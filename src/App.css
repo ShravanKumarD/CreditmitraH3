@@ -1,0 +1,135 @@
+
+.App{
+  background-image: linear-gradient(180deg, #0C4461 100%, #074464 100%);
+
+  
+}
+.page-container{
+  padding: 0 80px;
+}
+
+.header-nav a{
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.header-nav .navbar-nav{
+  gap: 40px;
+}
+.header-nav a.active{
+  color: #1B9BDC;
+  font-weight: 600;
+}
+
+/* hero section starts */
+.hero-section {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section .content {
+  width: 60%;
+}
+
+.hero-section img {
+  width: 40%;
+}
+.hero-section .content h6 {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: "General Sans Variable-Semibold", Helvetica;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-section .content p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+/* hero section ends */
+
+/* application-process-section starts */
+.application-process-section{
+  .application-process-card{
+    padding: 163px 0 152px 80px;
+    border-radius: 24px;
+    background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
+    color: #ffffff;
+    .content{
+      width: 60%;
+      .list-number{
+        display: flex;
+        height: 46px;
+        width: 46px;
+        border-radius: 13px;
+        background: #0072AD;
+        line-height: 28px;
+        align-items: center;
+        justify-content: center;
+        span{
+          width: 36px;
+          height: 36px;
+          display: flex;
+          background: rgba(255, 255, 255, 0.40);
+          border-radius: 40px;
+          font-size: 24px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      h6{
+        margin-top: 32px;
+        font-size: 38px;
+        font-weight: 600;
+      }
+      p{
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    &+.application-process-card{
+      margin-top: 64px;
+    }
+  }
+  .heading{
+    margin: 32px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+/* application-process-section ends */
+
+/* common styling starts */
+.brand-secondary{
+  border-radius: 4px;
+  border: 1px solid #1B9BDC;
+  background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+}
+.brand-secondary.lg{
+  padding: 8px 40px;
+}
+.brand-primary{
+  border: 1px solid #198BC7;
+  border-radius: 4px;
+  background: #198BC7;
+  color: #ffffff;
+}
+.brand-primary.lg{
+  padding: 8px 40px;
+}
+.py-20{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
