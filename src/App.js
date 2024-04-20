@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import ResponsibleLending from './Pages/ResponsibleLending/ResponsibleLending';
 import Contact from './Pages/Contact/Contact';
 import AboutUs from './Pages/AboutUs/AboutUs';
+import OurLendingPartners from './Pages/OurLendingPartners/OurLendingPartners';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/responsibleLending' element={<ResponsibleLending routePath="/responsibleLending"/>} />
           <Route path='/contact' element={<Contact routePath="/contact" />} /> 
           <Route path='/about' element={<AboutUs routePath="/about" />} /> 
+          <Route path='/ourLendingPartners' element={<OurLendingPartners routePath="/OurLendingPartners" />} /> 
       </Routes>
     </BrowserRouter>
     </div>

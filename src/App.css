@@ -20,6 +20,11 @@
     padding-right: 120px;
     padding-left: 120px;
   }
+  &.lending-partners{
+    padding-top: 87px;
+    padding-right: 140;
+    padding-left: 140px;
+  }
 }
 
 .header-nav a{
@@ -472,6 +477,53 @@
   }
 }
 /* about-us-container ends */
+
+/* lendingpartners-section starts */
+.lendingpartners-section{
+  .content{
+    text-align: center;
+    h6.heading{
+      background: linear-gradient(90deg, #1B9BDC 0%, #7ED2FF 53%, #1B9BDC 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    p.caption{
+      color: #FFF;
+      font-size: 24px;
+      margin-bottom: 130px;
+    }
+    .company-container{
+      h6{
+        margin-top: 18px;
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        margin-bottom: 64px;
+      }
+      p{
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 80px;
+      }
+      .website-text{
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: 1.6px;
+
+      }
+    }
+  }
+}
+/* lendingpartners-section ends */
 
 /* footer-section starts */
 .footer-section{
