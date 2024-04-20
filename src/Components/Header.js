@@ -34,7 +34,7 @@ function Header(props) {
                   <li class="nav-item" key={index}>
                     <Link
                       to={each.redirection}
-                      className="nav-link"
+                      className={`${props.routePath == each.redirection ? 'active' : ""} nav-link`}
                       title={each.displayName}
                     >
                       {each.displayName}
