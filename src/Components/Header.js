@@ -13,7 +13,7 @@ function Header(props) {
     { displayName: "FAQ", redirection: "/faq" },
   ];
   return (
-    <div className="page-container">
+    <div className="page-container pb-0">
       <div className="align-items-center d-flex justify-content-between py-20">
         <div>
           <Link to="/">

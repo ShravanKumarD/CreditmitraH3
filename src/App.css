@@ -3,6 +3,12 @@
   &.products-page{
     padding-right: 186px;
     padding-left: 186px;
+    padding-top: 86px;
+  }
+  &.responsible-lending-page{
+    padding-right: 136px;
+    padding-left: 136px;
+    padding-top: 115px;
   }
 }
 
@@ -49,70 +55,70 @@
 /* hero section ends */
 
 /* application-process-section starts */
-.application-process-section{
-  .application-process-card{
-    padding: 163px 0 152px 80px;
-    border-radius: 24px;
-    background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
-    color: #ffffff;
-    .content{
-      width: 60%;
-      .list-number{
+.application-process-card{
+  padding: 163px 0 152px 80px;
+  border-radius: 24px;
+  background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
+  color: #ffffff;
+  .content{
+    width: 60%;
+    .list-number{
+      display: flex;
+      height: 46px;
+      width: 46px;
+      border-radius: 13px;
+      background: #0072AD;
+      line-height: 28px;
+      align-items: center;
+      justify-content: center;
+      span{
+        width: 36px;
+        height: 36px;
         display: flex;
-        height: 46px;
-        width: 46px;
-        border-radius: 13px;
-        background: #0072AD;
-        line-height: 28px;
-        align-items: center;
-        justify-content: center;
-        span{
-          width: 36px;
-          height: 36px;
-          display: flex;
-          background: rgba(255, 255, 255, 0.40);
-          border-radius: 40px;
-          font-size: 24px;
-          justify-content: center;
-          align-items: center;
-        }
-      }
-      h6{
-        margin-top: 32px;
-        font-size: 38px;
-        font-weight: 600;
-        margin-bottom: 28px;
-      }
-      p{
+        background: rgba(255, 255, 255, 0.40);
+        border-radius: 40px;
         font-size: 24px;
-        font-weight: 400;
+        justify-content: center;
+        align-items: center;
       }
     }
-    &+.application-process-card{
-      margin-top: 64px;
+    h6{
+      margin-top: 32px;
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 28px;
     }
-    &.small-card{
-      padding: 100px 0 158px 58px;
+    p{
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+  &+.application-process-card{
+    margin-top: 64px;
+  }
+  &.small-card{
+    padding: 100px 0 158px 58px;
+    margin-bottom: 32px;
+    h6{
+      margin-top: 0;
+      font-size: 36px;
+      font-weight: 600;
       margin-bottom: 32px;
-      h6{
-        margin-top: 0;
-        font-size: 36px;
-        font-weight: 600;
-        margin-bottom: 32px;
-      }
-      &.half-card{
-        padding-top: 62px;
-        padding-bottom: 54px;
-        padding-right: 40px;
-        display: flex;
-        align-items: end;
-        .content{
-          width: calc(100% - 104px + 24px);
-          margin-right: 24px;
-        }
+    }
+    &.half-card{
+      padding-top: 62px;
+      padding-bottom: 54px;
+      padding-right: 40px;
+      display: flex;
+      align-items: end;
+      .content{
+        width: calc(100% - 104px + 24px);
+        margin-right: 24px;
       }
     }
   }
+}
+.application-process-section{
   .heading{
     margin: 32px 0;
     color: #FFF;
@@ -172,11 +178,8 @@
 /* user-feedback-section ends */
 
 /* products-hero-section starts */
-.products-hero-section{
-  padding-top: 86px;
-  padding-bottom: 230px;
-  text-align: center;
-  h6{
+.products-hero-section, .responsible-lending-section{
+  h6, .heading{
     background: linear-gradient(91deg, #1B9BDC -2.45%, #76D1FF 51.77%, #1B9BDC 97.01%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -184,6 +187,10 @@
     font-size: 64px;
     font-weight: 700;
   }
+}
+.products-hero-section{
+  padding-bottom: 230px;
+  text-align: center;
   small{
     color: #FFF;
     font-size: 18px;
@@ -247,6 +254,52 @@
   }
 }
 /* description-section ends */
+
+/* responsible-lending-section starts */
+.responsible-lending-section{
+  text-align: center;
+  .content{
+    margin-bottom: 160px;
+    p{
+      margin-top: 24px;
+      color: #FFF;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+  }
+  .section-heading{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+  .application-process-card{
+    padding: 50px 36px;
+    .content{
+      margin: 0;
+      width: 100%;
+      padding-left: 64px;
+      position: relative;
+      text-align: left;
+      p{
+        margin-top: 0;
+        font-size: 24px;
+      }
+      .list-number{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+    }
+    &+.application-process-card{
+      margin-top: 40px;
+    }
+  }
+}
+/* responsible-lending-section ends */
 
 /* footer-section starts */
 .footer-section{
