@@ -15,6 +15,11 @@
     padding-right: 342px;
     padding-left: 342px;
   }
+  &.about-us{
+    padding-top: 80px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
 }
 
 .header-nav a{
@@ -361,6 +366,112 @@
   }
 }
 /* contact-us-section ends */
+
+/* about-us-container starts */
+.about-us-container{
+  .content{
+    padding: 0 26px;
+    .heading{
+      opacity: 0.8;
+      background: linear-gradient(92deg, #41A5F1 20.66%, #A7DAFF 48.98%, #51A8E8 78.11%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-size: 60px;
+      font-weight: 700;
+      margin-bottom: 72px;
+    }
+    .about-section{
+      display: flex;
+      justify-content: space-between;
+      gap: 196px;
+      align-items: center;
+      margin-bottom: 120px;
+      .about-section-content{
+        h6{
+          color: #FFF;
+          font-size: 40px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        p{
+          color: #FFF;
+          font-size: 24px;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .about-points-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 160px;
+    .each-point{
+      width: calc(50% - 40px);
+      display: flex;
+      flex-direction: column;
+      &:nth-child(even){
+        padding-left: 20px;
+      }
+      &:nth-child(odd){
+        padding-right: 20px;
+      }
+      .quote-container{
+        padding: 0 16px;
+        display: flex;
+        span{
+          opacity: 0.99;
+          background: linear-gradient(91deg, #4CBFFC -2.45%, #2199EF 97.01%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 133px;
+          font-weight: 700;
+        }
+        p{
+          color: #7ED2FF;
+          font-size: 32px;
+          font-weight: 700;
+          opacity: 0.8;
+          margin-bottom: 0;
+          padding: 48px 0;
+          display: flex;
+          align-items: center;
+        }
+      }
+      .application-process-card{
+        padding: 48px;
+        height: 100%;
+        .content{width: 100%;}
+      }
+    }
+  }
+  .application-process-card{
+    &.small-card{
+      padding: 50px 50px 116px;
+      &+.small-card{
+        margin-top: 32px;
+      }      
+      h6{
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        margin-top: 0;
+      }
+      p{
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+/* about-us-container ends */
 
 /* footer-section starts */
 .footer-section{
