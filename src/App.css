@@ -1,8 +1,8 @@
 .page-container{
-  padding: 0 80px 160px;
+  padding: 0 88px 160px;
   &.products-page{
-    padding-right: 186px;
-    padding-left: 186px;
+    padding-right: 100px;
+    padding-left: 100px;
     padding-top: 86px;
   }
   &.responsible-lending-page{

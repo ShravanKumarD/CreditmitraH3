@@ -11,9 +11,11 @@ function Home(props) {
             <Header routePath={props.routePath}/>
             <section>
                 <div className='page-container'>
-                    <HeroSection />
-                    <ApplicationProcess/>
-                    <UserFeedback />
+                    <div className='px-3'>
+                        <HeroSection />
+                        <ApplicationProcess/>
+                        <UserFeedback />
+                    </div>
                 </div>
                 <Footer/>
             </section>
