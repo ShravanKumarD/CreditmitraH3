@@ -28,7 +28,7 @@ function Contact(props) {
                     <input type="text" class="form-control" id="Contact" placeholder="Contact"/>
                 </div>
                 <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Message" style={{resize:"none"}}></textarea>
+                <textarea class="form-control" id="message" placeholder="Message" style={{resize:"none", height: "214px"}}></textarea>
                 </div>
                 <button type="submit" class="btn brand-primary-gradient btn-block lg-btn">
                 Send Message

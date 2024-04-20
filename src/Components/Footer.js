@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from "../assets/images/logo.png"
 import { Link } from 'react-router-dom';
+import FooterImg from "../assets/images/footer-globe.png"
 
 function Footer(props) {
     function getFooterNavLinks(){
@@ -60,6 +61,7 @@ function Footer(props) {
     return (
         <footer >
             <div className='footer-section'>
+                <img src={FooterImg} className='footer-globe img-fluid' />
                 <div className='footer-content'>
                     <div className='footer-container'>
                         <div className='w-25'>
