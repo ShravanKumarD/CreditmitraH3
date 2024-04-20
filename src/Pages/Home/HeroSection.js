@@ -1,5 +1,5 @@
 import React from 'react';
-
+import heroImage from '../../assets/images/hero-image.png'
 function HeroSection(props) {
     return (
         <div className='hero-section'>
@@ -11,6 +11,7 @@ function HeroSection(props) {
                     <buttton className="btn brand-secondary ml-3 py-3 px-4">Download App</buttton>
                 </div>
             </div>
+            <img src={heroImage}/>
         </div>
     );
 }

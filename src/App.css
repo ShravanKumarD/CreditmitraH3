@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 .page-container{
   padding: 0 88px 110px;
   &.products-page{
@@ -11,7 +16,7 @@
     padding-top: 115px;
   }
   &.contact-us{
-    padding-top: 241px;
+    padding-top: 120px;
     padding-right: 342px;
     padding-left: 342px;
   }
@@ -33,7 +38,7 @@
 }
 
 .header-nav a{
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   font-family: Poppins;
 }
@@ -48,8 +53,17 @@
 
 /* hero section starts */
 .hero-section {
-  padding-top: 185px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
   padding-bottom: 160px;
+}
+.hero-section img {
+  height: 480px;
+    position: absolute;
+    right: -100px;
+    top: -50px;
 }
 .hero-section .content {
   width: 70%;
@@ -60,10 +74,10 @@
   background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
   background-clip: text;
   color: transparent;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   line-height: normal;
-  font-family: "General Sans Variable";
+  /* font-family: "General Sans Variable"; */
 }
 
 .hero-section .content p {
@@ -79,7 +93,9 @@
 
 /* application-process-section starts */
 .application-process-card{
-  padding: 163px 0 152px 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 60px 80px;
   border-radius: 24px;
   background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
   color: #ffffff;
@@ -120,11 +136,11 @@
     margin-top: 64px;
   }
   &.small-card{
-    padding: 100px 0 158px 58px;
+    padding: 70px 0 70px 58px;
     margin-bottom: 32px;
     h6{
       margin-top: 0;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 600;
       margin-bottom: 32px;
     }
@@ -178,8 +194,7 @@
           margin-bottom: 16px;
         }
         .feedback-ratings{
-          height: 34px;
-          background-color: gold;
+          height: 34px;         
           margin-bottom: 22px;
         }
         .comment{
@@ -443,16 +458,16 @@
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          font-size: 133px;
+          font-size: 80px;
           font-weight: 700;
         }
         p{
           color: #7ED2FF;
-          font-size: 32px;
+          font-size: 22px;
           font-weight: 700;
           opacity: 0.8;
           margin-bottom: 0;
-          padding: 48px 0;
+          padding: 30px 0;
           display: flex;
           align-items: center;
         }

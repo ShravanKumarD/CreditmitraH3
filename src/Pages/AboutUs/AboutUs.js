@@ -2,6 +2,10 @@ import React from 'react';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
 import ApplicationProcessingCard from '../../Components/ApplicationProcessingCard';
+import Image1 from '../../assets/images/mission.png'
+import Image2 from '../../assets/images/vision.png'
+import aboutus from '../../assets/images/aboutus.png'
+
 
 function AboutUs(props) {
 
@@ -18,7 +22,7 @@ function AboutUs(props) {
                         <h6>{cardInfo.heading}</h6>
                         <p>{cardInfo.description}</p>
                     </div>
-                    <div className='img-container'></div>
+                    <img height="300px" src={cardInfo.img}/>
                 </div>
         </>
     }
@@ -37,7 +41,7 @@ function AboutUs(props) {
                                 <h6>About Credit Mitra</h6>
                                 <p>Credit Mitra is a fintech company facilitating personal loans through a mobile application to salaried employees pan-India, within 24 hours</p>
                             </div>
-                            <div className='img-container'></div>
+                            <img  height="300px" src={aboutus}/>
                         </div>
                     </div>
                     <div className='about-points-container'>
@@ -53,8 +57,8 @@ function AboutUs(props) {
                             </>
                         })}
                     </div>
-                    <VisionCard heading="Our Mission" description="Our mission is to bring financial inclusion to millions of underserved and unserved urban working Indian employees with accurate and faster credit decisions, as well as, unmatched user experience through a smartphone application. We are targeting to serve a 1% employee market size by 2024."/>
-                    <VisionCard heading="Our Vision" description="We believe in providing accessible credit facilities to those who may not have the time or resources to navigate through the complexities of traditional lending services. Credit Mitra is committed to offering quick and convenient loan solutions through our user-friendly mobile app." />
+                    <VisionCard heading="Our Mission" img={Image1} description="Our mission is to bring financial inclusion to millions of underserved and unserved urban working Indian employees with accurate and faster credit decisions, as well as, unmatched user experience through a smartphone application. We are targeting to serve a 1% employee market size by 2024."/>
+                    <VisionCard heading="Our Vision"  img={Image2} description="We believe in providing accessible credit facilities to those who may not have the time or resources to navigate through the complexities of traditional lending services. Credit Mitra is committed to offering quick and convenient loan solutions through our user-friendly mobile app." />
                 
                 </div>
             </div>
