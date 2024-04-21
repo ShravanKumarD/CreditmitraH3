@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
+import message from '../../assets/images/message.png'
 
 function Contact(props) {
   return (
@@ -10,6 +11,7 @@ function Contact(props) {
         <div className="page-container contact-us">
           <div className="contact-us-section">
             <div className="content">
+              <img src={message}  className="mb-3" height="140px"/>
               <p className="mt-0 mb-5">
                 Feel free to connect with us with any questions or queries.
                 We’re dedicated to providing you with the best possible

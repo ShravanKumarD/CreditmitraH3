@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../../Components/Header';
 import Footer from '../../Components/Footer';
-
+import venus from "../../assets/images/venus.png";
+import agf from "../../assets/images/agf.jpeg";
 function OurLendingPartners(props) {
     return (
         <>
@@ -12,7 +13,8 @@ function OurLendingPartners(props) {
                     <div className="content">
                        <h6 className='heading'>Our Lending Partners</h6>
                        <p className='caption'>CreditMitra is acting as a Digital Lending Platform on behalf of the following RBI Registered NBFC</p>
-                        <div className='company-container'>
+                        <div className='company-container mb-5'>
+                            <img  height="100px" src={venus}/>
                             <h6>VENUS BARTER</h6>
                             <p>Venus Barter Private Limited</p>
                             <div className='website-text'>
@@ -20,7 +22,17 @@ function OurLendingPartners(props) {
                                 Email: venusbarterpvtltd1994@gmail.com<br/>Phone: 9666042345
                             </div>
                         </div>
+                        <div className='company-container mt-3'>
+                            <img  height="100px" src={agf}/>
+                            <h6>A.G.F Finlease </h6>
+                            <p>A.G.F Finlease (India) Limited</p>
+                            <div className='website-text'>
+                                Website: https://agffinlease.com<br/>
+                                Email: support@agffinlease.in<br/>Phone:  9666042345 
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
             <Footer/>

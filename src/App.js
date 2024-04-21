@@ -1,3 +1,5 @@
+
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Products from './Pages/Products/Products';
@@ -9,6 +11,9 @@ import OurLendingPartners from './Pages/OurLendingPartners/OurLendingPartners';
 import FAQ from './Pages/FAQ/FAQ';
 
 function App() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [window? window.location.href : null])
   return (
     <div className="App bg-dark">
       <BrowserRouter>
