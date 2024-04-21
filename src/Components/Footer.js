@@ -1,7 +1,7 @@
 import React from 'react';
-import Logo from "../assets/images/logo.png"
+import Logo from "../assets/images/logo.png";
 import { Link } from 'react-router-dom';
-import FooterImg from "../assets/images/footer-globe.png"
+import FooterImg from "../assets/images/footer-globe.png";
 
 function Footer(props) {
     function getFooterNavLinks(){
@@ -15,7 +15,7 @@ function Footer(props) {
         {
             heading: "Our Company",
             navLinks: [
-                {displayName: "About us", redirectTo: "/"},
+                {displayName: "About us", redirectTo: "/about"},
                 {displayName: "We are hiring", redirectTo: "/"},
                 {displayName: "Digital Lending Partners", redirectTo: "/"}
             ]
@@ -23,18 +23,18 @@ function Footer(props) {
         {
             heading: "Legal",
             navLinks: [
-                {displayName: "Terms & Conditions", redirectTo: "/"},
-                {displayName: "Privacy Policy", redirectTo: "/"},
-                {displayName: "Grieviance Redressal", redirectTo: "/"}
+                    {displayName: "Terms & Conditions", target :"_blank", download:"download", redirectTo:"/TermsandConditions.pdf"},
+                {displayName: "Privacy Policy", target :"_blank", download:"download", redirectTo:"/PrivacyPolicy.pdf"},
+                {displayName: "Grieviance Redressal", target :"_blank", download:"download", redirectTo:"/Grievance.pdf"}
             ]
         },
         {
             heading: "Categories",
             navLinks: [
-                {displayName: "Contact us", redirectTo: "/"},
-                {displayName: "About us", redirectTo: "/"},
-                {displayName: "Responsible lending", redirectTo: "/"},
-                {displayName: "FAQ", redirectTo: "/"},
+                {displayName: "Contact us", redirectTo: "/contact"},
+                {displayName: "About us", redirectTo: "/about"},
+                {displayName: "Responsible lending", redirectTo: "/responsibleLending"},
+                {displayName: "FAQ", redirectTo: "/faq"},
                 {displayName: "Blog", redirectTo: "/"}
             ]
         },
@@ -48,7 +48,7 @@ function Footer(props) {
                                 {each.navLinks.map((eachNav)=>{
                                     return<>
                                     <li>
-                                        <Link to={eachNav.redirectTo} title={eachNav.displayName}>{eachNav.displayName}</Link>
+                                        <Link to={eachNav.redirectTo} title={eachNav.displayName} download={eachNav.download} target={eachNav.target}>{eachNav.displayName}</Link>
                                     </li>
                                     </>
                                 })}
