@@ -10,7 +10,7 @@ function Contact(props) {
       <section>
         <div className="page-container contact-us">
           <div className="contact-us-section">
-            <div className="content">
+            <div className="content mb-5">
               <img src={message}  className="mb-3" height="140px"/>
               <p className="mt-0 mb-5">
                 Feel free to connect with us with any questions or queries.
@@ -19,7 +19,7 @@ function Contact(props) {
               </p>
               <h6>Got a question? We're here to help!</h6>
             </div>
-            <div className="form-container">
+            {/* <div className="form-container">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" placeholder="Your name"/>
                 </div>
@@ -35,7 +35,10 @@ function Contact(props) {
                 <button type="submit" class="btn brand-primary-gradient btn-block lg-btn">
                 Send Message
                 </button>
-            </div>
+            </div> */}
+            
+            
+            <div class="website-text">Email: Support@creditmitra.in<br/>Phone:  9666042345</div>
           </div>
         </div>
         <Footer />

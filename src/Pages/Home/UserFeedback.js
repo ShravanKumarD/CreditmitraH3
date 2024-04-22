@@ -5,22 +5,27 @@ function UserFeedback(props) {
   function getFeedbackCard() {
     let feedbacks = [
       {
-        comment: "hshssjs hshsh sjsjsjsj sjsj[o[sc kdkdklan sskk",
+        comment: " No crazy paperwork, just a quick online application and the money was in my account the same day.",
         userName: "Riya S.",
+        img : "https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
       },
       {
-        comment: "hshssjs hshsh sjsjsjsj sjsj[o[sc kdkdklan sskk",
-        userName: "Riya S.",
+        comment: "Very simple and instructions were clearly present. No hidden charges were present and very low interest rates.",
+        userName: "Kunal P.",
+        img : "https://mdbcdn.b-cdn.net/img/new/avatars/10.webp"
       },
       {
-        comment: "hshssjs hshsh sjsjsjsj sjsj[o[sc kdkdklan sskk",
-        userName: "Riya S.",
+        comment: "I took the loan from Creditmitra many times. Very soft spoken and professional staff.",
+        userName: "Samir K.",
+        img : "https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
       },
     ];
     return feedbacks.map((each) => {
       return (
         <>
-          <div class="card each-feedback-card">
+          <div class="card each-feedback-card text-center">
+          <img class="rounded-circle mb-3" alt="avatar1" height="64px" width="64px" src={each.img} />
+
             <div class="card-body">
               <div className="feedback-ratings">
               <svg

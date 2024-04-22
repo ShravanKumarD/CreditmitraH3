@@ -7,6 +7,7 @@ import Image4 from '../../assets/images/IMG4.png'
 import Image5 from '../../assets/images/IMG5.png'
 import Image6 from '../../assets/images/approvalIcon.png'
 import Image7 from '../../assets/images/repayicon.png'
+import { Link } from 'react-router-dom';
 
 function ApplicationProcess(props) {
     function BottomHalfCards(subProps){
@@ -18,7 +19,7 @@ function ApplicationProcess(props) {
                     <p>{subProps.description}</p>
                 </div>
             </div>
-            <img height="100px" src={subProps.img}/>
+            <img height="75px" src={subProps.img}/>
         </div>
         </>)
     }
@@ -67,7 +68,7 @@ function ApplicationProcess(props) {
                 <h6>Customized Personal Loan</h6>
                 <p>Instant offer, quick disbursal & array of customised, flexible personal loan</p>
             </div>
-            <img height="300px" src={Image5}/>
+            <img height="370px" src={Image5}/>
         </div>
         <div className='d-flex' style={{gap: "32px"}}>
             <div className='w-100'>
@@ -79,7 +80,7 @@ function ApplicationProcess(props) {
         </div>
         <div className='btn-container text-center'>
             <buttton className="btn brand-primary py-3 px-4">Apply Now</buttton>
-            <buttton className="btn brand-secondary ml-3 py-3 px-4">Contact Us</buttton>
+            <buttton className="btn brand-secondary ml-3 py-3 px-4"> <Link to="/contact">Contact Us </Link></buttton>
         </div>
       </div>
     );

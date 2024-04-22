@@ -63,10 +63,10 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   padding-bottom: 160px;
 }
 .hero-section img {
-  height: 480px;
+  height: 530px;
     position: absolute;
     right: -100px;
-    top: -50px;
+    top: -45px;
 }
 .hero-section .content {
   width: 70%;
@@ -77,15 +77,16 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
   background-clip: text;
   color: transparent;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 600;
+  margin-bottom: 1rem;
   line-height: normal;
   /* font-family: "General Sans Variable"; */
 }
 
 .hero-section .content p {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 28px;
   margin-bottom: 24px;
@@ -98,7 +99,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
 .application-process-card{
   display: flex;
   justify-content: space-between;
-  padding: 60px 0 60px 80px;
+  padding: 60px 0 0px 80px;
   border-radius: 24px;
   background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
   color: #ffffff;
@@ -106,6 +107,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     width: 60%;
     .list-number{
       display: flex;
+      margin-top: 24px;
       height: 46px;
       width: 46px;
       border-radius: 13px;
@@ -126,12 +128,12 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     }
     h6{
       margin-top: 32px;
-      font-size: 38px;
+      font-size: 32px;
       font-weight: 600;
       margin-bottom: 28px;
     }
     p{
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 400;
     }
   }
@@ -139,10 +141,10 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     margin-top: 64px;
   }
   &.small-card{
-    padding: 70px 0 70px 58px;
+    padding:  0 0 0 80px;   
     margin-bottom: 32px;
     h6{
-      margin-top: 0;
+      /* margin-top: 80px; */
       font-size: 30px;
       font-weight: 600;
       margin-bottom: 32px;
@@ -165,8 +167,8 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     margin: 32px 0;
     color: #FFF;
     text-align: center;
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 600;
     &.extra-margin-top{
       margin-top: 160px;
     }
@@ -184,10 +186,12 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   .feedback-card-container{
     display: flex;
     gap: 32px;
-    align-items: center;
+    align-items: center;    
     justify-content: center;
     .each-feedback-card{
       border-radius: 30px;
+      display: flex;
+      align-items: center;
       background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
       padding: 34px 64px;
       .card-body{
@@ -202,7 +206,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
         }
         .comment{
           color: #FFF;
-          font-size: 18px;
+          font-size: 16px;
           margin-bottom: 48px;
         }
         .user-name{
@@ -225,7 +229,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 700;
     text-align: center;
   }
@@ -308,6 +312,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       margin-bottom: 0;
     }
   }
+  
 }
 .responsible-lending-section{
   text-align: center;
@@ -347,9 +352,16 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       }
 
     }
-    &+.application-process-card{
+    &.application-process-card{
       margin-top: 40px;
+      height: 200px;
+      display: flex;
+      align-items: center;   
+      .list-number{
+        margin-top: 10px;
+      }  
     }
+    
   }
 }
 /* responsible-lending-section ends */
@@ -515,20 +527,20 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 64px;
+      font-size: 54px;
       font-weight: 700;
       margin-bottom: 36px;
     }
     p.caption{
       color: #FFF;
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: 130px;
     }
     .company-container{
       h6{
-        margin-top: 18px;
+        margin-top: 16x;
         color: #FFF;
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 700;
         letter-spacing: 2.4px;
         margin-bottom: 64px;
@@ -543,7 +555,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       .website-text{
         color: #FFF;
         text-align: center;
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 500;
         letter-spacing: 1.6px;
 
@@ -651,7 +663,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       align-items: center;
       margin-top: 80px;
       p{
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 600;
         margin-bottom: 24px;
       }
@@ -715,7 +727,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
         justify-content: space-between;
         h6{
           color: #FFF;
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 600;
           margin-bottom: 16px;
         }
@@ -754,7 +766,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   margin: 32px 0;
     color: #FFF;
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 700;
 }
 .brand-secondary{
@@ -792,4 +804,13 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
 .py-20{
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.website-text{
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+
 }

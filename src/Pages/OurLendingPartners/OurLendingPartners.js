@@ -21,6 +21,7 @@ function OurLendingPartners(props) {
                                 Website:<br/>
                                 Email: venusbarterpvtltd1994@gmail.com<br/>Phone: 9666042345
                             </div>
+                            <h6 className='mt-5'>&</h6>
                         </div>
                         <div className='company-container mt-3'>
                             <img  height="100px" src={agf}/>
