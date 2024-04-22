@@ -281,7 +281,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   .content{
     color: #FFF;
     h6{
-      font-size: 48px;
+      font-size: 40px;
       font-weight: 700;
       margin-bottom: 44px;
     }
@@ -423,7 +423,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
-      font-size: 60px;
+      font-size: 48px;
       font-weight: 700;
       margin-bottom: 72px;
     }
