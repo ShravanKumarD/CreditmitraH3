@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a4717722.css",
+    "main.js": "/static/js/main.3c47a375.js",
+    "static/js/453.140c7dc7.chunk.js": "/static/js/453.140c7dc7.chunk.js",
+    "static/media/footer-globe.png": "/static/media/footer-globe.d3b0a773c97fa531d1d6.png",
+    "static/media/hero-image.png": "/static/media/hero-image.98e9121f0ab0bee551ba.png",
+    "static/media/aboutus.png": "/static/media/aboutus.7631614f4e45264ab32c.png",
+    "static/media/IMG1.png": "/static/media/IMG1.8ce0deb358b85f009840.png",
+    "static/media/IMG4.png": "/static/media/IMG4.5c79c510f117fe656c2b.png",
+    "static/media/IMG3.png": "/static/media/IMG3.96d3c45945b5c73bdb90.png",
+    "static/media/IMG2.png": "/static/media/IMG2.799b1dc5450f04dbc328.png",
+    "static/media/agf.jpeg": "/static/media/agf.c140ffd54baf13342960.jpeg",
+    "static/media/IMG5.png": "/static/media/IMG5.355f9d925d52b0ca5e02.png",
+    "static/media/message.png": "/static/media/message.7e0f8f3dcaaf4dd577e7.png",
+    "static/media/Products_Page_Loan_steps.png": "/static/media/Products_Page_Loan_steps.67eba31a161dcb3aee2e.png",
+    "static/media/eligiblity.png": "/static/media/eligiblity.e249c544a5678db22e52.png",
+    "static/media/venus.png": "/static/media/venus.9226c74f979c7f4a12fc.png",
+    "static/media/mission.png": "/static/media/mission.816f15ca65c68a66a5cc.png",
+    "static/media/vision.png": "/static/media/vision.2d574334e4ab0434cbad.png",
+    "static/media/approvalIcon.png": "/static/media/approvalIcon.6918103cc7c973cd36bb.png",
+    "static/media/repayicon.png": "/static/media/repayicon.d946ad44a0184022207e.png",
+    "index.html": "/index.html",
+    "main.a4717722.css.map": "/static/css/main.a4717722.css.map",
+    "main.3c47a375.js.map": "/static/js/main.3c47a375.js.map",
+    "453.140c7dc7.chunk.js.map": "/static/js/453.140c7dc7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4717722.css",
+    "static/js/main.3c47a375.js"
+  ]
+}
