@@ -23,9 +23,9 @@ function Footer(props) {
         {
             heading: "Legal",
             navLinks: [
-                    {displayName: "Terms & Conditions", target :"_blank", download:"download", redirectTo:"/TermsandConditions.pdf"},
-                {displayName: "Privacy Policy", target :"_blank", download:"download", redirectTo:"/PrivacyPolicy.pdf"},
-                {displayName: "Grieviance Redressal", target :"_blank", download:"download", redirectTo:"/Grievance.pdf"}
+                    {displayName: "Terms & Conditions", redirectTo:"/termsAndConditions"},
+                {displayName: "Privacy Policy",  redirectTo:"/privacypolicy"},
+                {displayName: "Grieviance Redressal", redirectTo:"/grievienceredressal"}
             ]
         },
         {
