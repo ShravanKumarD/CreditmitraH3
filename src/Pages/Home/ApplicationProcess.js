@@ -47,8 +47,8 @@ function ApplicationProcess(props) {
           orderNo={3}
           heading={"Credit Assessment"}
           description={
-            "Upon successful credit assessment, your loan will be promptly approved and disbursed directly into your linked bank account."
-          }
+            "Our seasoned underwriting team, leveraging cutting-edge technology, meticulously assesses your application and financial history for creditworthiness." 
+            }
           img={Image3}
         />
         <ApplicationProcessingCard
@@ -64,9 +64,14 @@ function ApplicationProcess(props) {
           <br /> Personal Loan Needs?
         </h6>
         <div className='application-process-card small-card'>
-            <div className='content'>
+            <div className='content '>
                 <h6>Customized Personal Loan</h6>
-                <p>Instant offer, quick disbursal & array of customised, flexible personal loan</p>
+                <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
+                 
+               <p className='pb-5'> With our customized personal loan, borrowers have the flexibility to choose the loan amount and repayment tenure that best suits their needs. We understand that one size does not fit all; we work closely with our customers to understand their financial objectives, ensuring that the loan terms are structured in a way that aligns with their preferences and capabilities.)
+
+
+                </p>
             </div>
             <img height="370px" src={Image5}/>
         </div>
@@ -80,7 +85,7 @@ function ApplicationProcess(props) {
         </div>
         <div className='btn-container text-center'>
             <buttton className="btn brand-primary py-3 px-4">Apply Now</buttton>
-            <buttton className="btn brand-secondary ml-3 py-3 px-4"> <Link to="/contact">Contact Us </Link></buttton>
+            <buttton className="btn brand-secondary ml-3 py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us </Link></buttton>
         </div>
       </div>
     );

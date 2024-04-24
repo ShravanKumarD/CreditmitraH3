@@ -9,7 +9,7 @@ function Footer(props) {
         {
             heading: "Products",
             navLinks: [
-                {displayName: "Instant Personal Loan", redirectTo: "/"}
+                {displayName: "Instant Personal Loan", redirectTo: "/products"}
             ]
         },
         {

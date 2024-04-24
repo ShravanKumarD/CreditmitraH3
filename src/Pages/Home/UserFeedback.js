@@ -6,17 +6,17 @@ function UserFeedback(props) {
     let feedbacks = [
       {
         comment: " No crazy paperwork, just a quick online application and the money was in my account the same day.",
-        userName: "Riya S.",
+        userName: "Kunal P.",
         img : "https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
       },
       {
         comment: "Very simple and instructions were clearly present. No hidden charges were present and very low interest rates.",
-        userName: "Kunal P.",
+        userName: "Rashmi.",
         img : "https://mdbcdn.b-cdn.net/img/new/avatars/10.webp"
       },
       {
         comment: "I took the loan from Creditmitra many times. Very soft spoken and professional staff.",
-        userName: "Samir K.",
+        userName: "Neha K.",
         img : "https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
       },
     ];
@@ -52,6 +52,7 @@ function UserFeedback(props) {
                   fill="#F3D057"
                 />
               </svg>
+              
               <svg
                 width="25"
                 height="24"

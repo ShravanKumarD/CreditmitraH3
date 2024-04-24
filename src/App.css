@@ -1,8 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-html {
-  scroll-behavior: smooth;
-}
+
 .App{
   background: rgb(31,32,37);
 background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba(7,68,100,1) 100%);
@@ -129,13 +127,14 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       }
     }
     h6{
-      margin-top: 32px;
+      margin-top: 12px;
       font-size: 32px;
       font-weight: 600;
-      margin-bottom: 28px;
+      margin-bottom: 16px;
     }
     p{
       font-size: 18px;
+      margin-bottom: 0px;
       font-weight: 400;
     }
   }
@@ -146,13 +145,13 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     padding:  0 0 0 80px;   
     margin-bottom: 32px;
     h6{
-      /* margin-top: 80px; */
+       margin-top: 40px; 
       font-size: 30px;
       font-weight: 600;
       margin-bottom: 32px;
     }
     &.half-card{
-      padding-top: 62px;
+      padding-top: 0px;
       padding-bottom: 54px;
       padding-right: 40px;
       display: flex;
@@ -231,7 +230,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     text-align: center;
   }
@@ -323,14 +322,14 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     p{
       margin-top: 24px;
       color: #FFF;
-      font-size: 28px;
+      font-size: 20px;
       font-weight: 700;
       margin-bottom: 0;
     }
   }
   .section-heading{
     color: #FFF;
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 600;
     margin-bottom: 64px;
     text-align: center;
@@ -438,13 +437,13 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       .about-section-content{
         h6{
           color: #FFF;
-          font-size: 40px;
+          font-size: 34px;
           font-weight: 700;
-          margin-bottom: 8px;
+          margin-bottom: 12px;
         }
         p{
           color: #FFF;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 500;
           margin-bottom: 0;
         }
@@ -490,7 +489,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
         }
       }
       .application-process-card{
-        padding: 48px;
+        padding: 24px;
         height: 100%;
         .content{width: 100%;}
       }
@@ -498,7 +497,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   }
   .application-process-card{
     &.small-card{
-      padding: 50px 50px 116px;
+      padding: 50px 50px 50px;
       &+.small-card{
         margin-top: 32px;
       }      
@@ -511,7 +510,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       }
       p{
         color: #FFF;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
         margin-bottom: 0;
       }
@@ -634,7 +633,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
             justify-content: space-between;
             align-items: center;
             color: #FFF;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
             line-height: normal;
             svg{
@@ -772,11 +771,17 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     font-weight: 700;
 }
 .brand-secondary{
-  border-radius: 4px;
-  border: 1px solid #1B9BDC;
+  border-radius: 4px;  
   background: rgba(255, 255, 255, 0.10);
   color: #ffffff;
-  font-family: Poppins;
+  font-family: Poppins;   
+  border-image-source: linear-gradient(to left, #1B9BDC, #A9E2FF,#1B9BDC);
+  border-width: 1px;
+  border-image-slice: 1;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: round
+    
 }
 .brand-secondary.lg{
   padding: 8px 40px;
@@ -792,7 +797,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   padding: 8px 40px;
 }
 .brand-primary-gradient{
-  border-radius: 8px;
+  border-radius: 0px !important;
   border: 1px solid #FFF;
   background: linear-gradient(91deg, #3CAFF5 -2.45%, #1A69A3 97.01%);
   color: #fff;

@@ -10,9 +10,9 @@ import aboutus from '../../assets/images/aboutus.png'
 function AboutUs(props) {
 
     let points=[
-        {quote: "Empowering Millennials with Innovative Loans", description: "Credit Mitra offers innovative loans to help millennials achieve a life that they desire.We differentiate in the otherwise cluttered Personal Loan segment and deliver fastest Personal Loans at customer friendly terms."},
+        {quote: "Empowering Millennials      with Innovative Loans", description: "Credit Mitra offers innovative loans to help millennials achieve a life that they desire.We differentiate in the otherwise cluttered Personal Loan segment and deliver fastest Personal Loans at customer friendly terms."},
         {quote: "Customer-Centric Loan Solutions", description:"Credit Mitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products."},
-        {quote: "Trusted Leadership in FinTech", description:"We boast of an experienced leadership and highly talented team, making us one of the fastest growing & trusted FinTech companies in the category."},
+        {quote: "Trusted  Leadership  in  FinTech", description:"We boast of an experienced leadership and highly talented team, making us one of the fastest growing & trusted FinTech companies in the category."},
         {quote: "Quick and Convenient Personal Loans", description:"Credit Mitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products."}
     ];
     function VisionCard (cardInfo){
@@ -57,8 +57,8 @@ function AboutUs(props) {
                             </>
                         })}
                     </div>
-                    <VisionCard heading="Our Mission" img={Image1} description="Our mission is to bring financial inclusion to millions of underserved and unserved urban working Indian employees with accurate and faster credit decisions, as well as, unmatched user experience through a smartphone application. We are targeting to serve a 1% employee market size by 2024."/>
-                    <VisionCard heading="Our Vision"  img={Image2} description="We believe in providing accessible credit facilities to those who may not have the time or resources to navigate through the complexities of traditional lending services. Credit Mitra is committed to offering quick and convenient loan solutions through our user-friendly mobile app." />
+                    <VisionCard heading="Our Mission" img={Image1} description="Our core mission is to champion financial liberation for all. We focus on breaking away from conventional lending practices, eliminating the requirement for collateral and democratizing access to financial resources. We specialize in providing flexible loan options tailored to diverse needs, accompanied by repayment terms designed for utmost convenience. We strive to emerge as the leading financial Mitra for both ambitious and salaried individuals, delivering transformative solutions that fuel aspirations."/>
+                    <VisionCard heading="Our Vision"  img={Image2} description="We as a company, envision a future where financial freedom is within reach for everyone. We want to revolutionize the lending landscape by challenging traditional norms and barriers. We aspire to create a world where collateral-free loans are the norm, granting equal opportunities to all individuals. We see ourselves as catalysts for positive change, empowering individuals to pursue their dreams and achieve their goals with confidence." />
                 
                 </div>
             </div>
