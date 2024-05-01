@@ -1,21 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../../Components/Header';
-import Footer from '../../Components/Footer';
-import { Collapse } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
+import { Collapse } from "reactstrap";
+import { Link } from "react-router-dom";
+import SEO from "../SEO/SEO";
 
 function FAQ(props) {
-    let faqContent = [
+  let faqContent = [
+    {
+      General: [
         {
-            "General": [
-                {"What is Credit Mitra ?": `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI
+          "What is Credit Mitra ?": `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI
                 payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling
-                unexpected emergencies, CreditMitra has you covered.`},
-                {"What is the Eligibility Criteria to apply for a loan?":
-                 `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a
+                unexpected emergencies, CreditMitra has you covered.`,
+        },
+        {
+          "What is the Eligibility Criteria to apply for a loan?": `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a
                  minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan
-                 application process.`},
-                {"How does CreditMitra Works?": `CreditMitra is where simplicity meets convenience. All you need to do is follow through these
+                 application process.`,
+        },
+        {
+          "How does CreditMitra Works?": `CreditMitra is where simplicity meets convenience. All you need to do is follow through these
                 steps to get an instant loan:
 
                  Download the CreditMitra app from Play Store.                
@@ -23,71 +28,111 @@ function FAQ(props) {
                  Check eligibility with basic details.
                  Complete the application with ease.
                  Upload documents’ photos conveniently.
-                 Add your bank account details securely.`},
+                 Add your bank account details securely.`,
+        },
 
-                { "Are you a Bank or an NBFC?" :`CreditMitra is neither a Bank nor an NBFC. It is an user-friendly technology platform
+        {
+          "Are you a Bank or an NBFC?": `CreditMitra is neither a Bank nor an NBFC. It is an user-friendly technology platform
                 powered by Bluechip Finance Private Limited; an RBI-registered Non-Banking Financial
-                Company (NBFC).`},
-                { "Does it work only on smartphone ?" :`No, you can also apply via your computer/laptop through our web-app.`},
-               {"How much loan do you offer?":`We offer loans ranging from 5,000 INR to 1,50,000 INR with tenures starting from 65 days.`},
-                { "Is CreditMitra app Legal ? " :`Yes, CreditMitra is 100% legal. It is registered on Google Playstore and only offer loans
-                through RBI-registered NBFCs.`},
-                { "Are you a Bank or an NBFC ?" :`CreditMitra is neither a Bank nor an NBFC. It is an user-friendly technology platform
+                Company (NBFC).`,
+        },
+        {
+          "Does it work only on smartphone ?": `No, you can also apply via your computer/laptop through our web-app.`,
+        },
+        {
+          "How much loan do you offer?": `We offer loans ranging from 5,000 INR to 1,50,000 INR with tenures starting from 65 days.`,
+        },
+        {
+          "Is CreditMitra app Legal ? ": `Yes, CreditMitra is 100% legal. It is registered on Google Playstore and only offer loans
+                through RBI-registered NBFCs.`,
+        },
+        {
+          "Are you a Bank or an NBFC ?": `CreditMitra is neither a Bank nor an NBFC. It is an user-friendly technology platform
                 powered by Bluechip Finance Private Limited; an RBI-registered Non-Banking Financial
-                Company (NBFC).`},
-                { "Where can I reach for a support ? " :`For any needed support related to CreditMitra, you can contact us at support@creditmitra.in`},
-                
-            ]
-        }
-        // {
-        //     "Technical": [
-        //         {"What is Credit  ?": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently "},
-        //         {"What is Credit Mitra ?": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently "},
-        //     ]
-        // },
-    ]
-    const [tabActive, setTabActive] = useState(Object.keys(faqContent[0])[0]);
-    const [faqAnswerOpened, setFaqAnswerOpened] = useState({});
-    
-    function openfaqAnswer(index){
-        let temp = {...faqAnswerOpened, [index] : !faqAnswerOpened[index]}
-        setFaqAnswerOpened(temp);
-    }
-    function generateFaqQuestions(){
-        let faqSelected = faqContent.filter((each)=>{
-            return Object.keys(each)[0] == tabActive;
-        });
-        faqSelected = faqSelected[0][tabActive];
-        return <>
-        {faqSelected.map((each, index)=>{
-            return <>
-            <div className='each-answer'>
-            <button onClick={()=>{openfaqAnswer(index)}} className='btn faq-toggler'>
-                <div className='faq-toggler-content'>
-                    {Object.keys(each)[0]}
-                    <svg className={`${faqAnswerOpened[index] ? "isopened" : ""}`} xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.5227 3.46689L13.1523 13.8373C12.5159 14.4737 11.4841 14.4737 10.8477 13.8373L0.477287 3.46689C-0.159096 2.83051 -0.159096 1.79873 0.477287 1.16234C1.11367 0.525962 2.14545 0.525962 2.78183 1.16234L12 10.3805L21.2182 1.16235C21.8546 0.525963 22.8863 0.525963 23.5227 1.16235C24.1591 1.79873 24.1591 2.83051 23.5227 3.46689Z" fill="white"/>
-                    </svg>
-                </div>
-             <Collapse isOpen={faqAnswerOpened[index]}>
-                <p>{Object.values(each)[0]}</p>
-             </Collapse>
-            </button>
-            </div>
-            </>
-        })}
-        </>
-    }
+                Company (NBFC).`,
+        },
+        {
+          "Where can I reach for a support ? ": `For any needed support related to CreditMitra, you can contact us at support@creditmitra.in`,
+        },
+      ],
+    },
+    // {
+    //     "Technical": [
+    //         {"What is Credit  ?": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently "},
+    //         {"What is Credit Mitra ?": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently "},
+    //     ]
+    // },
+  ];
+  const [tabActive, setTabActive] = useState(Object.keys(faqContent[0])[0]);
+  const [faqAnswerOpened, setFaqAnswerOpened] = useState({});
+
+  function openfaqAnswer(index) {
+    let temp = { ...faqAnswerOpened, [index]: !faqAnswerOpened[index] };
+    setFaqAnswerOpened(temp);
+  }
+  function generateFaqQuestions() {
+    let faqSelected = faqContent.filter((each) => {
+      return Object.keys(each)[0] == tabActive;
+    });
+    faqSelected = faqSelected[0][tabActive];
     return (
-        <>
-            <Header routePath={props.routePath}/>
-            <section>
-                <div className='page-container faq'>
-                    <div className='faq-section'>
-                        <div  className='content'>
-                            <h6 className='heading'>We Have Answers </h6>
-                            <div className='faq-container mx-auto'>
-                                {/* <div class="form-group">
+      <>
+        {faqSelected.map((each, index) => {
+          return (
+            <>
+              <div className="each-answer">
+                <button
+                  onClick={() => {
+                    openfaqAnswer(index);
+                  }}
+                  className="btn faq-toggler"
+                >
+                  <div className="faq-toggler-content">
+                    {Object.keys(each)[0]}
+                    <svg
+                      className={`${faqAnswerOpened[index] ? "isopened" : ""}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="15"
+                      viewBox="0 0 24 15"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23.5227 3.46689L13.1523 13.8373C12.5159 14.4737 11.4841 14.4737 10.8477 13.8373L0.477287 3.46689C-0.159096 2.83051 -0.159096 1.79873 0.477287 1.16234C1.11367 0.525962 2.14545 0.525962 2.78183 1.16234L12 10.3805L21.2182 1.16235C21.8546 0.525963 22.8863 0.525963 23.5227 1.16235C24.1591 1.79873 24.1591 2.83051 23.5227 3.46689Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <Collapse isOpen={faqAnswerOpened[index]}>
+                    <p>{Object.values(each)[0]}</p>
+                  </Collapse>
+                </button>
+              </div>
+            </>
+          );
+        })}
+      </>
+    );
+  }
+  return (
+    <>
+      <Header routePath={props.routePath} />
+      <SEO
+        title="Frequently Asked Questions | CreditMitra"
+        description="Learn about CreditMitra Online Personal Loan. Here you will find F.A.Qs to help you get started."
+        keywords="online instant personal loan"
+        name="Credit Mitra"
+        type="faq"
+      />
+      <section>
+        <div className="page-container faq">
+          <div className="faq-section">
+            <div className="content">
+              <h6 className="heading">We Have Answers </h6>
+              <div className="faq-container mx-auto">
+                {/* <div class="form-group">
                                     <input type="text" class="form-control" id="search-faq" placeholder="Enter your search term here"/>
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -95,31 +140,44 @@ function FAQ(props) {
                                         </svg>
                                     </span>
                                 </div> */}
-                                <div className='faq-tab-container'>
-                                    <div className='tab-buttons'>
-                                        {faqContent.map((each)=>{
-                                            return <>
-                                                <button className={`${tabActive == Object.keys(each)[0] ? "active-btn" : ""} btn`} onClick={()=>{setTabActive(Object.keys(each)[0])}}>{Object.keys(each)[0]}</button>
-                                            </>
-                                        })}
-                                    </div>
-                                    <div className='answer-section'>
-                                        {generateFaqQuestions()}
-                                    </div>
-                                </div>
-                                <div className='more-questions'>
-                                    <p>Haven’t Found what you need?</p>
-                                    <span>Get in Touch, We are happy to help!</span>
-                                    <Link to={"/contact"} className='btn'>Contact Us</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div className="faq-tab-container">
+                  <div className="tab-buttons">
+                    {faqContent.map((each) => {
+                      return (
+                        <>
+                          <button
+                            className={`${
+                              tabActive == Object.keys(each)[0]
+                                ? "active-btn"
+                                : ""
+                            } btn`}
+                            onClick={() => {
+                              setTabActive(Object.keys(each)[0]);
+                            }}
+                          >
+                            {Object.keys(each)[0]}
+                          </button>
+                        </>
+                      );
+                    })}
+                  </div>
+                  <div className="answer-section">{generateFaqQuestions()}</div>
                 </div>
-                <Footer/>
-            </section>
-        </>
-    );
+                <div className="more-questions">
+                  <p>Haven't Found what you need?</p>
+                  <span>Get in Touch, We are happy to help!</span>
+                  <Link to={"/contact"} className="btn">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Footer />
+      </section>
+    </>
+  );
 }
 
 export default FAQ;

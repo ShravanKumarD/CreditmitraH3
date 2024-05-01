@@ -5,17 +5,18 @@ function PrivacyPolicy(props) {
   return (
     <>
     <Header routePath={props.routePath} />
+    
     <div style={{color:"#fff",padding:"6rem"}}>
    <h1 className="text-center mb-5">Privacy and Security Policy</h1>
-    <p><b>(Last updated on 21/04/2024)</b></p>
+    <p><b>(last updated on 1st May, 2024)</b></p>
     
     <p><b>Introduction</b></p>
-    <p>This privacy and security policy (“Privacy Policy”) establishes the terms and conditions under which CreditMitra (“the Company” or “CreditMitra” or “we” or “us” or “our”) with registered address at [Hitech City, Hyderabad], processes the personal information that you provide us with when using the website “CreditMitra.in” (“the Website” or “site”), the mobile application or app “CreditMitra”, understood as the software application designed to be used on smartphones, tablets or other mobile devices (“App”) or other applications, software, digital media, storage medium, or functionalities related to our brand (collectively referred to as “Platform”).</p>
+    <p>This privacy and security policy (“Privacy Policy”) establishes the terms and conditions under which Samcint Solutions Private Limited  (“the Company” or “CreditMitra” or “we” or “us” or “our”) with registered address at [2nd Floor, No. 20, H.No. 1-65/A/1/62, Survey No 41&42, Kailashnath Arcade, Kavuri Hills, Guttala Begumpet Village, Serilingampally, Jubli Hills, Hyderabad, Telangana, 500081, India], processes the personal information that you provide us with when using the website “CreditMitra.in” (“the Website” or “site”), the mobile application or app “CreditMitra”, understood as the software application designed to be used on smartphones, tablets or other mobile devices (“App”) or other applications, software, digital media, storage medium, or functionalities related to our brand (collectively referred to as “Platform”).</p>
     
-    <p>CreditMitra has developed the Platform through which you may apply for a loan to be granted by various non-banking financial companies or banks (“Lender” or “Lending Partner”), based on the loan agreement to be executed between you and the Lender. The Lender has further appointed and authorized us to collect, store, authenticate, verify and share the Personal Information (as defined below) as may be required by the Lender to sanction and disburse the loan.</p>
+    <p>Samcint Solutions Private Limited has developed the Platform through which you may apply for a loan to be granted by various non-banking financial companies or banks (“Lender” or “Lending Partner”), based on the loan agreement to be executed between you and the Lender. The Lender has further appointed and authorized us to collect, store, authenticate, verify and share the Personal Information (as defined below) as may be required by the Lender to sanction and disburse the loan.</p>
     
     <p><b>Our Commitment</b></p>
-    <p>Maintaining your right to privacy and the security of your data is a priority at CreditMitra. We are committed to respecting your privacy rights. We pledge to handle your data in a fair and lawful manner at all times. We are also dedicated to being transparent about what data we collect about you and how we use it. By visiting and accessing the Platform and availing the loan facilitation services provided by us, you are deemed to have read, acknowledged and accepted all the provisions stated here in the Privacy Policy, including any changes we may make from time to time.</p>
+    <p>Maintaining your right to privacy and the security of your data is a priority at Samcint Solutions Private Limited. We are committed to respecting your privacy rights. We pledge to handle your data in a fair and lawful manner at all times. We are also dedicated to being transparent about what data we collect about you and how we use it. By visiting and accessing the Platform and availing the loan facilitation services provided by us, you are deemed to have read, acknowledged and accepted all the provisions stated here in the Privacy Policy, including any changes we may make from time to time.</p>
     
     <p>Our commitment to privacy and data protection is demonstrated through the preparation of this Privacy Policy, which aligns with the legal frameworks and guidelines of the Information Technology Act, 2000 (IT Act), Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 and Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, Reserve Bank of Indian Guidelines on Digital Lending and all other relevant acts, regulations and rules that mandate the publication of a privacy policy for handling and processing of personal information, including sensitive personal data or information.</p>
     
@@ -377,10 +378,10 @@ function PrivacyPolicy(props) {
         subject
         to this Privacy Policy and our Terms and Conditions of Platform, including limitations on damages,
         resolution of disputes, and application of the prevailing law in India. If you have any concern about
-        privacy at CreditMitra please contact us with a thorough description, and we will try to resolve it.
+        privacy at Samcint Solutions Private Limited please contact us with a thorough description, and we will try to resolve it.
         If you are found to be in non-compliance with laws and regulations, the Terms and Conditions
-        published on the Platform, or this Privacy Policy, CreditMitra shall have the right to immediately
-        block your access and usage of the Platform and CreditMitra shall have the right to remove any
+        published on the Platform, or this Privacy Policy, Samcint Solutions Private Limited shall have the right to immediately
+        block your access and usage of the Platform and Samcint Solutions Private Limited shall have the right to remove any
         non-compliant content and/or information forthwith, uploaded by you and shall further have the
         right to take appropriate recourse to such remedies as would be available to it under various
         statutes.</p>
@@ -388,7 +389,7 @@ function PrivacyPolicy(props) {
     <p><b>13. Grievance Officer</b></p>
     <p><b>13.1.</b> If you have any comments, inquiries or concerns/complaints about this Privacy Policy or Terms
         and Conditions or other policies, or to exercise your rights, you may contact our Grievance
-        Officer, Murthy Balaji at grievance@creditmitra.in The Grievance Officer can be contacted
+        Officer, Murthy Balaji at grievance@creditmitra.in. The Grievance Officer can be contacted
         between 09:30 a.m. to 6:00 p.m. from Monday to Friday except on public holidays.</p>
 
 

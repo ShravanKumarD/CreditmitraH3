@@ -10,24 +10,21 @@ import Header from "../../Components/Header";
     <Header routePath={props.routePath} />
     <div style={{color:"#fff",padding:"6rem"}}>
     <h1 className="text-center mb-5">TERMS AND CONDITIONS</h1>
-    <p><b>Last Updated: 21, April 2024</b></p>
+    <p><b>Last Updated: 1st May, 2024</b></p>
     <p><b>INTRODUCTION</b></p>
     <p>A. Through the Platform, the Company provides loan facilitation services to you by assisting you to avail loans
         from a non-banking financial company ("Lender" or "Lending Partner"). The objective of the Platform is to
         facilitate the lending and borrowing of capital, in accordance with the terms of the loan agreement and other
         documentation to be executed between the Lender and borrower/you whether in physical or electronic form, without
-        any recourse to the Company. The company operates the Platform as a marketplace for the purpose of connecting
-        you with the Lending Partners and not in the capacity of a non-banking financial company-peer to-peer lending
-        platform (NBFC-P2P), as defined under the Master Directions-Non- Banking Financial Company- Peer to Peer Lending
-        Platform (Reserve Bank) Directions, 2017.</p>
+        any recourse to the Company. The company operates the Platform as an intermediary for the purpose of connecting
+        you with the Lending Partners.</p>
     <p>B. By accepting the terms or by accessing, using, or availing any part of the Service, You expressly agree to and
         consent to being irrevocably bound by these terms and conditions ("Terms and Conditions"), as amended from time
         to time, and any other applicable laws, whether or not you are a registered user of the Platform. If You do not
         agree with any of these Terms and Conditions, You must immediately cease accessing and/or using the Company
         website or other portals ("Platform"), or the Services being provided under these Terms and Conditions. Your
         acceptance of these Terms and Conditions will operate as a binding agreement between "You/Client" and
-        CreditMitra, a company incorporated under the Companies Act, 2013 and having its registered office at Hitech
-        City, Hyderabad("Company" or "we" or "us" or "our") in respect of Your use of the Services.</p>
+        Samcint Solutions Private Limited, a company incorporated under the Companies Act, 2013 and having its registered office at 2nd Floor, No. 20, H.No. 1-65/A/1/62, Survey No 41&42, Kailashnath Arcade, Kavuri Hills, Guttala Begumpet Village, Serilingampally, Jubli Hills, Hyderabad, Telangana, 500081, India ("Company" or "we" or "us" or "our") in respect of Your use of the Services.</p>
     <p>The Company's Privacy and Security Policy is provided separately on the website and is an integral part of these
         Terms and Conditions. Thus, while accepting these Terms and Conditions, You are confirming that you have read
         and unequivocally accepted our Privacy Policy.</p>
