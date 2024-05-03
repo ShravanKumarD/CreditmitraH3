@@ -13,6 +13,7 @@ import FAQ from './Pages/FAQ/FAQ';
 import GrievienceRedressal from './Pages/Policies/GrievienceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
+import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -38,6 +39,8 @@ function App() {
           <Route path='/grievienceredressal' element={<GrievienceRedressal routePath="/grievienceredressal" />} /> 
           <Route path='/privacypolicy' element={<PrivacyPolicy routePath="/privacypolicy" />} /> 
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
+          <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
+
          
       </Routes>
       </Wrapper>
