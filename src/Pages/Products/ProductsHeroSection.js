@@ -16,8 +16,8 @@ function ProductsHeroSection(props) {
         well-deserved treat to yourself like a refreshing getaway
       </p>
       <div className="btn-container">
-        <div className="d-flex justify-content-center" style={{gap: "40px"}}>
-          <button className="btn primary-gradient-btn">
+      <div className="row" style={{padding: "20px",gap:'10px'}}>
+      <button className="btn primary-gradient-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -91,8 +91,11 @@ function ProductsHeroSection(props) {
             </svg>
             Low Interest & Flexi tenures
           </button>
-        </div>
-        <div className="d-flex justify-content-center" style={{gap: "40px", marginTop: "32px"}}>
+      </div>
+      
+        
+        
+          <div className="row" style={{padding: "20px",gap:'10px'}}>
           <button className="btn primary-gradient-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +133,8 @@ function ProductsHeroSection(props) {
             </svg>
             Loan Disbursal in minutes
           </button>
-        </div>
+          </div>
+        
       </div>
     </div>
   );

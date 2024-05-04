@@ -75,20 +75,27 @@ function AboutUs(props) {
                 <img height="300px" src={aboutus} />
               </div>
             </div>
-            <div className="about-points-container">
+            <div className="about-points-container row">
               {points.map((each, index) => {
                 return (
-                  <>
-                    <div className="each-point">
-                      <div className="quote-container">
-                        <span>{"0" + (index + 1)}</span>
-                        <p>"{each.quote}"</p>
+
+                  
+                    <div className="col-sm-6">
+                      <div className="each-point">
+
+                        <div className="quote-container">
+                          <span>{"0" + (index + 1)}</span>
+                          <p>"{each.quote}"</p>
+                        </div>
+
+                        <ApplicationProcessingCard
+                          description={each.description}
+                        />
                       </div>
-                      <ApplicationProcessingCard
-                        description={each.description}
-                      />
                     </div>
-                  </>
+            
+
+
                 );
               })}
             </div>

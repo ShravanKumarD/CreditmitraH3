@@ -75,7 +75,7 @@ function ApplicationProcess(props) {
             </div>
             <img height="370px" src={Image5}/>
         </div>
-        <div className='d-flex' style={{gap: "32px"}}>
+        <div className='row' >
             <div className='w-100'>
                 <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
             </div>

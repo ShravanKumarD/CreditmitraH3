@@ -419,10 +419,8 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     padding: 0 26px;
     .heading{
       opacity: 0.8;
-      background: linear-gradient(92deg, #41A5F1 20.66%, #A7DAFF 48.98%, #51A8E8 78.11%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+     
+
       text-align: center;
       font-size: 48px;
       font-weight: 700;
@@ -431,7 +429,7 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     .about-section{
       display: flex;
       justify-content: space-between;
-      gap: 196px;
+      
       align-items: center;
       margin-bottom: 120px;
       .about-section-content{
@@ -451,14 +449,9 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     }
   }
   .about-points-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+   
     margin-bottom: 160px;
     .each-point{
-      width: calc(50% - 40px);
-      display: flex;
-      flex-direction: column;
       &:nth-child(even){
         padding-left: 20px;
       }
@@ -490,8 +483,8 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
       }
       .application-process-card{
         padding: 24px;
-        height: 100%;
-        .content{width: 100%;}
+        height: 183px;
+      .content{width: 100%;}
       }
     }
   }
@@ -821,3 +814,68 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   letter-spacing: 1.6px;
 
 }
+
+
+@media only screen and (max-width: 767px) {
+
+  .page-container {
+    padding: 0 20px 60px;
+  }
+
+  .header-nav a {
+    font-size: 14px;
+  }
+
+
+  .application-process-card {
+    flex-direction: column; 
+  }
+  .user-feedback-section .feedback-card-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  /* img{
+    display: none;
+  } */
+  .footer-content{
+    flex-direction: column;
+    font-size: 14px;
+
+  }
+  .footer-content .navigation-container {
+    flex-direction: column; /* Arrange items in a column */
+  }
+
+  .page-container {
+    padding: 0 20px 60px;
+    &.products-page {
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 86px; /* Adjust as needed */
+    }
+  }
+  
+  /* Optionally, you can adjust other specific elements for mobile view */
+  .products-hero-section {
+    padding-bottom: 100px; /* Adjust as needed */
+  }
+  
+  .description-section {
+    margin-bottom: 60px; /* Adjust as needed */
+  }
+.btn{
+  width:60px
+  
+}
+.produc{
+  gap:0px
+}
+  /* Adjust other sections as needed */
+  
+.heading{
+  padding:0px
+}
+}
+
+
+
