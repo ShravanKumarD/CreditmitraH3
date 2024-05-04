@@ -45,6 +45,15 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   color: #ffffff;
   font-family: Poppins;
 }
+.nav-item{
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Poppins;
+  gap: 40px;
+  color: #1B9BDC;
+  /* font-weight: 600; */
+
+}
 
 .header-nav .navbar-nav{
   gap: 40px;
@@ -98,8 +107,8 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
 /* application-process-section starts */
 .application-process-card{
   display: flex;
-  justify-content: space-between;
-  padding: 60px 0 0px 80px;
+  /* justify-content: space-between; */
+  padding: 60px 0 20px 80px;
   border-radius: 24px;
   background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
   color: #ffffff;
@@ -129,13 +138,15 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
     h6{
       margin-top: 12px;
       font-size: 32px;
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 16px;
+      font-family:Poppins;
     }
     p{
       font-size: 18px;
       margin-bottom: 0px;
-      font-weight: 400;
+      font-weight: 300;
+      font-family:Poppins;
     }
   }
   &+.application-process-card{
@@ -814,6 +825,10 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   letter-spacing: 1.6px;
 
 }
+.custom-background {
+  background: rgb(31,32,37);
+background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba(7,68,100,1) 100%);
+}
 
 
 @media only screen and (max-width: 767px) {
@@ -863,10 +878,18 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   .description-section {
     margin-bottom: 60px; /* Adjust as needed */
   }
-.btn{
-  width:60px
+  .btn{
+    width:250px;
+      
+      margin-bottom: 10px;
+  }
   
-}
+  .btn-container{
+    margin-top: 128px;
+  padding-right: 10px;
+  width: 60px;
+  }
+  
 .produc{
   gap:0px
 }
@@ -874,6 +897,118 @@ background: linear-gradient(90deg, rgba(31,32,37,1) 0%, rgba(2,0,36,1) 35%, rgba
   
 .heading{
   padding:0px
+}
+.img-home{
+  height: 0 px;
+  width: 390px;
+margin-right: 100px;
+position: relative;
+}
+.content{
+  margin-top: 430px;
+  
+}
+.hero-section .content h6 {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: normal;
+  /* font-family: "General Sans Variable"; */
+}
+.hero-section .content {
+  width: 205px;
+}
+
+
+.application-process-card{
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 0px 80px; 
+ border-radius: 24px;
+  background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%); 
+  color: #ffffff;
+  .content{
+    width: 125%;
+    align-self: center;
+    margin-right: 80px;
+    .list-number{
+      display: flex;
+      /* margin-top: 24px; */
+      height: 46px;
+      width: 46px;
+      /* border-radius: 13px; */
+      background: #0072AD;
+      /* line-height: 28px; */
+      align-items: center;
+      justify-content: center;
+      span{
+        width: 36px;
+        height: 36px;
+        display: flex;
+        background: rgba(255, 255, 255, 0.40);
+        border-radius: 40px;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    h6{
+     
+      margin-top: 12px;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      font-family:Poppins;
+    }
+    p{
+      font-size: 12px;
+      margin-bottom: 0px;
+      font-weight: 300;
+      font-family:Poppins;
+    }
+  }
+  &+.application-process-card{
+    /* margin-top: 64px; */
+  }
+  &.small-card{
+    padding:  0 0 0 80px;   
+    margin-bottom: 32px;
+    h6{
+       margin-top: 40px; 
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    &.half-card{
+      padding-top: 0px;
+          padding-bottom: 54px;
+          padding-right: 40px;
+      display: flex;
+      /* align-items: end; */
+      .content{
+        /* width: calc(100% - 104px + 24px); */
+        margin-right: 24px;
+      }
+    }
+  }
+}
+.application-process-section{
+  .heading{
+    display: none;
+    /* margin: 32px 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    &.extra-margin-top{
+      margin-top: 10px;
+    } */
+  }
 }
 }
 

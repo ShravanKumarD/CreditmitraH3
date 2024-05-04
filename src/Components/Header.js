@@ -5,9 +5,16 @@ import Logo from "../assets/images/logo.png";
 
 function Header(props) {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [disableBackground, setDisableBackground] = useState(false);
 
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsNavOpen(false);
+    setDisableBackground(true);
+    // Here, you can perform any additional actions related to link click
   };
 
   const navigations = [
@@ -20,8 +27,8 @@ function Header(props) {
   ];
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
+    <nav className={`navbar navbar-expand-lg navbar-light ${disableBackground ? '' : 'custom-background'}`}>
+    <Link className="navbar-brand" to="/" onClick={() => setDisableBackground(false)}>  
         <img
           className="img-fluid"
           style={{ width: 180 }}
@@ -49,6 +56,12 @@ function Header(props) {
                     each.redirection === props.routePath ? "active" : ""
                   }`}
                   title={each.displayName}
+                  onClick={handleLinkClick}
+                  style={{ marginLeft:'10px' ,color: 'white',
+                    
+                  ...(each.redirection === props.routePath && { color: 'blue' })
+                   }}
+                  
                 >
                   {each.displayName}
                 </Link>
