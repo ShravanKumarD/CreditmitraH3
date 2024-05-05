@@ -58,7 +58,7 @@ function AboutUs(props) {
         <div className="page-container about-us">
           <div className="about-us-container">
             <div className="content">
-              <h6 className="heading">
+              <h6 className="heading abtus">
                 Welcome to Credit Mitra
                 <br />
                 Your Digital Lending Partner!
