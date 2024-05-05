@@ -33,7 +33,7 @@ function AboutUs(props) {
   function VisionCard(cardInfo) {
     return (
       <>
-        <div className="application-process-card small-card">
+        <div className="application-process-card aboutcard ">
           <div className="content">
             <h6>{cardInfo.heading}</h6>
             <p>{cardInfo.description}</p>
@@ -63,7 +63,7 @@ function AboutUs(props) {
                 <br />
                 Your Digital Lending Partner!
               </h6>
-        
+
               <div className="element"></div>
               <div className="about-section">
                 <div className="about-section-content">
@@ -74,38 +74,38 @@ function AboutUs(props) {
                     pan-India, within 24 hours
                   </p>
                 </div>
-           <img height="300px" className="aboutus" src={aboutus}/>
+                <img height="300px" className="aboutus" src={aboutus} />
               </div>
             </div>
             <div className="about-points-container row">
               {points.map((each, index) => {
                 return (
 
-                  
-                    <div className="col-sm-6">
-                      <div className="each-point">
 
-                        <div className="quote-container">
-                          <span>{"0" + (index + 1)}</span>
-                          <p>"{each.quote}"</p>
-                        </div>
-                        <ApplicationProcessingCard
-                          description={each.description}
-                        />
+                  <div className="col-sm-6 aboutcard">
+                    <div className="each-point">
+
+                      <div className="quote-container">
+                        <span>{"0" + (index + 1)}</span>
+                        <p>"{each.quote}"</p>
                       </div>
+                      <ApplicationProcessingCard
+                        description={each.description}
+                      />
                     </div>
-            
+                  </div>
+
 
 
                 );
               })}
             </div>
-            <VisionCard
+            <VisionCard 
               heading="Our Mission"
               img={Image1}
               description="Our core mission is to champion financial liberation for all. We focus on breaking away from conventional lending practices, eliminating the requirement for collateral and democratizing access to financial resources. We specialize in providing flexible loan options tailored to diverse needs, accompanied by repayment terms designed for utmost convenience. We strive to emerge as the leading financial Mitra for both ambitious and salaried individuals, delivering transformative solutions that fuel aspirations."
             />
-            <VisionCard
+            <VisionCard 
               heading="Our Vision"
               img={Image2}
               description="We as a company, envision a future where financial freedom is within reach for everyone. We want to revolutionize the lending landscape by challenging traditional norms and barriers. We aspire to create a world where collateral-free loans are the norm, granting equal opportunities to all individuals. We see ourselves as catalysts for positive change, empowering individuals to pursue their dreams and achieve their goals with confidence."

@@ -62,9 +62,12 @@
   /* font-weight: 600; */
 
 }
-.b{
+
+.b {
   margin-top: 20px;
+
 }
+
 .header-nav .navbar-nav {
   gap: 40px;
 }
@@ -178,6 +181,7 @@
   &+.application-process-card {
     margin-top: 64px;
   }
+
 
   &.small-card {
     padding: 0 0 0 80px;
@@ -521,7 +525,6 @@
     .about-section {
       display: flex;
       justify-content: space-between;
-
       align-items: center;
       margin-bottom: 120px;
 
@@ -542,6 +545,7 @@
           margin-bottom: 0;
         }
       }
+    
     }
   }
 
@@ -596,27 +600,27 @@
   }
 
   .application-process-card {
-  
 
-        margin-top: 32px;
-      
 
-      h6 {
-        color: #FFF;
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 8px;
-        margin-top: 0;
-      }
+    margin-top: 32px;
 
-      p {
-        color: #FFF;
-        font-size: 18px;
-        font-weight: 500;
-        margin-bottom: 0;
-      }
+
+    h6 {
+      color: #FFF;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+
+    p {
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 0;
     }
   }
+}
 
 
 /* about-us-container ends */
@@ -975,11 +979,21 @@
   background: rgb(31, 32, 37);
   background: linear-gradient(90deg, rgba(31, 32, 37, 1) 0%, rgba(2, 0, 36, 1) 35%, rgba(7, 68, 100, 1) 100%);
 }
-.inmageHome{
-height:300px;
+
+.inmageHome {
+  height: 300px;
 }
 
 @media only screen and (max-width: 767px) {
+  .aboutcard{
+    margin-left: 20px;
+    margin-right:20px
+    
+  }
+
+.space{
+  height:20px;
+}
 
   .page-container {
     padding: 0 20px 60px;
@@ -992,10 +1006,10 @@ height:300px;
 
   .application-process-card {
     flex-direction: column;
-    text-align:center;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    
+
   }
 
   .user-feedback-section .feedback-card-container {
@@ -1035,8 +1049,9 @@ height:300px;
   }
 
   .description-section {
-    margin-bottom: 60px;
-    /* Adjust as needed */
+  margin-top: -400px;
+  display:block;
+
   }
 
   .btn {
@@ -1044,28 +1059,35 @@ height:300px;
     margin-bottom: 10px;
 
   }
-  .produc {
+
+  /* .produc {
     gap: 0px
-  }
+  } */
+
   .heading {
     padding: 0px
   }
+
   .img-home {
-    height: 0 px;
+    max-height: 450px;
     width: 390px;
     margin-right: 60px;
     position: relative;
   }
-  .content {
+
+  .a {
     margin-top: 430px;
 
   }
+
   .brand-primary {
     margin-left: 15px;
   }
+
   .hero-content {
     margin-left: 15px;
   }
+
   .hero-section .content h6 {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
@@ -1078,13 +1100,16 @@ height:300px;
     line-height: normal;
     /* font-family: "General Sans Variable"; */
   }
+
   p {
     margin-left: 15px;
     ;
   }
+
   .hero-section .content {
     width: 205px;
   }
+
   .application-process-card {
     display: flex;
     justify-content: space-between;
@@ -1138,10 +1163,13 @@ height:300px;
       }
     }
   }
+  .btn-container {
+    margin-left: -20px;  }
 
   .application-process-section {
 
-column-gap: 0px;
+    column-gap: 0px;
+margin: 0px;
     .heading {
       display: none;
       /* margin: 32px 0;
@@ -1154,148 +1182,33 @@ column-gap: 0px;
     } */
     }
   }
-  .about-section {
-    display: none;
 
-    .about-section-content {}
-
-    .aboutus {
-      display: none;
+  .page-container {
+    
+        &.about-us {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
     }
+    .about-us-container {
+      & .content {
+        margin-left:20px;
+          .about-section {
+              display:block;
+              direction: row-reverse;
+              justify-content: space-between;
+              align-items: center;
+              margin-bottom: 120px;
+          
+          }
+      }
   }
-  .about-us-container {
-    .content {
-      width: 250px;
-      margin-right: 10px;
-      padding: 0 2px;
 
-      /* justify-content:center; */
-      .heading {
-        opacity: 0.8;
-        color: #1B9BDC;
-        text-align: center;
-        font-size: 32px;
-        font-weight: 700;
-        margin-bottom: 72px;
-      }
-
-      .element {
-        background-image: url('./assets/images/aboutus.png');
-        position: relative;
-        width: 250px;
-        height: 250px;
-
-      }
-
-      .about-section {
-        display: flex;
-        justify-content: space-between;
-
-        align-items: center;
-        margin-bottom: 120px;
-
-        .about-section-content {
-          margin-top: 80px;
-
-          h6 {
-            color: #FFF;
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 12px;
-          }
-
-          p {
-            color: #FFF;
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-
-    .about-points-container {
-      margin-bottom: 160px;
-
-      .each-point {
-
-        &:nth-child(even) {
-          padding-left: 20px;
-        }
-
-        &:nth-child(odd) {
-          padding-right: 20px;
-        }
-
-        .quote-container {
-
-          padding: 0 16px;
-          display: flex;
-
-          span {
-            opacity: 0.99;
-            background: linear-gradient(91deg, #4CBFFC -2.45%, #2199EF 97.01%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 80px;
-            font-weight: 700;
-            position: sticky;
-          }
-
-          p {
-            color: #7ED2FF;
-            font-size: 22px;
-            font-weight: 700;
-            opacity: 0.8;
-            margin-bottom: 0;
-            padding: 30px 0;
-            display: flex;
-            align-items: center;
-          }
-        }
-
-        .application-process-card {
-          padding: 24px;
-          height: 183px;
-
-          .content {
-            width: 100%;
-          }
-        }
-      }
-    }
-
-    .application-process-card {
-      &.small-card {
-        padding: 50px 50px 50px;
-
-        &+.small-card {
-          margin-top: 32px;
-        }
-
-        h6 {
-          color: #FFF;
-          font-size: 28px;
-          font-weight: 700;
-          margin-bottom: 8px;
-          margin-top: 0;
-        }
-
-        p {
-          color: #FFF;
-          font-size: 18px;
-          font-weight: 500;
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
   .products-hero-section,
   .responsible-lending-section,
   .contact-us-section,
   .faq-section {
-    width: 140px;
     height: fit-content;
 
     h6,
@@ -1317,10 +1230,11 @@ column-gap: 0px;
       /* text-align: center; */
     }
   }
-  .hero-section{
-    padding:0px;
+
+  .hero-section {
+    padding: 0px;
     margin: 0px;
-    height:fit-content;
+    height: fit-content;
   }
 
   .responsible-lending-section {
@@ -1359,7 +1273,8 @@ column-gap: 0px;
 
   .application-process-card {
     display: block;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
     border-radius: 24px;
     background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
@@ -1370,8 +1285,8 @@ column-gap: 0px;
     }
 
     .content {
-      width: 220px;
-      margin:0px;
+      width: fit-content;
+      margin: 0px;
       margin-bottom: 20px;
 
       h6 {
@@ -1396,17 +1311,10 @@ column-gap: 0px;
 
     .heading {
       display: none;
-      /* margin: 32px 0;
-    color: #FFF;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 600;
-    &.extra-margin-top{
-      margin-top: 10px;
-    } */
     }
   }
-.px-4{
-  margin-top:20px;
-}
+
+  .px-4 {
+    margin-top: 20px;
+  }
 }

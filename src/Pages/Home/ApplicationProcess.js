@@ -66,6 +66,7 @@ function ApplicationProcess(props) {
         </h6>
         <div className='application-process-card b'>
             <div className='content '>
+              <div className='space'></div>
                 <h6>Customized Personal Loan</h6>
                 <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
                  

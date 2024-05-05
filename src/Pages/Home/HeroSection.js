@@ -3,7 +3,7 @@ import heroImage from '../../assets/images/hero-image.png'
 function HeroSection(props) {
     return (
         <div className='hero-section'>
-            <div className='content'>
+            <div className='content a'>
                 <h6 className='hero-content'>Your Trusted Loan Mitra<br/>Loans Made Easy & Friendly</h6>
                 <p>At Credit mitra, we understand that life doesn't always wait for payday. That's why we're here to offer you instant personal loans with no hassle and no waiting. </p>
                 <div className='btn-container'>
