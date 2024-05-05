@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 function ApplicationProcess(props) {
     function BottomHalfCards(subProps){
         return (<>
-        <div className='application-process-card small-card half-card'>
+        <div className='application-process-card'>
             <div className='content'>
                 <div>
                     <h6>{subProps.heading}</h6>
@@ -64,7 +64,7 @@ function ApplicationProcess(props) {
           Why Choose Credit Mitra for Your
           <br /> Personal Loan Needs?
         </h6>
-        <div className='application-process-card small-card'>
+        <div className='application-process-card b'>
             <div className='content '>
                 <h6>Customized Personal Loan</h6>
                 <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
@@ -74,13 +74,13 @@ function ApplicationProcess(props) {
 
                 </p>
             </div>
-            <img height="370px" src={Image5}/>
+            <img  className='inmageHome' src={Image5}/>
         </div>
         <div className='row' >
-            <div className='w-100'>
+            <div className='w-100 b'>
                 <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
             </div>
-            <div className='w-100'>
+            <div className='w-100 b'>
                 <BottomHalfCards img={Image7} heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding"/>
             </div>
         </div>

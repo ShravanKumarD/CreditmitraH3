@@ -14,7 +14,6 @@ function Header(props) {
   const handleLinkClick = () => {
     setIsNavOpen(false);
     setDisableBackground(true);
-    // Here, you can perform any additional actions related to link click
   };
 
   const navigations = [
@@ -58,7 +57,6 @@ function Header(props) {
                   title={each.displayName}
                   onClick={handleLinkClick}
                   style={{ marginLeft:'10px' ,color: 'white',
-                    
                   ...(each.redirection === props.routePath && { color: 'blue' })
                    }}
                   

@@ -8,7 +8,7 @@ function ApplicationProcessingCard(props) {
                     {props.heading && <h6>{props.heading}</h6>}
                     <p>{props.description}</p>
                 </div>
-                 {props.img &&<img height="300px" src={props.img}/>}
+                 {props.img &&<img className='inmageHome' src={props.img}/>}
                 
             </div>
     );

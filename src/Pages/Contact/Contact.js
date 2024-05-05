@@ -20,12 +20,13 @@ function Contact(props) {
           <div className="contact-us-section">
             <div className="content mb-5">
               <img src={message} className="mb-3" height="140px"/>
+              <h6>Got a question? We're here to help!</h6>
               <p className="mt-0 mb-5">
                 Feel free to connect with us with any questions or queries.
-                We're dedicated to providing you with the best possible
+                We're<br></br> dedicated to providing you with the best possible
                 experience
               </p>
-              <h6>Got a question? We're here to help!</h6>
+             
             </div>
             {/* <div className="form-container">
                 <div class="form-group">

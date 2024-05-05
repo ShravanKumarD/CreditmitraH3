@@ -55,6 +55,9 @@ function FAQ(props) {
           "Where can I reach for a support ? ": `For any needed support related to CreditMitra, you can contact us at support@creditmitra.in`,
         },
       ],
+      Technical:[],
+      Eligibility:[],
+      Document:[],
     },
     // {
     //     "Technical": [
@@ -81,12 +84,7 @@ function FAQ(props) {
           return (
             <>
               <div className="each-answer">
-                <button
-                  onClick={() => {
-                    openfaqAnswer(index);
-                  }}
-                  className="btn faq-toggler"
-                >
+                <button onClick={() => {openfaqAnswer(index);}}className="btn faq-toggler">
                   <div className="faq-toggler-content">
                     {Object.keys(each)[0]}
                     <svg
@@ -95,8 +93,7 @@ function FAQ(props) {
                       width="24"
                       height="15"
                       viewBox="0 0 24 15"
-                      fill="none"
-                    >
+                      fill="none">
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"

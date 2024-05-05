@@ -63,16 +63,18 @@ function AboutUs(props) {
                 <br />
                 Your Digital Lending Partner!
               </h6>
+        
+              <div className="element"></div>
               <div className="about-section">
                 <div className="about-section-content">
                   <h6>About Credit Mitra</h6>
                   <p>
                     Credit Mitra is a fintech company facilitating personal
                     loans through a mobile application to salaried employees
-                    pan-India, within 24 hours
+                    pan-India, within 24 hours
                   </p>
                 </div>
-                <img height="300px" src={aboutus} />
+           <img height="300px" className="aboutus" src={aboutus}/>
               </div>
             </div>
             <div className="about-points-container row">
@@ -87,7 +89,6 @@ function AboutUs(props) {
                           <span>{"0" + (index + 1)}</span>
                           <p>"{each.quote}"</p>
                         </div>
-
                         <ApplicationProcessingCard
                           description={each.description}
                         />
