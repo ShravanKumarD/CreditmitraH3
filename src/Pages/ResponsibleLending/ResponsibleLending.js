@@ -41,7 +41,7 @@ function ResponsibleLending(props) {
             <div className="list-container">
               {pledgePoints.map((each, index) => {
                 return (
-                  <div className="col-sm-6" >
+                  <div className="col-sm-12 lending" >
                     <ApplicationProcessingCard
                       orderNo={index + 1}
                       description={each}
