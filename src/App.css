@@ -545,7 +545,7 @@
           margin-bottom: 0;
         }
       }
-    
+
     }
   }
 
@@ -985,15 +985,17 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .aboutcard{
+
+
+
+  .aboutcard {
     margin-left: 20px;
-    margin-right:20px
-    
+    margin-right: 20px
   }
 
-.space{
-  height:20px;
-}
+  .space {
+    height: 20px;
+  }
 
   .page-container {
     padding: 0 20px 60px;
@@ -1049,8 +1051,8 @@
   }
 
   .description-section {
-  margin-top: -400px;
-  display:block;
+    margin-top: -400px;
+    display: block;
 
   }
 
@@ -1163,13 +1165,16 @@
       }
     }
   }
+
   .btn-container {
-    margin-left: -20px;  }
+    margin-left: -20px;
+  }
 
   .application-process-section {
 
     column-gap: 0px;
-margin: 0px;
+    margin: 0px;
+
     .heading {
       display: none;
       /* margin: 32px 0;
@@ -1184,25 +1189,27 @@ margin: 0px;
   }
 
   .page-container {
-    
-        &.about-us {
-            padding-top: 0px;
-            padding-right: 0px;
-            padding-left: 0px;
-        }
+
+    &.about-us {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
     }
-    .about-us-container {
-      & .content {
-        margin-left:20px;
-          .about-section {
-              display:block;
-              direction: row-reverse;
-              justify-content: space-between;
-              align-items: center;
-              margin-bottom: 120px;
-          
-          }
+  }
+
+  .about-us-container {
+    & .content {
+      margin-left: 20px;
+
+      .about-section {
+        display: block;
+        direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 120px;
+
       }
+    }
   }
 
   .products-hero-section,
@@ -1210,6 +1217,7 @@ margin: 0px;
   .contact-us-section,
   .faq-section {
     height: fit-content;
+    width: auto;
 
     h6,
     .heading {
@@ -1236,12 +1244,19 @@ margin: 0px;
     margin: 0px;
     height: fit-content;
   }
-
+  .page-container {
+    
+        &.responsible-lending-page {
+            padding: 0px;
+            margin-top: 40px;
+            text-align: center;
+        }
+    }
   .responsible-lending-section {
     text-align: center;
 
     .content {
-      margin-bottom: 160px;
+      
 
       p {
         margin-top: 24px;
