@@ -10,19 +10,24 @@ function FAQ(props) {
     {
       General: [
         {
-          "What is Credit Mitra ?": `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling unexpected emergencies, CreditMitra has you covered.`,
+          "What is Credit Mitra ?":
+           `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling unexpected emergencies, CreditMitra has you covered.`,
         },
         {
-          "What is the Eligibility Criteria to apply for a loan?": `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan application process.`,
+          "What is the Eligibility Criteria to apply for a loan?": 
+          `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan application process.`,
         },
         {
-          "How does CreditMitra Works?": `CreditMitra is where simplicity meets convenience. All you need to do is follow through these steps to get an instant loan:
-Download the CreditMitra app from Play Store.
-Register effortlessly using Facebook, Gmail, or LinkedIn.
-Check eligibility with basic details.
-Complete the application with ease.
-Upload documents’ photos conveniently.
-Add your bank account details securely.`,
+          "How does CreditMitra Works?": 
+          `CreditMitra is where simplicity meets convenience. All you need to do is follow
+          through these steps to get an instant loan:
+          Download the CreditMitra app from Play Store.
+        ● Register effortlessly using Facebook, Gmail, or LinkedIn.
+          ● Check eligibility with basic details.
+          ● Complete the application with ease.
+          ● Upload documents’ photos conveniently.
+          ● Add your bank account details securely.
+          ●   Upon verification, expect swift fund transfer to your account.`,
         },
 
         {
@@ -71,51 +76,74 @@ Add your bank account details securely.`,
     {
       Document: [
         {
-          "": "",
+          ". What documents are required while applying for a Personal Loan from CreditMitra?":
+           ` PAN card
+           Latest salary slip from the same employer
+           Present Address Proof – Aadhar/Electricity bill/Gas Bill/Telephone
+           bill/Creditcard/Internet/HR Letter/PG Invoice
+           Proof of Employment - Company ID/Payslip
+           Latest statement of your Bank Account, reflecting salary credit for last 3 months
+           `,
         },
         {
-          "I am not registered for net banking or if my net banking ID is not valid, how can I send you my bank statement?": "",
+         ". I am not registered for netbanking or if my netbanking ID is not valid, how can I send you my bank statement?":
+          ` You can provide us the last 3 months bank statement.`,
         },
         {
-          "What documents are required while applying for a Personal Loan from Credit Mitra?": " ",
+          " I received/Downloaded the Bank Statement in Email from my Bank. However,when I am trying to upload it's not getting accepted?": 
+          ` Many times the bank statement sent or downloaded is not in the right format. To
+          ensure your loan is processed at the earliest, please download the bank statement in
+          PDF from your bank website or the one received in your registered email id and
+          upload it on our Credit Mitra app.`,
+        },
+        {        
+  "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?": 
+  " You can reach out to us on support@creditmitra.in. We will be able to help you.",
         },
         {
-          "I have uploaded all the required documents for the loan, then why have I received a mail asking for some documents?": "",
-        },
-        {
-          "I don't have any docs for Current Address Proof which are listed in your list. What can be done in such a condition?": "",
-        },
-        {
-          "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?": "",
+          " I am not able to upload docs online or see errors. Can I send the docs directly in email and you can process the application?": 
+          ` If you are facing problems in uploading the docs, you can reach out to us on
+          support@creditmitra.in. We will be able to help you.`,
         },
       ],
     },
     {
       Eligibility: [
         {
-          "What are the eligibility criteria for Personal Loan?": " ",
+          "What are the eligibility criteria for Personal Loan?": 
+          ` You are eligible to apply personal loan on satisfying the following criteria –
+          ● Should be an Indian citizen
+          ● Should be a salaried employee
+          ● Should have a minimum salary of Rs. 15,000/- p.m.
+          ● Salary should credit direct in the bank
+          ● Should be above 21yrs and not more than 50yrs. old`,
         },
         {
-          "Does Credit Mitra charge any processing fee for the Personal loans taken?": "",
+          " How quickly will I get my Loan?": 
+          ` Your loan is generally transferred immediately as soon as all your documents are
+          verified. In order to process your loan quickly, we advise you to upload the necessary
+          documents in the necessary formats and make sure they are clear and legible.`,
         },
         {
-          "How quickly will I get my Loan?": "",
+          " What is the maximum and minimum loan amount that I can apply for?": 
+          ` The minimum amount that you can borrow on Credit Mitra loans is Rs.5,000. The
+          maximum loan amount is calculated by our algorithm and can go up to Rs.2 Lakhs.`,
         },
         {
-          "How do I repay the loan availed from Credit Mitra?": " ",
+          ". I am a self-employed individual, am I eligible for a loan from Credit Mitra?":
+          `No, Credit Mitra Personal loan is only for Salaried as of now.`,
         },
         {
-          "Who is eligible to apply for a loan from Credit Mitra ?": " ",
+          ". Will I get a loan if I get my salary in cash?": 
+          ` At this point in time, we only give loans to those individuals who get their salary
+          via bank transfer – directly from their employer. We will not be able to give loans to
+          those individuals who get their salaries in cash.`,
         },
         {
-          "What is the maximum and minimum loan amount that I can apply for?": " ",
-        },
-        {
-          "Will I get a loan if I get my salary in cash?": " ",
-        },
-        {
-          "Am I allowed to change the loan amount once I’ve applied for it?": " ",
-        },
+          " I have one loan running with Credit Mitra. Can I apply for another loan?":
+           ` No, we don’t provide the option of applying for a new loan if a user already has an
+           existing one.`,
+        }
       ],
     },
  
