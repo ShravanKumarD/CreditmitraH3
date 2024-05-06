@@ -13,7 +13,10 @@ text-align: center;
 
 
 } */
+.row {
 
+  justify-content: space-evenly;
+} 
 .App {
   background: rgb(31, 32, 37);
   background: linear-gradient(90deg, rgba(31, 32, 37, 1) 0%, rgba(2, 0, 36, 1) 35%, rgba(7, 68, 100, 1) 100%);
@@ -128,6 +131,7 @@ display:-moz-inline-box;
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: normal;
+    font-family: Poppins;
   /* font-family: "General Sans Variable"; */
 }
 
