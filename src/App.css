@@ -1150,7 +1150,9 @@ display:-moz-inline-box;
     max-height: 450px;
     width: 390px;
     margin-right: 60px;
-    position: relative;
+    position: absolute;
+    margin-top: 40px;
+    z-index:0
   }
 
   .a {
@@ -1186,6 +1188,8 @@ display:-moz-inline-box;
     margin-bottom: 1rem;
     line-height: normal;
     width: 300px;
+    width: 300px;
+        margin-top: 50px;
     /* font-family: "General Sans Variable"; */
   }
 

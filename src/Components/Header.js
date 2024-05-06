@@ -12,9 +12,7 @@ function Header(props) {
   useEffect(() => {
     setIsNavOpen(false); 
     setDisableBackground(false); 
-   if(props.routePath === '/'){
-    setIsNavOpen(true); 
-   }
+   
   
   }, [location]);
 
