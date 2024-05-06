@@ -48,19 +48,45 @@ Add your bank account details securely.`,
     {
       Technical: [
         {
-          "What happens if your platform crashes when I’m midway through my loan application process?": "",
+          "What happens if your platform crashes when I’m midway through my loan application process?":
+           " We have made sure that the loan request process on our platforms is smooth and bug-free. If you are using our website for your loan application, we recommend that you save your application frequently. And if your app crashes at any point in time, you will be able to start from the same step where the app crashed previously. Still  if you face any difficulty, please get in touch with us at support@creditmitra.in along with the details of the issue",
         },
         {
-          "How can I reach Credit Mitra for support?": "",
+          "Why can’t I see the loans section on my Credit Mitra app whereas my friends can see such a section on theirs?": 
+          ` If you can’t see the Loans tab on your Credit Mitra app, please make sure to
+          update the app to the latest version`,
         },
         {
-          " How can I change the address and contact/phone number?": "",
+          " How can I change the address and contact/phone number?": `You can write an email to our support team at support@creditmitra.in if you wish
+          to update your contact details.`,
         },
         {
-          "What happens if a borrower faces difficulties in repaying the loan?": "",
+          " Why is the Credit Mitra Personal App not loading on my device?": ` If you're experiencing issues with the Credit Mitra Personal App not loading, there
+          could be several reasons behind this problem. Ensure that your internet connection
+          is stable, and try restarting the app. If the issue persists, consider updating the app to
+          the latest version or checking for any system updates on your device.`,
+        },
+      ],
+    },
+    {
+      Document: [
+        {
+          "": "",
         },
         {
-          "What happens if a borrower faces difficulties in repaying the loan?": "",
+          "I am not registered for net banking or if my net banking ID is not valid, how can I send you my bank statement?": "",
+        },
+        {
+          "What documents are required while applying for a Personal Loan from Credit Mitra?": " ",
+        },
+        {
+          "I have uploaded all the required documents for the loan, then why have I received a mail asking for some documents?": "",
+        },
+        {
+          "I don't have any docs for Current Address Proof which are listed in your list. What can be done in such a condition?": "",
+        },
+        {
+          "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?": "",
         },
       ],
     },
@@ -92,28 +118,7 @@ Add your bank account details securely.`,
         },
       ],
     },
-    {
-      Document: [
-        {
-          "I don't have a hard copy of my PAN with me. Can I make the video with the soft copy?": "",
-        },
-        {
-          "I am not registered for net banking or if my net banking ID is not valid, how can I send you my bank statement?": "",
-        },
-        {
-          "What documents are required while applying for a Personal Loan from Credit Mitra?": " ",
-        },
-        {
-          "I have uploaded all the required documents for the loan, then why have I received a mail asking for some documents?": "",
-        },
-        {
-          "I don't have any docs for Current Address Proof which are listed in your list. What can be done in such a condition?": "",
-        },
-        {
-          "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?": "",
-        },
-      ],
-    },
+ 
   ];
   const [tabActive, setTabActive] = useState(Object.keys(faqContent[0])[0]);
   const [faqAnswerOpened, setFaqAnswerOpened] = useState({});
@@ -176,11 +181,32 @@ Add your bank account details securely.`,
             <div className="content">
               <h6 className="heading">We Have Answers </h6>
               <div className="faq-container mx-auto">
+
+              <div className="input-box">
+
+{/* <input
+
+    type="search"
+
+    name="search-form"
+
+    id="search-form"
+
+    className="search-input"
+
+    //  onChange={(e) => setSearchQuery(e.target.value)}
+
+    placeholder="Enter your search term here"
+
+/> */}
+
+</div>
+
                 <div className="faq-tab-container ">
                   <div className="tab-buttons row">
                     {faqContent.map((each, index) => {
                       return (
-                        <div className="col-sm-3">
+                        <div className="col-md-2">
 
                           <button
                             key={index}
