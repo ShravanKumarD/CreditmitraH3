@@ -27,23 +27,7 @@ function Contact(props) {
               </p>
               <h6>Got a question? We're here to help!</h6>
             </div>
-            {/* <div className="form-container">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Your name"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="email" placeholder="Email Address"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="Contact" placeholder="Contact"/>
-                </div>
-                <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Message" style={{resize:"none", height: "214px"}}></textarea>
-                </div>
-                <button type="submit" class="btn brand-primary-gradient btn-block lg-btn">
-                Send Message
-                </button>
-            </div> */}
+            
             
             
             <div class="website-text">

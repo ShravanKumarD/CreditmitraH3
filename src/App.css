@@ -1450,3 +1450,32 @@ display:-moz-inline-box;
     margin-top: 20px;
   }
 }
+
+
+/* Blogs styling */
+
+.blogs-section .content {
+  display: inline-block;
+}
+
+.blogs-section .content h6{
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+  line-height: normal;
+  width: 300px;
+  margin-top: 12px;
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  align-items: center;
+  text-align: center;
+
+  
+}
+
+
+

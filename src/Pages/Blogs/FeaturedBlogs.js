@@ -1,10 +1,45 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
-import message from '../../assets/images/message.png'
 import SEO from "../SEO/SEO";
+import CardList from "./CardList";
 
-function Contact(props) {
+function FeaturedBlogs(props) {
+
+  // const arrayOfCards = [title, date, imageLink];
+  const arrayOfCards = [
+    {
+      title: "Blog 1",
+      date: "28/08/24",
+      imageLink: require("../../assets/images/blogs/blog_sample.png")
+    },
+    {
+      title: "Blog 2",
+      date: "29/08/24",
+      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+    },
+    {
+      title: "Blog 3",
+      date: "28/08/24",
+      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+    },
+    {
+      title: "Blog 4",
+      date: "28/08/24",
+      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+    },
+    {
+      title: "Blog 5",
+      date: "28/08/24",
+      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+    },
+    {
+      title: "Blog 6",
+      date: "28/08/24",
+      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+    },
+  ];
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -17,23 +52,14 @@ function Contact(props) {
       />
       <section>
         <div className="page-container contact-us">
-          <div className="contact-us-section">
-            <div className="content mb-5">
-            <h6>Featured Blogs</h6>
+          <div className="blogs-section">
+            <div className="content">
+              <h6>Featured Blogs</h6>
 
-              <img src={message} className="mb-3" height="140px"/>
-              <p className="mt-0 mb-5">
-                Feel free to connect with us with any questions or queries.
-                We're dedicated to providing you with the best possible
-                experience
-              </p>
+              <CardList cards={arrayOfCards} />
+
             </div>
-            
-            
-            <div class="website-text">
-              Email: Support@creditmitra.in<br/>
-              Phone:  9666042345
-            </div>
+
             
           </div>
         </div>
@@ -43,4 +69,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default FeaturedBlogs;
