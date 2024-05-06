@@ -1,11 +1,22 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import Logo from "../assets/images/logo.png";
-
+import Toggle from "../assets/images/toggle.png";
 function Header(props) {
+  console.log(props,"props")
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [disableBackground, setDisableBackground] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsNavOpen(false); 
+    setDisableBackground(false); 
+    if (props.routePath === '/') {
+      setIsNavOpen(true); 
+    } 
+  
+  }, [location]);
 
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
@@ -27,7 +38,10 @@ function Header(props) {
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-light ${disableBackground ? '' : 'custom-background'}`}>
-    <Link className="navbar-brand" to="/" onClick={() => setDisableBackground(false)}>  
+      <Link className="navbar-brand" to="/" onClick={() => {
+        setDisableBackground(false);
+        setIsNavOpen(false); 
+      }}>  
         <img
           className="img-fluid"
           style={{ width: 180 }}
@@ -41,7 +55,8 @@ function Header(props) {
         type="button"
         onClick={handleNavToggle}
       >
-        <span className="navbar-toggler-icon"></span>
+        {/* <span className="navbar-toggler-icon"></span> */}
+        <img src={Toggle}/>
       </button>
 
       <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}>
@@ -52,14 +67,16 @@ function Header(props) {
                 <Link
                   to={each.redirection}
                   className={`nav-link ${
-                    each.redirection === props.routePath ? "active" : ""
+                    each.redirection === location.pathname ? "active" : ""
                   }`}
                   title={each.displayName}
-                  onClick={handleLinkClick}
-                  style={{ marginLeft:'10px' ,color: 'white',
-                  ...(each.redirection === props.routePath && { color: 'blue' })
-                   }}
-                  
+                  onClick={() => {
+                    handleLinkClick();
+                    if (each.redirection === "/") setIsNavOpen(false);
+                  }}
+                  style={{ marginLeft: '10px', color: 'white',
+                    ...(each.redirection === location.pathname && { color: 'blue' })
+                  }}
                 >
                   {each.displayName}
                 </Link>
