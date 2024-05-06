@@ -68,14 +68,14 @@ function ApplicationProcess(props) {
             <div className='content '>
               <div className='space'></div>
                 <h6>Customized Personal Loan</h6>
-                <p className='mb-3'>Instant offer, quick disbursal & array of customised, flexible personal loan</p>
-                 
-                {/* <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
+                {/* <p className='mb-3'>Instant offer, quick disbursal & array of customised, flexible personal loan</p>
                   */}
-               {/* <p className='pb-5'> With our customized personal loan, borrowers have the flexibility to choose the loan amount and repayment tenure that best suits their needs. We understand that one size does not fit all; we work closely with our customers to understand their financial objectives, ensuring that the loan terms are structured in a way that aligns with their preferences and capabilities.)
+                <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
+                 
+               <p className='pb-5'> With our customized personal loan, borrowers have the flexibility to choose the loan amount and repayment tenure that best suits their needs. We understand that one size does not fit all; we work closely with our customers to understand their financial objectives, ensuring that the loan terms are structured in a way that aligns with their preferences and capabilities.)
 
 
-                </p> */}
+                </p>
             </div>
             <img  className='inmageHome' src={Image5}/>
         </div>
@@ -88,8 +88,8 @@ function ApplicationProcess(props) {
             </div>
         </div>
         <div className='btn-container text-center'>
-            <buttton className="btn brand-primary end py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
-            <buttton className="btn brand-secondary end  py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
+            <buttton className="btn brand-primary  py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
+            <buttton className="btn brand-secondary  py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
         </div>
       </div>
     );

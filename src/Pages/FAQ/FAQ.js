@@ -10,19 +10,24 @@ function FAQ(props) {
     {
       General: [
         {
-          "What is Credit Mitra ?": `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling unexpected emergencies, CreditMitra has you covered.`,
+          "What is Credit Mitra ?":
+           `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling unexpected emergencies, CreditMitra has you covered.`,
         },
         {
-          "What is the Eligibility Criteria to apply for a loan?": `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan application process.`,
+          "What is the Eligibility Criteria to apply for a loan?": 
+          `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan application process.`,
         },
         {
-          "How does CreditMitra Works?": `CreditMitra is where simplicity meets convenience. All you need to do is follow through these steps to get an instant loan:
-Download the CreditMitra app from Play Store.
-Register effortlessly using Facebook, Gmail, or LinkedIn.
-Check eligibility with basic details.
-Complete the application with ease.
-Upload documents’ photos conveniently.
-Add your bank account details securely.`,
+          "How does CreditMitra Works?": 
+          `CreditMitra is where simplicity meets convenience. All you need to do is follow
+          through these steps to get an instant loan:
+          Download the CreditMitra app from Play Store.
+        ● Register effortlessly using Facebook, Gmail, or LinkedIn.
+          ● Check eligibility with basic details.
+          ● Complete the application with ease.
+          ● Upload documents’ photos conveniently.
+          ● Add your bank account details securely.
+          ●   Upon verification, expect swift fund transfer to your account.`,
         },
 
         {
@@ -48,72 +53,100 @@ Add your bank account details securely.`,
     {
       Technical: [
         {
-          "What happens if your platform crashes when I’m midway through my loan application process?": "",
+          "What happens if your platform crashes when I’m midway through my loan application process?":
+           " We have made sure that the loan request process on our platforms is smooth and bug-free. If you are using our website for your loan application, we recommend that you save your application frequently. And if your app crashes at any point in time, you will be able to start from the same step where the app crashed previously. Still  if you face any difficulty, please get in touch with us at support@creditmitra.in along with the details of the issue",
         },
         {
-          "How can I reach Credit Mitra for support?": "",
+          "Why can’t I see the loans section on my Credit Mitra app whereas my friends can see such a section on theirs?": 
+          ` If you can’t see the Loans tab on your Credit Mitra app, please make sure to
+          update the app to the latest version`,
         },
         {
-          " How can I change the address and contact/phone number?": "",
+          " How can I change the address and contact/phone number?": `You can write an email to our support team at support@creditmitra.in if you wish
+          to update your contact details.`,
         },
         {
-          "What happens if a borrower faces difficulties in repaying the loan?": "",
-        },
-        {
-          "What happens if a borrower faces difficulties in repaying the loan?": "",
-        },
-      ],
-    },
-    {
-      Eligibility: [
-        {
-          "What are the eligibility criteria for Personal Loan?": " ",
-        },
-        {
-          "Does Credit Mitra charge any processing fee for the Personal loans taken?": "",
-        },
-        {
-          "How quickly will I get my Loan?": "",
-        },
-        {
-          "How do I repay the loan availed from Credit Mitra?": " ",
-        },
-        {
-          "Who is eligible to apply for a loan from Credit Mitra ?": " ",
-        },
-        {
-          "What is the maximum and minimum loan amount that I can apply for?": " ",
-        },
-        {
-          "Will I get a loan if I get my salary in cash?": " ",
-        },
-        {
-          "Am I allowed to change the loan amount once I’ve applied for it?": " ",
+          " Why is the Credit Mitra Personal App not loading on my device?": ` If you're experiencing issues with the Credit Mitra Personal App not loading, there
+          could be several reasons behind this problem. Ensure that your internet connection
+          is stable, and try restarting the app. If the issue persists, consider updating the app to
+          the latest version or checking for any system updates on your device.`,
         },
       ],
     },
     {
       Document: [
         {
-          "I don't have a hard copy of my PAN with me. Can I make the video with the soft copy?": "",
+          ". What documents are required while applying for a Personal Loan from CreditMitra?":
+           ` PAN card
+           Latest salary slip from the same employer
+           Present Address Proof – Aadhar/Electricity bill/Gas Bill/Telephone
+           bill/Creditcard/Internet/HR Letter/PG Invoice
+           Proof of Employment - Company ID/Payslip
+           Latest statement of your Bank Account, reflecting salary credit for last 3 months
+           `,
         },
         {
-          "I am not registered for net banking or if my net banking ID is not valid, how can I send you my bank statement?": "",
+         ". I am not registered for netbanking or if my netbanking ID is not valid, how can I send you my bank statement?":
+          ` You can provide us the last 3 months bank statement.`,
         },
         {
-          "What documents are required while applying for a Personal Loan from Credit Mitra?": " ",
+          " I received/Downloaded the Bank Statement in Email from my Bank. However,when I am trying to upload it's not getting accepted?": 
+          ` Many times the bank statement sent or downloaded is not in the right format. To
+          ensure your loan is processed at the earliest, please download the bank statement in
+          PDF from your bank website or the one received in your registered email id and
+          upload it on our Credit Mitra app.`,
+        },
+        {        
+  "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?": 
+  " You can reach out to us on support@creditmitra.in. We will be able to help you.",
         },
         {
-          "I have uploaded all the required documents for the loan, then why have I received a mail asking for some documents?": "",
-        },
-        {
-          "I don't have any docs for Current Address Proof which are listed in your list. What can be done in such a condition?": "",
-        },
-        {
-          "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?": "",
+          " I am not able to upload docs online or see errors. Can I send the docs directly in email and you can process the application?": 
+          ` If you are facing problems in uploading the docs, you can reach out to us on
+          support@creditmitra.in. We will be able to help you.`,
         },
       ],
     },
+    {
+      Eligibility: [
+        {
+          "What are the eligibility criteria for Personal Loan?": 
+          ` You are eligible to apply personal loan on satisfying the following criteria –
+          ● Should be an Indian citizen
+          ● Should be a salaried employee
+          ● Should have a minimum salary of Rs. 15,000/- p.m.
+          ● Salary should credit direct in the bank
+          ● Should be above 21yrs and not more than 50yrs. old`,
+        },
+        {
+          " How quickly will I get my Loan?": 
+          ` Your loan is generally transferred immediately as soon as all your documents are
+          verified. In order to process your loan quickly, we advise you to upload the necessary
+          documents in the necessary formats and make sure they are clear and legible.`,
+        },
+        {
+          " What is the maximum and minimum loan amount that I can apply for?": 
+          ` The minimum amount that you can borrow on Credit Mitra loans is Rs.5,000. The
+          maximum loan amount is calculated by our algorithm and can go up to Rs.2 Lakhs.`,
+        },
+        {
+          ". I am a self-employed individual, am I eligible for a loan from Credit Mitra?":
+          `No, Credit Mitra Personal loan is only for Salaried as of now.`,
+        },
+        {
+          ". Will I get a loan if I get my salary in cash?": 
+          ` At this point in time, we only give loans to those individuals who get their salary
+          via bank transfer – directly from their employer. We will not be able to give loans to
+          those individuals who get their salaries in cash.`,
+        },
+        {
+          " I have one loan running with Credit Mitra. Can I apply for another loan?":
+           ` No, we don’t provide the option of applying for a new loan if a user already has an
+           existing one.`,
+        }
+      ],
+    },
+ 
   ];
   const [tabActive, setTabActive] = useState(Object.keys(faqContent[0])[0]);
   const [faqAnswerOpened, setFaqAnswerOpened] = useState({});
@@ -176,11 +209,32 @@ Add your bank account details securely.`,
             <div className="content">
               <h6 className="heading">We Have Answers </h6>
               <div className="faq-container mx-auto">
+
+              <div className="input-box">
+
+{/* <input
+
+    type="search"
+
+    name="search-form"
+
+    id="search-form"
+
+    className="search-input"
+
+    //  onChange={(e) => setSearchQuery(e.target.value)}
+
+    placeholder="Enter your search term here"
+
+/> */}
+
+</div>
+
                 <div className="faq-tab-container ">
                   <div className="tab-buttons row">
                     {faqContent.map((each, index) => {
                       return (
-                        <div className="col-sm-3">
+                        <div className="col-md-2">
 
                           <button
                             key={index}
