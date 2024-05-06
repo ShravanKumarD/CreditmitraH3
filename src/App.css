@@ -1280,7 +1280,7 @@ display:-moz-inline-box;
       font-size: 24px;
       font-weight: 600;
       margin-bottom: 64px;
-      /* text-align: center; */
+      font-family: Poppins;
     }
   }
 
