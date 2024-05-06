@@ -1454,8 +1454,8 @@ display:-moz-inline-box;
 
 /* Blogs styling */
 
-.blogs-section .content {
-  display: inline-block;
+.feature-card{
+  border: 1px solid hsl(0, 0%, 80%);
 }
 
 .blogs-section .content h6{
