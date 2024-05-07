@@ -1146,8 +1146,9 @@ display:-moz-inline-box;
     max-height: 400px;
     width: 390px;
     margin-right: 60px;
-    margin-top: 45px;
+    margin-top: 30px;
     /* position: absolute;
+    margin-top: 15px; */
     /* z-index:0 */
   }
 
@@ -1523,9 +1524,33 @@ display:-moz-inline-box;
   font-family: Poppins;
   align-items: center;
   text-align: center;
-
-  
 }
-
+h5 {
+  margin-top: 12px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  font-family: Poppins;
+  color: #ffffff;
+}
+.datefaq{
+    margin-top: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: Poppins;
+  margin-left: 10px;
+  color: #ffffff;
+}
+h1 {
+  color: #1B9BDC;
+  text-align: center;
+    margin-top: 12px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-family: Poppins;
+}
 
 

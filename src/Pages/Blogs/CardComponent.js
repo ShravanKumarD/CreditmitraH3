@@ -6,7 +6,7 @@ const CardComponent = ({ title, date, imageLink }) => (
       <div className='feature-card'>
         <img src={imageLink} alt={title} />
         <h5>{title}</h5>
-        <p>{date}</p>
+        <p className='datefaq'>{date}</p>
       </div>
     </div>
   </div>

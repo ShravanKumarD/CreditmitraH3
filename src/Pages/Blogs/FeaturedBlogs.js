@@ -54,7 +54,7 @@ function FeaturedBlogs(props) {
         <div className="page-container contact-us">
           <div className="blogs-section">
             <div className="content">
-              <h6>Featured Blogs</h6>
+              <h1>Featured Blogs</h1>
 
               <CardList cards={arrayOfCards} />
 
