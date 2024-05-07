@@ -1143,12 +1143,12 @@ display:-moz-inline-box;
   }
 
   .img-home {
-    max-height: 450px;
+    max-height: 400px;
     width: 390px;
     margin-right: 60px;
-    position: absolute;
-    margin-top: 15px;
-    z-index:0
+    margin-top: 45px;
+    /* position: absolute;
+    /* z-index:0 */
   }
 
   .a {
@@ -1500,8 +1500,13 @@ display:-moz-inline-box;
 
 .feature-card{
   border: 1px solid hsl(0, 0%, 80%);
-  border-radius: 10px;
+  border-radius: 20px;
+  width: fit-content;
+ align-self: center;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102)
+}
+.blogcard{
+  padding: 20px;
 }
 .blogs-section .content h6{
   -webkit-background-clip: text !important;
