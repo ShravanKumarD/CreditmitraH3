@@ -73,7 +73,7 @@ function Header(props) {
                     if (each.redirection === "/") setIsNavOpen(false);
                   }}
                   style={{ marginLeft: '10px', color: 'white',
-                    ...(each.redirection === location.pathname && { color: 'blue' })
+                    ...(each.redirection === location.pathname && { color: "rgb(117.94, 208.84, 255)" })
                   }}
                 >
                   {each.displayName}
