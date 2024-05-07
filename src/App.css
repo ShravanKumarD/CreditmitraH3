@@ -1102,7 +1102,6 @@ display:-moz-inline-box;
 
   .footer-content .navigation-container {
     flex-direction: column;
-    /* Arrange items in a column */
   }
 
   .page-container {
@@ -1112,18 +1111,15 @@ display:-moz-inline-box;
       padding-right: 20px;
       padding-left: 20px;
       padding-top: 86px;
-      /* Adjust as needed */
     }
   }
 
   .App{
     overflow: hidden;
   }
-
-  /* Optionally, you can adjust other specific elements for mobile view */
   .products-hero-section {
     padding-bottom: 100px;
-    /* Adjust as needed */
+  
   }
 
   .description-section {
