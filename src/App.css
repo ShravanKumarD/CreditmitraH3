@@ -274,11 +274,12 @@ display:-moz-inline-box;
     justify-content: center;
 
     .each-feedback-card {
+      padding: 10px;
       border-radius: 30px;
-      display: flex;
+      /* display: flex; */
       align-items: center;
       background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
-      padding: 34px 64px;
+      /* padding: 34px 64px; */
 
       .card-body {
         padding: 0;
@@ -309,7 +310,9 @@ display:-moz-inline-box;
     }
   }
 }
-
+.text-center{
+  width: 300px;
+}
 /* user-feedback-section ends */
 
 /* products-hero-section starts */
@@ -1032,10 +1035,30 @@ display:-moz-inline-box;
   margin: auto;
 }
 .inmage{
-  /* height: 100px; */
+margin-right: 20px;
+}
+.applpcardbuttons{
+   margin-left: 420px;
+}
+.needsContent{
+/* margin-right: 100px; */
+margin-top: -15px;
+}
+.intext{
+  margin-left: -50px;
+  width: 400px;
 }
 
 @media only screen and (max-width: 767px) {
+  .applpcardbuttons{
+    margin-left: -26px;
+ }
+
+ .intext{
+  margin-left: 10px;
+   width: 200px;
+   text-align: center;
+ }
   .application-process-section {
     .heading {
       margin-top: 30px /* how it works */

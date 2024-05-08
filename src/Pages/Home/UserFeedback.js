@@ -24,7 +24,7 @@ function UserFeedback(props) {
       return (
         <>
           <div className="card each-feedback-card text-center">
-          <img className="rounded-circle mb-3" alt="avatar1" height="64px" width="64px" src={each.img} />
+          <img className="rounded-circle " alt="avatar1" height="64px" width="64px" src={each.img} />
 
             <div className="card-body">
               <div className="feedback-ratings">

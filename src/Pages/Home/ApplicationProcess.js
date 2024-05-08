@@ -13,13 +13,17 @@ function ApplicationProcess(props) {
     function BottomHalfCards(subProps){
         return (<>
         <div className='application-process-card'>
-            <div className='content'>
+            <div className='content needsContent'>
                 <div>
-                    <h6>{subProps.heading}</h6>
-                    <p>{subProps.description}</p>
+                    <h6 className='intext' >{subProps.heading}</h6>
+                    <p className='intext' >{subProps.description}</p>
                 </div>
             </div>
-            <img height="75px" marginTop="auto" src={subProps.img}/>
+            <div className='inmage'>
+            <img marginTop="auto"  src={subProps.img}/>
+            {/* height="75px" */}
+            </div>
+           
         </div>
         </>)
     }
@@ -82,13 +86,13 @@ function ApplicationProcess(props) {
         <div className='halfcard'></div>
         <div className='row' >
             <div className='col-sm-6'>
-                <BottomHalfCards img={Image6} className='inmage'  heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
+                <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
             </div>
             <div className='col-sm-6'>
-                <BottomHalfCards img={Image7} className='inmage' heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding"/>
+                <BottomHalfCards img={Image7}  heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding"/>
             </div>
         </div>
-        <div className='btn-container text-center'>
+        <div className='applpcardbuttons'>
             <buttton className="btn brand-primary  py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
             <buttton className="btn brand-secondary  py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
         </div>
