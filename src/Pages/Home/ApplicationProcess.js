@@ -88,8 +88,10 @@ function ApplicationProcess(props) {
             </div>
         </div>
         <div className='btn-container text-center'>
-            <buttton className="btn brand-primary  py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
-            <buttton className="btn brand-secondary  py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
+            <buttton className="btn brand-primary  apbutton1 py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
+        </div>
+        <div className='btn-container text-center'>
+            <buttton className="btn brand-secondary apbutton2 py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
         </div>
       </div>
     );
