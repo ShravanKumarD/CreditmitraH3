@@ -19,7 +19,7 @@ function ApplicationProcess(props) {
                     <p>{subProps.description}</p>
                 </div>
             </div>
-            <img height="75px" src={subProps.img}/>
+            <img height="75px" marginTop="auto" src={subProps.img}/>
         </div>
         </>)
     }
@@ -80,18 +80,16 @@ function ApplicationProcess(props) {
             <img  className='inmageHome' src={Image5}/>
         </div>
         <div className='row' >
-            <div className='w-100 b'>
-                <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
+            <div className='col-sm-6'>
+                <BottomHalfCards img={Image6} className='inmage'  heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
             </div>
-            <div className='w-100 b'>
-                <BottomHalfCards img={Image7} heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding"/>
+            <div className='col-sm-6'>
+                <BottomHalfCards img={Image7} className='inmage' heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding"/>
             </div>
         </div>
         <div className='btn-container text-center'>
-            <buttton className="btn brand-primary  apbutton1 py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
-        </div>
-        <div className='btn-container text-center'>
-            <buttton className="btn brand-secondary apbutton2 py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
+            <buttton className="btn brand-primary  py-3 px-4" style={{color:"#fff",textDecoration:"none"}}>Apply Now</buttton>
+            <buttton className="btn brand-secondary  py-3 px-4"> <Link to="/contact" style={{color:"#fff",textDecoration:"none"}}>Contact Us</Link></buttton>
         </div>
       </div>
     );
