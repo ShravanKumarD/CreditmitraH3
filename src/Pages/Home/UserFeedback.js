@@ -23,10 +23,10 @@ function UserFeedback(props) {
     return feedbacks.map((each) => {
       return (
         <>
-          <div class="card each-feedback-card text-center">
-          <img class="rounded-circle mb-3" alt="avatar1" height="64px" width="64px" src={each.img} />
+          <div className="card each-feedback-card text-center">
+          <img className="rounded-circle mb-3" alt="avatar1" height="64px" width="64px" src={each.img} />
 
-            <div class="card-body">
+            <div className="card-body">
               <div className="feedback-ratings">
               <svg
                 width="25"
@@ -78,7 +78,7 @@ function UserFeedback(props) {
                 />
               </svg>
               </div>
-              <p class="comment">{each.comment}</p>
+              <p className="comment">{each.comment}</p>
               <p className="user-name">{each.userName}</p>
             </div>
           </div>

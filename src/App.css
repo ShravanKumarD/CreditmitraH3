@@ -152,9 +152,12 @@ display:-moz-inline-box;
 /* hero section ends */
 
 /* application-process-section starts */
+.halfcard{
+  padding: 15px;
+}
 
 .application-process-card {
-  margin: 15px;
+  /* margin: 0px; */
   display: flex;
   justify-content: space-between;
   padding: 60px 0 20px 80px;
@@ -188,7 +191,8 @@ display:-moz-inline-box;
     }
 
     h6 {
-      margin-top: 12px;
+      /* margin-top: 0px; */
+      text-align: left;
       font-size: 32px;
       font-weight: 500;
       margin-bottom: 16px;
@@ -196,6 +200,7 @@ display:-moz-inline-box;
     }
 
     p {
+      text-align: left;
       font-size: 18px;
       margin-bottom: 0px;
       font-weight: 300;

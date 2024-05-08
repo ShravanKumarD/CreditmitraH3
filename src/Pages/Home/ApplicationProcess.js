@@ -79,6 +79,7 @@ function ApplicationProcess(props) {
             </div>
             <img  className='inmageHome' src={Image5}/>
         </div>
+        <div className='halfcard'></div>
         <div className='row' >
             <div className='col-sm-6'>
                 <BottomHalfCards img={Image6} className='inmage'  heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
