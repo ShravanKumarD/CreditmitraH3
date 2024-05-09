@@ -61,8 +61,8 @@ text-align: center;
 
   &.lending-partners {
     padding-top: 87px;
-    padding-right: 140;
-    padding-left: 140px;
+    padding-right: 3%;
+    padding-left: 3%;
   }
 
   &.faq {
