@@ -201,7 +201,7 @@ function FAQ(props) {
             <div className="content">
               <h6 className="heading">We Have Answers </h6>
               <div className="faq-container mx-auto">
-                <div className="input-box">
+                {/* <div className="input-box"> */}
                   {/* <input
 
     type="search"
@@ -217,10 +217,10 @@ function FAQ(props) {
     placeholder="Enter your search term here"
 
 /> */}
-                </div>
+                {/* </div> */}
 
                 <div className="faq-tab-container ">
-                  <div className="tab-buttons row">
+                  <div className="tab-buttons row faqheads">
                     {faqContent.map((each, index) => {
                       return (
                         <div className="col-md-3">

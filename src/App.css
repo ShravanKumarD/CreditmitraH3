@@ -799,14 +799,13 @@ text-align: center;
           height: 64px;
           color: #ffffff;
           border: 1px solid #FFF;
-          margin: 20px;
+          /* margin: 0px; */
 
           &.active-btn {
             background: linear-gradient(91deg, #00246A -2.45%, #2199EF 97.01%);
           }
         }
       }
-
       .answer-section {
         margin-top: 48px;
         width: 100%;
@@ -1078,6 +1077,9 @@ text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
+  .aboutus{
+    margin-top: 20px;
+  }
   .applpcardbuttons {
     margin-left: -26px;
   }
