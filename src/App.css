@@ -1451,19 +1451,20 @@ text-align: center;
 
 
         .answer-section {
-          margin-left: 20px;
-          width: 320px;
+          padding-left: 6%;
+          padding-right: 6%;
+          justify-content: center;
+          align-items: center;
         }
 
         & .tab-buttons {
+          padding-left: 6%;
+          padding-right: 6%;
+
           & button {
-            margin-left: 30px;
-            width: 300px;
 
             &.active-btn {
               background: linear-gradient(91deg, #00246A -2.45%, #2199EF 97.01%);
-              width: 300px;
-              margin-left: 30px;
             }
           }
         }
