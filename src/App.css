@@ -1063,7 +1063,9 @@ text-align: center;
 }
 
 .applpcardbuttons {
-  margin-left: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .needsContent {
@@ -1081,7 +1083,10 @@ text-align: center;
     margin-top: 20px;
   }
   .applpcardbuttons {
-    margin-left: -26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .intext {
@@ -1209,9 +1214,8 @@ text-align: center;
   }
 
   .btn {
-    width: 250px;
+    width:98%;
     margin-bottom: 10px;
-
   }
 
   /* .produc {
@@ -1237,14 +1241,17 @@ text-align: center;
 
   }
 
+
   .brand-primary {
-    margin-left: 30px;
-    width: 300px;
+    margin-left: 3%;
+    margin-right: 3%;
+
   }
 
   .brand-secondary {
-    margin-left: 30px;
-    width: 300px;
+    margin-left: 3%;
+    margin-right: 3%;
+
   }
 
   .end {
@@ -1254,6 +1261,13 @@ text-align: center;
   .hero-content {
     margin-left: 15px;
   }
+
+  .hero-content-button{
+    width:150%;
+  }
+
+  
+
 
 
   .hero-section .content h6 {
