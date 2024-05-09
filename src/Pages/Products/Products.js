@@ -41,28 +41,39 @@ function Products(props) {
             ]}
             img={StepsImg2}
           />
-          <div className="btn-container text-center">
-            <buttton className="btn brand-primary py-3 px-4">
+          {/* old code */}
+          <div className="btn-container text-center"></div>
+          {/* new from here */}
+          {/* new class */}
+          <div className="product-apply-button" style={{
+            display:"flex",
+            justifyContent: "center"
+          }}>
+            {/* margin-left: 0 for fixing this */}
+            <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
               {" "}
               <Link to="/home" style={{ color: "#fff" }}>
                 Apply Now
               </Link>
             </buttton>
-            <h6
-              style={{
-                color: "#fff",
-                fontSize: "20px",
-                fontFamily: "poppins",
-                marginTop: "3rem",
-              }}
-            >
-              At CreditMitra, we believe that financial empowerment begins with
-              rapid loan solutions that cater to individual needs swiftly. Our
-              instant personal loans are designed to provide you with the
-              financial flexibility and freedom in minutes that you need to
-              achieve your goals, whatever they may be
-            </h6>
           </div>
+
+          <h6
+            style={{
+              color: "#fff",
+              fontSize: "20px",
+              fontFamily: "poppins",
+              marginTop: "3rem",
+              textAlign: "center",
+              fontWeight: "normal"
+            }}
+          >
+            At CreditMitra, we believe that financial empowerment begins with
+            rapid loan solutions that cater to individual needs swiftly. Our
+            instant personal loans are designed to provide you with the
+            financial flexibility and freedom in minutes that you need to
+            achieve your goals, whatever they may be
+          </h6>
         </div>
         <Footer />
       </section>
