@@ -223,7 +223,7 @@ function FAQ(props) {
                   <div className="tab-buttons row">
                     {faqContent.map((each, index) => {
                       return (
-                        <div className="col-md-2">
+                        <div className="col-md-3">
                           <button
                             key={index}
                             className={`${

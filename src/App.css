@@ -14,20 +14,24 @@ text-align: center;
 
 } */
 
-.App{
+.App {
   overflow: hidden;
 }
+
 .row {
 
   justify-content: space-evenly;
-} 
+}
+
 .App {
   background: rgb(31, 32, 37);
   background: linear-gradient(90deg, rgba(31, 32, 37, 1) 0%, rgba(2, 0, 36, 1) 35%, rgba(7, 68, 100, 1) 100%);
 }
-.navbar{
-display:-moz-inline-box;
+
+.navbar {
+  display: -moz-inline-box;
 }
+
 .page-container {
   padding: 0 88px 110px;
 
@@ -67,6 +71,7 @@ display:-moz-inline-box;
     padding-left: 336px;
   }
 }
+
 .header-nav a {
   font-size: 16px;
   color: #ffffff;
@@ -110,7 +115,7 @@ display:-moz-inline-box;
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top:0px;
+  padding-top: 0px;
   padding-bottom: 160px;
 }
 
@@ -135,7 +140,7 @@ display:-moz-inline-box;
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: normal;
-    font-family: Poppins;
+  font-family: Poppins;
   /* font-family: "General Sans Variable"; */
 }
 
@@ -152,7 +157,7 @@ display:-moz-inline-box;
 /* hero section ends */
 
 /* application-process-section starts */
-.halfcard{
+.halfcard {
   padding: 15px;
 }
 
@@ -164,6 +169,7 @@ display:-moz-inline-box;
   border-radius: 24px;
   background: linear-gradient(140deg, #5E7784 5.94%, #151B1E 90.73%);
   color: #ffffff;
+
   .content {
     width: 100%;
 
@@ -237,8 +243,9 @@ display:-moz-inline-box;
       }
     }
   }
- 
+
 }
+
 .application-process-section {
   .heading {
     margin: 32px 0;
@@ -310,9 +317,11 @@ display:-moz-inline-box;
     }
   }
 }
-.text-center{
+
+.text-center {
   width: 300px;
 }
+
 /* user-feedback-section ends */
 
 /* products-hero-section starts */
@@ -406,6 +415,7 @@ display:-moz-inline-box;
         color: #FFF;
         font-weight: 500;
         font-family: Poppins;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -767,15 +777,15 @@ display:-moz-inline-box;
     }
 
     .faq-tab-container {
+
       .tab-buttons {
-        display: flex;
-        gap: 32px;
 
         button {
-          width: 100%;
+          width:100%;
           height: 64px;
           color: #ffffff;
           border: 1px solid #FFF;
+          margin: 20px;
 
           &.active-btn {
             background: linear-gradient(91deg, #00246A -2.45%, #2199EF 97.01%);
@@ -1034,67 +1044,76 @@ display:-moz-inline-box;
   height: 300px;
   margin: auto;
 }
-.inmage{
-margin-right: 20px;
+
+.inmage {
+  margin-right: 20px;
 }
-.applpcardbuttons{
-   margin-left: 420px;
+
+.applpcardbuttons {
+  margin-left: 420px;
 }
-.needsContent{
-/* margin-right: 100px; */
-margin-top: -15px;
+
+.needsContent {
+  /* margin-right: 100px; */
+  margin-top: -15px;
 }
-.intext{
+
+.intext {
   margin-left: -50px;
   width: 400px;
 }
 
 @media only screen and (max-width: 767px) {
-  .applpcardbuttons{
+  .applpcardbuttons {
     margin-left: -26px;
- }
+  }
 
- .intext{
-  margin-left: 10px;
-   width: 200px;
-   text-align: center;
- }
+  .intext {
+    margin-left: 10px;
+    width: 200px;
+    text-align: center;
+  }
+
   .application-process-section {
     .heading {
-      margin-top: 30px /* how it works */
+      margin-top: 30px
+        /* how it works */
     }
   }
-  .hero-section .content p{
+
+  .hero-section .content p {
     width: 300px;
   }
-  .pinFooter{
+
+  .pinFooter {
     margin-left: 0px;
   }
 
   .a {
     margin-top: 430px;
     margin-left: -40px;
-}
+  }
 
   .about-us-container {
     & .content {
 
-        .heading {
-          margin-top: 40px;
-            opacity: 0.8;
-            color: #1B9BDC;
-            text-align: center;
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 72px;
-        }
+      .heading {
+        margin-top: 40px;
+        opacity: 0.8;
+        color: #1B9BDC;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 72px;
+      }
     }
-}
+  }
+
   .application-process-card {
 
-  
+
     padding: 15px;
-}
+  }
 
   .lending {
     width: 400px;
@@ -1158,12 +1177,13 @@ margin-top: -15px;
     }
   }
 
-  .App{
+  .App {
     overflow: hidden;
   }
+
   .products-hero-section {
     padding-bottom: 100px;
-  
+
   }
 
   .description-section {
@@ -1203,21 +1223,23 @@ margin-top: -15px;
 
   .brand-primary {
     margin-left: 30px;
-    width:300px;
+    width: 300px;
   }
-  .brand-secondary{
+
+  .brand-secondary {
     margin-left: 30px;
-    width:300px;
+    width: 300px;
   }
-  .end{
+
+  .end {
     margin-left: -5px;
   }
 
   .hero-content {
     margin-left: 15px;
   }
-  
-   
+
+
   .hero-section .content h6 {
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent;
@@ -1229,12 +1251,13 @@ margin-top: -15px;
     margin-bottom: 1rem;
     line-height: normal;
     width: 300px;
-        margin-top: 50px;
+    margin-top: 50px;
     /* font-family: "General Sans Variable"; */
   }
 
   p {
-    margin-left: 15px;;
+    margin-left: 15px;
+    ;
   }
 
   .hero-section .content {
@@ -1268,7 +1291,7 @@ margin-top: -15px;
         span {
           width: 36px;
           height: 36px;
-          display: flex;
+          display: block;
           background: rgba(255, 255, 255, 0.40);
           border-radius: 40px;
           font-size: 24px;
@@ -1398,7 +1421,7 @@ margin-top: -15px;
           font-size: 20px;
           font-weight: 600;
           margin-bottom: 24px;
-      }
+        }
 
         span {
           color: #FFF;
@@ -1418,6 +1441,8 @@ margin-top: -15px;
 
         & .tab-buttons {
           & button {
+            margin-left: 30px;
+            width: 300px;
 
             &.active-btn {
               background: linear-gradient(91deg, #00246A -2.45%, #2199EF 97.01%);
@@ -1541,17 +1566,19 @@ margin-top: -15px;
 
 /* Blogs styling */
 
-.feature-card{
+.feature-card {
   border: 1px solid hsl(0, 0%, 80%);
   border-radius: 20px;
   width: fit-content;
- align-self: center;
+  align-self: center;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102)
 }
-.blogcard{
+
+.blogcard {
   padding: 20px;
 }
-.blogs-section .content h6{
+
+.blogs-section .content h6 {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
@@ -1567,6 +1594,7 @@ margin-top: -15px;
   align-items: center;
   text-align: center;
 }
+
 h5 {
   margin-top: 12px;
   font-size: 32px;
@@ -1576,8 +1604,9 @@ h5 {
   font-family: Poppins;
   color: #ffffff;
 }
-.datefaq{
-    margin-top: 12px;
+
+.datefaq {
+  margin-top: 12px;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 16px;
@@ -1585,14 +1614,13 @@ h5 {
   margin-left: 10px;
   color: #ffffff;
 }
+
 h1 {
   color: #1B9BDC;
   text-align: center;
-    margin-top: 12px;
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    font-family: Poppins;
+  margin-top: 12px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: Poppins;
 }
-
-
