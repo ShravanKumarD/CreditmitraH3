@@ -7,16 +7,17 @@ function UserFeedback(props) {
       {
         comment: " No crazy paperwork, just a quick online application and the money was in my account the same day.",
         userName: "Kunal P.",
-        img : require('./../../assets/images/avatar1.png')
+        img :require('./../../assets/images/avatar2.png')
       },
       {
         comment: "Very simple and instructions were clearly present. No hidden charges were present and very low interest rates.",
         userName: "Rashmi.",
-        img : require('./../../assets/images/avatar2.png')
+        img : 
+        require('./../../assets/images/avatar1.png')
       },
       {
         comment: "I took the loan from Creditmitra many times. Very soft spoken and professional staff.",
-        userName: "Neha K.",
+        userName: "Nehal K.",
         img : require('./../../assets/images/avatar3.png')
       },
     ];

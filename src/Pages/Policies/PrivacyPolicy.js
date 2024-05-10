@@ -6,33 +6,33 @@ function PrivacyPolicy(props) {
     <>
     <Header routePath={props.routePath} />
     
-    <div style={{color:"#fff",padding:"6rem"}}>
-   <h1 className="text-center mb-5">Privacy and Security Policy</h1>
-    <p><b>(last updated on 1st May, 2024)</b></p>
+    <div className="main" style={{color:"#fff",padding:"1rem"  }}>
+   <h1 className="text-center ">Privacy and Security Policy</h1>
+    <p className="tnc"><b>(last updated on 1st May, 2024)</b></p>
     
-    <p><b>Introduction</b></p>
-    <p>This privacy and security policy (“Privacy Policy”) establishes the terms and conditions under which Samcint Solutions Private Limited  (“the Company” or “CreditMitra” or “we” or “us” or “our”) with registered address at [2nd Floor, No. 20, H.No. 1-65/A/1/62, Survey No 41&42, Kailashnath Arcade, Kavuri Hills, Guttala Begumpet Village, Serilingampally, Jubli Hills, Hyderabad, Telangana, 500081, India], processes the personal information that you provide us with when using the website “CreditMitra.in” (“the Website” or “site”), the mobile application or app “CreditMitra”, understood as the software application designed to be used on smartphones, tablets or other mobile devices (“App”) or other applications, software, digital media, storage medium, or functionalities related to our brand (collectively referred to as “Platform”).</p>
+    <p className="tnc"><b>Introduction</b></p>
+    <p className="tnc">This privacy and security policy (“Privacy Policy”) establishes the terms and conditions under which Samcint Solutions Private Limited  (“the Company” or “CreditMitra” or “we” or “us” or “our”) with registered address at [2nd Floor, No. 20, H.No. 1-65/A/1/62, Survey No 41&42, Kailashnath Arcade, Kavuri Hills, Guttala Begumpet Village, Serilingampally, Jubli Hills, Hyderabad, Telangana, 500081, India], processes the personal information that you provide us with when using the website “CreditMitra.in” (“the Website” or “site”), the mobile application or app “CreditMitra”, understood as the software application designed to be used on smartphones, tablets or other mobile devices (“App”) or other applications, software, digital media, storage medium, or functionalities related to our brand (collectively referred to as “Platform”).</p>
     
-    <p>Samcint Solutions Private Limited has developed the Platform through which you may apply for a loan to be granted by various non-banking financial companies or banks (“Lender” or “Lending Partner”), based on the loan agreement to be executed between you and the Lender. The Lender has further appointed and authorized us to collect, store, authenticate, verify and share the Personal Information (as defined below) as may be required by the Lender to sanction and disburse the loan.</p>
+    <p className="tnc">Samcint Solutions Private Limited has developed the Platform through which you may apply for a loan to be granted by various non-banking financial companies or banks (“Lender” or “Lending Partner”), based on the loan agreement to be executed between you and the Lender. The Lender has further appointed and authorized us to collect, store, authenticate, verify and share the Personal Information (as defined below) as may be required by the Lender to sanction and disburse the loan.</p>
     
-    <p><b>Our Commitment</b></p>
-    <p>Maintaining your right to privacy and the security of your data is a priority at Samcint Solutions Private Limited. We are committed to respecting your privacy rights. We pledge to handle your data in a fair and lawful manner at all times. We are also dedicated to being transparent about what data we collect about you and how we use it. By visiting and accessing the Platform and availing the loan facilitation services provided by us, you are deemed to have read, acknowledged and accepted all the provisions stated here in the Privacy Policy, including any changes we may make from time to time.</p>
+    <p className="tnc"><b>Our Commitment</b></p>
+    <p className="tnc">Maintaining your right to privacy and the security of your data is a priority at Samcint Solutions Private Limited. We are committed to respecting your privacy rights. We pledge to handle your data in a fair and lawful manner at all times. We are also dedicated to being transparent about what data we collect about you and how we use it. By visiting and accessing the Platform and availing the loan facilitation services provided by us, you are deemed to have read, acknowledged and accepted all the provisions stated here in the Privacy Policy, including any changes we may make from time to time.</p>
     
-    <p>Our commitment to privacy and data protection is demonstrated through the preparation of this Privacy Policy, which aligns with the legal frameworks and guidelines of the Information Technology Act, 2000 (IT Act), Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 and Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, Reserve Bank of Indian Guidelines on Digital Lending and all other relevant acts, regulations and rules that mandate the publication of a privacy policy for handling and processing of personal information, including sensitive personal data or information.</p>
+    <p className="tnc">Our commitment to privacy and data protection is demonstrated through the preparation of this Privacy Policy, which aligns with the legal frameworks and guidelines of the Information Technology Act, 2000 (IT Act), Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 and Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021, Reserve Bank of Indian Guidelines on Digital Lending and all other relevant acts, regulations and rules that mandate the publication of a privacy policy for handling and processing of personal information, including sensitive personal data or information.</p>
     
-    <p>This Privacy Policy provides you with the details about the manner in which your data is collected, stored and used by us. You are advised to read this Privacy Policy carefully. By sharing any information on the Platform, you expressly signify that you have read, understood and agree to be bound by this Privacy Policy. If you do not agree to the terms of this Privacy Policy (in whole or part), kindly do not use/ access/ install the Platform (or any part thereof); or share any information on the Platform. By accessing the Platform/sharing any information on the Platform, you provide your express agreement and informed consent to all the terms and conditions as stated under this Privacy Policy and as may be amended from time to time. The Terms and Conditions of our services have been provided separately on the Platform and shall be read with this Privacy Policy as they are an integral part of our services.</p>
+    <p className="tnc">This Privacy Policy provides you with the details about the manner in which your data is collected, stored and used by us. You are advised to read this Privacy Policy carefully. By sharing any information on the Platform, you expressly signify that you have read, understood and agree to be bound by this Privacy Policy. If you do not agree to the terms of this Privacy Policy (in whole or part), kindly do not use/ access/ install the Platform (or any part thereof); or share any information on the Platform. By accessing the Platform/sharing any information on the Platform, you provide your express agreement and informed consent to all the terms and conditions as stated under this Privacy Policy and as may be amended from time to time. The Terms and Conditions of our services have been provided separately on the Platform and shall be read with this Privacy Policy as they are an integral part of our services.</p>
     
-    <p><b>Definitions</b></p>
-    <p>“Personal Information” means information that relates to a natural person, which, either directly or indirectly, in combination with other information available or likely to be available with a body corporate, is capable of identifying such person. Such Personal Information may include your name, email address, date of birth, residence address, telephone number, credit or debit card number, your financial information, password, device information, identity information, login-in credentials of Third Party platforms, location information, and/or log information.</p>
+    <p className="tnc"><b>Definitions</b></p>
+    <p className="tnc">“Personal Information” means information that relates to a natural person, which, either directly or indirectly, in combination with other information available or likely to be available with a body corporate, is capable of identifying such person. Such Personal Information may include your name, email address, date of birth, residence address, telephone number, credit or debit card number, your financial information, password, device information, identity information, login-in credentials of Third Party platforms, location information, and/or log information.</p>
     
-    <p>Provided that, any information that is freely available or accessible in public domain or furnished under any law for the time being in force shall not be regarded as sensitive personal data or information for the purposes of this Privacy Policy.</p>
+    <p className="tnc">Provided that, any information that is freely available or accessible in public domain or furnished under any law for the time being in force shall not be regarded as sensitive personal data or information for the purposes of this Privacy Policy.</p>
     
-    <p>“Third Party” refers to an entity that is not the Company or its direct customer.</p>
+    <p className="tnc">“Third Party” refers to an entity that is not the Company or its direct customer.</p>
     
-    <p>This Privacy Policy provides you with information about:</p>
+    <p className="tnc">This Privacy Policy provides you with information about:</p>
     
-    <p><b>1. What Personal Information We Collect</b></p>
-    <p>We will only collect information that is necessary and needed for the specified, explicit and lawful purposes of rendering our services and will not further process it in a manner that is incompatible with those purposes. We may collect the following types of information:</p>
+    <p className="tnc"><b>1. What Personal Information We Collect</b></p>
+    <p className="tnc">We will only collect information that is necessary and needed for the specified, explicit and lawful purposes of rendering our services and will not further process it in a manner that is incompatible with those purposes. We may collect the following types of information:</p>
     
     <ol>
     <li>For the purpose of providing services to you, we require you to register yourself on our Platform. If you choose to access/register yourself on our Platform you are required to share your information with us or upload on our Platform including your contact information (e.g.: name, date of birth, gender, photo, postal or e-mail address, fax number, phone number, education, occupation, account details, identification documents, banking information such as salary slips, bank statements, PAN card, bank account number, payment information, or any other information/documents for KYC compliance). This information is also necessary to communicate with you for the loan application process.</li>
@@ -48,24 +48,24 @@ function PrivacyPolicy(props) {
     <li>Usage Information: We use tracking tools like Google Analytics, Google Webmaster, browser cookies etc. for collecting information about your usage of our Website.</li>
     </ol>
     
-    <p>This list is not exhaustive and, in specific instances we may need to collect additional data for the purposes set out in this Privacy Policy. However, one-time access may be required for the camera, microphone, location or any other facility necessary for the purpose of on-boarding/ fulfilling KYC requirements. Further, any information exchanged by you with us in the form of written communication, responses to emails, feedback required from you, participation in discussions, etc. is handled with confidentiality.</p>
+    <p className="tnc">This list is not exhaustive and, in specific instances we may need to collect additional data for the purposes set out in this Privacy Policy. However, one-time access may be required for the camera, microphone, location or any other facility necessary for the purpose of on-boarding/ fulfilling KYC requirements. Further, any information exchanged by you with us in the form of written communication, responses to emails, feedback required from you, participation in discussions, etc. is handled with confidentiality.</p>
     
-    <p>We may collect other types of Personal Information in exceptional circumstances only. If we do need to process additional types of Personal Information about you, we will make sure that you are informed about the processing of your Personal Information and that there is a valid legal basis for doing so (e.g. your consent).</p>
+    <p className="tnc">We may collect other types of Personal Information in exceptional circumstances only. If we do need to process additional types of Personal Information about you, we will make sure that you are informed about the processing of your Personal Information and that there is a valid legal basis for doing so (e.g. your consent).</p>
     
-    <p><b>2. Exception to Our Collection of Your Personal Information</b></p>
-    <p><b>2.1.</b> We do not collect certain categories of Personal Information, such as your details relating to your race or ethnicity, religious or philosophical beliefs, biometric information, sexual orientation, political opinions, or information about your physical, physiological, or mental health condition, medical records and history or any genetic information.</p>
+    <p className="tnc"><b>2. Exception to Our Collection of Your Personal Information</b></p>
+    <p className="tnc"><b>2.1.</b> We do not collect certain categories of Personal Information, such as your details relating to your race or ethnicity, religious or philosophical beliefs, biometric information, sexual orientation, political opinions, or information about your physical, physiological, or mental health condition, medical records and history or any genetic information.</p>
     
-    <p><b>2.2.</b> Children's Privacy: Our service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from children under the age of 13 years. If you are a parent or guardian and you are aware that your child has or children have provided us with Personal Information, please contact us at support@creditmitra.in. If we become aware that we have collected Personal Information from children under age 13 without verification of parental consent, we take immediate steps to remove such Personal Information from our Platform.</p>
+    <p className="tnc"><b>2.2.</b> Children's Privacy: Our service does not address anyone under the age of 18. We do not knowingly collect personally identifiable information from children under the age of 13 years. If you are a parent or guardian and you are aware that your child has or children have provided us with Personal Information, please contact us at support@creditmitra.in. If we become aware that we have collected Personal Information from children under age 13 without verification of parental consent, we take immediate steps to remove such Personal Information from our Platform.</p>
     
-    <p><b>3. Personal Information You Provide Us</b></p>
-    <p><b>3.1.</b> Please bear in mind that before availing any services on the Platform, you must read this Privacy Policy. You may choose not to provide certain Personal Information or withdraw the consent or ask us to delete such information collected or restrict disclosure to Third Parties subsequently with respect to such Personal Information by sending a written intimation. However, not providing certain compulsory information or withdrawing the consent may mean that it will not be possible to manage your registration as a user or to use certain functionalities available through the Platform.</p>
+    <p className="tnc"><b>3. Personal Information You Provide Us</b></p>
+    <p className="tnc"><b>3.1.</b> Please bear in mind that before availing any services on the Platform, you must read this Privacy Policy. You may choose not to provide certain Personal Information or withdraw the consent or ask us to delete such information collected or restrict disclosure to Third Parties subsequently with respect to such Personal Information by sending a written intimation. However, not providing certain compulsory information or withdrawing the consent may mean that it will not be possible to manage your registration as a user or to use certain functionalities available through the Platform.</p>
     
-    <p><b>3.2.</b> You hereby guarantee that the Personal Information provided is true and exact, and agree to report any change or modification thereto. If you provide us with the Personal Information of Third Parties, you shall be responsible for having informed them and obtained their consent for these details to be provided for the purposes indicated in the corresponding provisions of this Privacy Policy. Any loss or damage caused to the Platform, to the Company or to any Third Party through the communication of erroneous, inaccurate or incomplete information on the registration forms shall be your sole responsibility.</p>
+    <p className="tnc"><b>3.2.</b> You hereby guarantee that the Personal Information provided is true and exact, and agree to report any change or modification thereto. If you provide us with the Personal Information of Third Parties, you shall be responsible for having informed them and obtained their consent for these details to be provided for the purposes indicated in the corresponding provisions of this Privacy Policy. Any loss or damage caused to the Platform, to the Company or to any Third Party through the communication of erroneous, inaccurate or incomplete information on the registration forms shall be your sole responsibility.</p>
     
-    <p><b>3.3.</b> The Personal Information provided by you will be collected and retained, on behalf of our Lending Partner. You hereby consent that we may process and disclose Personal Information to our Lending Partners, our affiliates, Third-Party service providers and credit bureaus for the purposes stated in this Privacy Policy and as maybe communicated to you.</p>
+    <p className="tnc"><b>3.3.</b> The Personal Information provided by you will be collected and retained, on behalf of our Lending Partner. You hereby consent that we may process and disclose Personal Information to our Lending Partners, our affiliates, Third-Party service providers and credit bureaus for the purposes stated in this Privacy Policy and as maybe communicated to you.</p>
     
 
-    <p><b>4. Purpose and Processing of Your Personal Information <br /></b></p>
+    <p className="tnc"><b>4. Purpose and Processing of Your Personal Information <br /></b></p>
     <table border="1" cellspacing="0" cellpadding="5">
         <thead>
             <tr>
@@ -198,9 +198,9 @@ function PrivacyPolicy(props) {
         </tbody>
     </table>
 
-    <p><b> <br /></b></p>
+    <p className="tnc"><b> <br /></b></p>
 
-    <p><b>5. We may disclose your Personal Information <br /></b></p>
+    <p className="tnc"><b>5. We may disclose your Personal Information <br /></b></p>
     <table border="1" cellspacing="0" cellpadding="5">
         <thead>
             <tr>
@@ -214,11 +214,11 @@ function PrivacyPolicy(props) {
                 <td>1</td>
                 <td>Affiliated Companies</td>
                 <td>
-                    <p>a. Product research and development and enhance our products and services, making them
+                    <p className="tnc">a. Product research and development and enhance our products and services, making them
                         more relevant and beneficial to you.</p>
-                    <p>b. To promote and advertise relevant products.</p>
-                    <p>c. Infrastructure and delivery system improvements.</p>
-                    <p>If our affiliates intend to use your data for purposes not outlined in this Privacy
+                    <p className="tnc">b. To promote and advertise relevant products.</p>
+                    <p className="tnc">c. Infrastructure and delivery system improvements.</p>
+                    <p className="tnc">If our affiliates intend to use your data for purposes not outlined in this Privacy
                         Policy, they will provide you with appropriate notice and seek your explicit consent
                         before using your data for such purposes.</p>
                 </td>
@@ -227,7 +227,7 @@ function PrivacyPolicy(props) {
                 <td>2</td>
                 <td>Lender</td>
                 <td>
-                    <p>We contract with Lender to facilitate the provisioning of loan services offered by such
+                    <p className="tnc">We contract with Lender to facilitate the provisioning of loan services offered by such
                         Lender to you on the Platform. We will only disclose such information to the Lender that
                         is necessary for you to use the Platform and transact with the Lender and to the extent
                         the Lender requires such information to assess your suitability for a loan, grant a loan
@@ -238,7 +238,7 @@ function PrivacyPolicy(props) {
                 <td>3</td>
                 <td>Third Party Service Providers</td>
                 <td>
-                    <p>Third Party Service Providers who provide services to CreditMitra such as website
+                    <p className="tnc">Third Party Service Providers who provide services to CreditMitra such as website
                         hosting, data analysis, payment processing, infrastructure provision, information
                         technology services, due-diligence, customer service, e-mail delivery services, credit
                         card processing, auditing, training, and other similar services. (These third parties
@@ -251,7 +251,7 @@ function PrivacyPolicy(props) {
                 <td>4</td>
                 <td>Administrators</td>
                 <td>
-                    <p>We might provide your Personal Information to our management team or administration
+                    <p className="tnc">We might provide your Personal Information to our management team or administration
                         department to enhance your experience with us and assist you 24*7.</p>
                 </td>
             </tr>
@@ -259,7 +259,7 @@ function PrivacyPolicy(props) {
                 <td>5</td>
                 <td>Third Party</td>
                 <td>
-                    <p>In the event of any reorganization, merger, sale, joint venture, assignment, transfer or
+                    <p className="tnc">In the event of any reorganization, merger, sale, joint venture, assignment, transfer or
                         other disposition of all or any portion of our business, assets or stock (including in
                         connection with any bankruptcy or similar proceedings).</p>
                 </td>
@@ -268,16 +268,16 @@ function PrivacyPolicy(props) {
                 <td>6</td>
                 <td>Legislatives & Credit Information Bureaus</td>
                 <td>
-                    <p>a. under applicable law, including laws outside your country of residence;</p>
-                    <p>b. to comply with legal process;</p>
-                    <p>c. to respond to requests from public and government authorities including public and
+                    <p className="tnc">a. under applicable law, including laws outside your country of residence;</p>
+                    <p className="tnc">b. to comply with legal process;</p>
+                    <p className="tnc">c. to respond to requests from public and government authorities including public and
                         government authorities outside your country of residence;</p>
-                    <p>d. to enforce Terms and Conditions of the Platform;</p>
-                    <p>e. to credit information companies;</p>
-                    <p>f. to protect our operations or those of any of our affiliates;</p>
-                    <p>g. to protect our rights, privacy, safety or property, and/or that of our affiliates, you
+                    <p className="tnc">d. to enforce Terms and Conditions of the Platform;</p>
+                    <p className="tnc">e. to credit information companies;</p>
+                    <p className="tnc">f. to protect our operations or those of any of our affiliates;</p>
+                    <p className="tnc">g. to protect our rights, privacy, safety or property, and/or that of our affiliates, you
                         or others;</p>
-                    <p>h. to allow us to pursue available remedies or limit the damages that we may sustain.</p>
+                    <p className="tnc">h. to allow us to pursue available remedies or limit the damages that we may sustain.</p>
                 </td>
             </tr>
         </tbody>
@@ -287,18 +287,18 @@ function PrivacyPolicy(props) {
     only for specific assigned purposes and will be disposing the information in a secured manner
     consistent with the Company’s policies.
     <br/>
-    <p><b>6. How We Protect Your Personal Information</b></p>
-    <p><b>6.1.</b> We are committed to protecting the privacy and the confidentiality of the Personal Information
+    <p className="tnc"><b>6. How We Protect Your Personal Information</b></p>
+    <p className="tnc"><b>6.1.</b> We are committed to protecting the privacy and the confidentiality of the Personal Information
         you share with us. We implement appropriate security measures to protect against unauthorized
         access, alteration, disclosure, or destruction of your personal information. This includes physical,
         electronic, and managerial procedures to safeguard and secure the information we collect.</p>
-    <p><b>6.2.</b> All your Personal Information is stored on secure servers that are protected in controlled facilities
+    <p className="tnc"><b>6.2.</b> All your Personal Information is stored on secure servers that are protected in controlled facilities
         situated in India. We shall only store basic personal information such as name, address, contact
         information etc. which are required to be stored for carrying out our services. For other personal
         information collected as part of our services being provided to the Lending Partners, we shall
         collect such information upon the instructions of the Lending Partners and thereafter transfer the
         same to the Lending Partners upon the completion of the preliminary onboarding.</p>
-    <p><b>6.3.</b> We classify your data based on importance and sensitivity, and ensure that your Personal
+    <p className="tnc"><b>6.3.</b> We classify your data based on importance and sensitivity, and ensure that your Personal
         Information has the highest security level. We maintain appropriate technical and organizational
         security safeguards designed to protect the Personal Information we process against accidental,
         unlawful or unauthorized destruction, loss, alteration, access, disclosure or use including
@@ -306,56 +306,56 @@ function PrivacyPolicy(props) {
         operational and physical security control measures as mandated under applicable Indian laws for
         the protection of Personal Information and to prevent unauthorised use or disclosure of Personal
         Information.</p>
-    <p><b>6.4.</b> When you send or receive data from your device to our servers, we make sure they are encrypted
+    <p className="tnc"><b>6.4.</b> When you send or receive data from your device to our servers, we make sure they are encrypted
         using Secure Sockets Layer (“SSL”) and other algorithms.</p>
-    <p><b>6.5.</b> We will take all practicable steps to safeguard your Personal Information. However, you should
+    <p className="tnc"><b>6.5.</b> We will take all practicable steps to safeguard your Personal Information. However, you should
         be aware that the use of the Internet is not entirely secure, and for this reason, we cannot guarantee
         the security or integrity of any Personal Information which is transferred from you or to you via
         the Internet.</p>
-    <p><b>6.6.</b> We do not sell, trade, or rent users' personal information to Third Parties. However, we may share
+    <p className="tnc"><b>6.6.</b> We do not sell, trade, or rent users' personal information to Third Parties. However, we may share
         necessary information with trusted third parties who assist us in providing our services, subject
         to strict confidentiality obligations.</p>
 
-    <p><b>7. How Long We Retain Personal Information</b></p>
-    <p><b>7.1.</b> We retain the Personal Information for as long as it is necessary to fulfil the purpose for which it
+    <p className="tnc"><b>7. How Long We Retain Personal Information</b></p>
+    <p className="tnc"><b>7.1.</b> We retain the Personal Information for as long as it is necessary to fulfil the purpose for which it
         was collected as also outlined in this Privacy Policy, or as required or permitted by applicable
         law. Such information is retained for such period as necessary for legal, regulatory or accounting
         requirements.</p>
-    <p><b>7.2.</b> We shall cease to retain Personal Information or remove the means by which the Personal
+    <p className="tnc"><b>7.2.</b> We shall cease to retain Personal Information or remove the means by which the Personal
         Information can be associated with particular individuals, as soon as it is reasonable to assume
         that the purpose for which that Personal Information was collected is no longer being served by
         retention of the Personal Information, and there being no outstanding payment obligations of you
         towards the Lender.</p>
-    <p><b>7.3.</b> In accordance with the applicable KYC norms in India, the data relating to KYC is required to
+    <p className="tnc"><b>7.3.</b> In accordance with the applicable KYC norms in India, the data relating to KYC is required to
         be retained for a stipulated time period (five (5) years, as of February 2024). Accordingly, we
         will be retaining all documents and information relating to your KYC.</p>
 
-    <p><b>8. Your Rights</b></p>
-    <p><b>8.1.</b> Your rights under applicable law may include access to the Personal Information we process about you,
+    <p className="tnc"><b>8. Your Rights</b></p>
+    <p className="tnc"><b>8.1.</b> Your rights under applicable law may include access to the Personal Information we process about you,
         the right to have such Personal Information corrected/modified, updated or erased, the right to restrict
         the processing of your Personal Information, as well as the right to data portability.</p>
-    <p><b>8.2.</b> Where we have obtained your consent for the processing of your Personal Information, you have the
+    <p className="tnc"><b>8.2.</b> Where we have obtained your consent for the processing of your Personal Information, you have the
         right to withdraw your consent at any time. This will not affect the lawfulness of the processing that has
         happened based on your consent prior to the withdrawal.</p>
-    <p><b>8.3.</b> You have the right to give or deny consent for specific data usage, restrict disclosure to third
+    <p className="tnc"><b>8.3.</b> You have the right to give or deny consent for specific data usage, restrict disclosure to third
         parties,
         determine data retention periods, and revoke previously granted consent.</p>
-    <p><b>8.4.</b> You also have the right to object, at any time, to the processing of your Personal Information which
+    <p className="tnc"><b>8.4.</b> You also have the right to object, at any time, to the processing of your Personal Information which
         is
         based on the Company’s legitimate interests. Further, if you wish to remove all your Personal
         Information from the Platform, you can do so by opting out of the Platform and uninstalling the Platform
         from your system(s).</p>
-    <p><b>8.5.</b> To exercise these rights, you should make a written request using our contact details set out below
+    <p className="tnc"><b>8.5.</b> To exercise these rights, you should make a written request using our contact details set out below
         and
         it may result in suspension or termination of our services being provided to you.</p>
 
-    <p><b>9. Governing Statue</b></p>
-    <p><b>9.1.</b> This Privacy Policy is governed by and is compliant with the applicable laws Republic of India, in
+    <p className="tnc"><b>9. Governing Statue</b></p>
+    <p className="tnc"><b>9.1.</b> This Privacy Policy is governed by and is compliant with the applicable laws Republic of India, in
         order
         to protect Personal Information of the end-user(s) of the services.</p>
 
-    <p><b>10. Cookies</b></p>
-    <p><b>10.1.</b> Our Platform uses cookies. A cookie is a small text file, which is stored on your computer, mobile
+    <p className="tnc"><b>10. Cookies</b></p>
+    <p className="tnc"><b>10.1.</b> Our Platform uses cookies. A cookie is a small text file, which is stored on your computer, mobile
         phone,
         tablet etc. in order to recognize your computer at recurring visits. The cookie may transmit information
         via your browser with the purpose of authenticating or identifying the computer (via e.g. the IP address)
@@ -363,18 +363,18 @@ function PrivacyPolicy(props) {
         server receives a request from a computer which stores a cookie from the website, the server is able to
         use the information stored in the cookie in combination with the information stored on the server.</p>
 
-    <p><b>11. Updates to the Privacy Policy</b></p>
-    <p><b>11.1.</b> We keep our Privacy Policy under regular review and may update this Privacy Policy to reflect
+    <p className="tnc"><b>11. Updates to the Privacy Policy</b></p>
+    <p className="tnc"><b>11.1.</b> We keep our Privacy Policy under regular review and may update this Privacy Policy to reflect
         changes to our information practices.</p>
-    <p><b>11.2.</b> We reserve the right to update and amend this Privacy Policy at any time. Any changes made
+    <p className="tnc"><b>11.2.</b> We reserve the right to update and amend this Privacy Policy at any time. Any changes made
         will be effective immediately upon posting the revised policy on our Platform. It is your
         responsibility to review this policy periodically and remain informed about any updates. Your
         continued use of services on the Platform will be taken as acceptance of the updated Privacy
         Policy. You acknowledge that no knowledge of the revised Privacy Policy shall not be a defence
         in any proceedings with regard to the Privacy Policy.</p>
 
-    <p><b>12. Terms and Conditions of Platform</b></p>
-    <p><b>12.1.</b> If you choose to avail services at our Platform, your transaction and any dispute over privacy is
+    <p className="tnc"><b>12. Terms and Conditions of Platform</b></p>
+    <p className="tnc"><b>12.1.</b> If you choose to avail services at our Platform, your transaction and any dispute over privacy is
         subject
         to this Privacy Policy and our Terms and Conditions of Platform, including limitations on damages,
         resolution of disputes, and application of the prevailing law in India. If you have any concern about
@@ -386,8 +386,8 @@ function PrivacyPolicy(props) {
         right to take appropriate recourse to such remedies as would be available to it under various
         statutes.</p>
 
-    <p><b>13. Grievance Officer</b></p>
-    <p><b>13.1.</b> If you have any comments, inquiries or concerns/complaints about this Privacy Policy or Terms
+    <p className="tnc"><b>13. Grievance Officer</b></p>
+    <p className="tnc"><b>13.1.</b> If you have any comments, inquiries or concerns/complaints about this Privacy Policy or Terms
         and Conditions or other policies, or to exercise your rights, you may contact our Grievance
         Officer, Murthy Balaji at grievance@creditmitra.in. The Grievance Officer can be contacted
         between 09:30 a.m. to 6:00 p.m. from Monday to Friday except on public holidays.</p>

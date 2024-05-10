@@ -5,8 +5,8 @@ function GrievienceRedressal(props) {
   return (
     <>
        <Header routePath={props.routePath} />
-       <div style={{color:"#fff",padding:"6rem"}}>
-      <h1 className="text-center mb-5">GRIEVANCE REDRESSAL POLICY OF CREDITMITRA</h1>
+       <div className="main" style={{color:"#fff"}}>
+      <h1 className="text-center">GRIEVANCE REDRESSAL POLICY OF CREDITMITRA</h1>
 
       <h2>PREAMBLE</h2>
       <p>

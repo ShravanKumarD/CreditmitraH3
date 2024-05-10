@@ -16,8 +16,8 @@ function ProductsHeroSection(props) {
         well-deserved treat to yourself like a refreshing getaway
       </p>
       <div className="btn-container">
-        <div className="row" style={{padding:'20px'}}>
-          <div className="col-sm-4">
+        <div className="row productsDiv">
+          <div className="col-12 col-sm-4 productsDivBtn">
             <button className="btn primary-gradient-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ function ProductsHeroSection(props) {
               100% Digital Journey
             </button>
           </div>
-          <div className="col-sm-4">
+          <div className="col-12 col-sm-4 productsDivBtn">
             <button className="btn primary-gradient-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ function ProductsHeroSection(props) {
               0 Collateral or documents
             </button>
           </div>
-          <div className="col-sm-4">
+          <div className="col-12 col-sm-4 productsDivBtn">
             <button className="btn primary-gradient-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,9 +104,9 @@ function ProductsHeroSection(props) {
 
 
 
-        <div className="row"style={{padding:'20px'}} >
+        <div className="row productsDiv" >
         <div className="col-sm-2"></div>
-          <div className="col-sm-4"><button className="btn primary-gradient-btn">
+          <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"
@@ -128,7 +128,7 @@ function ProductsHeroSection(props) {
             </svg>
             Available 24*7
           </button></div>
-          <div className="col-sm-4">  <button className="btn primary-gradient-btn">
+          <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="36"

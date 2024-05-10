@@ -358,7 +358,7 @@ text-align: center;
 }
 
 .products-hero-section {
-  padding-bottom: 230px;
+  padding-bottom: 130px; /* padding-bottom: 230px;  */
   text-align: center;
 
   small {
@@ -823,10 +823,11 @@ text-align: center;
           border: 1px solid #ffffff;
           padding: 0;
 
+
           .faq-toggler-content {
             display: flex;
             width: 100%;
-            padding: 24px;
+            padding: 14px;
             justify-content: space-between;
             align-items: center;
             color: #FFF;
@@ -918,6 +919,9 @@ text-align: center;
     top: 0;
     transform: translateX(-50%);
   }
+  .footer-data{
+    background-color: red;
+  }
 
   .footer-content {
     z-index: 1000;
@@ -942,6 +946,7 @@ text-align: center;
           font-size: 16px;
           font-weight: 600;
           margin-bottom: 16px;
+          width: auto;
         }
 
         ul {
@@ -1077,8 +1082,58 @@ text-align: center;
   margin-left: -50px;
   width: 400px;
 }
+.rounded-circle{
+  align-self: center;
+} 
+
+.text-center{
+
+  background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: normal;
+  font-family: Poppins;
+  width: 100%;
+}
+
+.main {
+ padding: 6rem;
+}
+
+.productsDiv {
+  padding: 20px
+}
 
 @media only screen and (max-width: 767px) {
+  .inmage{
+    padding: 5%;
+  }
+  .main{
+    margin:-40px;
+    display: block;
+    padding: 3rem;
+  }
+  tnc {
+    width: 100%;
+    text-align: center;
+    margin-left: 3%;
+    padding-right: 5%;
+} 
+  .text-center{
+   width:120%;
+    text-align:-webkit-match-parent;
+    padding-right: 30%;
+  }
+
+  .img-fluid{
+    align-self: center;
+    max-width: 80%;
+  }
+  .feedback-ratings{
+    padding:8%;
+  }
   .aboutus{
     margin-top: 20px;
   }
@@ -1592,8 +1647,25 @@ text-align: center;
   .px-4 {
     margin-top: 20px;
   }
+  
+  .productsDiv {
+    margin: 0px -20px 0px 0px;
+    padding: 0px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+}
+.productsDivBtn {
+  display: flex;
+  justify-content: center;
 }
 
+.img-container {
+  display: flex;
+  justify-content: center
+}
 
 /* Blogs styling */
 

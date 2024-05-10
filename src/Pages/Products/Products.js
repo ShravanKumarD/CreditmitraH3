@@ -31,7 +31,8 @@ function Products(props) {
             ]}
             img={StepsImg}
           />
-          <DescriptionSection
+          
+   <DescriptionSection
             heading="Eligibility Criteria"
             points={[
               "Indian Citizen ",
@@ -41,6 +42,7 @@ function Products(props) {
             ]}
             img={StepsImg2}
           />
+       
           {/* old code */}
           <div className="btn-container text-center"></div>
           {/* new from here */}
