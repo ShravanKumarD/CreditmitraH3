@@ -1272,6 +1272,7 @@ text-align: center;
 
   .description-section {
     margin-top: -20px;
+    margin-bottom: 0px;
     display: block;
 
   }
