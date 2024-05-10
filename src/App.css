@@ -272,7 +272,7 @@ text-align: center;
     &.extra-margin-top {
       margin-top: 160px;
       font-family: Poppins;
-      font-size: 24px;
+      font-size: 36px;
     }
   }
 }
@@ -406,6 +406,7 @@ text-align: center;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 120px;
+  padding: 50px;
 
   &:last-child {
     margin-bottom: 0;
@@ -834,8 +835,8 @@ text-align: center;
             justify-content: space-between;
             align-items: center;
             color: #FFF;
-            font-size: 20px;
-            font-weight: 700;
+            font-size:16px;
+            font-weight: 500;
             line-height: normal;
 
             svg {
@@ -1191,7 +1192,7 @@ text-align: center;
 
   .application-process-card {
 
-    align-content: center;
+    /* align-content: center; */
     padding: 15px;
   }
 
@@ -1421,15 +1422,9 @@ text-align: center;
     margin: 0px;
 
     .heading {
-      /* display: none; */
-      /* margin: 32px 0;
-    color: #FFF;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 600;
     &.extra-margin-top{
-      margin-top: 10px;
-    } */
+      /* margin-top: 24px; */
+    } 
     }
   }
 

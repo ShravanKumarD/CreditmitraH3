@@ -64,11 +64,11 @@ function Footer(props) {
                 <img src={FooterImg} className='footer-globe img-fluid' />
                 <div className='footer-content'>
                     <div className='footer-container row'>
-                        <div className='col-sm-4'>
+                        <div className='col-sm-6'>
                             <img src={Logo} className='img-fluid mb-3' />
                             <p className='pinFooter'>Welcome to CreditMitra Your Gateway to Financial Empowerment! At CreditMitra, Navigate through our user-friendly platform to access a range of credit solutions tailored to your needs.</p>
                         </div>
-                        <div className='col-sm-4 navigation-container'>
+                        <div className='col-sm-6 navigation-container'>
                            {getFooterNavLinks()}
                         </div>
                     </div>
