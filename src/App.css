@@ -1191,7 +1191,7 @@ text-align: center;
 
   .application-process-card {
 
-
+    align-content: center;
     padding: 15px;
   }
 
@@ -1685,7 +1685,7 @@ text-align: center;
 }
 
 .blogcard {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .blogs-section .content h6 {
@@ -1733,4 +1733,12 @@ h1 {
   font-weight: 500;
   margin-bottom: 16px;
   font-family: Poppins;
+}
+
+h2{
+  font-size: 20px;
+}
+
+h3{
+  font-size: 20px;
 }
