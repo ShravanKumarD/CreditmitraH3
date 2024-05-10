@@ -72,7 +72,8 @@ function Header(props) {
                     handleLinkClick();
                     if (each.redirection === "/") setIsNavOpen(false);
                   }}
-                  style={{ marginLeft: '10px', color: 'white',
+                  style={{ marginLeft: '10px', color: 'white',  whiteSpace: 'nowrap',
+                  overflow: 'hidden', textOverflow: 'ellipsis',
                     ...(each.redirection === location.pathname && { color: "rgb(117.94, 208.84, 255)" })
                   }}
                 >
