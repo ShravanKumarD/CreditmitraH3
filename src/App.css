@@ -34,7 +34,7 @@ text-align: center;
 
 .page-container {
   padding: 0 88px 110px;
-
+   
   &.products-page {
     padding-right: 100px;
     padding-left: 100px;
@@ -272,6 +272,7 @@ text-align: center;
     &.extra-margin-top {
       margin-top: 160px;
       font-family: Poppins;
+      font-size: 24px;
     }
   }
 }
@@ -414,7 +415,7 @@ text-align: center;
     color: #FFF;
 
     h6 {
-      font-size: 40px;
+      font-size: 36px;
       font-weight: 700;
       margin-bottom: 44px;
       font-family: Poppins;
@@ -429,6 +430,7 @@ text-align: center;
         color: #FFF;
         font-weight: 500;
         font-family: Poppins;
+        font-size: 18px;
 
         &:last-child {
           margin-bottom: 0;
@@ -448,7 +450,7 @@ text-align: center;
       margin-top: 32px;
       color: #FFF;
       font-size: 28px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 0;
       font-family: Poppins;
     }
@@ -466,7 +468,7 @@ text-align: center;
       margin-top: 24px;
       color: #FFF;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 400;
       margin-bottom: 0;
     }
   }
@@ -602,7 +604,7 @@ text-align: center;
 
         h6 {
           color: #FFF;
-          font-size: 32px;
+          font-size: 28px;
           font-weight: 600;
           margin-bottom: 12px;
           font-family: Poppins;
@@ -610,6 +612,7 @@ text-align: center;
 
         p {
           color: #FFF;
+          margin-left:  0%;
           font-size: 20px;
           font-weight: 500;
           margin-bottom: 0;
@@ -1111,28 +1114,29 @@ text-align: center;
     padding: 5%;
   }
   .main{
-    margin:-40px;
+    /* margin:-40px; */
     display: block;
-    padding: 3rem;
+    /* padding: 3rem; */
+    width: 100%;
   }
   tnc {
-    width: 100%;
-    text-align: center;
-    margin-left: 3%;
-    padding-right: 5%;
+    /* width: 100%; */
+    /* text-align: center; */
+    /* margin-left: 3%;
+    padding-right: 5%; */
 } 
-  .text-center{
+  /* .text-center{
    width:120%;
     text-align:-webkit-match-parent;
     padding-right: 30%;
-  }
+  } */
 
   .img-fluid{
     align-self: center;
     max-width: 80%;
   }
   .feedback-ratings{
-    padding:8%;
+    padding:0%;
   }
   .aboutus{
     margin-top: 20px;
@@ -1210,6 +1214,7 @@ text-align: center;
 
   .page-container {
     padding: 0 20px 60px;
+    margin-top: -5px;
   }
 
   .header-nav a {
@@ -1228,6 +1233,8 @@ text-align: center;
   .user-feedback-section .feedback-card-container {
     flex-direction: column;
     align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 
   /* img{
@@ -1593,7 +1600,7 @@ text-align: center;
         margin-top: 32px;
         color: #FFF;
         font-size: 16px;
-        font-weight: 700;
+        font-weight: 400;
         margin-bottom: 0;
         font-family: Poppins;
       }

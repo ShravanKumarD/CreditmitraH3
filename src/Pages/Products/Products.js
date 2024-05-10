@@ -3,8 +3,9 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import ProductsHeroSection from "./ProductsHeroSection";
 import DescriptionSection from "./DescriptionSection";
-import StepsImg from "../../assets/images/Products_Page_Loan_steps.png";
-import StepsImg2 from "../../assets/images/eligiblity.png";
+import StepsImg from "./../../assets/images/mobile.png";
+// import StepsImg2 from "../../assets/images/eligiblity.png";
+import StepsImg2 from "./../../assets/images/pad.png";
 import { Link } from "react-router-dom";
 import SEO from "../SEO/SEO";
 
@@ -63,7 +64,7 @@ function Products(props) {
           <h6
             style={{
               color: "#fff",
-              fontSize: "20px",
+              fontSize: "18px",
               fontFamily: "poppins",
               marginTop: "3rem",
               textAlign: "center",
