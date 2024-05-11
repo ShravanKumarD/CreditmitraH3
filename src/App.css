@@ -1670,33 +1670,6 @@ text-align: center;
   justify-content: center
 }
 
-/* Blogs styling */
-
-.feature-card {
-  border: 1px solid hsl(0, 0%, 80%);
-  border-radius: 20px;
-  width: fit-content;
-  align-self: center;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102)
-}
-
-.blogs-section .content h6 {
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
-  background-clip: text;
-  color: transparent;
-  font-weight: 600;
-  line-height: normal;
-  width: 300px;
-  margin-top: 12px;
-  font-size: 32px;
-  margin-bottom: 16px;
-  font-family: Poppins;
-  align-items: center;
-  text-align: center;
-}
-
 h5 {
   margin-top: 12px;
   font-size: 32px;
