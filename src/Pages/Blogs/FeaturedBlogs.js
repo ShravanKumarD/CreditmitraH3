@@ -3,38 +3,39 @@ import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import SEO from "../SEO/SEO";
 import CardList from "./CardList";
+import './../../styles.css';
 
 function FeaturedBlogs(props) {
 
   // const arrayOfCards = [title, date, imageLink];
   const arrayOfCards = [
     {
-      title: "Blog 1",
+      title: "Credit Repair Guide: How It Works, Importance and Benefits",
       date: "28/08/24",
       imageLink: require("../../assets/images/blogs/blog_sample.png")
     },
     {
-      title: "Blog 2",
+      title: "Experian vs. CIBIL Score: Why are Experian and CIBIL Scores Different?",
       date: "29/08/24",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
-      title: "Blog 3",
+      title: "Avoid These Mistakes While Applying for Personal Loans",
       date: "28/08/24",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
-      title: "Blog 4",
+      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
       date: "28/08/24",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
-      title: "Blog 5",
+      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
       date: "28/08/24",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
-      title: "Blog 6",
+      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
       date: "28/08/24",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
@@ -54,7 +55,7 @@ function FeaturedBlogs(props) {
         <div className="page-container contact-us">
           <div className="blogs-section">
             <div className="content1">
-              <h1>Featured Blogs</h1>
+              <h1 className="heading">Featured Blogs</h1>
 
               <CardList cards={arrayOfCards} />
 

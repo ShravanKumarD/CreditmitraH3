@@ -1680,10 +1680,6 @@ text-align: center;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102)
 }
 
-.blogcard {
-  /* padding: 20px; */
-}
-
 .blogs-section .content h6 {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;

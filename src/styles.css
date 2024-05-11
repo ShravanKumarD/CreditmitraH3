@@ -1,3 +1,34 @@
-.blogcard{
-    background-color: red;
-}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-evenly;
+    /*  grid-gap: 20px; */
+  }
+  .grid-item{
+    padding:10px;
+  }
+  .h5{
+    font-size: 12px;
+    display:none
+  }
+  .heading {
+    background: linear-gradient(91deg, #1B9BDC -2.45%, #76D1FF 51.77%, #1B9BDC 97.01%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Poppins;
+  }
+  .blogcard{
+
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);    
+    }
+  }
+  
