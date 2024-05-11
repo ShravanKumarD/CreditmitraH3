@@ -938,11 +938,11 @@ text-align: center;
 
     .footer-container {
       display: flex;
-      gap: 2%;
+      gap: 48px;
 
       .navigation-container {
         display: flex;
-        gap: 10%;
+        gap: 64px;
         justify-content: space-between;
 
         h6 {
