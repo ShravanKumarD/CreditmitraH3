@@ -29,9 +29,8 @@
 .feature-card {
   border: 1px solid hsla(0, 0%, 80%, 50%);
   border-radius: 20px;
-  align-self: center;
   box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102);
-  text-align: center;
+  text-align: left;
   max-width: 392px;
   display: inline-block;
   margin: 10px;
@@ -89,7 +88,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+
   .blog-container {
     margin: 0px;
     padding: 0px;
