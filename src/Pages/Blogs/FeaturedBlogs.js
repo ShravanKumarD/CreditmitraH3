@@ -10,33 +10,33 @@ function FeaturedBlogs(props) {
   // const arrayOfCards = [title, date, imageLink];
   const arrayOfCards = [
     {
-      title: "Credit Repair Guide: How It Works, Importance and Benefits",
-      date: "28/08/24",
-      imageLink: require("../../assets/images/blogs/blog_sample.png")
+      title: "8 Tips to Improve Your Cibil Score",
+      date: "13th May, 2024",
+      imageLink: require("../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png")
     },
     {
-      title: "Experian vs. CIBIL Score: Why are Experian and CIBIL Scores Different?",
-      date: "29/08/24",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+      title: "Improving your CIBIL score is not rocket science",
+      date: "13th May, 2024",
+      imageLink: require("../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science.png"),
     },
     {
       title: "Avoid These Mistakes While Applying for Personal Loans",
-      date: "28/08/24",
+      date: "13th May, 2024",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
       title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "28/08/24",
+      date: "13th May, 2024",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
       title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "28/08/24",
+      date: "13th May, 2024",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
     {
       title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "28/08/24",
+      date: "13th May, 2024",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
     },
   ];
