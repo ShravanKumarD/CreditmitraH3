@@ -9,7 +9,6 @@ function ApplicationProcessingCard(props) {
                     <p>{props.description}</p>
                 </div>
                  {props.img &&<img className='inmageHome' src={props.img}/>}
-                
             </div>
     );
 }

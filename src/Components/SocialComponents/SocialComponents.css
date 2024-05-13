@@ -1,0 +1,17 @@
+/* Logic to make Social Components Desktop Work */
+@media (max-width: 576px) { 
+    .social-components-desktop {
+        display: none;
+    }
+}
+
+/* Logic to make Social components mobile work */
+.social-components-mobile {
+    display: none;
+}
+
+@media (max-width: 576px) { /* adjust the value as needed */
+    .social-components-mobile {
+        display: block;
+    }
+}

@@ -2,6 +2,10 @@ import React from 'react';
 import Logo from "../assets/images/logo.png";
 import { Link } from 'react-router-dom';
 import FooterImg from "../assets/images/footer-globe.png";
+import SocialComponentsDesktop from './SocialComponents/SocialComponentsDesktop';
+import './SocialComponents/SocialComponents.css';
+import SocialComponentsMobile from './SocialComponents/SocialComponentsMobile';
+
 
 function Footer(props) {
     function getFooterNavLinks(){
@@ -67,12 +71,13 @@ function Footer(props) {
                         <div className='col-sm-4'>
                             <img src={Logo} className='img-fluid mb-3' />
                             <p className='pinFooter'>Welcome to CreditMitra Your Gateway to Financial Empowerment! At CreditMitra, Navigate through our user-friendly platform to access a range of credit solutions tailored to your needs.</p>
-                        </div>
+                            <SocialComponentsDesktop></SocialComponentsDesktop>                        </div>
                         <div className='col-sm-4 navigation-container'>
                            {getFooterNavLinks()}
                         </div>
                     </div>
-                    <p className='copyright-text'>© 2024 CreditMitra —All Rights are Reserved</p>
+                    <SocialComponentsMobile></SocialComponentsMobile>
+                    <p className='copyright-text'>© 2024 CreditMitra — All Rights are Reserved</p>
                 </div>
             </div>
         </footer>

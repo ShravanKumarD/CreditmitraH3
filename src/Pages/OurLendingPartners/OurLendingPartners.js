@@ -44,7 +44,7 @@ function OurLendingPartners(props) {
                 <h6>A.G.F Finlease </h6>
                 <p>A.G.F Finlease (India) Limited</p>
                 <div className="website-text">
-                  Website: https://agffinlease.com
+                  Website: <a href="https://agffinlease.com/" target="_blank">https://agffinlease.com</a>
                   <br />
                   Email: support@agffinlease.in
                   <br />
