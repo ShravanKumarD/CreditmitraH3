@@ -14,6 +14,7 @@ import GrievienceRedressal from './Pages/Policies/GrievienceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
+import BlogPage from './Pages/Blogs/BlogPages/BlogPage'
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -40,6 +41,8 @@ function App() {
           <Route path='/privacypolicy' element={<PrivacyPolicy routePath="/privacypolicy" />} /> 
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
+          <Route path="/blogs/blog1" element={<BlogPage routePath="/blogs/blog1"/>} />
+
 
          
       </Routes>

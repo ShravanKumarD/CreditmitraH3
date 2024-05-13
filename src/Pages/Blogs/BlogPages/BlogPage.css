@@ -1,0 +1,54 @@
+.blog-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-content-paragraph {
+  color: white;
+}
+
+.blog-content-date {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 1.87rem;
+  font-weight: 500;
+}
+
+.blog-image-container{
+    border-radius: 2%;
+    width: 62vw;
+    max-width: 100%; /* to ensure the image doesn't overflow its container */
+}
+
+.blog-content-text {
+    margin-top: 5%; /* adjust this value as needed */
+    width: 62vw;
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: left;
+
+}
+
+.blog-content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-content-heading {
+    background: linear-gradient(91deg, #1B9BDC -2.45%, #76D1FF 51.77%, #1B9BDC 97.01%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.8rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: Poppins;
+    margin-top: 6%;
+    margin-bottom: 7%;
+}

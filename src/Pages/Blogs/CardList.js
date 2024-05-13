@@ -1,7 +1,7 @@
   import React from "react";
 
   const CardList = ({ cards }) => (
-    <div className="blog-container" style={{display:"flex", flexWrap: "wrap", justifyContent: "space-around"
+    <div className="featured-blog-container" style={{display:"flex", flexWrap: "wrap", justifyContent: "space-around"
   }}>
       {cards.map((card, index) => (
         <div key={index} className="blog-item">

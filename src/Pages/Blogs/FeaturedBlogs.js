@@ -52,7 +52,8 @@ function FeaturedBlogs(props) {
         type="article"
       />
       <section>
-        <div className="page-container blog-container">
+        {/* featured-blog prefix is used here */}
+        <div className="page-container featured-blog-container">
           <div className="blogs-section">
             <div className="content1">
               <h1 className="heading" style={{fontSize: "3.3rem", marginBottom: "5%"}}>Featured Blogs</h1>
