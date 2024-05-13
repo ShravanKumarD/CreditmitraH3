@@ -73,4 +73,25 @@
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  
+}
+
+
+@media screen and (max-width: 400px) {
+  /* making blogs responsive for small mobile screens */
+  .feature-card {
+    width: 95vw;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .blog-container {
+    margin: 0px;
+    padding: 0px;
+  }
 }
