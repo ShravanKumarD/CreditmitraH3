@@ -1,12 +1,11 @@
   import React from "react";
-  // import CardComponent from "./CardComponent"; 
-  import './../../styles.css';
 
   const CardList = ({ cards }) => (
-    <div className="grid-container">
+    <div className="blog-container" style={{display:"flex", flexWrap: "wrap", justifyContent: "space-around"
+  }}>
       {cards.map((card, index) => (
-        <div key={index} className="grid-item">
-          <div className="blogcard">
+        <div key={index} className="blog-item">
+          <div className="blog-card">
             <div className="feature-card">
               <img src={card.imageLink} alt={card.title} />
               <h5 className="blog-feature-title">{card.title}</h5>

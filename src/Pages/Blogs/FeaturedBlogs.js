@@ -52,10 +52,10 @@ function FeaturedBlogs(props) {
         type="article"
       />
       <section>
-        <div className="page-container contact-us">
+        <div className="page-container">
           <div className="blogs-section">
             <div className="content1">
-              <h1 className="heading">Featured Blogs</h1>
+              <h1 className="heading" style={{fontSize: "3.3rem", marginBottom: "5%"}}>Featured Blogs</h1>
 
               <CardList cards={arrayOfCards} />
 
