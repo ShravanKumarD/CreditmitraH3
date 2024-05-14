@@ -980,6 +980,7 @@ color: #00246A;
             a {
               color: #FFF;
               font-size: 16px;
+              text-decoration: none;
 
               &:hover {
                 text-decoration: none;

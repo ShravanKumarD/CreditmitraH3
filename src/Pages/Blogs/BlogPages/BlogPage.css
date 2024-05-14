@@ -53,6 +53,14 @@
     margin-bottom: 7%;
 }
 
+.feature-blog-link {
+  text-decoration: none;
+}
+
+.feature-blog-link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 768px) {
     .blog-content-heading {
         font-size: 2.3rem;
