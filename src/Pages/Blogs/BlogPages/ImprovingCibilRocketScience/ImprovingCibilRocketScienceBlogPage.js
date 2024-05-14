@@ -1,10 +1,10 @@
 import React from "react";
-import Footer from "../../../Components/Footer";
-import Header from "../../../Components/Header";
-import blogImage from "../../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png";
-import SEO from "../../SEO/SEO";
-import "./BlogPage.css";
-import InstantLoanWithLowCibil from "./InstantLoanWithCibil";
+import Footer from "../../../../Components/Footer";
+import Header from "../../../../Components/Header";
+import blogImage from "../../../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science_blog.png";
+import SEO from "../../../SEO/SEO";
+import "../BlogPage.css";
+import InstantLoanWithLowCibil from "./ImprovingCibilRocketScience";
 
 function Contact(props) {
   return (
@@ -22,7 +22,7 @@ function Contact(props) {
         <div className="page-container blog-content-page">
           <div className="blog-content-section">
             {/* we should decouple this image asap */}
-            <h1 className="blog-content-heading">How To Get An Instant Loans With Low CIBIL Score?</h1>
+            <h1 className="blog-content-heading">Improving your CIBIL score is not rocket science</h1>
             <div className="blog-content-date">May 14, 2024</div>
 
             <div className="blog-content-image">

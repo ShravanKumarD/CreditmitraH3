@@ -3,42 +3,37 @@ import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import SEO from "../SEO/SEO";
 import CardList from "./CardList";
-import './../../styles.css';
+import "./../../styles.css";
+
+function slugify(title) {
+  return title
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^\w-]+/g, "");
+}
 
 function FeaturedBlogs(props) {
-
   // const arrayOfCards = [title, date, imageLink];
   const arrayOfCards = [
     {
       title: "8 Tips to Improve Your Cibil Score",
       date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png")
+      imageLink: require("../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png"),
+      blogSlug: "8-tips-to-improve-your-cibil-score"
     },
     {
       title: "Improving your CIBIL score is not rocket science",
-      date: "13th May, 2024",
+      date: "14th May, 2024",
       imageLink: require("../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science.png"),
-    },
+      blogSlug: "improving-your-cibil-score-is-not-rocket-science",
+    },    
     {
-      title: "Avoid These Mistakes While Applying for Personal Loans",
-      date: "13th May, 2024",
+      title: "How to get the best personal loan interest rate available to you?",
+      date: "14th May, 2024",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
+      blogSlug: "how-to-get-the-best-personal-loan-interest-rate-available-to-you",
     },
-    {
-      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-    },
-    {
-      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-    },
-    {
-      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-    },
+    
   ];
 
   return (
@@ -56,13 +51,15 @@ function FeaturedBlogs(props) {
         <div className="page-container featured-blog-container">
           <div className="blogs-section">
             <div className="content1">
-              <h1 className="heading" style={{fontSize: "3.3rem", marginBottom: "5%"}}>Featured Blogs</h1>
+              <h1
+                className="heading"
+                style={{ fontSize: "3.3rem", marginBottom: "5%" }}
+              >
+                Featured Blogs
+              </h1>
 
               <CardList cards={arrayOfCards} />
-
             </div>
-
-            
           </div>
         </div>
         <Footer />

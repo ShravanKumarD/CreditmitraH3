@@ -26,7 +26,7 @@
 .blog-content-text {
     margin-top: 5%; /* adjust this value as needed */
     width: 62vw;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: "Poppins", sans-serif;
     color: white;
     text-align: left;
@@ -51,4 +51,49 @@
     font-family: Poppins;
     margin-top: 6%;
     margin-bottom: 7%;
+}
+
+@media screen and (max-width: 768px) {
+    .blog-content-heading {
+        font-size: 2.3rem;
+    }
+
+    .blog-content-date {
+        font-size: 1.4rem;
+    }
+
+    .blog-content-text {
+        font-size: 1.2rem;
+        width: 90vw;
+    }
+
+    .blog-content-text p {
+      margin-left: 0;
+    }
+
+    .blog-image-container {
+        width: 90vw;
+        margin-left: 0px;
+    }
+  
+}
+
+@media screen and (max-width: 915px) and (min-width: 769px) {
+    .blog-content-heading {
+        font-size: 2.8rem;
+    }
+
+    .blog-content-date {
+        font-size: 1.6rem;
+    }
+
+    .blog-content-text {
+        font-size: 1.3rem;
+        width: 80vw;
+    }
+
+    .blog-image-container {
+        width: 80vw;
+    }
+  
 }

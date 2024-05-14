@@ -15,7 +15,8 @@ import GrievienceRedressal from './Pages/Policies/GrievienceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
-import BlogPage from './Pages/Blogs/BlogPages/BlogPage'
+import InstantLoanWithCibilBlogPage from './Pages/Blogs/BlogPages/InstantLoanWithCibil/InstantLoanWithCibilBlogPage'
+import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/ImprovingCibilRocketScience/ImprovingCibilRocketScienceBlogPage'
 
 import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
 import InstantPersonalLoan from './Pages/Products/VariousPersonalLoans/InstantPersonalLoan';
@@ -50,12 +51,9 @@ function App() {
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
           <Route path="/blogs/blog1" element={<BlogPage routePath="/blogs/blog1"/>} />
-          <Route path='/InstantPersonalLoan' element={<InstantPersonalLoan routePath="/InstantPersonalLoan"/>}/>
-          <Route path='/PersonalLoanforSalaried' element={<PersonalLoanforSalaried routePath="/PersonalLoanforSalaried"/>}/>
-          <Route path='/WeddingLoan' element={<WeddingLoan routePath="/WeddingLoan"/>}/>
-          <Route path='/TravelLoan' element={<TravelLoan routePath="/TravelLoan"/>}/>
-          <Route path='/MedicalLoan' element={<MedicalLoan routePath="/MedicalLoan"/>}/>
-          <Route path='/EmergencyLoan' element={<EmergencyLoan routePath="/EmergencyLoan"/>}/>
+
+
+         
       </Routes>
       </Wrapper>
     </BrowserRouter>
