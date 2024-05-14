@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../../../Components/Footer";
 import Header from "../../../../Components/Header";
-import blogImage from "../../../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science.png";
+import blogImage from "../../../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science_blog.png";
 import SEO from "../../../SEO/SEO";
 import "../BlogPage.css";
 import InstantLoanWithLowCibil from "./ImprovingCibilRocketScience";
