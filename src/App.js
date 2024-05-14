@@ -50,10 +50,19 @@ function App() {
           <Route path='/privacypolicy' element={<PrivacyPolicy routePath="/privacypolicy" />} /> 
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
-          <Route path="/blogs/blog1" element={<BlogPage routePath="/blogs/blog1"/>} />
+          {/* routes to blogs */}
+          <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={<InstantLoanWithCibilBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
+          <Route path="/blogs/improving-your-cibil-score-is-not-rocket-science" element={<ImprovingCibilRocketScienceBlogPage routePath="/blogs/improving-your-cibil-score-is-not-rocket-science"/>} />
+          {/* 8-tips-to-improve-your-cibil-score */}
 
-
-         
+          {/* product routes */}
+          <Route path="/EmergencyLoan" element={<EmergencyLoan routePath="/EmergencyLoan"/>} />
+          <Route path="/InstantPersonalLoan" element={<InstantPersonalLoan routePath="/InstantPersonalLoan"/>} />
+          <Route path="/MedicalLoan" element={<MedicalLoan routePath="/MedicalLoan"/>} />
+          <Route path="/PersonalLoanforSalaried" element={<PersonalLoanforSalaried routePath="/PersonalLoanforSalaried"/>} />
+          <Route path="/TravelLoan" element={<TravelLoan routePath="/TravelLoan"/>} />
+          <Route path="/WeddingLoan" element={<WeddingLoan routePath="/WeddingLoan"/>} />
+                 
       </Routes>
       </Wrapper>
     </BrowserRouter>
