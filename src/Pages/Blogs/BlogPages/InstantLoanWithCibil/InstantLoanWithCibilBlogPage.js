@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../../../Components/Footer";
-import Header from "../../../Components/Header";
-import blogImage from "../../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png";
-import SEO from "../../SEO/SEO";
-import "./BlogPage.css";
+import Footer from "../../../../Components/Footer";
+import Header from "../../../../Components/Header";
+import blogImage from "../../../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png";
+import SEO from "../../../SEO/SEO";
+import "../BlogPage.css";
 import InstantLoanWithLowCibil from "./InstantLoanWithCibil";
 
 function Contact(props) {

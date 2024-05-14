@@ -14,7 +14,8 @@ import GrievienceRedressal from './Pages/Policies/GrievienceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
-import BlogPage from './Pages/Blogs/BlogPages/BlogPage'
+import InstantLoanWithCibilBlogPage from './Pages/Blogs/BlogPages/InstantLoanWithCibil/InstantLoanWithCibilBlogPage'
+import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/ImprovingCibilRocketScience/ImprovingCibilRocketScienceBlogPage'
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -41,8 +42,10 @@ function App() {
           <Route path='/privacypolicy' element={<PrivacyPolicy routePath="/privacypolicy" />} /> 
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
-          <Route path="/blogs/blog1" element={<BlogPage routePath="/blogs/blog1"/>} />
-
+          {/* routes to blogs */}
+          <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={<InstantLoanWithCibilBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
+          <Route path="/blogs/improving-your-cibil-score-is-not-rocket-science" element={<ImprovingCibilRocketScienceBlogPage routePath="/blogs/improving-your-cibil-score-is-not-rocket-science"/>} />
+          {/* 8-tips-to-improve-your-cibil-score */}
 
          
       </Routes>
