@@ -23,34 +23,17 @@ function FeaturedBlogs(props) {
     },
     {
       title: "Improving your CIBIL score is not rocket science",
-      date: "13th May, 2024",
+      date: "14th May, 2024",
       imageLink: require("../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science.png"),
       blogSlug: "improving-your-cibil-score-is-not-rocket-science",
-    },
+    },    
     {
-      title: "Avoid These Mistakes While Applying for Personal Loans",
-      date: "13th May, 2024",
+      title: "How to get the best personal loan interest rate available to you?",
+      date: "14th May, 2024",
       imageLink: require("../../assets/images/blogs/blog_sample.png"),
-      blogSlug: "avoid-these-mistakes-while-applying-for-personal-loans",
+      blogSlug: "how-to-get-the-best-personal-loan-interest-rate-available-to-you",
     },
-    {
-      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-      blogSlug: "improving-your-cibil-score-is-not-rocket-science",
-    },
-    {
-      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-      blogSlug: "improving-your-cibil-score-is-not-rocket-science",
-    },
-    {
-      title: "Securing Personal Loans as a Freelancer: What You Need to Know?",
-      date: "13th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-      blogSlug: "improving-your-cibil-score-is-not-rocket-science",
-    },
+    
   ];
 
   return (
