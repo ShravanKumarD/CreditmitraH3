@@ -1,7 +1,8 @@
 
 import React , {useEffect}from 'react';
 import { BrowserRouter, Route, Routes, useLocation  } from 'react-router-dom';
-import { useLayoutEffect } from 'react'
+import { useLayoutEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Products from './Pages/Products/Products';
 import Home from './Pages/Home/Home';
@@ -15,6 +16,13 @@ import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
 import BlogPage from './Pages/Blogs/BlogPages/BlogPage'
+
+import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
+import InstantPersonalLoan from './Pages/Products/VariousPersonalLoans/InstantPersonalLoan';
+import MedicalLoan from './Pages/Products/VariousPersonalLoans/MedicalLoan';
+import PersonalLoanforSalaried from './Pages/Products/VariousPersonalLoans/PersonalLoanforSalaried';
+import TravelLoan from './Pages/Products/VariousPersonalLoans/TravelLoan';
+import WeddingLoan from './Pages/Products/VariousPersonalLoans/WeddingLoan';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -42,14 +50,16 @@ function App() {
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
           <Route path="/blogs/blog1" element={<BlogPage routePath="/blogs/blog1"/>} />
-
-
-         
+          <Route path='/InstantPersonalLoan' element={<InstantPersonalLoan routePath="/InstantPersonalLoan"/>}/>
+          <Route path='/PersonalLoanforSalaried' element={<PersonalLoanforSalaried routePath="/PersonalLoanforSalaried"/>}/>
+          <Route path='/WeddingLoan' element={<WeddingLoan routePath="/WeddingLoan"/>}/>
+          <Route path='/TravelLoan' element={<TravelLoan routePath="/TravelLoan"/>}/>
+          <Route path='/MedicalLoan' element={<MedicalLoan routePath="/MedicalLoan"/>}/>
+          <Route path='/EmergencyLoan' element={<EmergencyLoan routePath="/EmergencyLoan"/>}/>
       </Routes>
       </Wrapper>
-      
     </BrowserRouter>
-  
+
     </div>
   );
 }

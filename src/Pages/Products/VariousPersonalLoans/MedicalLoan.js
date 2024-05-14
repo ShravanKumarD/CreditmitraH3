@@ -1,14 +1,36 @@
-import React from "react";
-
-function ProductsHeroSection(props) {
-  return (
-    <div className="products-hero-section ">
-      <h6>Personal Loan for Salaried</h6>
+import React from 'react';
+    import Header from "./../../../Components/Header";
+    import Footer from "./../../../Components/Footer";
+    import ProductsHeroSection from "./../ProductsHeroSection";
+    import DescriptionSection from "./../DescriptionSection";
+    import StepsImg from "./../../../assets/images/mobile.png";
+    import StepsImg2 from "./../../../assets/images/pad.png";
+    import { Link } from "react-router-dom";
+    import SEO from "./../../SEO/SEO";
+    
+  
+    const MedicalLoan = (props) => {
+      return (
+        <>
+          <Header routePath={props.routePath} />
+          <SEO
+            title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
+            description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
+            keywords="personal loan, instant personal loan, personal loan online"
+            name="Credit Mitra"
+            type="article"
+          />
+          <section>
+            <div className="page-container products-page">
+              {/* <ProductsHeroSection /> */}
+              <div className="products-hero-section ">
+      <h6>Medical Loan
+</h6>
       <small>
-      Get Empower with your Finance Mitra
+     Credit mitra supports you when you're in need!
       </small>
       <p>
-      Creditmitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
+      At CreditMitra, we understand the financial stress unexpected medical emergencies can cause. That's why we offer convenient and accessible medical loans to help you manage healthcare costs. A medical loan is a type of personal loan designed specifically to cover medical expenses. This can include hospital stays, doctor visits, surgery costs, prescription medications, and even dental procedures. Unlike medical insurance, a medical loan allows you to cover a wider range of expenses, providing flexibility during a challenging time
       </p>
       <div className="btn-container">
         <div className="row productsDiv">
@@ -146,7 +168,96 @@ function ProductsHeroSection(props) {
 
       </div>
     </div>
-  );
-}
+              <DescriptionSection
+                heading="Why CreditMitra for Your Medical Loan?"
+                points={[
+                  "Flexible Repayment: Choose a loan term that aligns with your budget, allowing comfortable repayment.",
+                  "Competitive Rates: We offer competitive interest rates on personal loans for medical emergencies to minimize the financial burden of your loan.",   
+                  "Quick and Easy Approval: We streamline the application process to get you the funds you need quickly. ",
+                  "Minimal Documents: We require only the essential documents to get your medical loan approved quickly.",
+                ]}
+                img={StepsImg}/>        
+       <DescriptionSection
+                heading="Get Medical Loan with Ease: A Simple 4-Step Loan Process"
+                points={[
+                   "Quick Application: Provide your basic personal details online in minutes.",
+                   "Seamless Verification: Securely provide your bank details for us to verify your information.",
+                   "Easy Approval: Review and accept the loan offer that fits ",
+                   "Funds in Reach: Get the medical loan amount deposited directly into your account."  
+                ]}
+                img={StepsImg2}
+              />
+           
+              {/* old code */}
+              <div className="btn-container text-center"></div>
 
-export default ProductsHeroSection;
+              <div className='heading'>Eligibility Criteria</div>
+                    <div className="products-hero-section ">
+                        <div className="btn-container">
+                            <div className="row productsDiv">
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Indian Citizen 
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Age Limit: 21- 55 Years
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Salaried Individual
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="row productsDiv" >
+                                <div className="col-sm-2"></div>
+                                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
+                                Monthly Income: Less than INR 15,000
+                                </button></div>
+                                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
+                               A good credit score
+                                </button></div>
+                                <div className="col-sm-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+              {/* new from here */}
+              {/* new class */}
+              <div className="product-apply-button" style={{
+                display:"flex",
+                justifyContent: "center"
+              }}>
+                {/* margin-left: 0 for fixing this */}
+                <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
+                  {" "}
+                  <Link to="/home" style={{ color: "#fff" }}>
+                    Apply Now
+                  </Link>
+                </buttton>
+              </div>
+    
+              <h6
+                style={{
+                  color: "#fff",
+                  fontSize: "18px",
+                  fontFamily: "poppins",
+                  marginTop: "3rem",
+                  textAlign: "center",
+                  fontWeight: "normal"
+                }}
+              >
+            Whether you need to cover an unexpected procedure or ongoing medical treatment, our medical loans can provide the financial support you need. Get our medical loan with a simple application process. We'll ensure a smooth journey.
+              </h6>
+            </div>
+            <Footer />
+          </section>
+        </>
+      );
+   
+    
+    }
+export default MedicalLoan

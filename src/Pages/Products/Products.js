@@ -24,28 +24,68 @@ function Products(props) {
         <div className="page-container products-page">
           <ProductsHeroSection />
           <DescriptionSection
-            heading="Get Personal Loan in Simple Steps"
+            heading="Why Creditmitra's Personal Loan for Salaried?"
             points={[
-              "Check eligibility",
-              "Apply for Loan",
-              "Get funds in bank A/C within minutes",
+              "Seamless Access: Getting funds shouldn't be a long task. With Creditmitra, salaried individuals can seamlessly access personal loans. We ensure that financial support is always within reach.",
+              "Flexible Options: We recognize that every individual has different needs. Whether it's consolidating debt, funding education, or planning a wedding, our flexible loan options help you to take a step towards your goals without any compromise.",
+              "Competitive Interest Rates: With us, the high interest rates will not weigh you down. Creditmitra offers competitive rates, allowing you to borrow responsibly without breaking your wallet.",
+              "Efficient Processing: Time is money, especially when it comes to addressing financial literal money. Our streamlined application and approval process makes sure you receive the funds as quickly as possible.",
             ]}
             img={StepsImg}
           />
           
    <DescriptionSection
-            heading="Eligibility Criteria"
+            heading="How to Apply for a Personal Loan as a Salaried?"
             points={[
-              "Indian Citizen ",
-              "Age Limit: 21- 55 Years",
-              "Salaried Individual",
-              "Monthly Income: >INR 15,000",
+              "Prepare Your Documentation: Gather essential documents such as proof of identity, address, income, and employment details.",
+              "Sign Up with Us Online: Visit Creditmitra's user-friendly application to begin your application journey. Provide accurate information about your personal and financial details, to make the application process hassle-free.",
+              "Submit Your Application: Once you've filled out the form, submit it along with the necessary documents through our secure portal. Our advanced algorithms will assess your eligibility, providing you with instant approval for your online personal loan.",
+              "Access Your Funds: Upon approval, the funds will be disbursed directly to your bank account, enabling you to address your financial needs.",
             ]}
             img={StepsImg2}
           />
        
           {/* old code */}
           <div className="btn-container text-center"></div>
+
+
+          <div className="btn-container text-center"></div>
+                    <div className='heading'>Eligibility Criteria</div>
+                    <div className="products-hero-section ">
+                        <div className="btn-container">
+                            <div className="row productsDiv">
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Indian Citizen 
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Age Limit: 21- 55 Years
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Salaried Individual
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="row productsDiv" >
+                                <div className="col-sm-2"></div>
+                                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
+                                Monthly Income: Less than INR 15,000
+                                </button></div>
+                                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
+                                    Loan Disbursal in minutes :A good credit score.
+                                </button></div>
+                                <div className="col-sm-2"></div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
           {/* new from here */}
           {/* new class */}
           <div className="product-apply-button" style={{
@@ -71,11 +111,7 @@ function Products(props) {
               fontWeight: "normal"
             }}
           >
-            At CreditMitra, we believe that financial empowerment begins with
-            rapid loan solutions that cater to individual needs swiftly. Our
-            instant personal loans are designed to provide you with the
-            financial flexibility and freedom in minutes that you need to
-            achieve your goals, whatever they may be
+         Don't let financial constraints hold you back from living the life you want. Creditmitra's personal loan for salaried is here to support you every step of the way. Apply now and take control of your financial future!
           </h6>
         </div>
         <Footer />

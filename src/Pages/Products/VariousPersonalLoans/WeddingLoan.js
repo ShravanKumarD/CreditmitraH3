@@ -1,14 +1,36 @@
-import React from "react";
-
-function ProductsHeroSection(props) {
-  return (
-    <div className="products-hero-section ">
-      <h6>Personal Loan for Salaried</h6>
+import React from 'react';
+    import Header from "./../../../Components/Header";
+    import Footer from "./../../../Components/Footer";
+    import ProductsHeroSection from "./../ProductsHeroSection";
+    import DescriptionSection from "./../DescriptionSection";
+    import StepsImg from "./../../../assets/images/mobile.png";
+    import StepsImg2 from "./../../../assets/images/pad.png";
+    import { Link } from "react-router-dom";
+    import SEO from "./../../SEO/SEO";
+    
+  
+    const WeddingLoan = (props) => {
+      return (
+        <>
+          <Header routePath={props.routePath} />
+          <SEO
+            title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
+            description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
+            keywords="personal loan, instant personal loan, personal loan online"
+            name="Credit Mitra"
+            type="article"
+          />
+          <section>
+            <div className="page-container products-page">
+              {/* <ProductsHeroSection /> */}
+              <div className="products-hero-section ">
+      <h6>Wedding Loan</h6>
       <small>
-      Get Empower with your Finance Mitra
+      Get Ready to Say "I Do" to Your Dream Wedding
+
       </small>
       <p>
-      Creditmitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
+      Your special day deserves to be nothing short of magical, and Creditmitra is here to make your fairy-tale wedding a reality. Introducing our Wedding Loan - the perfect Mitra to help you create the celebration of your dreams without compromise
       </p>
       <div className="btn-container">
         <div className="row productsDiv">
@@ -146,7 +168,98 @@ function ProductsHeroSection(props) {
 
       </div>
     </div>
-  );
-}
+              <DescriptionSection
+                heading="Why Choose Creditmitra's Wedding Loan?"
+                points={[
+                  "Customized for Your Big Day: Weddings come in all shapes and sizes. Whether you're planning an intimate affair or a grand extravaganza, our Wedding Loan is customized to suit your vision perfectly.",
+                  "Unbeatable Flexibility: From venue bookings to designer outfits, catering services, and beyond, our Wedding Loan covers all aspects of your celebration. Say goodbye to budget constraints and meet the wedding of a lifetime.",
+                  "Stress-Free Financing: Planning a wedding can be overwhelming, but financing it shouldn't be. CreditMitra offers you peace of mind by taking care of your finances and allowing you to focus on creating priceless memories.",
+                  "Competitive Prices: Your wedding day is precious, but that doesn't mean you have to break the bank. Our Wedding Loan offers competitive interest rates, ensuring you get the most value for your investment.",   
 
-export default ProductsHeroSection;
+                ]}
+                img={StepsImg}/>        
+       <DescriptionSection
+                heading="How to Make Your Dream Wedding a Reality?"
+                points={[
+                  "Imagine Your Perfect Day: Envision every detail of your dream wedding and assess how much financing you'll need to bring your vision to life.",
+                  "Apply for Your Wedding Loan: Visit CreditMitra's user-friendly app and fill out the personal Loan application form with your details.",
+                  "Submit Required Documents: Provide essential documents such as proof of identity, address, income, and identification-related expenses to support your application.",
+                  "Receive Approval: Once your application is submitted, our team will review it thoroughly and provide you with instant approval for your Wedding Loan. ",
+                   "Celebrate in Style: With your Wedding Loan approved, you can proceed to finalize arrangements for your big day with confidence, knowing that your finances are in good hands.",
+                ]}
+                img={StepsImg2}
+              />
+           
+              {/* old code */}
+              <div className="btn-container text-center"></div>
+
+              <div className='heading'>Eligibility Criteria</div>
+                    <div className="products-hero-section ">
+                        <div className="btn-container">
+                            <div className="row productsDiv">
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Indian Citizen 
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Age Limit: 21- 55 Years
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Salaried Individual
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="row productsDiv" >
+                                <div className="col-sm-2"></div>
+                                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
+                                Monthly Income: Less than INR 15,000
+                                </button></div>
+                                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
+                               A good credit score
+                                </button></div>
+                                <div className="col-sm-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+              {/* new from here */}
+              {/* new class */}
+              <div className="product-apply-button" style={{
+                display:"flex",
+                justifyContent: "center"
+              }}>
+                {/* margin-left: 0 for fixing this */}
+                <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
+                  {" "}
+                  <Link to="/home" style={{ color: "#fff" }}>
+                    Apply Now
+                  </Link>
+                </buttton>
+              </div>
+    
+              <h6
+                style={{
+                  color: "#fff",
+                  fontSize: "18px",
+                  fontFamily: "poppins",
+                  marginTop: "3rem",
+                  textAlign: "center",
+                  fontWeight: "normal"
+                }}
+              >
+             Your wedding day is a celebration of love, commitment, and new beginnings. Let CreditMitra be your trusted partner in bringing your vision to life, and in making your wedding day Unforgettable.
+              </h6>
+            </div>
+            <Footer />
+          </section>
+        </>
+      );
+   
+    
+}
+export default WeddingLoan;

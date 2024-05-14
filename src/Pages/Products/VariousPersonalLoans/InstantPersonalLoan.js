@@ -1,14 +1,35 @@
-import React from "react";
-
-function ProductsHeroSection(props) {
-  return (
-    <div className="products-hero-section ">
-      <h6>Personal Loan for Salaried</h6>
+import React from 'react'
+    import Header from "./../../../Components/Header";
+    import Footer from "./../../../Components/Footer";
+    import ProductsHeroSection from "./../ProductsHeroSection";
+    import DescriptionSection from "./../DescriptionSection";
+    import StepsImg from "./../../../assets/images/mobile.png";
+    import StepsImg2 from "./../../../assets/images/pad.png";
+    import { Link } from "react-router-dom";
+    import SEO from "./../../SEO/SEO";
+    
+  
+const InstantPersonalLoan = (props) => {
+      return (
+        <>
+          <Header routePath={props.routePath} />
+          <SEO
+            title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
+            description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
+            keywords="personal loan, instant personal loan, personal loan online"
+            name="Credit Mitra"
+            type="article"
+          />
+          <section>
+            <div className="page-container products-page">
+              {/* <ProductsHeroSection /> */}
+              <div className="products-hero-section ">
+      <h6>Instant Personal Loan</h6>
       <small>
-      Get Empower with your Finance Mitra
+      Unlock Your Dreams with Creditmitra's Instant Personal Loan!
       </small>
       <p>
-      Creditmitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
+      We are a gateway of financial possibilities, Creditmitra's instant personal loan is the solution to all your financial problems. Here, aspirations meet reality in the blink of an eye! It is time to Get Ready to Chart Your Financial Destiny!
       </p>
       <div className="btn-container">
         <div className="row productsDiv">
@@ -146,7 +167,100 @@ function ProductsHeroSection(props) {
 
       </div>
     </div>
-  );
+              <DescriptionSection
+                heading="Why CreditMitra for Your Instant Personal Loan?"
+                points={[
+                  "Swift and Effortless: Experience the thrill of instant approval and seize opportunities faster than you can celebrate, no more waiting.",
+                  "Sleek and Seamless: Get a smooth, user-friendly online application process. Navigate through your loan journey with ease and without the labyrinthine paperwork. ",
+                  " Customised and Streamlined: Your dreams are unique, and we craft personalized loan solutions that fit you, ensuring your financial journey is streamlined.",
+                  "Perfect Rates: We believe in fairness, not fees. Enjoy competitive interest rates that keep your dreams alive without capsizing your budget.",
+                ]}
+                img={StepsImg}/>        
+       <DescriptionSection
+                heading="How to Get on with CreditMitra?"
+                points={[
+                  "Sign up: Navigate to our online portal and get on your journey by your phone number or via Google or LinkedIn. It's as easy as spending money.",
+                  "Registration: When registering your loan application, no need to worry about hidden surprises! Simply fill in your basic information, and upload your documents securely to our portal. Once finished, your loan will be waiting for you.",
+                  "Instant Approval: Keep updated on your application via your CreditMitra account for instant approval. Before you know it, you'll be running to fulfil your financial goal!",
+                  "Claim Your Loan: Once approved, your instant personal loan will be deposited directly into your bank account!",
+                ]}
+                img={StepsImg2}
+              />
+           
+              {/* old code */}
+              <div className="btn-container text-center"></div>
+
+              
+          <div className="btn-container text-center"></div>
+                    <div className='heading'>Eligibility Criteria</div>
+                    <div className="products-hero-section ">
+                        <div className="btn-container">
+                            <div className="row productsDiv">
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Indian Citizen 
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Age Limit: 21- 55 Years
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Salaried Individual
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="row productsDiv" >
+                                <div className="col-sm-2"></div>
+                                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
+                                Monthly Income: Less than INR 15,000
+                                </button></div>
+                                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
+                                  A good credit score
+                                </button></div>
+                                <div className="col-sm-2"></div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+              {/* new from here */}
+              {/* new class */}
+              <div className="product-apply-button" style={{
+                display:"flex",
+                justifyContent: "center"
+              }}>
+                {/* margin-left: 0 for fixing this */}
+                <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
+                  {" "}
+                  <Link to="/home" style={{ color: "#fff" }}>
+                    Apply Now
+                  </Link>
+                </buttton>
+              </div>
+    
+              <h6
+                style={{
+                  color: "#fff",
+                  fontSize: "18px",
+                  fontFamily: "poppins",
+                  marginTop: "3rem",
+                  textAlign: "center",
+                  fontWeight: "normal"
+                }}>
+            Don't let your dreams sit on the shelf forever! Hop on with your best finance Mitra, Creditmitra today and unlock the door to endless possibilities. Let Creditmitra's instant personal loan help you target your financial goal!
+              </h6>
+            </div>
+            <Footer />
+          </section>
+        </>
+      );
+   
+    
 }
 
-export default ProductsHeroSection;
+export default InstantPersonalLoan

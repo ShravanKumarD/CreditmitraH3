@@ -13,7 +13,18 @@ text-align: center;
 
 
 } */
+.nav-link:hover,
+.nav-link.active {
+  color: blue !important;
+}
 
+.dropdown-toggle{
+color: #00246A;
+}
+.dropdown-menu{
+  /* background:  #1B9BDC ; */
+  color: white;
+}
 .App {
   overflow: hidden;
 }

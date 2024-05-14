@@ -1,14 +1,36 @@
-import React from "react";
-
-function ProductsHeroSection(props) {
-  return (
-    <div className="products-hero-section ">
-      <h6>Personal Loan for Salaried</h6>
+import React from 'react'
+    import Header from "./../../../Components/Header";
+    import Footer from "./../../../Components/Footer";
+    import ProductsHeroSection from "./../ProductsHeroSection";
+    import DescriptionSection from "./../DescriptionSection";
+    import StepsImg from "./../../../assets/images/mobile.png";
+    import StepsImg2 from "./../../../assets/images/pad.png";
+    import { Link } from "react-router-dom";
+    import SEO from "./../../SEO/SEO";
+    
+  
+    const TravelLoan = (props) => {
+      return (
+        <>
+          <Header routePath={props.routePath} />
+          <SEO
+            title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
+            description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
+            keywords="personal loan, instant personal loan, personal loan online"
+            name="Credit Mitra"
+            type="article"
+          />
+          <section>
+            <div className="page-container products-page">
+              {/* <ProductsHeroSection /> */}
+              <div className="products-hero-section ">
+      <h6>Travel Loan</h6>
       <small>
-      Get Empower with your Finance Mitra
+      Get Ready to Say "I Do" to Your Dream Wedding
+
       </small>
       <p>
-      Creditmitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
+      Do you dream of exotic beaches, bustling cities, or awe-inspiring landscapes?  Let your travel desires take flight with our convenient travel loan!  This isn't just a holiday loan, it's an investment in unforgettable memories and experiences that enrich your life. Travel loans are unsecured personal loans for travel specifically designed to finance your travel adventures.
       </p>
       <div className="btn-container">
         <div className="row productsDiv">
@@ -146,7 +168,97 @@ function ProductsHeroSection(props) {
 
       </div>
     </div>
-  );
-}
+              <DescriptionSection
+                heading="Why CreditMitra for Your Travel Loan?"
+                points={[
+                  "Flexible Repayment: Choose a loan term that aligns with your budget, allowing comfortable repayment.",
+                  "Competitive Rates: We offer competitive interest rates on personal loans for travel, making your dream vacation an affordable reality.",
+                  "Quick and Easy Approval: Apply online for a travel loan and get a fast decision to jumpstart your travel planning.",
+                  "Minimal Documents: We require only the essential documents to get your travel loan approved quickly.",   
 
-export default ProductsHeroSection;
+                ]}
+                img={StepsImg}/>        
+       <DescriptionSection
+                heading="Get Travel Loan with Ease: A Simple 4-Step Loan Process"
+                points={[
+                "Quick Application: Provide your basic personal details online in minutes.",
+                "Seamless Verification: Securely provide your bank details for us to verify your information.",
+                "Easy Approval: Review and accept the loan offer that fits your travel budget.",
+                "Funds in Reach: Get the holiday loan amount deposited directly into your account.",  
+                ]}
+                img={StepsImg2}
+              />
+           
+              {/* old code */}
+              <div className="btn-container text-center"></div>
+
+              <div className='heading'>Eligibility Criteria</div>
+                    <div className="products-hero-section ">
+                        <div className="btn-container">
+                            <div className="row productsDiv">
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Indian Citizen 
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Age Limit: 21- 55 Years
+                                    </button>
+                                </div>
+                                <div className="col-12 col-sm-4 productsDivBtn">
+                                    <button className="btn primary-gradient-btn">
+                                    Salaried Individual
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="row productsDiv" >
+                                <div className="col-sm-2"></div>
+                                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
+                                Monthly Income: Less than INR 15,000
+                                </button></div>
+                                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
+                                  A good credit score
+                                </button></div>
+                                <div className="col-sm-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+              {/* new from here */}
+              {/* new class */}
+              <div className="product-apply-button" style={{
+                display:"flex",
+                justifyContent: "center"
+              }}>
+                {/* margin-left: 0 for fixing this */}
+                <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
+                  {" "}
+                  <Link to="/home" style={{ color: "#fff" }}>
+                    Apply Now
+                  </Link>
+                </buttton>
+              </div>
+    
+              <h6
+                style={{
+                  color: "#fff",
+                  fontSize: "18px",
+                  fontFamily: "poppins",
+                  marginTop: "3rem",
+                  textAlign: "center",
+                  fontWeight: "normal"
+                }}
+              >
+             Get our travel loans with a simple application process. We'll ensure a smooth journey, both financially and physically, so you can set off on your dream adventure!
+              </h6>
+            </div>
+            <Footer />
+          </section>
+        </>
+      );
+   
+    
+}
+export default TravelLoan;
