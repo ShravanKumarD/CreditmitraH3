@@ -215,7 +215,7 @@ import React from 'react'
                             <div className="row productsDiv" >
                                 <div className="col-sm-2"></div>
                                 <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
-                                Monthly Income: Less than INR 15,000
+                                Monthly Income: greater than INR 15,000
                                 </button></div>
                                 <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
                                   A good credit score
