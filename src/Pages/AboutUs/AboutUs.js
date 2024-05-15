@@ -69,9 +69,7 @@ function AboutUs(props) {
                 <div className="about-section-content">
                   <h6>About Credit Mitra</h6>
                   <p>
-                    Credit Mitra is a fintech company facilitating personal
-                    loans through a mobile application to salaried employees
-                    pan-India, within 24 hours
+                  Crafting a Revolutionary Financial Journey CreditMitra is revolutionizing the lending landscape, catering to the financial needs of young salaried Indians. Our user-centric platform offers simplicity, transparency, and flexibility. Partnering with RBI-registered NBFCs, we empower self-employed and salaried individuals with quick loans up to Rs 2 lakh, flexible repayment options, and competitive interest rates
                   </p>
                 </div>
                 <img height="300px" className="aboutus" src={aboutus} />

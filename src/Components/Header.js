@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import Toggle from "../assets/images/toggle.png";
 
-
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [disableBackground, setDisableBackground] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State to manage dropdown visibility
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   const handleNavToggle = () => {
     setIsNavOpen(!isNavOpen);
@@ -24,6 +37,16 @@ function Header() {
   };
 
   const closeDropdown = () => {
+    if (isDropdownOpen) {
+      setIsDropdownOpen(false);
+    }
+  };
+
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
     setIsDropdownOpen(false);
   };
 
@@ -48,7 +71,9 @@ function Header() {
   return (
     <nav
       style={{ color: "white" }}
-      className={`navbar navbar-expand-lg navbar-light fixed ${disableBackground ? "" : "custom-background"}`}
+      className={`navbar navbar-expand-lg navbar-light fixed ${
+        disableBackground ? "" : "custom-background"
+      }`}
     >
       <Link
         className="navbar-brand"
@@ -66,11 +91,7 @@ function Header() {
           alt="Credit mitra"
         />
       </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        onClick={handleNavToggle}
-      >
+      <button className="navbar-toggler" type="button" onClick={handleNavToggle}>
         <img src={Toggle} alt="Toggle" />
       </button>
 
@@ -79,17 +100,22 @@ function Header() {
           {navigations.map((each, index) => (
             <li className="nav-item" key={index}>
               {each.displayName === "Products" ? (
-                <div className="nav-item dropdown">
+                <div
+                  ref={dropdownRef}
+                  className="nav-item dropdown"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
                   <Link
                     to={each.redirection}
                     className={`nav-link dropdown-toggle ${
                       location.pathname.startsWith("/products") ? "active" : ""
                     }`}
                     title={each.displayName}
-                    onClick={handleDropdownToggle}
                     aria-haspopup="true"
                     aria-expanded={isDropdownOpen ? "true" : "false"}
-                    style={{ color: "white" }} 
+                    style={{ color: "white",}} 
+                    onClick={handleDropdownToggle}
                   >
                     {each.displayName}
                   </Link>
