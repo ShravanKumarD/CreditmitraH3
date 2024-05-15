@@ -3,12 +3,12 @@ import React from "react";
 function ProductsHeroSection(props) {
   return (
     <div className="products-hero-section ">
-      <h6>Personal Loan for Salaried</h6>
+      <h6>Personal Loans</h6>
       <small>
-      Get Empower with your Finance Mitra
+      Creditmitra's Personal Loans: Key to Your Financial Freedom
       </small>
       <p>
-      Creditmitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
+      Life comes with all sorts of twists and turns, and sometimes we need a little financial assistance to handle them. What better way to get this assistance than your lending Mitra: Creditmitra. Because when a friend helps, it opens the world of possibilities, no matter the journey.
       </p>
       <div className="btn-container">
         <div className="row productsDiv">

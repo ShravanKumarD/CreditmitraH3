@@ -24,23 +24,23 @@ function Products(props) {
         <div className="page-container products-page">
           <ProductsHeroSection />
           <DescriptionSection
-            heading="Why Creditmitra's Personal Loan for Salaried?"
+            heading="Why Choose Creditmitra for Your Personal Loan?"
             points={[
-              "Seamless Access: Getting funds shouldn't be a long task. With Creditmitra, salaried individuals can seamlessly access personal loans. We ensure that financial support is always within reach.",
-              "Flexible Options: We recognize that every individual has different needs. Whether it's consolidating debt, funding education, or planning a wedding, our flexible loan options help you to take a step towards your goals without any compromise.",
-              "Competitive Interest Rates: With us, the high interest rates will not weigh you down. Creditmitra offers competitive rates, allowing you to borrow responsibly without breaking your wallet.",
-              "Efficient Processing: Time is money, especially when it comes to addressing financial literal money. Our streamlined application and approval process makes sure you receive the funds as quickly as possible.",
+              "Versatile Solutions: Whether you're planning a vacation, covering medical expenses, or pursuing an education abroad, our personal Loans are customized to meet your unique needs and aspirations.",
+              "Quick and Convenient: We know that lengthy approval processes are boring. With Creditmitra, you can apply for a personal loan online in minutes, giving you more time to focus on what truly matters.",
+              "Transparent Terms: We believe in honesty and transparency every step of the way. Rest assured knowing that our Personal Loans come with clear terms and competitive interest rates.",
+              "Expert Support: Our dedicated team of financial experts is here to guide you through the loan process, answer your questions, and provide tailored assistance to make sure you make informed decisions."
             ]}
             img={StepsImg}
           />
           
    <DescriptionSection
-            heading="How to Apply for a Personal Loan as a Salaried?"
+            heading="How to Apply for a Creditmitra Personal Loan?"
             points={[
-              "Prepare Your Documentation: Gather essential documents such as proof of identity, address, income, and employment details.",
-              "Sign Up with Us Online: Visit Creditmitra's user-friendly application to begin your application journey. Provide accurate information about your personal and financial details, to make the application process hassle-free.",
-              "Submit Your Application: Once you've filled out the form, submit it along with the necessary documents through our secure portal. Our advanced algorithms will assess your eligibility, providing you with instant approval for your online personal loan.",
-              "Access Your Funds: Upon approval, the funds will be disbursed directly to your bank account, enabling you to address your financial needs.",
+              "Sign-Up and Apply: Visit Creditmitra's secure website to access our user-friendly loan application platform. Fill out the required details in the application form, by providing accurate information about your personal and financial background.",
+              "Upload Necessary Documents: Submit essential documents such as proof of identity, address, income, and any other relevant documentation to support your application.",
+              "Receive Approval: Once your application is submitted, our team will review it and provide you with instant approval for your Personal Loan.",
+              "Get Your Funds: Upon approval, the loan amount will be disbursed directly to your bank account, enabling you to pursue your financial goals with confidence."
             ]}
             img={StepsImg2}
           />
