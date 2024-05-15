@@ -5,7 +5,7 @@ import { faXTwitter, faYoutube, faFacebook, faInstagram, faLinkedin } from '@for
 function SocialComponentsDesktop() {
     return (
         <div className='social-components-desktop'>
-            <h3 style={{fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '5%', marginTop: '11%', fontFamily: 'Poppins'}}>Follow Us</h3>
+            <h3 style={{fontSize: '1.1rem', marginBottom: '5%', marginTop: '11%', fontFamily: 'Poppins'}}>Follow Us</h3>
             
             <a href="https://twitter.com/CreditMitra/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} size="2x" style={{marginRight: "5%", color: "#2B6CB0"}} /></a>
 
