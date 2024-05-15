@@ -4,7 +4,7 @@ import Header from "../../../../Components/Header";
 import blogImage from "../../../../assets/images/blogs/8_tips_to_improve_your_cibil_score_blog.png";
 import SEO from "../../../SEO/SEO";
 import "../BlogPage.css";
-import InstantLoanWithLowCibil from "./InstantLoanWithCibil";
+import EightTipsToImproveYourCibilScore from "./EightTipsToImproveYourCibilScore";
 
 function Contact(props) {
   return (
@@ -22,14 +22,14 @@ function Contact(props) {
         <div className="page-container blog-content-page">
           <div className="blog-content-section">
             {/* we should decouple this image asap */}
-            <h1 className="blog-content-heading">How To Get An Instant Loans With Low CIBIL Score?</h1>
-            <div className="blog-content-date">May 14, 2024</div>
+            <h1 className="blog-content-heading">8 Tips to improve your CIBIL score</h1>
+            <div className="blog-content-date">May 15, 2024</div>
 
             <div className="blog-content-image">
               <img src={blogImage} className="blog-image-container" />
             </div>
             <div className="blog-content-text">
-              <InstantLoanWithLowCibil />
+              <EightTipsToImproveYourCibilScore />
               <p className="blog-content-paragraph">
 
               </p>

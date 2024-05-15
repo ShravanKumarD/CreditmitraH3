@@ -15,7 +15,8 @@ import GrievienceRedressal from './Pages/Policies/GrievienceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
-import InstantLoanWithCibilBlogPage from './Pages/Blogs/BlogPages/InstantLoanWithCibil/InstantLoanWithCibilBlogPage'
+import EightTipsToImproveYourCibilScoreBlogPage from './Pages/Blogs/BlogPages/InstantLoanWithCibil/EightTipsToImproveYourCibilScoreBlogPage'
+
 import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/ImprovingCibilRocketScience/ImprovingCibilRocketScienceBlogPage'
 
 import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
@@ -51,7 +52,7 @@ function App() {
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
           {/* routes to blogs */}
-          <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={<InstantLoanWithCibilBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
+          <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={< EightTipsToImproveYourCibilScoreBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
           <Route path="/blogs/improving-your-cibil-score-is-not-rocket-science" element={<ImprovingCibilRocketScienceBlogPage routePath="/blogs/improving-your-cibil-score-is-not-rocket-science"/>} />
           {/* 8-tips-to-improve-your-cibil-score */}
 

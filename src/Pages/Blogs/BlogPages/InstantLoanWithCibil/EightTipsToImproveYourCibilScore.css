@@ -1,0 +1,50 @@
+.credit-score-tips {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .credit-score-tips h1 {
+    margin-bottom: 20px;
+  }
+  
+  .credit-score-tips p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .credit-score-tips table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .credit-score-tips table th,
+  .credit-score-tips table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .credit-score-tips table th {
+  }
+  
+  .credit-score-tips ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .credit-score-tips ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #2196f3;
+  }
+  
+  .credit-score-tips ul li strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
