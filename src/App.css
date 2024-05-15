@@ -1737,6 +1737,20 @@ h3{
   font-size: 20px;
 }
 /*styling is not working ,we have to media query*/
+
+@media only screen and (min-width: 1367px) {
+  .nav-item {
+    margin-left: 55px;
+    
+     }
+}
+
+@media only screen and (max-width: 1367px) {
+  .nav-item {
+    margin-left: 45px;
+    
+     }
+}
 @media only screen and (max-width: 1267px) {
   .nav-item {
     margin-left: 35px;
