@@ -25,10 +25,10 @@ import React from 'react'
               {/* <ProductsHeroSection /> */}
               <div className="products-hero-section ">
       <h6>Travel Loan</h6>
-      <small>
+      {/* <small>
       Get Ready to Say "I Do" to Your Dream Wedding
 
-      </small>
+      </small> */}
       <p>
       Do you dream of exotic beaches, bustling cities, or awe-inspiring landscapes?  Let your travel desires take flight with our convenient travel loan!  This isn't just a holiday loan, it's an investment in unforgettable memories and experiences that enrich your life. Travel loans are unsecured personal loans for travel specifically designed to finance your travel adventures.
       </p>

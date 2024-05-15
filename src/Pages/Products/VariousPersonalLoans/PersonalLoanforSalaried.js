@@ -169,7 +169,7 @@ const PersonalLoanforSalaried = (props) => {
                         </div>
                     </div>
                     <DescriptionSection
-                        heading="Why Choose Creditmitra for Your Personal Loan?"
+                        heading="Why Creditmitra's Personal Loan for Salaried?"
                         points={[
                             "Seamless Access: Getting funds shouldn't be a long task. With Creditmitra, salaried individuals can seamlessly access personal loans. We ensure that financial support is always within reach.",
                               "Flexible Options: We recognize that every individual has different needs. Whether it's consolidating debt, funding education, or planning a wedding, our flexible loan options help you to take a step towards your goals without any compromise.",
