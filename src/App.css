@@ -1734,3 +1734,11 @@ h2{
 h3{
   font-size: 20px;
 }
+
+@media only screen and (max-width: 1299px) {
+  .nav-item {
+             margin-left: 3px;
+       /* font-weight: 600; */
+    
+     }
+}
