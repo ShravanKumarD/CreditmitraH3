@@ -48,7 +48,7 @@ function Header() {
   return (
     <nav
       style={{ color: "white" }}
-      className={`navbar navbar-expand-lg navbar-light ${disableBackground ? "" : "custom-background"}`}
+      className={`navbar navbar-expand-lg navbar-light fixed ${disableBackground ? "" : "custom-background"}`}
     >
       <Link
         className="navbar-brand"
@@ -74,7 +74,7 @@ function Header() {
         <img src={Toggle} alt="Toggle" />
       </button>
 
-      <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}>
+      <div className={`collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
         <ul className="navbar-nav mr-auto">
           {navigations.map((each, index) => (
             <li className="nav-item" key={index}>

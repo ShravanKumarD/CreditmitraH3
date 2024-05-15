@@ -26,7 +26,7 @@ const PersonalLoanforSalaried = (props) => {
                     <div className="products-hero-section ">
                         <h6>Personal Loan for Salaried</h6>
                         <small>
-                            Empowering Aspiring India: Speedy & Seamless Credit Solutions
+                        Get Empower with your Finance Mitra
                         </small>
                         <p>
                             Creditmitra's Personal Loans: Key to Your Financial Freedom
