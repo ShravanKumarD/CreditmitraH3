@@ -59,7 +59,7 @@ function Header() {
         }}
       >
         <img
-          className="img-fluid"
+          className="img-fluid-logo"
           style={{ width: 180 }}
           src={Logo}
           title="Credit mitra"
