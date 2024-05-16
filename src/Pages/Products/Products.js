@@ -95,7 +95,7 @@ function Products(props) {
             {/* margin-left: 0 for fixing this */}
             <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
               {" "}
-              <Link to="/home" style={{ color: "#fff" }}>
+              <Link to="/" style={{ color: "#fff" }}>
                 Apply Now
               </Link>
             </buttton>
