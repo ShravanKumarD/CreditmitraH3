@@ -1120,7 +1120,8 @@ color: #00246A;
 
 .intext {
   margin-left: -50px;
-  width: 400px;
+  width: 100%;/* width: 400px; */
+
 }
 .rounded-circle{
   align-self: center;
@@ -1763,4 +1764,10 @@ h3{
     margin-left: 5px;
     
      }
+}
+
+@media only screen and (max-width:1320px){
+  .application-process-card{
+
+  }
 }
