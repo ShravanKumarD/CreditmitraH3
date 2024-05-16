@@ -8,9 +8,8 @@ function DescriptionSection(props) {
                 <h6>{props.heading}</h6>
                 <ol>
                     {props.points.map((each)=>{
-                        console.log(each,"each")
                         return <>
-                        <li>{each}</li>
+                        <li><strong>{each.split(':')[0]}:</strong>{each.split(':')[1]}</li>
                         </>
                     })}
                 </ol>
