@@ -29,7 +29,7 @@ function Footer(props) {
             navLinks: [
                     {displayName: "Terms & Conditions", redirectTo:"/termsAndConditions"},
                 {displayName: "Privacy Policy",  redirectTo:"/privacypolicy"},
-                {displayName: "Grieviance Redressal", redirectTo:"/grievienceredressal"}
+                {displayName: "Grievance Redressal", redirectTo:"/grievanceredressal"}
             ]
         },
         {
@@ -39,7 +39,8 @@ function Footer(props) {
                 {displayName: "About us", redirectTo: "/about"},
                 {displayName: "Responsible lending", redirectTo: "/responsibleLending"},
                 {displayName: "FAQ", redirectTo: "/faq"},
-                {displayName: "Blog", redirectTo: "/blogs"}
+                {displayName: "Blog", redirectTo: "/blogs"},
+                {displayName:"Calculator", redirectTo:"/calculator"}
             ]
         },
     ];

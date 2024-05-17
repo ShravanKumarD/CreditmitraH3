@@ -51,12 +51,12 @@ function Header() {
   };
 
   const products = [
-    { name: "Instant Personal Loan", redirection: "/InstantPersonalLoan" },
-    { name: "Personal Loan for Salaried", redirection: "/PersonalLoanforSalaried" },
-    { name: "Wedding Loan", redirection: "/WeddingLoan" },
-    { name: "Travel Loan", redirection: "/TravelLoan" },
-    { name: "Medical Loan", redirection: "/MedicalLoan" },
-    { name: "Emergency Loan", redirection: "/EmergencyLoan" },
+    { name: "Instant Personal Loan", redirection: "/instant-personal-loan-online" },
+    { name: "Personal Loan for Salaried", redirection: "/personal-loan-for-salaried" },
+    { name: "Wedding Loan", redirection: "/marriage-loan" },
+    { name: "Travel Loan", redirection: "/travel-loan" },
+    { name: "Medical Loan", redirection: "/medical-loan" },
+    { name: "Emergency Loan", redirection: "/emergency-loan" },
   ];
 
   const navigations = [

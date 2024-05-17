@@ -11,12 +11,11 @@ import Contact from './Pages/Contact/Contact';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import OurLendingPartners from './Pages/OurLendingPartners/OurLendingPartners';
 import FAQ from './Pages/FAQ/FAQ';
-import GrievienceRedressal from './Pages/Policies/GrievienceRedressal';
+import GrievanceRedressal from './Pages/Policies/GrievanceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
 import EightTipsToImproveYourCibilScoreBlogPage from './Pages/Blogs/BlogPages/InstantLoanWithCibil/EightTipsToImproveYourCibilScoreBlogPage'
-
 import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/ImprovingCibilRocketScience/ImprovingCibilRocketScienceBlogPage'
 
 import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
@@ -25,6 +24,8 @@ import MedicalLoan from './Pages/Products/VariousPersonalLoans/MedicalLoan';
 import PersonalLoanforSalaried from './Pages/Products/VariousPersonalLoans/PersonalLoanforSalaried';
 import TravelLoan from './Pages/Products/VariousPersonalLoans/TravelLoan';
 import WeddingLoan from './Pages/Products/VariousPersonalLoans/WeddingLoan';
+
+import Calculator from './Pages/Calculators/PersonalEmiCalculator/Calculator';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -47,7 +48,7 @@ function App() {
           <Route path='/about' element={<AboutUs routePath="/about" />} /> 
           <Route path='/ourLendingPartners' element={<OurLendingPartners routePath="/ourLendingPartners" />} /> 
           <Route path='/faq' element={<FAQ routePath="/faq" />} /> 
-          <Route path='/grievienceredressal' element={<GrievienceRedressal routePath="/grievienceredressal" />} /> 
+          <Route path='/grievanceredressal' element={<GrievanceRedressal routePath="/grievanceredressal" />} /> 
           <Route path='/privacypolicy' element={<PrivacyPolicy routePath="/privacypolicy" />} /> 
           <Route path='/termsAndConditions' element={<TermsAndConditions routePath="/termsAndConditions" />} /> 
           <Route path="/blogs" element={<FeaturedBlogs routePath="/blogs"/>} />
@@ -57,13 +58,16 @@ function App() {
           {/* 8-tips-to-improve-your-cibil-score */}
 
           {/* product routes */}
-          <Route path="/EmergencyLoan" element={<EmergencyLoan routePath="/EmergencyLoan"/>} />
-          <Route path="/InstantPersonalLoan" element={<InstantPersonalLoan routePath="/InstantPersonalLoan"/>} />
-          <Route path="/MedicalLoan" element={<MedicalLoan routePath="/MedicalLoan"/>} />
-          <Route path="/PersonalLoanforSalaried" element={<PersonalLoanforSalaried routePath="/PersonalLoanforSalaried"/>} />
-          <Route path="/TravelLoan" element={<TravelLoan routePath="/TravelLoan"/>} />
-          <Route path="/WeddingLoan" element={<WeddingLoan routePath="/WeddingLoan"/>} />
+          <Route path="/emergency-loan" element={<EmergencyLoan routePath="/emergency-loan"/>} />
+          <Route path="/instant-personal-loan-online" element={<InstantPersonalLoan routePath="/instant-personal-loan-online"/>} />
+          <Route path="/medical-loan" element={<MedicalLoan routePath="/medical-loan"/>} />
+          <Route path="/personal-loan-for-salaried" element={<PersonalLoanforSalaried routePath="/personal-loan-for-salaried"/>} />
+          <Route path="/travel-loan" element={<TravelLoan routePath="/travel-loan"/>} />
+          <Route path="/marriage-loan" element={<WeddingLoan routePath="/marriage-loan"/>} />
                  
+        {/* Calculator routes */}
+        <Route path="calculator" element={<Calculator routePath="calculator"/>}/>
+        
       </Routes>
       </Wrapper>
     </BrowserRouter>

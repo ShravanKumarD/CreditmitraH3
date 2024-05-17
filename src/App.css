@@ -1121,7 +1121,7 @@ color: #00246A;
 .intext {
   margin-left: -50px;
   width: 100%;/* width: 400px; */
-
+height: 100%;
 }
 .rounded-circle{
   align-self: center;

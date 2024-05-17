@@ -86,7 +86,7 @@ function ApplicationProcess(props) {
         <div className='halfcard'></div>
         <div className='row' >
             <div className='col-sm-6'>
-                <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal within 24 hours"/>
+                <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal"/>
             </div>
             <div className='col-sm-6'>
                 <BottomHalfCards img={Image7}  heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding"/>
