@@ -27,9 +27,9 @@
   font-family: Poppins;
 }
 .feature-card {
-  border: 1px solid hsla(0, 0%, 80%, 50%);
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102);
+  /* border: 1px solid hsla(0, 0%, 80%, 50%);
+  /* box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.102); */
+  /* border-radius: 20px; */
   text-align: left;
   max-width: 392px;
   display: inline-block;
@@ -39,8 +39,8 @@
 .blog-feature-image {
   width: "100%";
   z-index: -10;
-  border-top-left-radius: 19px;
-  border-top-right-radius: 19px; 
+  /* border-top-left-radius: 19px; */
+  /* border-top-right-radius: 19px;  */
 }
 
 .blogs-section .content h6 {

@@ -1,5 +1,5 @@
-import React from 'react';
-import ApplicationProcessingCard from '../../Components/ApplicationProcessingCard';
+import React,{useEffect, useState} from 'react';
+// import ApplicationProcessingCard from '../../Components/ApplicationProcessingCard';
 import Image1 from '../../assets/images/IMG1.png'
 import Image2 from '../../assets/images/IMG2.png'
 import Image3 from '../../assets/images/IMG3.png'
@@ -8,6 +8,7 @@ import Image5 from '../../assets/images/IMG5.png'
 import Image6 from '../../assets/images/approvalIcon.png'
 import Image7 from '../../assets/images/repayicon.png'
 import { Link } from 'react-router-dom';
+
 
 function ApplicationProcess(props) {
     function BottomHalfCards(subProps){
@@ -27,43 +28,60 @@ function ApplicationProcess(props) {
         </div>
         </>)
     }
+  function ApplicationProcessingCard(props) {
+    return (
+      <div 
+      onMouseEnter={` slide-in-right'`}
+      className={`application-process-card ${props.orderNo % 2 === 0 ? 'slide-in-right' : 'slide-in-left'}`}>
+          <div className='content '>
+            {props.orderNo && <div className='list-number'><div className="light-overlay-number">{props.orderNo}</div></div>}
+            {props.heading && <h6>{props.heading}</h6>}
+            <p style={{ fontSize: "16px", fontWeight: "300" }}>{props.description}</p>
+          </div>
+          {props.img && <img className='inmageHome' src={props.img} />}
+          </div>
+    );
+  }
+
+    
+  // const toggleAnimationDirection = () => {
+  //   setAnimationDirection(prevDirection =>
+  //     prevDirection === 'left' ? 'right' : 'left'
+  //   );
+  // };
+    const processCards = [
+      {
+        orderNo: 1,
+        heading: "Application Process",
+        description: "Take the first step towards financial freedom by filling out our simple and easy online application form. Provide your basic information and let us handle the rest.",
+        img: Image1
+      },
+      {
+        orderNo: 2,
+        heading: "Document Verification",
+        description: "From the comfort of your home, upload the necessary documents to complete your application. Our secure system ensures the confidentiality of your information.",
+        img: Image2
+      },
+      {
+        orderNo: 3,
+        heading: "Credit Assessment",
+        description: "Our seasoned underwriting team, leveraging cutting-edge technology, meticulously assesses your application and financial history for creditworthiness.",
+        img: Image3
+      },
+      {
+        orderNo: 4,
+        heading: "Loan Approval",
+        description: "Upon successful credit assessment, your loan will be promptly approved and disbursed directly into your linked bank account.",
+        img: Image4
+      }
+    ];
     return (
       <div className="application-process-section">
          <h6 className="heading">How It Works?</h6>
-        <ApplicationProcessingCard
-          orderNo={1}
-          heading={"Application Process"}
-          description={
-            "Take the first step towards financial freedom by filling out our simple and easy online application form. Provide your basic information and let us handle the rest."
-          }
-          img={Image1}
-           className="discrption"
-        />
-        
-        <ApplicationProcessingCard
-          orderNo={2}
-          heading={"Document Verification"}
-          description={
-            "From the comfort of your home, upload the necessary documents to complete your application. Our secure system ensures the confidentiality of your information."
-          }
-          img={Image2}
-        />
-        <ApplicationProcessingCard
-          orderNo={3}
-          heading={"Credit Assessment"}
-          description={
-            "Our seasoned underwriting team, leveraging cutting-edge technology, meticulously assesses your application and financial history for creditworthiness." 
-            }
-          img={Image3}
-        />
-        <ApplicationProcessingCard
-          orderNo={4}
-          heading={"Loan Approval"}
-          description={
-            "Upon successful credit assessment, your loan will be promptly approved and disbursed directly into your linked bank account."
-          }
-          img={Image4}
-        />
+         {processCards.map((card, index) => (
+        <ApplicationProcessingCard key={index} {...card} />
+      ))}
+
          <h6 className="heading extra-margin-top">
           Why Choose Credit Mitra for Your
           <br /> Personal Loan Needs?

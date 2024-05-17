@@ -17,7 +17,7 @@ const PersonalLoanforSalaried = (props) => {
                 title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
                 description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
                 keywords="personal loan, instant personal loan, personal loan online"
-                name="Credit Mitra"
+                name="CreditMitra"
                 type="article"
             />
             <section>
