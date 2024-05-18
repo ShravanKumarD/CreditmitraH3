@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Image1 from '../../assets/images/IMG1.png';
 import Image2 from '../../assets/images/IMG2.png';
@@ -9,57 +9,76 @@ import Image6 from '../../assets/images/approvalIcon.png';
 import Image7 from '../../assets/images/repayicon.png';
 
 function ApplicationProcess(props) {
-    function BottomHalfCards(subProps) {
-        return (
-            <>
-                <div className='application-process-card'>
-                    <div className='content needsContent'>
-                        <div>
-                            <h6 className='intext'>{subProps.heading}</h6>
-                            <p className='intext'>{subProps.description}</p>
-                        </div>
-                    </div>
-                    <div className='inmage'>
-                        <img marginTop="auto" src={subProps.img} />
-                    </div>
-
-                </div>
-            </>
-        )
-    }
-
-    function ApplicationProcessingCard(props) {
-        const [isHovered, setIsHovered] = useState(false);
+    function BottomHalfCards({ img, heading, description, index }) {
+        const [isVisible, setIsVisible] = useState(false);
+        const cardRef = useRef(null);
 
         useEffect(() => {
-            const handleMouseEnter = () => {
-                setIsHovered(true);
-            };
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                        observer.unobserve(cardRef.current);
+                    }
+                },
+                { threshold: 0.1 }
+            );
 
-            const handleMouseLeave = () => {
-                setIsHovered(false);
-            };
-
-            const cardElement = document.getElementById(`card-${props.orderNo}`);
-            cardElement.addEventListener('mouseenter', handleMouseEnter);
-            cardElement.addEventListener('mouseleave', handleMouseLeave);
+            observer.observe(cardRef.current);
 
             return () => {
-                cardElement.removeEventListener('mouseenter', handleMouseEnter);
-                cardElement.removeEventListener('mouseleave', handleMouseLeave);
+                if (cardRef.current) {
+                    observer.unobserve(cardRef.current);
+                }
             };
         }, []);
 
         return (
             <div
-                id={`card-${props.orderNo}`}
-                className={`application-process-card ${isHovered ? 'slide-in-left' : 'slide-in-right'}`}>
-                <div className='content '>
-                    {props.orderNo && <div className='list-number'><div className="light-overlay-number">{props.orderNo}</div></div>}
-                    {props.heading && <h6>{props.heading}</h6>}
-                    <p style={{ fontSize: "16px", fontWeight: "300" }}>{props.description}</p>
+                ref={cardRef}
+                className={`application-process-card ${isVisible ? 'slide-in-bottom' : ''}`}>
+                <div className='content needsContent'>
+                    <div>
+                        <h6 className='intext'>{heading}</h6>
+                        <p className='intext'>{description}</p>
+                    </div>
                 </div>
-                {props.img && <img className='inmageHome' src={props.img} />}
+                <div className='inmage'>
+                    <img marginTop="auto" src={img} />
+                </div>
+            </div>
+        );
+    }
+
+    function ApplicationProcessingCard({ orderNo, heading, description, img }) {
+        const [isVisible, setIsVisible] = useState(false);
+
+        useEffect(() => {
+            const handleScroll = () => {
+                const cardElement = document.getElementById(`card-${orderNo}`);
+                const rect = cardElement.getBoundingClientRect();
+                const isFullyVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+                if (isFullyVisible) {
+                    setIsVisible(true);
+                    window.removeEventListener('scroll', handleScroll);
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }, [orderNo]);
+
+        return (
+            <div
+                id={`card-${orderNo}`}
+                className={`application-process-card ${isVisible ? (orderNo % 2 === 0 ? 'slide-in-right' : 'slide-in-left') : ''}`}>
+                <div className='content'>
+                    {orderNo && <div className='list-number'><div className="light-overlay-number">{orderNo}</div></div>}
+                    {heading && <h6>{heading}</h6>}
+                    <p style={{ fontSize: "16px", fontWeight: "300" }}>{description}</p>
+                </div>
+                {img && <img className='inmageHome' src={img} />}
             </div>
         );
     }
@@ -91,6 +110,22 @@ function ApplicationProcess(props) {
         }
     ];
 
+    const additionalCards = [
+        {
+            orderNo: 6,
+          img: Image6,
+          heading: "Instant Approval & Disbursal",
+          description: "Easy online process for loan sanction and fast disbursal"
+        },
+        {
+            orderNo: 7,
+          img: Image7,
+          heading: "Flexible Repayment Option",
+          description: "Accelerated payment option towards principal outstanding"
+        }
+      ];
+
+
     return (
         <div className="application-process-section">
             <h6 className="heading">How It Works?</h6>
@@ -103,27 +138,28 @@ function ApplicationProcess(props) {
                 <br /> Personal Loan Needs?
             </h6>
             <div className='application-process-card b'>
-                <div className='content '>
+                <div className='content'>
                     <div className='space'></div>
                     <h6>Customized Personal Loan</h6>
                     <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
-
-                    <p className='pb-5'> With our customized personal loan, borrowers have the flexibility to choose the loan amount and repayment tenure that best suits their needs. We understand that one size does not fit all; we work closely with our customers to understand their financial objectives, ensuring that the loan terms are structured in a way that aligns with their preferences and capabilities.</p>
+                    <p className='pb-5'>With our customized personal loan, borrowers have the flexibility to choose the loan amount and repayment tenure that best suits their needs. We understand that one size does not fit all; we work closely with our customers to understand their financial objectives, ensuring that the loan terms are structured in a way that aligns with their preferences and capabilities.</p>
                 </div>
                 <img className='inmageHome' src={Image5} />
             </div>
             <div className='halfcard'></div>
-            <div className='row' >
+            <div className='row'>
                 <div className='col-sm-6'>
-                    <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal" />
+                    <BottomHalfCards img={Image6} heading="Instant Approval & Disbursal" description="Easy online process for loan sanction and fast disbursal" index={1} />
                 </div>
                 <div className='col-sm-6'>
-                    <BottomHalfCards img={Image7} heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding" />
+                    <BottomHalfCards img={Image7} heading="Flexible Repayment Option" description="Accelerated payment option towards principal outstanding" index={2} />
                 </div>
             </div>
             <div className='applpcardbuttons'>
-                <button className="btn brand-primary  py-3 px-4" style={{ color: "#fff", textDecoration: "none" }}>Apply Now</button>
-                <button className="btn brand-secondary  py-3 px-4"> <Link to="/contact" style={{ color: "#fff", textDecoration: "none" }}>Contact Us</Link></button>
+                <button className="btn brand-primary py-3 px-4" style={{ color: "#fff", textDecoration: "none" }}>Apply Now</button>
+                <button className="btn brand-secondary py-3 px-4">
+                    <Link to="/contact" style={{ color: "#fff", textDecoration: "none" }}>Contact Us</Link>
+                </button>
             </div>
         </div>
     );
