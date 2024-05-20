@@ -38,7 +38,7 @@ function ResponsibleLending(props) {
             <h5 className="section-heading">
               Our Pledge as a Responsible Lender
             </h5>
-            <div className="list-container">
+            <div className="list-container" >
               {pledgePoints.map((each, index) => {
                 return (
                   <div className="col-sm-12 lending" >

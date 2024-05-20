@@ -22,10 +22,10 @@ const CardList = ({ cards }) => (
               />
               <h5 className="blog-feature-title">{card.title}</h5>
             {/* </Link> */}
-            <p className="datefaq">{card.date}</p>
-            <p className="datefaq">{card.summary}</p>
+            <p className="blog-feature-date">{card.date}</p>
+            <p className="blog-feature-summary">{card.summary}</p>
             <Link to={`/blogs/${card.blogSlug}`} className="read-more-link">
-             <p className="datefaq">Read More</p>
+             <p className="blog-feature-readmore">Read More</p>
             </Link>
           </div>
         </div>
