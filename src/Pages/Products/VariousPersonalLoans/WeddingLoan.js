@@ -193,7 +193,7 @@ const WeddingLoan = (props) => {
           {/* old code */}
           <div className="btn-container text-center"></div>
 
-          <div className='heading'>Eligibility Criteria</div>
+          <div className='heading eligibility'>Eligibility Criteria</div>
           <div className="products-hero-section ">
             <div className="btn-container">
               <div className="row productsDiv">
@@ -249,7 +249,8 @@ const WeddingLoan = (props) => {
               fontFamily: "poppins",
               marginTop: "3rem",
               textAlign: "center",
-              fontWeight: "normal"
+              fontWeight: "normal",
+              marginBottom:"-60px"
             }}
           >
             Your wedding day is a celebration of love, commitment, and new beginnings. Let CreditMitra be your trusted partner in bringing your vision to life, and in making your wedding day Unforgettable.

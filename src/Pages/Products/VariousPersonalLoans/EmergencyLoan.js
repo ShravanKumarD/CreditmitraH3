@@ -189,7 +189,7 @@
               {/* old code */}
               <div className="btn-container text-center"></div>
 
-              <div className='heading'>Eligibility Criteria</div>
+              <div className='heading eligibility'>Eligibility Criteria</div>
                     <div className="products-hero-section ">
                         <div className="btn-container">
                             <div className="row productsDiv">
@@ -245,7 +245,8 @@
                   fontFamily: "poppins",
                   marginTop: "3rem",
                   textAlign: "center",
-                  fontWeight: "normal"
+                  fontWeight: "normal",
+                  marginBottom:"-60px"
                 }}
               >
            Unexpected situations shouldn't derail your financial goals. With an emergency loan from CreditMitra, you can address urgent needs with confidence, knowing you have a manageable repayment plan in place. Get our emergency loans with a simple application process. We'll ensure a smooth journey.

@@ -192,7 +192,7 @@ const InstantPersonalLoan = (props) => {
 
               
           <div className="btn-container text-center"></div>
-                    <div className='heading'>Eligibility Criteria</div>
+                    <div className='heading eligibility'>Eligibility Criteria</div>
                     <div className="products-hero-section ">
                         <div className="btn-container">
                             <div className="row productsDiv">
@@ -249,7 +249,8 @@ const InstantPersonalLoan = (props) => {
                   fontFamily: "poppins",
                   marginTop: "3rem",
                   textAlign: "center",
-                  fontWeight: "normal"
+                  fontWeight: "normal",
+                  marginBottom:"-60px"
                 }}>
             Don't let your dreams sit on the shelf forever! Hop on with your best finance Mitra, Creditmitra today and unlock the door to endless possibilities. Let Creditmitra's instant personal loan help you target your financial goal!
               </h6>

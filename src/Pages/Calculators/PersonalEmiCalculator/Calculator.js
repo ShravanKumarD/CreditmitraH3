@@ -1,25 +1,40 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import './../PersonalEmiCalculator/calculator.css';
 import Header from '../../../Components/Header';
 import Footer from '../../../Components/Footer';
 import SEO from '../../SEO/SEO';
 
 const Calculator = (props) => {
-    const [loanAmount, setloanAmount] = useState(0);
+    const [loanAmount, setLoanAmount] = useState(0);
     const [roi, setROI] = useState(0);
     const [tenure, setTenure] = useState(0);
-    
+    const [totalInterest, setTotalInterest] = useState(0);
+    const [totalPayment, setTotalPayment] = useState(0);
+
     const handleChangeLa = (event) => {
-        console.log(event,"eventkjbsdjfusdfuwdh")
-        setloanAmount(event.target);
+        setLoanAmount(event.target.value);
     };
     const handleChangeROI = (event) => {
-        setloanAmount(event.target);
+        setROI(event.target.value);
     };
     const handleChangeT = (event) => {
-        setloanAmount(event.target);
+        setTenure(event.target.value);
     };
 
+    useEffect(() => {
+        const calculateEMI = (principal, rate, time) => {
+            rate = rate / (12 * 100); // Monthly interest rate
+            time = time * 12; // Number of monthly installments
+            return (principal * rate * Math.pow(1 + rate, time)) / (Math.pow(1 + rate, time) - 1);
+        };
+
+        const emi = calculateEMI(loanAmount, roi, tenure);
+        const interest = (emi * tenure * 12) - loanAmount;
+        const total = parseFloat(loanAmount) + interest;
+
+        setTotalInterest(interest);
+        setTotalPayment(total);
+    }, [loanAmount, roi, tenure]);
 
     return (
         <>
@@ -31,66 +46,63 @@ const Calculator = (props) => {
                 name="Credit Mitra"
                 type="article"
             />
-            <section>
-                <div className="page-container calculator">
-                    <h6>Personal Loan EMI Calculator</h6>
-                <div className='mainDivSlider'>
-                    <div className='row main-slider'>
-                    <h1>Loan Amount: {loanAmount}</h1>
-                        <div className="col-sm-4 slider-container">
+            <section className="container mx-auto p-4">
+                <h3 className="text-xl font-semibold mb-4">Personal Loan EMI Calculator</h3>
+                <div className='my-6'>
+                    <div className='flex flex-col items-center'>
+                        <h1 className="text-2xl font-semibold">Loan Amount: ₹{loanAmount}</h1>
+                        <div className="w-full max-w-md">
                             <input
                                 type="range"
                                 min="0"
-                                max="100"
+                                max="1000000"
                                 value={loanAmount}
                                 onChange={handleChangeLa}
-                                className="slider"
+                                className="slider w-full"
                             />
-                          
-                          
                         </div>
-                        <div style={{padding:"3%"}}></div>
                     </div>
-                    <h1>Rate Of Interest: {roi}%</h1>
-                    <div className='row main-slider'>
-                        <div className="col-sm-4 slider-container">
+                    <div className="py-6"></div>
+                    <div className='flex flex-col items-center'>
+                        <h1 className="text-2xl font-semibold">Rate Of Interest: {roi}%</h1>
+                        <div className="w-full max-w-md">
                             <input
                                 type="range"
                                 min="0"
-                                max="100"
+                                max="20"
                                 value={roi}
                                 onChange={handleChangeROI}
-                                className="slider"
+                                className="slider w-full"
                             />
-                            <div className="markers">
-                                <div className="marker" style={{ left: '25%' }}></div>
-                                <div className="marker" style={{ left: '50%' }}></div>
-                                <div className="marker" style={{ left: '75%' }}></div>
+                            <div className="relative w-full h-2 mt-2">
+                                <div className="absolute left-1/4 w-1 h-full bg-gray-500"></div>
+                                <div className="absolute left-1/2 w-1 h-full bg-gray-500"></div>
+                                <div className="absolute left-3/4 w-1 h-full bg-gray-500"></div>
                             </div>
-                           
                         </div>
-                        <div style={{padding:"3%"}}></div>
                     </div>
-                    <h1>Tenure: {tenure}Months</h1>
-                    <div className='row main-slider'>
-                        <div className="col-sm-4 slider-container">
+                    <div className="py-6"></div>
+                    <div className='flex flex-col items-center'>
+                        <h1 className="text-2xl font-semibold">Tenure: {tenure} Months</h1>
+                        <div className="w-full max-w-md">
                             <input
                                 type="range"
-                                min="0"
-                                max="100"
+                                min="1"
+                                max="360"
                                 value={tenure}
                                 onChange={handleChangeT}
-                                className="slider"
+                                className="slider w-full"
                             />
-                            <div className="markers">
-                                <div className="marker" style={{ left: '25%' }}></div>
-                                <div className="marker" style={{ left: '50%' }}></div>
-                                <div className="marker" style={{ left: '75%' }}></div>
+                            <div className="relative w-full h-2 mt-2">
+                                <div className="absolute left-1/4 w-1 h-full bg-gray-500"></div>
+                                <div className="absolute left-1/2 w-1 h-full bg-gray-500"></div>
+                                <div className="absolute left-3/4 w-1 h-full bg-gray-500"></div>
                             </div>
-                          
                         </div>
-                        <div style={{padding:"3%"}}></div>
                     </div>
+                    <div className="result-container mt-8 text-center">
+                        <h2 className="text-xl font-semibold transition-opacity duration-1000 opacity-0 show">Total Interest: ₹{totalInterest.toFixed(2)}</h2>
+                        <h2 className="text-xl font-semibold transition-opacity duration-1000 opacity-0 show">Total Payment: ₹{totalPayment.toFixed(2)}</h2>
                     </div>
                 </div>
                 <Footer />
@@ -98,6 +110,5 @@ const Calculator = (props) => {
         </>
     );
 }
-
 
 export default Calculator;

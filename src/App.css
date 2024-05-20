@@ -86,7 +86,7 @@ color: #00246A;
   &.products-page {
     padding-right: 100px;
     padding-left: 100px;
-    padding-top: 86px;
+    padding-top: 40px;
   }
 
   &.responsible-lending-page {
@@ -465,7 +465,7 @@ color: #00246A;
 }
 
 .products-hero-section {
-  padding-bottom: 130px; /* padding-bottom: 230px;  */
+  padding-bottom: 50px; /* padding-bottom: 230px;  */
   text-align: center;
 
   small {
@@ -482,6 +482,7 @@ color: #00246A;
     font-size: 18px;
     margin-bottom: 0;
     font-family: Poppins;
+    margin-bottom: -50px;
   }
 
   .btn-container {
@@ -503,6 +504,10 @@ color: #00246A;
   }
 
 }
+.eligibility{
+  margin-bottom: -60px;
+margin-top: 50px;
+}
 
 /* products-hero-section ends */
 
@@ -511,7 +516,7 @@ color: #00246A;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
   padding: 15px;
 
   &:last-child {
@@ -533,7 +538,7 @@ color: #00246A;
       padding-left: 28px;
 
       li {
-        margin-bottom: 28px;
+        margin-bottom: 16px;
         color: #FFF;
         font-weight: 400;
         font-family: Poppins;
@@ -1227,7 +1232,7 @@ height: 100%;
 }
 
 .productsDiv {
-  padding: 20px
+  padding: 10px
 }
 
 @media only screen and (max-width: 767px) {

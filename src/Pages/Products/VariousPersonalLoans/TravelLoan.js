@@ -192,7 +192,7 @@ import React from 'react'
               {/* old code */}
               <div className="btn-container text-center"></div>
 
-              <div className='heading'>Eligibility Criteria</div>
+              <div className='heading eligibility'>Eligibility Criteria</div>
                     <div className="products-hero-section ">
                         <div className="btn-container">
                             <div className="row productsDiv">
@@ -248,7 +248,8 @@ import React from 'react'
                   fontFamily: "poppins",
                   marginTop: "3rem",
                   textAlign: "center",
-                  fontWeight: "normal"
+                  fontWeight: "normal",
+                  marginBottom:"-60px"
                 }}
               >
              Get our travel loans with a simple application process. We'll ensure a smooth journey, both financially and physically, so you can set off on your dream adventure!
