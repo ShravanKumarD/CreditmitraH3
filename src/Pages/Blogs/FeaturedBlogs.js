@@ -28,7 +28,8 @@ function FeaturedBlogs(props) {
       imageLink: require("../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science.png"),
       blogSlug: "improving-your-cibil-score-is-not-rocket-science",
       summary:"  Have you ever faced rejection for your loan application due to a low CIBIL score? Don't worry you are not alone. There are thousands of loan applications daily that get rejected due to low CIBIL scores...", 
-    },    
+    },
+        
     // {
     //   title: "How to get the best personal loan interest rate available to you?",
     //   date: "14th May, 2024",
@@ -38,6 +39,12 @@ function FeaturedBlogs(props) {
     // },
     
   ];
+
+  arrayOfCards.sort((a, b) => {
+    const dateA = new Date(a.date.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+    const dateB = new Date(b.date.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+    return dateB - dateA;
+  });
 
   return (
     <>

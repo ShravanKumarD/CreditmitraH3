@@ -608,6 +608,8 @@ color: #00246A;
         position: absolute;
         top: 0;
         left: 0;
+        margin-top: 0px;
+
       }
 
     }
@@ -618,9 +620,7 @@ color: #00246A;
       display: flex;
       align-items: center;
 
-      .list-number {
-        margin-top: 10px;
-      }
+      
     }
 
   }
@@ -833,7 +833,7 @@ color: #00246A;
 
     .company-container {
       h6 {
-        margin-top: 16x;
+        margin-top: 16px;
         color: #FFF;
         font-size: 40px;
         font-weight: 700;
@@ -1796,14 +1796,6 @@ h5 {
   color: #ffffff;
 }
 
-.datefaq {
-  margin-top: 12px;
-  font-size: 18px;
-  margin-bottom: 16px;
-  font-family: Poppins;
-  margin-left: 10px;
-  color: #ffffff;
-}
 
 h1 {
   color: #1B9BDC;

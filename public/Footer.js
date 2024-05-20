@@ -66,7 +66,7 @@ function Footer(props) {
                     <div className='footer-container'>
                         <div className='w-25'>
                             <img src={Logo} className='img-fluid mb-3' />
-                            <p>Welcome to CreditMitra Your Gateway to Financial Empowerment! At CreditMitra, Navigate through our user-friendly platform to access a range of credit solutions tailored to your needs.</p>
+                            <p>Welcome to CreditMitra, Your Gateway to Financial Empowerment! At CreditMitra, you can Navigate through our user-friendly platform to access a range of credit solutions tailored to your needs.</p>
                         </div>
                         <div className='w-75 navigation-container'>
                            {getFooterNavLinks()}
