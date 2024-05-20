@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import ApplicationProcessingCard from "../../Components/ApplicationProcessingCard";
-import SEO from "../SEO/SEO";
+import SEO from "../../Components/SEO/SEO";
 import Image1 from "../../assets/images/mission.png";
 import Image2 from "../../assets/images/vision.png";
 import aboutus from "../../assets/images/aboutus.png";

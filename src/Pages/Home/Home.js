@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection";
 import ApplicationProcess from "./ApplicationProcess";
 import Footer from "../../Components/Footer";
 import UserFeedback from "./UserFeedback";
-import SEO from '../SEO/SEO'
+import SEO from "../../Components/SEO/SEO";
 
 
 function Home(props) {

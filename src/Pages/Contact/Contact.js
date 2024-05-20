@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header";
 import message from '../../assets/images/message.png'
-import SEO from "../SEO/SEO";
+import SEO from "../../Components/SEO/SEO";
 
 function Contact(props) {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import ApplicationProcessingCard from "../../Components/ApplicationProcessingCard";
-import SEO from '../SEO/SEO'
+import SEO from '../../Components/SEO/SEO'
 
 function ResponsibleLending(props) {
   let pledgePoints = [

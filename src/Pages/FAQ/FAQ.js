@@ -3,7 +3,7 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { Collapse } from "reactstrap";
 import { Link } from "react-router-dom";
-import SEO from "../SEO/SEO";
+import SEO from "../../Components/SEO/SEO";
 
 function FAQ(props) {
   let faqContent = [

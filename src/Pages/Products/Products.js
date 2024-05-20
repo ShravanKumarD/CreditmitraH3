@@ -7,7 +7,7 @@ import StepsImg from "./../../assets/images/mobile.png";
 // import StepsImg2 from "../../assets/images/eligiblity.png";
 import StepsImg2 from "./../../assets/images/pad.png";
 import { Link } from "react-router-dom";
-import SEO from "../SEO/SEO";
+import SEO from "../../Components/SEO/SEO";
 
 function Products(props) {
   return (

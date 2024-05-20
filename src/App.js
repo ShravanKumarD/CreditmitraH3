@@ -27,6 +27,8 @@ import WeddingLoan from './Pages/Products/VariousPersonalLoans/WeddingLoan';
 
 import Calculator from './Pages/Calculators/PersonalEmiCalculator/Calculator';
 
+import Sitemap from './Components/SEO/Sitemap';
+
 function App() {
   const Wrapper = ({ children }) => {
     const location = useLocation()
@@ -67,6 +69,10 @@ function App() {
                  
         {/* Calculator routes */}
         <Route path="calculator" element={<Calculator routePath="calculator"/>}/>
+
+          {/* Sitemap Route */}
+          <Route path="/sitemap.xml" element={<Sitemap />} />
+
         
       </Routes>
       </Wrapper>

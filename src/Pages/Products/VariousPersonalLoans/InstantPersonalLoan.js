@@ -6,7 +6,7 @@ import React from 'react'
     import StepsImg from "./../../../assets/images/mobile.png";
     import StepsImg2 from "./../../../assets/images/pad.png";
     import { Link } from "react-router-dom";
-    import SEO from "./../../SEO/SEO";
+    import SEO from "../../../Components/SEO/SEO";
     
   
 const InstantPersonalLoan = (props) => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './../PersonalEmiCalculator/calculator.css';
 import Header from '../../../Components/Header';
 import Footer from '../../../Components/Footer';
-import SEO from '../../SEO/SEO';
+import SEO from '../../../Components/SEO/SEO';
 
 const Calculator = (props) => {
     const [loanAmount, setLoanAmount] = useState(0);
