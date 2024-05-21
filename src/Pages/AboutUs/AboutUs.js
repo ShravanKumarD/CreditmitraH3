@@ -47,7 +47,7 @@ function AboutUs(props) {
   
   function ProcessingCard(props) {
     return (
-        <div className='application-process-card' style={{marginRight:"6px"}}>
+        <div className='application-process-card'>
                 <div className='content'>
                     {props.orderNo && <div className='list-number'><div className="light-overlay-number">{props.orderNo}</div></div>}
                     {props.heading && <h6>{props.heading}</h6>}
@@ -64,7 +64,7 @@ function AboutUs(props) {
         title="best instant personal loan in India | Hyderabad | CreditMitra"
         description="CreditMitra is the best instant personal loan in india. We offer instant personal loans upto 2 lakhs with attractive interest rates. Apply for your instant personal loan now."
         keywords="best instant personal loan in india, best personal loan in india, instant personal loans in hyderabad"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
       />
 

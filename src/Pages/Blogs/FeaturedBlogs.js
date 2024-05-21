@@ -13,7 +13,6 @@ function slugify(title) {
 }
 
 function FeaturedBlogs(props) {
-  // const arrayOfCards = [title, date, imageLink];
   const arrayOfCards = [
     {
       title: "8 Tips to Improve Your Cibil Score",
@@ -29,13 +28,12 @@ function FeaturedBlogs(props) {
       blogSlug: "improving-your-cibil-score-is-not-rocket-science",
       summary:"  Have you ever faced rejection for your loan application due to a low CIBIL score? Don't worry you are not alone. There are thousands of loan applications daily that get rejected due to low CIBIL scores...", 
     },
-        
     {
       title: "Understanding Personal Loan Recovery: Process & RBI Guidelines",
       date: "21th May, 2024",
-      imageLink: require("../../assets/images/blogs/blog_sample.png"),
-      blogSlug: "how-to-get-the-best-personal-loan-interest-rate-available-to-you",
-      summary:"", 
+      imageLink: require("../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png"),
+      blogSlug:"understanding-personal-loan-recovery",
+      summary:"With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...", 
     },
     
   ];

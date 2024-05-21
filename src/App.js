@@ -28,6 +28,7 @@ import WeddingLoan from './Pages/Products/VariousPersonalLoans/WeddingLoan';
 import Calculator from './Pages/Calculators/PersonalEmiCalculator/Calculator';
 
 import Sitemap from './Components/SEO/Sitemap';
+import UnderstandingPersonalLoanRecovery from './Pages/Blogs/BlogPages/UnderstandingPersonalLoanRecovery';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -58,6 +59,7 @@ function App() {
           <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={< EightTipsToImproveYourCibilScoreBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
           <Route path="/blogs/improving-your-cibil-score-is-not-rocket-science" element={<ImprovingCibilRocketScienceBlogPage routePath="/blogs/improving-your-cibil-score-is-not-rocket-science"/>} />
           {/* 8-tips-to-improve-your-cibil-score */}
+          <Route path="/blogs/understanding-personal-loan-recovery" element={<UnderstandingPersonalLoanRecovery routePath="/blogs/understanding-personal-loan-recovery"/>}/>
 
           {/* product routes */}
           <Route path="/emergency-loan" element={<EmergencyLoan routePath="/emergency-loan"/>} />

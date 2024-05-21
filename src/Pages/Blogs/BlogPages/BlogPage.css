@@ -10,7 +10,7 @@
 }
 
 .blog-feature-image {
-  width: "100%";
+  width:-webkit-fill-available;
   z-index: -10;
   /* border-top-left-radius: 19px; */
   /* border-top-right-radius: 19px;  */
