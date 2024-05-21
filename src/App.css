@@ -1441,8 +1441,8 @@ text-align: center;
   }
 
   .aboutcard {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .space {
@@ -1655,11 +1655,12 @@ text-align: center;
     }
   }
 
+  /* About Us */
   .page-container {
     &.about-us {
       padding-top: 0px;
-      padding-right: 0px;
-      padding-left: 0px;
+      padding-right: 10px !important;
+      padding-left: 10px !important;
     }
   }
 
