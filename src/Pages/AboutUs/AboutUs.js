@@ -30,33 +30,41 @@ function AboutUs(props) {
         "Credit Mitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products.",
     },
   ];
-  
+
   function VisionCard(cardInfo) {
     return (
       <>
         <div className="application-process-card aboutcard ">
           <div className="content">
             <h6>{cardInfo.heading}</h6>
-            <p style={{fontSize:"14px",fontWeight:"400"}}>{cardInfo.description}</p>
+            <p style={{ fontSize: "14px", fontWeight: "400" }}>
+              {cardInfo.description}
+            </p>
           </div>
           <img height="300px" src={cardInfo.img} />
         </div>
       </>
     );
   }
-  
+
   function ProcessingCard(props) {
     return (
-        <div className='application-process-card'>
-                <div className='content'>
-                    {props.orderNo && <div className='list-number'><div className="light-overlay-number">{props.orderNo}</div></div>}
-                    {props.heading && <h6>{props.heading}</h6>}
-                    <p style={{fontSize:"12px",fontWeight:"300"}}>{props.description}</p>
-                </div>
-                 {props.img &&<img className='inmageHome' src={props.img}/>}
+      <div className="application-process-card">
+        <div className="content">
+          {props.orderNo && (
+            <div className="list-number">
+              <div>{props.orderNo}</div>
             </div>
+          )}
+          {props.heading && <h6>{props.heading}</h6>}
+          <p style={{ fontWeight: "300" }}>
+            {props.description}
+          </p>
+        </div>
+        {props.img && <img className="inmageHome" src={props.img} />}
+      </div>
     );
-}
+  }
   return (
     <>
       <Header routePath={props.routePath} />
@@ -83,7 +91,14 @@ function AboutUs(props) {
                 <div className="about-section-content">
                   <h6>About CreditMitra</h6>
                   <p>
-                  Crafting a Revolutionary Financial Journey CreditMitra is revolutionizing the lending landscape, catering to the financial needs of young salaried Indians. Our user-centric platform offers simplicity, transparency, and flexibility. Partnering with RBI-registered NBFCs, we empower self-employed and salaried individuals with quick loans up to Rs 2 lakh, flexible repayment options, and competitive interest rates
+                    Crafting a Revolutionary Financial Journey CreditMitra is
+                    revolutionizing the lending landscape, catering to the
+                    financial needs of young salaried Indians. Our user-centric
+                    platform offers simplicity, transparency, and flexibility.
+                    Partnering with RBI-registered NBFCs, we empower
+                    self-employed and salaried individuals with quick loans up
+                    to Rs 2 lakh, flexible repayment options, and competitive
+                    interest rates
                   </p>
                 </div>
                 <img height="300px" className="aboutus" src={aboutus} />
@@ -94,28 +109,22 @@ function AboutUs(props) {
                 return (
                   <div className="col-sm-6 aboutcard">
                     <div className="each-point">
-
                       <div className="quote-container">
                         <span>{"0" + (index + 1)}</span>
                         <p>"{each.quote}"</p>
                       </div>
-                      <ProcessingCard
-                        description={each.description}
-                      />
+                      <ProcessingCard description={each.description} />
                     </div>
                   </div>
-
-
-
                 );
               })}
             </div>
-            <VisionCard 
+            <VisionCard
               heading="Our Mission"
               img={Image1}
               description="Our core mission is to champion financial liberation for all. We focus on breaking away from conventional lending practices, eliminating the requirement for collateral and democratizing access to financial resources. We specialize in providing flexible loan options tailored to diverse needs, accompanied by repayment terms designed for utmost convenience. We strive to emerge as the leading financial Mitra for both ambitious and salaried individuals, delivering transformative solutions that fuel aspirations."
             />
-            <VisionCard 
+            <VisionCard
               heading="Our Vision"
               img={Image2}
               description="We as a company, envision a future where financial freedom is within reach for everyone. We want to revolutionize the lending landscape by challenging traditional norms and barriers. We aspire to create a world where collateral-free loans are the norm, granting equal opportunities to all individuals. We see ourselves as catalysts for positive change, empowering individuals to pursue their dreams and achieve their goals with confidence."

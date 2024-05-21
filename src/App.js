@@ -69,8 +69,8 @@ function App() {
           <Route path="/travel-loan" element={<TravelLoan routePath="/travel-loan"/>} />
           <Route path="/marriage-loan" element={<WeddingLoan routePath="/marriage-loan"/>} />
                  
-        {/* Calculator routes */}
-        <Route path="calculator" element={<Calculator routePath="calculator"/>}/>
+          {/* Calculator routes */}
+          <Route path="calculator" element={<Calculator routePath="calculator"/>}/>
 
           {/* Sitemap Route */}
           <Route path="/sitemap.xml" element={<Sitemap />} />
