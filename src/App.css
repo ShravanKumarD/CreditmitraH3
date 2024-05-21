@@ -109,14 +109,14 @@ color: #00246A;
 
 @media (max-width: 991px) {
   .nav-item-container {
-    font-size: 1.3rem;
-    margin-left: 5%;
+    font-size: 1.23rem;
+    margin-left: 4.5%;
   }
 
   .nav-item-seperator{
     display: block;
-    margin-left: 5%;
-    margin-right: 10px;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
   }
 }
 /* Navbar ends */
