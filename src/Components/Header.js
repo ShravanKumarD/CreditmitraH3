@@ -101,28 +101,38 @@ function Header() {
       {/* Navbar Items Collapsible begins */}
       <div className={`collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
         <ul className="navbar-nav mr-auto">
-          {navigations.map((each, index) => (
+          {navigations.map((item, index) => (
             <li className="nav-item" key={index}>
-              {each.displayName === "Products" ? (
+              {item.displayName === "Products" ? (
+                // if item is Products
                 <div
                   ref={dropdownRef}
-                  className="nav-item dropdown"
+                  className="dropdown"
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Link
-                    to={each.redirection}
-                    className={`nav-link dropdown-toggle ${
-                      location.pathname.startsWith("/products") ? "active" : ""
-                    }`}
-                    title={each.displayName}
-                    aria-haspopup="true"
-                    aria-expanded={isDropdownOpen ? "true" : "false"}
-                    style={{ color: "white",}} 
-                    onClick={handleDropdownToggle}
-                  >
-                    {each.displayName}
-                  </Link>
+                  <div className="nav-item-container">
+                    <Link
+                      // This links to /products
+                      to={item.redirection}
+                      className={`nav-link dropdown-toggle ${
+                        // if url is already /products or /products/*, then 'active' class will be added
+                        location.pathname.startsWith("/products") ? "active" : ""
+                      }`}
+                      // title is product
+                      title={item.displayName}
+                      aria-haspopup="true"
+                      aria-expanded={isDropdownOpen ? "true" : "false"}
+                      // activated products, will give white color
+                      style={{ color: "white"}} 
+                      onClick={handleDropdownToggle}
+                    >
+                      {/*  display "Products" */}
+                      {item.displayName}
+                    </Link>
+                  </div>
+
+                  {/* dropdown for product */}
                   <div
                     className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
                     aria-labelledby="navbarDropdown"
@@ -138,23 +148,29 @@ function Header() {
                       </Link>
                     ))}
                   </div>
+                  {/* dropdown for products ends */}
+                  <hr className="nav-item-seperator"/>
                 </div>
               ) : (
-                // else part of ternary operator, if each.displayName === "Products"
+                // else part of ternary operator, if item.displayName != "Products"
+                <>
                 <div className="nav-item-container"> 
                   <Link
-                    to={each.redirection}
+                    to={item.redirection}
+                    // if url is already /itemname then 'active' class will be added
                     className={`nav-link ${
-                      each.redirection === location.pathname ? "active" : ""
+                      item.redirection === location.pathname ? "active" : ""
                     }`}
-                    title={each.displayName}
+                    title={item.displayName}
                     onClick={handleLinkClick}
                   >
-                    {each.displayName}
+                    {/* not products */}
+                    {item.displayName}
                   </Link>
-                  <hr className="nav-item-seperator"/>
 
                 </div>
+                <hr className="nav-item-seperator"/>
+                </>
               )}
             </li>
           ))}
