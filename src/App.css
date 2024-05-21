@@ -1344,10 +1344,10 @@ text-align: center;
   padding: 10px;
 }
 
-.tnc {
+/* .tnc {
   margin-left: 5%;
   width: 90%;
-}
+} */
 @media only screen and (max-width: 767px) {
   .text-center {
     font-size: 30px;
