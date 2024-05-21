@@ -71,11 +71,12 @@ function Header() {
   return (
     <nav
       style={{ color: "white" }}
-      className={`navbar fixed ${
+      className={`navbar navbar-expand-lg navbar-light fixed ${
         disableBackground ? "" : "custom-background"
       }`}
     >
       <Link
+        className="navbar-brand"
         to="/"
         onClick={() => {
           setDisableBackground(false);
@@ -94,7 +95,7 @@ function Header() {
         <img src={Toggle} alt="Toggle" />
       </button>
 
-      <div className={`collapse   ${isNavOpen ? "show" : ""}`}>
+      <div className={`collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
         <ul className="navbar-nav mr-auto">
           {navigations.map((each, index) => (
             <li className="nav-item" key={index}>
@@ -143,11 +144,12 @@ function Header() {
                   title={each.displayName}
                   onClick={handleLinkClick}
                   style={{
-                    marginLeft: "10px",
+                    marginLeft: "20px",
                     color: "white",
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
+                    textSize: "3rem"
                   }}
                 >
                   {each.displayName}

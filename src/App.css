@@ -65,7 +65,8 @@ text-align: center;
   animation: fadeInUp 1s forwards;
 }
 
-
+/* Navbar styles */
+/* CM Logo */
 .img-fluid-logo{
   margin-left: 15%;
 }
@@ -81,7 +82,10 @@ color: #00246A;
 .dropdown-menu{
   /* background:  #1B9BDC ; */
   color: white;
-  
+}
+
+.dropdown-menu a:hover {
+  color:#1B9BDC;
 }
 .App {
   overflow: hidden;
