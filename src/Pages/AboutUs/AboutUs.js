@@ -47,11 +47,11 @@ function AboutUs(props) {
   
   function ProcessingCard(props) {
     return (
-        <div className='application-process-card' style={{marginRight:"15px"}}>
+        <div className='application-process-card' style={{marginRight:"6px"}}>
                 <div className='content'>
                     {props.orderNo && <div className='list-number'><div className="light-overlay-number">{props.orderNo}</div></div>}
                     {props.heading && <h6>{props.heading}</h6>}
-                    <p style={{fontSize:"13px",fontWeight:"300"}}>{props.description}</p>
+                    <p style={{fontSize:"12px",fontWeight:"300"}}>{props.description}</p>
                 </div>
                  {props.img &&<img className='inmageHome' src={props.img}/>}
             </div>
