@@ -75,7 +75,7 @@ function GrievienceRedressal(props) {
         have created the following escalation system for our customers:
       </p>
 
-      <h3>Level 1</h3>
+      <h2>Level 1</h2>
       <ul>
         <li>
           Customers can reach out to our Support Team at{" "}
@@ -103,7 +103,7 @@ function GrievienceRedressal(props) {
         </li>
       </ul>
 
-      <h3>Level 2</h3>
+      <h2>Level 2</h2>
       <p>Grievance Officer</p>
       <ul>
         <li>
@@ -130,7 +130,7 @@ function GrievienceRedressal(props) {
         </li>
       </ul>
 
-      <h3>Level 3</h3>
+      <h2>Level 3</h2>
       <p>Grievance Nodal Officer</p>
       <ul>
         <li>

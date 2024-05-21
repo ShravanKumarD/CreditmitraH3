@@ -192,7 +192,7 @@ const InstantPersonalLoan = (props) => {
 
               
           <div className="btn-container text-center"></div>
-                    <div className='heading eligibility'>Eligibility Criteria</div>
+                    <div className='uncolored-heading eligibility'>Eligibility Criteria</div>
                     <div className="products-hero-section ">
                         <div className="btn-container">
                             <div className="row productsDiv">

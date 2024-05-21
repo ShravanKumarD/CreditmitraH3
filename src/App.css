@@ -499,6 +499,19 @@ color: #00246A;
     font-family: Poppins;
     margin: 50px;
   }
+
+  
+  
+}
+
+.uncolored-heading {
+  color: white;
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  font-family: Poppins;
+  margin: 50px;
 }
 
 .products-hero-section {
