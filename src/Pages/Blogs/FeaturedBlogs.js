@@ -61,7 +61,7 @@ function FeaturedBlogs(props) {
             <div className="content1">
               <h1
                 className="heading"
-                style={{ fontSize: "3rem", marginBottom: "5%",marginTop:"10%" }}
+                style={{ fontSize: "3rem", marginBottom: "5%",marginTop:"100px" }}
               >
                 Featured Blogs
               </h1>
