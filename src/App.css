@@ -56,7 +56,7 @@ text-align: center;
 
 .resLending{
   opacity: 0;
-  transition: opacity 1s, transform 1s;
+  transition: opacity 0.25s, transform 0.25s;
 }
 
 .resLending.animate {
@@ -70,6 +70,12 @@ text-align: center;
 .img-fluid-logo{
   margin-left: 15%;
 }
+
+.nav-btn{
+  margin-left: 4%;
+  margin-right: 35px;
+}
+
 .nav-link:hover,
 .nav-link.active {
   color:#53b9eb !important;
@@ -87,6 +93,33 @@ color: #00246A;
 .dropdown-menu a:hover {
   color:#1B9BDC;
 }
+
+.nav-link {
+  margin-left: 10px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.nav-item-seperator{
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .nav-item-container {
+    font-size: 1.2rem;
+  }
+
+  .nav-item-seperator{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* Navbar ends */
+
 .App {
   overflow: hidden;
 }
@@ -164,8 +197,16 @@ color: #00246A;
 
 } 
 .nav-item .dropdown{
-  margin-left:  10px;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Poppins;
+  gap: 40px;
+  color: #1B9BDC;
+  margin-left: 50px;
+
+  margin-left:  0px;
 }
+
 .mr-auto{
 }
 

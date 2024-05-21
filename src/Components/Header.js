@@ -75,6 +75,7 @@ function Header() {
         disableBackground ? "" : "custom-background"
       }`}
     >
+      {/* CM Image Link */}
       <Link
         className="navbar-brand"
         to="/"
@@ -94,7 +95,10 @@ function Header() {
       <button className="navbar-toggler" type="button" onClick={handleNavToggle}>
         <img src={Toggle} alt="Toggle" />
       </button>
+      {/* Image ends here */}
 
+
+      {/* Navbar Items Collapsible begins */}
       <div className={`collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
         <ul className="navbar-nav mr-auto">
           {navigations.map((each, index) => (
@@ -136,30 +140,29 @@ function Header() {
                   </div>
                 </div>
               ) : (
-                <Link
-                  to={each.redirection}
-                  className={`nav-link ${
-                    each.redirection === location.pathname ? "active" : ""
-                  }`}
-                  title={each.displayName}
-                  onClick={handleLinkClick}
-                  style={{
-                    marginLeft: "20px",
-                    color: "white",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    textSize: "3rem"
-                  }}
-                >
-                  {each.displayName}
-                </Link>
+                // else part of ternary operator, if each.displayName === "Products"
+                <div className="nav-item-container"> 
+                  <Link
+                    to={each.redirection}
+                    className={`nav-link ${
+                      each.redirection === location.pathname ? "active" : ""
+                    }`}
+                    title={each.displayName}
+                    onClick={handleLinkClick}
+                  >
+                    {each.displayName}
+                  </Link>
+                  <hr className="nav-item-seperator"/>
+
+                </div>
               )}
             </li>
           ))}
         </ul>
-        <button className="btn brand-secondary lg">Login</button>
+        {/* Navbar Items here */}
+        <button className="nav-btn btn brand-secondary lg">Login</button>
       </div>
+      {/* Navbar Items Collapsible ends */}
     </nav>
   );
 }
