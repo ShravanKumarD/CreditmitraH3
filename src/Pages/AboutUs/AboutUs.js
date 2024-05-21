@@ -12,7 +12,7 @@ function AboutUs(props) {
     {
       quote: "Empowering Millennials      with Innovative Loans",
       description:
-        "Credit Mitra offers innovative loans to help millennials achieve a life that they desire.We differentiate in the otherwise cluttered Personal Loan segment and deliver fastest Personal Loans at customer friendly terms.",
+        "CreditMitra offers innovative loans to help millennials achieve a life that they desire.We differentiate in the otherwise cluttered Personal Loan segment and deliver fastest Personal Loans at customer friendly terms.",
     },
     {
       quote: "Customer-Centric Loan Solutions",
@@ -30,19 +30,33 @@ function AboutUs(props) {
         "Credit Mitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products.",
     },
   ];
+  
   function VisionCard(cardInfo) {
     return (
       <>
         <div className="application-process-card aboutcard ">
           <div className="content">
             <h6>{cardInfo.heading}</h6>
-            <p>{cardInfo.description}</p>
+            <p style={{fontSize:"14px",fontWeight:"400"}}>{cardInfo.description}</p>
           </div>
           <img height="300px" src={cardInfo.img} />
         </div>
       </>
     );
   }
+  
+  function ProcessingCard(props) {
+    return (
+        <div className='application-process-card' style={{marginRight:"15px"}}>
+                <div className='content'>
+                    {props.orderNo && <div className='list-number'><div className="light-overlay-number">{props.orderNo}</div></div>}
+                    {props.heading && <h6>{props.heading}</h6>}
+                    <p style={{fontSize:"13px",fontWeight:"300"}}>{props.description}</p>
+                </div>
+                 {props.img &&<img className='inmageHome' src={props.img}/>}
+            </div>
+    );
+}
   return (
     <>
       <Header routePath={props.routePath} />
@@ -67,7 +81,7 @@ function AboutUs(props) {
               <div className="element"></div>
               <div className="about-section">
                 <div className="about-section-content">
-                  <h6>About Credit Mitra</h6>
+                  <h6>About CreditMitra</h6>
                   <p>
                   Crafting a Revolutionary Financial Journey CreditMitra is revolutionizing the lending landscape, catering to the financial needs of young salaried Indians. Our user-centric platform offers simplicity, transparency, and flexibility. Partnering with RBI-registered NBFCs, we empower self-employed and salaried individuals with quick loans up to Rs 2 lakh, flexible repayment options, and competitive interest rates
                   </p>
@@ -78,8 +92,6 @@ function AboutUs(props) {
             <div className="about-points-container row">
               {points.map((each, index) => {
                 return (
-
-
                   <div className="col-sm-6 aboutcard">
                     <div className="each-point">
 
@@ -87,7 +99,7 @@ function AboutUs(props) {
                         <span>{"0" + (index + 1)}</span>
                         <p>"{each.quote}"</p>
                       </div>
-                      <ApplicationProcessingCard
+                      <ProcessingCard
                         description={each.description}
                       />
                     </div>
