@@ -30,13 +30,13 @@ function FeaturedBlogs(props) {
       summary:"  Have you ever faced rejection for your loan application due to a low CIBIL score? Don't worry you are not alone. There are thousands of loan applications daily that get rejected due to low CIBIL scores...", 
     },
         
-    // {
-    //   title: "How to get the best personal loan interest rate available to you?",
-    //   date: "14th May, 2024",
-    //   imageLink: require("../../assets/images/blogs/blog_sample.png"),
-    //   blogSlug: "how-to-get-the-best-personal-loan-interest-rate-available-to-you",
-    //   summary:"", 
-    // },
+    {
+      title: "Understanding Personal Loan Recovery: Process & RBI Guidelines",
+      date: "21th May, 2024",
+      imageLink: require("../../assets/images/blogs/blog_sample.png"),
+      blogSlug: "how-to-get-the-best-personal-loan-interest-rate-available-to-you",
+      summary:"", 
+    },
     
   ];
 
