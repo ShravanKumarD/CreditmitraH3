@@ -36,7 +36,7 @@ function ApplicationProcess(props) {
         return (
             <div
                 ref={cardRef}
-                className={`application-process-card ${isVisible ? 'slide-in-bottom' : ''}`}>
+                className={`application-process-card resLending ${isVisible ? 'animate' : ''}`}>
                 <div className='content needsContent'>
                     <div>
                         <h6 className='intext'>{heading}</h6>
@@ -44,7 +44,7 @@ function ApplicationProcess(props) {
                     </div>
                 </div>
                 <div className='inmage'>
-                    <img marginTop="auto" src={img} />
+                    <img marginTop="auto" src={img} alt={heading} />
                 </div>
             </div>
         );
@@ -72,13 +72,13 @@ function ApplicationProcess(props) {
         return (
             <div
                 id={`card-${orderNo}`}
-                className={`application-process-card ${isVisible ? (orderNo % 2 === 0 ? 'slide-in-right' : 'slide-in-left') : ''}`}>
+                className={`application-process-card resLending ${isVisible ? 'animate' : ''}`}>
                 <div className='content'>
                     {orderNo && <div className='list-number'><div className="light-overlay-number">{orderNo}</div></div>}
                     {heading && <h6>{heading}</h6>}
                     <p style={{ fontSize: "16px", fontWeight: "300" }}>{description}</p>
                 </div>
-                {img && <img className='inmageHome' src={img} />}
+                {img && <img className='inmageHome' src={img} alt={heading} />}
             </div>
         );
     }
@@ -113,18 +113,17 @@ function ApplicationProcess(props) {
     const additionalCards = [
         {
             orderNo: 6,
-          img: Image6,
-          heading: "Instant Approval & Disbursal",
-          description: "Easy online process for loan sanction and fast disbursal"
+            img: Image6,
+            heading: "Instant Approval & Disbursal",
+            description: "Easy online process for loan sanction and fast disbursal"
         },
         {
             orderNo: 7,
-          img: Image7,
-          heading: "Flexible Repayment Option",
-          description: "Accelerated payment option towards principal outstanding"
+            img: Image7,
+            heading: "Flexible Repayment Option",
+            description: "Accelerated payment option towards principal outstanding"
         }
-      ];
-
+    ];
 
     return (
         <div className="application-process-section">
@@ -144,7 +143,7 @@ function ApplicationProcess(props) {
                     <p className='mb-3'>At CreditMitra, the customized personal loan is the core of our commitment. We understand that financial needs differ from person to person, and resultantly, we offer personalized loan solutions to meet the unique requirements of each individual.</p>
                     <p className='pb-5'>With our customized personal loan, borrowers have the flexibility to choose the loan amount and repayment tenure that best suits their needs. We understand that one size does not fit all; we work closely with our customers to understand their financial objectives, ensuring that the loan terms are structured in a way that aligns with their preferences and capabilities.</p>
                 </div>
-                <img className='inmageHome' src={Image5} />
+                <img className='inmageHome' src={Image5} alt="Customized Personal Loan" />
             </div>
             <div className='halfcard'></div>
             <div className='row'>

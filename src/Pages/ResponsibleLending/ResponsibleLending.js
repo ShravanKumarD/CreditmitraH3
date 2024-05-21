@@ -19,7 +19,7 @@ function ApplicationProcessingCard({ orderNo, heading, description, img }) {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Check on mount
+    handleScroll(); 
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
