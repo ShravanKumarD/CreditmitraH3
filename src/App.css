@@ -2014,14 +2014,16 @@ h3 {
     }
   }
 
+
   .about-us-container {
     & .about-points-container {
       & .each-point {
         & .application-process-card {
+          height: 210px !important;
           & .content {
             p {
               padding: 0%;
-              font-size: 18px;
+              font-size: 16px;
             }
           }
         }
