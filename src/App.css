@@ -1441,10 +1441,6 @@ text-align: center;
     margin-top: -30px;
   }
 
-  .aboutcard {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
 
   .space {
     height: 20px;
@@ -1657,6 +1653,25 @@ text-align: center;
   }
 
   /* About Us */
+  .aboutcard {
+    margin-left: 0px;
+    margin-right: 0px;
+    .content {
+      padding-top: 4%;
+      h6 {
+        font-size: 19px !important;
+        font-weight: 700 !important;
+        margin: 0px;
+        padding: 0px;
+      }
+      p {
+        font-size: 16px !important;
+        padding: 0px !important;
+
+      }
+    }
+  }
+
   .page-container {
     &.about-us {
       padding-top: 0px;
