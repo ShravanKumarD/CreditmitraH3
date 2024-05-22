@@ -105,6 +105,10 @@ text-align: center;
 }
 
 @media (max-width: 991px) {
+  .navbar-container{
+    background-color: #1a69a3;
+  } 
+  
   .nav-item-container {
     font-size: 1.23rem;
     margin-left: 4.5%;
