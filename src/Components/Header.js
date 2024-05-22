@@ -111,6 +111,8 @@ function Header() {
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}
                 >
+                  <hr className="nav-item-seperator"/>
+
                   <div className="nav-item-container">
                     <Link
                       // This links to /products
@@ -149,11 +151,11 @@ function Header() {
                     ))}
                   </div>
                   {/* dropdown for products ends */}
-                  <hr className="nav-item-seperator"/>
                 </div>
               ) : (
                 // else part of ternary operator, if item.displayName != "Products"
                 <>
+                <hr className="nav-item-seperator"/>
                 <div className="nav-item-container"> 
                   <Link
                     to={item.redirection}
@@ -169,7 +171,6 @@ function Header() {
                   </Link>
 
                 </div>
-                <hr className="nav-item-seperator"/>
                 </>
               )}
             </li>
