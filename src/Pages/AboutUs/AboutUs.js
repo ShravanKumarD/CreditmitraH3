@@ -49,7 +49,9 @@ function AboutUs(props) {
 
   function ProcessingCard(props) {
     return (
-      <div className="application-process-card">
+      <div className="application-process-card" style={{
+        border: '1px solid #9FCDE9',
+      }}>
         <div className="content">
           {props.orderNo && (
             <div className="list-number">
@@ -110,7 +112,7 @@ function AboutUs(props) {
                   <div className="col-sm-6 aboutcard">
                     <div className="each-point">
                       <div className="quote-container">
-                        <span>{"0" + (index + 1)}</span>
+                        <span style={{fontFamily: 'Rajdhani', padding: '2.1%'}}>{"0" + (index + 1)}</span>
                         <p>"{each.quote}"</p>
                       </div>
                       <ProcessingCard description={each.description} />

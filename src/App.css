@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 
 /* .search-input{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 56.4%, rgba(153, 153, 153, 0.04) 100%);
@@ -836,6 +838,7 @@ text-align: center;
 
       .about-section-content {
         margin-top: 60px;
+        padding-right: 6%;
         
 
         h6 {
@@ -1741,6 +1744,9 @@ text-align: center;
         margin-bottom: 50px;
       }
     }
+  }
+  .about-section-content {
+    padding-right: 0% !important;
   }
 
   
