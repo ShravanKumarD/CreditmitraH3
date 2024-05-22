@@ -677,7 +677,7 @@ text-align: center;
   text-align: center;
 
   .content {
-    margin-bottom: 160px;
+    margin-bottom: 100px;
 
     p {
       margin-top: 24px;
@@ -812,6 +812,7 @@ text-align: center;
 
       .about-section-content {
         margin-top: 60px;
+        
 
         h6 {
           color: #fff;
@@ -825,7 +826,7 @@ text-align: center;
           color: #fff;
           margin-left: 0%;
           font-size: 16px;
-          font-weight: 400;
+          font-weight: 300;
           margin-bottom: 0;
           font-family: Poppins;
         }
@@ -1416,6 +1417,9 @@ text-align: center;
 
   .about-us-container {
     & .content {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
       .heading {
         padding-top: 10%;
         justify-content: baseline;
@@ -1654,9 +1658,12 @@ text-align: center;
 
   /* About Us */
   .aboutcard {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
     .content {
+      padding-left: 3%;
+      padding-right: 3%;
+  
       padding-top: 4%;
       h6 {
         font-size: 19px !important;
@@ -1712,10 +1719,14 @@ text-align: center;
         direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 120px;
+        margin-bottom: 50px;
       }
     }
   }
+
+  
+
+  
   .products-hero-section,
   .responsible-lending-section,
   .contact-us-section,
