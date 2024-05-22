@@ -1169,6 +1169,7 @@ text-align: center;
         display: flex;
         gap: 9%;
         justify-content: space-between;
+        margin-top :15px;
 
         h6 {
           color: #fff;
@@ -1672,7 +1673,7 @@ text-align: center;
           & .content {
             p {
               padding: 0%;
-              font-size: small !important;
+              font-size: 17px !important;
             }
           }
         }
