@@ -99,7 +99,7 @@ function Header() {
 
 
       {/* Navbar Items Collapsible begins */}
-      <div className={`collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
+      <div className={`navbar-container collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
         <ul className="navbar-nav mr-auto">
           {navigations.map((item, index) => (
             <li className="nav-item" key={index}>

@@ -1169,7 +1169,7 @@ text-align: center;
         display: flex;
         gap: 9%;
         justify-content: space-between;
-        margin-top :15px;
+        margin-top: 15px;
 
         h6 {
           color: #fff;
@@ -1665,7 +1665,6 @@ text-align: center;
     }
   }
 
-  
   .about-us-container {
     & .about-points-container {
       & .each-point {
@@ -1673,7 +1672,7 @@ text-align: center;
           & .content {
             p {
               padding: 0%;
-              font-size: 17px !important;
+              font-size: 16px !important;
             }
           }
         }
@@ -1681,6 +1680,13 @@ text-align: center;
     }
   }
 
+  .about-points-container {
+    .each-point {
+      .application-process-card {
+        height: 210px !important;
+      }
+    }
+  }
 
   .about-us-container {
     & .content {
