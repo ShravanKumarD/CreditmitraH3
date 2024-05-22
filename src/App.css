@@ -285,7 +285,7 @@ text-align: center;
 }
 
 .img-home {
-  animation: vertical-shake 0.3s ease-in-out 5;
+  animation: vertical-shake 4s infinite;
 }
 
 
