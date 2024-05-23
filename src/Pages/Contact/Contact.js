@@ -28,7 +28,7 @@ function Contact(props) {
               </p>
              
             </div>
-            <div className="form-container">
+            {/* <div className="form-container">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" placeholder="Your name"/>
                 </div>
@@ -44,7 +44,7 @@ function Contact(props) {
                 <button type="submit" class="contact-submit-button">
                 Send Message
                 </button>
-            </div>
+            </div> */}
             
             
             <div class="website-text">
