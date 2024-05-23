@@ -34,7 +34,12 @@ function AboutUs(props) {
   function VisionCard(cardInfo) {
     return (
       <>
-        <div className="application-process-card aboutcard ">
+        <div
+          className="application-process-card aboutcard"
+          style={{
+            border: "1px solid rgba(159, 205, 233)", // 0.5 is the opacity
+          }}
+        >
           <div className="content">
             <h6>{cardInfo.heading}</h6>
             <p style={{ fontSize: "16px", fontWeight: "300" }}>
@@ -49,9 +54,12 @@ function AboutUs(props) {
 
   function ProcessingCard(props) {
     return (
-      <div className="application-process-card" style={{
-        border: '1px solid #9FCDE9',
-      }}>
+      <div
+        className="application-process-card"
+        style={{
+          border: "1px solid #9FCDE9",
+        }}
+      >
         <div className="content">
           {props.orderNo && (
             <div className="list-number">
@@ -59,9 +67,7 @@ function AboutUs(props) {
             </div>
           )}
           {props.heading && <h6>{props.heading}</h6>}
-          <p style={{ fontWeight: "300" }}>
-            {props.description}
-          </p>
+          <p style={{ fontWeight: "300" }}>{props.description}</p>
         </div>
         {props.img && <img className="inmageHome" src={props.img} />}
       </div>
@@ -112,7 +118,11 @@ function AboutUs(props) {
                   <div className="col-sm-6 aboutcard">
                     <div className="each-point">
                       <div className="quote-container">
-                        <span style={{fontFamily: 'Rajdhani', padding: '2.1%'}}>{"0" + (index + 1)}</span>
+                        <span
+                          style={{ fontFamily: "Rajdhani", padding: "2.1%" }}
+                        >
+                          {"0" + (index + 1)}
+                        </span>
                         <p>"{each.quote}"</p>
                       </div>
                       <ProcessingCard description={each.description} />

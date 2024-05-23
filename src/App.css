@@ -957,11 +957,14 @@ text-align: center;
   }
 
   .application-process-card {
-    margin-top: 32px;
+    align-items: center;
+    padding-left: 1%;
+    padding-top: 2%;
 
+   
     h6 {
       color: #fff;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
       margin-bottom: 8px;
       margin-top: 0;
@@ -975,6 +978,8 @@ text-align: center;
       margin-bottom: 0;
       font-family: Poppins;
     }
+
+    
   }
 }
 
