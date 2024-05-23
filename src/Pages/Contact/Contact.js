@@ -20,7 +20,7 @@ function Contact(props) {
           <div className="contact-us-section">
             <div className="content mb-5">
               <img src={message} className="mb-3" height="140px"/>
-              <h6>Got a question? We're here to help!</h6>
+              <h6 className="">Got a question? We're here to help!</h6>
               <p className="mt-0 mb-5">
                 Feel free to connect with us with any questions or queries.
                 We're<br></br> dedicated to providing you with the best possible
@@ -28,7 +28,7 @@ function Contact(props) {
               </p>
              
             </div>
-            {/* <div className="form-container">
+            <div className="form-container">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" placeholder="Your name"/>
                 </div>
@@ -41,10 +41,10 @@ function Contact(props) {
                 <div class="form-group">
                 <textarea class="form-control" id="message" placeholder="Message" style={{resize:"none", height: "214px"}}></textarea>
                 </div>
-                <button type="submit" class="btn brand-primary-gradient btn-block lg-btn">
+                <button type="submit" class="contact-submit-button">
                 Send Message
                 </button>
-            </div> */}
+            </div>
             
             
             <div class="website-text">
