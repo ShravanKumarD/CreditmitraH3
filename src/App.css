@@ -945,7 +945,10 @@ text-align: center;
 
   .application-process-card {
     align-items: center;
-    padding-left: 0px;
+    padding-left: 1%;
+    padding-top: 2%;
+
+   
     h6 {
       color: #fff;
       font-size: 24px;
