@@ -89,8 +89,9 @@ const Calculator = (props) => {
                         <h5 className="mb-3 fade-in">Total Payment: ₹{totalPayment.toFixed(2)}</h5>
                     </div>
                 </div>
-                <Footer />
+                
             </section>
+            <Footer />
         </>
     );
 }
