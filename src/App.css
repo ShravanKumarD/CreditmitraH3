@@ -57,7 +57,7 @@ text-align: center;
 
 .resLending {
   opacity: 0;
-  transition: opacity 0.25s, transform 0.25s;
+  transition: opacity 0.25s, transform 2s;
 }
 
 .resLending.animate {
@@ -104,6 +104,25 @@ text-align: center;
 
 .nav-item-seperator {
   display: none;
+}
+.hero-heading{
+  margin: 32px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -80px;
+  font-family: Poppins;
+}
+.hero-sub{
+  margin: 32px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -40px;
+  font-family: Poppins;
+  margin-top: 120px
 }
 
 @media (max-width: 991px) {
@@ -306,17 +325,20 @@ text-align: center;
   );
   background-clip: text;
   color: transparent;
-  font-size: 45px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 800;
   margin-bottom: 1rem;
   line-height: normal;
   font-family: Poppins;
   /* font-family: "General Sans Variable"; */
+ 
+  
 }
 
 .hero-section .content p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
+  /* color: rgba(255, 255, 255, 0.6); */
+  color:#dee2e6;
+  font-size: 22px;
   font-weight: 500;
   line-height: 28px;
   margin-bottom: 24px;
@@ -335,7 +357,7 @@ text-align: center;
   /* margin: 0px; */
   display: flex;
   justify-content: space-between;
-  padding: 60px 0 20px 80px;
+  padding: 10px 0 20px 80px;
   border-radius: 24px;
   background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
   color: #ffffff;
@@ -380,9 +402,9 @@ text-align: center;
     }
 
     h6 {
-      /* margin-top: 0px; */
+      margin-top: 30px;
       text-align: left;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 500;
       margin-bottom: 16px;
       font-family: Poppins;
@@ -435,6 +457,7 @@ text-align: center;
     font-size: 40px;
     font-weight: 600;
     margin-top: -40px;
+    font-family: Poppins;
 
     &.extra-margin-top {
       margin-top: 160px;
@@ -902,7 +925,7 @@ text-align: center;
       }
 
       .application-process-card {
-        padding: 24px;
+        padding: 22px;
         height: 240px;
 
         .content {
@@ -1191,11 +1214,11 @@ text-align: center;
 
     .footer-container {
       display: flex;
-      /* gap: 48px; */
+      gap: 0px;
 
       .navigation-container {
         display: flex;
-        gap: 9%;
+        gap: 12%;
         justify-content: space-between;
         margin-top: 15px;
 
@@ -1205,6 +1228,7 @@ text-align: center;
           font-weight: 600;
           margin-bottom: 16px;
           width: auto;
+          padding-top: 15px;
         }
 
         ul {
@@ -1327,6 +1351,7 @@ text-align: center;
 
 .inmage {
   margin-right: 20px;
+  margin-block: auto
 }
 
 .applpcardbuttons {
@@ -1378,6 +1403,9 @@ text-align: center;
   width: 90%;
 } */
 @media only screen and (max-width: 767px) {
+  .hero-heading{
+    margin-top: 20px;
+  }
   .text-center {
     font-size: 30px;
   }
@@ -1427,10 +1455,6 @@ text-align: center;
       margin-top: 30px;
       /* how it works */
     }
-  }
-
-  .hero-section .content p {
-    width: 300px;
   }
 
   .pinFooter {
@@ -1591,13 +1615,20 @@ text-align: center;
     );
     background-clip: text;
     color: transparent;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: 800;
+    /* font-size: 20px; */
+    /* font-weight: 600; */
     margin-bottom: 1rem;
     line-height: normal;
     width: 300px;
     margin-top: 50px;
     /* font-family: "General Sans Variable"; */
+  }
+  .hero-section .content p{
+    font-size: 18px;
+    font-weight: 700;
+    width: 300px;
   }
 
   p {
@@ -1648,7 +1679,7 @@ text-align: center;
         margin: 10px;
         padding: 15px;
         margin-top: 12px;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 500;
         margin-bottom: 16px;
         font-family: Poppins;
@@ -1997,25 +2028,52 @@ h3 {
   font-size: 20px;
 }
 /*styling is not working ,we have to media query*/
-@media only screen and (max-width: 1267px) {
+@media only screen and (max-width: 1279px) {
+  .nav-item {
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 1219px) {
   .nav-item {
     margin-left: 35px;
   }
 }
-@media only screen and (max-width: 1209px) {
+@media only screen and (max-width: 1190px) {
+  .nav-item {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 1160px) {
   .nav-item {
     margin-left: 25px;
   }
-}
-@media only screen and (max-width: 1150px) {
-  .nav-item {
-    margin-left: 15px;
+  @media only screen and (max-width: 1130px) {
+    .nav-item {
+      margin-left: 20px;
+    }
   }
-}
-@media only screen and (max-width: 1069px) {
-  .nav-item {
-    margin-left: 5px;
+  @media only screen and (max-width: 1100px) {
+    .nav-item {
+      margin-left: 15px;
+    }
   }
+  @media only screen and (max-width: 1070px) {
+    .nav-item {
+      margin-left: 10px;
+    }
+  }
+  @media only screen and (max-width: 1040px) {
+    .nav-item {
+      margin-left: 5px;
+    }
+  }
+  @media only screen and (max-width: 1010px) {
+    .nav-item {
+      margin-left: 0px;
+    }
+  }
+
+
   .footer-content {
     flex-direction: column;
     font-size: 14px;
@@ -2044,7 +2102,7 @@ h3 {
     & .about-points-container {
       & .each-point {
         & .application-process-card {
-          height: 210px !important;
+          height: 190px !important;
           & .content {
             p {
               padding: 0%;
@@ -2061,10 +2119,17 @@ h3 {
   .application-process-card {
   }
 }
-
 td,
 th {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+}
+
+@media only screen and (min-width:1275px){
+  .hero-section .content h6{
+  }
+  .hero-section .content p{
+
+  }
 }

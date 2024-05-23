@@ -76,7 +76,7 @@ function ApplicationProcess(props) {
                 <div className='content'>
                     {orderNo && <div className='list-number'><div className="light-overlay-number">{orderNo}</div></div>}
                     {heading && <h6>{heading}</h6>}
-                    <p style={{ fontSize: "16px", fontWeight: "300" }}>{description}</p>
+                    <p style={{ fontSize: "18px", fontWeight: "300" }}>{description}</p>
                 </div>
                 {img && <img className='inmageHome' src={img} alt={heading} />}
             </div>
@@ -127,13 +127,13 @@ function ApplicationProcess(props) {
 
     return (
         <div className="application-process-section">
-            <h6 className="heading">How It Works?</h6>
+            <h6 className="hero-heading">How It Works?</h6>
             {processCards.map((card, index) => (
                 <ApplicationProcessingCard key={index} {...card} />
             ))}
 
-            <h6 className="heading extra-margin-top">
-                Why Choose Credit Mitra for Your
+            <h6 className="hero-sub extra-margin-top">
+                Why Choose CreditMitra for Your
                 <br /> Personal Loan Needs?
             </h6>
             <div className='application-process-card b'>

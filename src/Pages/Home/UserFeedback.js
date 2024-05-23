@@ -40,7 +40,7 @@ function UserFeedback(props) {
         img: require('./../../assets/images/avatar1.png'),
       },
       {
-        comment: "I took the loan from Creditmitra many times. Very soft spoken and professional staff.",
+        comment: "I took the loan from CreditMitra many times. Very soft spoken and professional staff.",
         userName: "Nehal K.",
         img: require('./../../assets/images/avatar3.png'),
       },

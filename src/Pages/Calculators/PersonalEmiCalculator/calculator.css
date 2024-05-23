@@ -1,5 +1,6 @@
   
 h3{
+    margin-top: 60px;
         background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
         background-clip: text;
         color: transparent;
@@ -49,3 +50,4 @@ h3{
     height: 10px;
     background-color: #333;
 } */
+

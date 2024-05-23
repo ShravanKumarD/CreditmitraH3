@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './../PersonalEmiCalculator/calculator.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './calculator.css';
 import Header from '../../../Components/Header';
 import Footer from '../../../Components/Footer';
 import SEO from '../../../Components/SEO/SEO';
@@ -23,8 +24,8 @@ const Calculator = (props) => {
 
     useEffect(() => {
         const calculateEMI = (principal, rate, time) => {
-            rate = rate / (12 * 100); // Monthly interest rate
-            time = time * 12; // Number of monthly installments
+            rate = rate / (12 * 100); 
+            time = time * 12; 
             return (principal * rate * Math.pow(1 + rate, time)) / (Math.pow(1 + rate, time) - 1);
         };
 
@@ -48,61 +49,44 @@ const Calculator = (props) => {
             />
             <section className="container mx-auto p-4">
                 <h3 className="text-xl font-semibold mb-4">Personal Loan EMI Calculator</h3>
-                <div className='my-6'>
-                    <div className='flex flex-col items-center'>
-                        <h1 className="text-2xl font-semibold">Loan Amount: ₹{loanAmount}</h1>
-                        <div className="w-full max-w-md">
-                            <input
-                                type="range"
-                                min="0"
-                                max="1000000"
-                                value={loanAmount}
-                                onChange={handleChangeLa}
-                                className="slider w-full"
-                            />
-                        </div>
+                <div className="my-6">
+                    <div className="text-center mb-4">
+                        <h4 className="mb-3">Loan Amount: ₹{loanAmount}</h4>
+                        <input
+                            type="range"
+                            min="0"
+                            max="1000000"
+                            value={loanAmount}
+                            onChange={handleChangeLa}
+                            className="form-range"
+                        />
                     </div>
-                    <div className="py-6"></div>
-                    <div className='flex flex-col items-center'>
-                        <h1 className="text-2xl font-semibold">Rate Of Interest: {roi}%</h1>
-                        <div className="w-full max-w-md">
-                            <input
-                                type="range"
-                                min="0"
-                                max="20"
-                                value={roi}
-                                onChange={handleChangeROI}
-                                className="slider w-full"
-                            />
-                            <div className="relative w-full h-2 mt-2">
-                                <div className="absolute left-1/4 w-1 h-full bg-gray-500"></div>
-                                <div className="absolute left-1/2 w-1 h-full bg-gray-500"></div>
-                                <div className="absolute left-3/4 w-1 h-full bg-gray-500"></div>
-                            </div>
-                        </div>
+                    <div className="text-center mb-4">
+                        <h4 className="mb-3">Rate Of Interest: {roi}%</h4>
+                        <input
+                            type="range"
+                            min="0"
+                            max="20"
+                            step="0.1"
+                            value={roi}
+                            onChange={handleChangeROI}
+                            className="form-range"
+                        />
                     </div>
-                    <div className="py-6"></div>
-                    <div className='flex flex-col items-center'>
-                        <h1 className="text-2xl font-semibold">Tenure: {tenure} Months</h1>
-                        <div className="w-full max-w-md">
-                            <input
-                                type="range"
-                                min="1"
-                                max="360"
-                                value={tenure}
-                                onChange={handleChangeT}
-                                className="slider w-full"
-                            />
-                            <div className="relative w-full h-2 mt-2">
-                                <div className="absolute left-1/4 w-1 h-full bg-gray-500"></div>
-                                <div className="absolute left-1/2 w-1 h-full bg-gray-500"></div>
-                                <div className="absolute left-3/4 w-1 h-full bg-gray-500"></div>
-                            </div>
-                        </div>
+                    <div className="text-center mb-4">
+                        <h4 className="mb-3">Tenure: {tenure} Months</h4>
+                        <input
+                            type="range"
+                            min="1"
+                            max="360"
+                            value={tenure}
+                            onChange={handleChangeT}
+                            className="form-range"
+                        />
                     </div>
-                    <div className="result-container mt-8 text-center">
-                        <h2 className="text-xl font-semibold transition-opacity duration-1000 opacity-0 show">Total Interest: ₹{totalInterest.toFixed(2)}</h2>
-                        <h2 className="text-xl font-semibold transition-opacity duration-1000 opacity-0 show">Total Payment: ₹{totalPayment.toFixed(2)}</h2>
+                    <div className="text-center mt-5">
+                        <h5 className="mb-3 fade-in">Total Interest: ₹{totalInterest.toFixed(2)}</h5>
+                        <h5 className="mb-3 fade-in">Total Payment: ₹{totalPayment.toFixed(2)}</h5>
                     </div>
                 </div>
                 <Footer />

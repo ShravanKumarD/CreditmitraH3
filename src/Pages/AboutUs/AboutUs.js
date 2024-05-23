@@ -37,7 +37,7 @@ function AboutUs(props) {
         <div className="application-process-card aboutcard ">
           <div className="content">
             <h6>{cardInfo.heading}</h6>
-            <p style={{ fontSize: "14px", fontWeight: "400" }}>
+            <p style={{ fontSize: "16px", fontWeight: "300" }}>
               {cardInfo.description}
             </p>
           </div>
