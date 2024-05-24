@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 /* .search-input{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 56.4%, rgba(153, 153, 153, 0.04) 100%);
@@ -66,7 +65,7 @@ text-align: center;
   animation: fadeInUp 1s forwards;
 }
 
-.hero-heading{
+.hero-heading {
   margin: 32px 0;
   color: #fff;
   text-align: center;
@@ -75,7 +74,7 @@ text-align: center;
   margin-top: -80px;
   font-family: Poppins;
 }
-.hero-sub{
+.hero-sub {
   margin: 32px 0;
   color: #fff;
   text-align: center;
@@ -83,10 +82,8 @@ text-align: center;
   font-weight: 600;
   margin-top: -40px;
   font-family: Poppins;
-  margin-top: 120px
+  margin-top: 120px;
 }
-
-
 
 .App {
   overflow: hidden;
@@ -105,8 +102,6 @@ text-align: center;
     rgba(7, 68, 100, 1) 100%
   );
 }
-
-
 
 .page-container {
   padding: 0 88px 110px;
@@ -148,13 +143,9 @@ text-align: center;
   }
 }
 
-
-
 .b {
   margin-top: 20px;
 }
-
-
 
 /* hero section starts */
 
@@ -177,10 +168,10 @@ text-align: center;
   align-items: right;
   right: 10px;
   top: 40px;
-  
 }
 @keyframes vertical-shake {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   25% {
@@ -194,7 +185,6 @@ text-align: center;
 .img-home {
   animation: vertical-shake 4s infinite;
 }
-
 
 .hero-section .content {
   width: 70%;
@@ -217,13 +207,11 @@ text-align: center;
   line-height: normal;
   font-family: Poppins;
   /* font-family: "General Sans Variable"; */
- 
-  
 }
 
 .hero-section .content p {
   /* color: rgba(255, 255, 255, 0.6); */
-  color:#dee2e6;
+  color: #dee2e6;
   font-size: 22px;
   font-weight: 500;
   line-height: 28px;
@@ -687,8 +675,7 @@ text-align: center;
     background: rgba(255, 255, 255, 0.1);
     padding: 36px 36px 32px;
     max-width: 600px;
-    margin:auto;
-  
+    margin: auto;
 
     .form-group {
       margin-bottom: 30px;
@@ -721,16 +708,16 @@ text-align: center;
   }
 }
 
-.contact-submit-button{
+.contact-submit-button {
   border-radius: 20px !important;
-    border: 1px solid #fff;
-    background: linear-gradient(91deg, #3caff5 -2.45%, #1a69a3 97.01%);
-    color: #fff;
-    font-weight: 700;
-    height: 60px;
-    font-family: Poppins;
-    text-align: center;
-    padding: 10px;
+  border: 1px solid #fff;
+  background: linear-gradient(91deg, #3caff5 -2.45%, #1a69a3 97.01%);
+  color: #fff;
+  font-weight: 700;
+  height: 60px;
+  font-family: Poppins;
+  text-align: center;
+  padding: 10px;
 }
 
 /* contact-us-section ends */
@@ -761,7 +748,6 @@ text-align: center;
       .about-section-content {
         margin-top: 60px;
         padding-right: 6%;
-        
 
         h6 {
           color: #fff;
@@ -789,13 +775,13 @@ text-align: center;
     margin-bottom: 160px;
 
     .each-point {
-      &:nth-child(even) {
-        /* padding-left: 20px; */
-      }
+      /* &:nth-child(even) {
+        padding-left: 20px;
+      } */
 
-      &:nth-child(odd) {
-        /* padding-right: 20px; */
-      }
+      /* &:nth-child(odd) {
+        padding-right: 20px;
+      } */
 
       .quote-container {
         padding: 0 16px;
@@ -847,7 +833,6 @@ text-align: center;
     padding-left: 1%;
     padding-top: 2%;
 
-   
     h6 {
       color: #fff;
       font-size: 24px;
@@ -864,8 +849,6 @@ text-align: center;
       margin-bottom: 0;
       font-family: Poppins;
     }
-
-    
   }
 }
 
@@ -1152,8 +1135,8 @@ text-align: center;
               font-size: 16px;
               text-decoration: none;
 
-              &:hover {
-              }
+              /* &:hover {
+              } */
             }
           }
         }
@@ -1255,7 +1238,7 @@ text-align: center;
 
 .inmage {
   margin-right: 20px;
-  margin-block: auto
+  margin-block: auto;
 }
 
 .applpcardbuttons {
@@ -1310,7 +1293,7 @@ text-align: center;
   .form-container {
     width: max-content;
   }
-  .hero-heading{
+  .hero-heading {
     margin-top: 20px;
   }
   .text-center {
@@ -1325,12 +1308,12 @@ text-align: center;
     /* padding: 3rem; */
     width: 100%;
   }
-  tnc {
-    /* width: 100%; */
-    /* text-align: center; */
-    /* margin-left: 3%;
-    padding-right: 5%; */
-  }
+  /* tnc {
+    width: 100%;
+    text-align: center;
+    margin-left: 3%;
+    padding-right: 5%; 
+  } */
   /* .text-center{
    width:120%;
     text-align:-webkit-match-parent;
@@ -1402,7 +1385,6 @@ text-align: center;
     justify-content: space-evenly;
     margin-top: -30px;
   }
-
 
   .space {
     height: 20px;
@@ -1477,8 +1459,8 @@ text-align: center;
   }
 
   .img-home {
-   padding-bottom: 50px; 
-   margin-right: 20%;
+    padding-bottom: 50px;
+    margin-right: 20%;
   }
 
   .a {
@@ -1528,7 +1510,7 @@ text-align: center;
     margin-top: 50px;
     /* font-family: "General Sans Variable"; */
   }
-  .hero-section .content p{
+  .hero-section .content p {
     font-size: 18px;
     font-weight: 700;
     width: 300px;
@@ -1605,11 +1587,11 @@ text-align: center;
     column-gap: 0px;
     margin: 0px;
 
-    .heading {
+    /* .heading {
       &.extra-margin-top {
-        /* margin-top: 24px; */
+        margin-top: 24px;
       }
-    }
+    } */
   }
 
   /* About Us */
@@ -1619,7 +1601,7 @@ text-align: center;
     .content {
       padding-left: 3%;
       padding-right: 3%;
-  
+
       padding-top: 4%;
       h6 {
         font-size: 19px !important;
@@ -1630,7 +1612,6 @@ text-align: center;
       p {
         font-size: 16px !important;
         padding: 0px !important;
-
       }
     }
   }
@@ -1683,9 +1664,6 @@ text-align: center;
     padding-right: 0% !important;
   }
 
-  
-
-  
   .products-hero-section,
   .responsible-lending-section,
   .contact-us-section,
@@ -1932,7 +1910,6 @@ h3 {
 }
 
 @media only screen and (max-width: 1160px) {
-
   .footer-content {
     flex-direction: column;
     font-size: 14px;
@@ -1956,7 +1933,6 @@ h3 {
     }
   }
 
-
   .about-us-container {
     & .about-points-container {
       & .each-point {
@@ -1975,9 +1951,10 @@ h3 {
 }
 
 @media only screen and (max-width: 1320px) {
-  .application-process-card {
-  }
+  /* .application-process-card {
+  } */
 }
+
 td,
 th {
   border: 1px solid #ddd;
@@ -1985,10 +1962,9 @@ th {
   text-align: left;
 }
 
-@media only screen and (min-width:1275px){
-  .hero-section .content h6{
+@media only screen and (min-width: 1275px) {
+  /* .hero-section .content h6 {
   }
-  .hero-section .content p{
-
-  }
+  .hero-section .content p {
+  } */
 }
