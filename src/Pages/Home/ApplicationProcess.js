@@ -76,7 +76,7 @@ function ApplicationProcess(props) {
                 <div className='content'>
                     {orderNo && <div className='list-number'><div className="light-overlay-number">{orderNo}</div></div>}
                     {heading && <h6>{heading}</h6>}
-                    <p style={{ fontSize: "18px", fontWeight: "300" }}>{description}</p>
+                    <p style={{ fontSize: "16px", fontWeight: "300" }}>{description}</p>
                 </div>
                 {img && <img className='inmageHome' src={img} alt={heading} />}
             </div>
