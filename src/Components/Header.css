@@ -1,12 +1,19 @@
 /* Navbar styles */
 /* CM Logo */
-.img-fluid-logo {
-  margin-left: 15%;
+
+
+.navbar-brand {
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .nav-btn {
-  margin-left: 4%;
-  margin-right: 35px;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  margin-top: 0% !important;
+  margin-bottom: 0% !important;
 }
 
 .nav-link:hover,
@@ -27,11 +34,13 @@
 }
 
 .nav-link {
-  margin-left: 10px;
+  /* margin-left: 10px; */
   color: white;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 0% !important;
+  padding-right: 0% !important;
 }
 
 .nav-item-seperator {
@@ -50,7 +59,7 @@
   font-family: Poppins;
   gap: 40px;
   color: #1b9bdc;
-  margin-left: 60px;
+  /* margin-left: 60px; */
   /* font-weight: 600; */
 }
 .nav-item .dropdown {
@@ -73,7 +82,7 @@
 }
 /*fixed navbar*/
 .navbar {
-  display: -moz-inline-box;
+  /* display: -moz-inline-box; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -81,6 +90,9 @@
   transition: background 0.3s ease;
   z-index: 1000;
   height: 60px;
+  display: flex; 
+  padding-left: 1%; 
+  padding-right:1%
 }
 
 .navbar .navbar-toggler:focus,
@@ -89,8 +101,16 @@
   box-shadow: none;
 }
 
+.navbar-nav {
+    width: 100%;
+    justify-content: space-around;
+}
+
 .header-nav .navbar-nav {
-  gap: 40px;
+  /* gap: 40px; */
+  .brand-seconday {
+    margin: 0px;
+  }
 }
 
 .header-nav a.active {
@@ -99,31 +119,43 @@
 }
 
 @media (max-width: 991px) {
-    .navbar-container{
-      /* background-color: #172631; */
-      background: linear-gradient(90deg, rgba(31, 32, 37, 1) 0%, rgba(2, 0, 36, 1) 35%, rgba(7, 68, 100, 1) 100%);
-  
-    } 
-  
-    .nav-item-container {
-      font-size: 1.23rem;
-      margin-left: 4.5%;
-    }
-  
-    .nav-item-seperator {
-      display: block;
-      margin-left: 4.5%;
-      margin-right: 4.5%;
-    }
+  .navbar-container {
+    /* background-color: #172631; */
+    background: linear-gradient(
+      90deg,
+      rgba(31, 32, 37, 1) 0%,
+      rgba(2, 0, 36, 1) 35%,
+      rgba(7, 68, 100, 1) 100%
+    );
   }
+
+  .nav-item-container {
+    font-size: 1.23rem;
+    margin-left: 4.5%;
+  }
+
+  .nav-item-seperator {
+    display: block;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+  }
+
+  .nav-btn {
+    margin-top: 2% !important;
+    margin-bottom: 1% !important;
+    align-self: center;
+    width:91%;
+  }
+
+
+}
 
 /* phone view */
 @media only screen and (max-width: 767px) {
-    .header-nav a {
-        font-size: 14px;
-    }
+  .header-nav a {
+    font-size: 14px;
+  }
 }
-
 
 /*styling is not working ,we have to media query*/
 /* @media only screen and (max-width: 1279px) {
@@ -143,7 +175,7 @@
 } */
 
 @media only screen and (max-width: 1160px) {
-    /* .nav-item {
+  /* .nav-item {
       margin-left: 25px;
     }
     @media only screen and (max-width: 1130px) {
@@ -151,7 +183,7 @@
         margin-left: 20px;
       }
     } */
-    /* @media only screen and (max-width: 1100px) {
+  /* @media only screen and (max-width: 1100px) {
       .nav-item {
         margin-left: 15px;
       }
@@ -171,4 +203,4 @@
         margin-left: 0px;
       }
     } */
-}  
+}

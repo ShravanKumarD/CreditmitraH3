@@ -87,22 +87,25 @@ function Header() {
         }}
       >
         <img
-          className="img-fluid-logo"
+          className="nav-logo-creditmitra"
           style={{ width: 180 }}
           src={Logo}
           title="Credit mitra"
           alt="Credit mitra"
         />
       </Link>
+      {/* Image ends here */}
+
+      {/* We can add x on toggle */}
       <button className="navbar-toggler" type="button" onClick={handleNavToggle}>
         <img src={Toggle} alt="Toggle" />
       </button>
-      {/* Image ends here */}
+      {/* Toggle Ends here */}
 
 
       {/* Navbar Items Collapsible begins */}
       <div className={`navbar-container collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav">
           {navigations.map((item, index) => (
             <li className="nav-item" key={index}>
               {item.displayName === "Products" ? (
@@ -177,9 +180,12 @@ function Header() {
               )}
             </li>
           ))}
+          <button className="nav-btn btn brand-secondary lg">Login</button>
+        <button className="nav-btn btn brand-primary lg">Download</button>
         </ul>
         {/* Navbar Items here */}
-        <button className="nav-btn btn brand-secondary lg">Login</button>
+        
+
       </div>
       {/* Navbar Items Collapsible ends */}
     </nav>
