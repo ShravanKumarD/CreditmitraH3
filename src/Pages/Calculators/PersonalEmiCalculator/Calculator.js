@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './calculator.css';
-import Header from '../../../Components/Header';
+import Header from '../../../Components/Header/Header';
 import Footer from '../../../Components/Footer';
 import SEO from '../../../Components/SEO/SEO';
 

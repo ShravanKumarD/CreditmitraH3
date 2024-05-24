@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../assets/images/logo.png";
-import Toggle from "../assets/images/toggle.png";
+import Logo from "../../assets/images/logo.png";
+import Toggle from "../../assets/images/toggle.png";
 import "./Header.css";
 
 function Header() {
