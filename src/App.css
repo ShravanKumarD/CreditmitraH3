@@ -1915,9 +1915,8 @@ h3 {
     font-size: 14px;
   }
   .products-hero-section,
-  .responsible-lending-section,
   .contact-us-section,
-  .faq-section {
+  {
     .btn {
       text-align: left;
     }
