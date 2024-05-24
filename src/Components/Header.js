@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import Toggle from "../assets/images/toggle.png";
+import "./Header.css";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -69,8 +70,9 @@ function Header() {
   ];
 
   return (
+    <div className="navbar-dad" style={{display:"flex"}}>
     <nav
-      style={{ color: "white" }}
+      style={{ color: "white", display:"flex"}}
       className={`navbar navbar-expand-lg navbar-light fixed ${
         disableBackground ? "" : "custom-background"
       }`}
@@ -181,6 +183,7 @@ function Header() {
       </div>
       {/* Navbar Items Collapsible ends */}
     </nav>
+    </div>
   );
 }
 

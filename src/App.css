@@ -207,55 +207,7 @@ text-align: center;
   }
 }
 
-.header-nav a {
-  font-size: 16px;
-  color: #ffffff;
-  font-family: Poppins;
-}
 
-.nav-item {
-  font-size: 16px;
-  color: #ffffff;
-  font-family: Poppins;
-  gap: 40px;
-  color: #1b9bdc;
-  margin-left: 60px;
-  /* font-weight: 600; */
-}
-.nav-item .dropdown {
-  font-size: 16px;
-  color: #ffffff;
-  font-family: Poppins;
-  gap: 40px;
-  color: #1b9bdc;
-  margin-left: 50px;
-
-  margin-left: 0px;
-}
-
-.mr-auto {
-}
-
-.dropdown-item {
-  font-family: Poppins;
-  /* color:#0072AD; */
-}
-/*fixed navber*/
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.8); /* Adjust transparency */
-  transition: background 0.3s ease;
-  z-index: 1000;
-  height: 60px;
-}
-
-.navbar .navbar-toggler:focus,
-.navbar .navbar-toggler:active {
-  outline: none;
-  box-shadow: none;
-}
 
 .b {
   margin-top: 20px;
@@ -2049,7 +2001,7 @@ h3 {
   font-size: 20px;
 }
 /*styling is not working ,we have to media query*/
-@media only screen and (max-width: 1279px) {
+/* @media only screen and (max-width: 1279px) {
   .nav-item {
     margin-left: 40px;
   }
@@ -2063,17 +2015,17 @@ h3 {
   .nav-item {
     margin-left: 30px;
   }
-}
+} */
 @media only screen and (max-width: 1160px) {
-  .nav-item {
+  /* .nav-item {
     margin-left: 25px;
   }
   @media only screen and (max-width: 1130px) {
     .nav-item {
       margin-left: 20px;
     }
-  }
-  @media only screen and (max-width: 1100px) {
+  } */
+  /* @media only screen and (max-width: 1100px) {
     .nav-item {
       margin-left: 15px;
     }
@@ -2092,7 +2044,7 @@ h3 {
     .nav-item {
       margin-left: 0px;
     }
-  }
+  } */
 
 
   .footer-content {
