@@ -118,6 +118,7 @@
   font-weight: 600;
 }
 
+/* hamburger kicks in */
 @media (max-width: 991px) {
   .navbar-container {
     /* background-color: #172631; */
