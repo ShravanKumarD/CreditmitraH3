@@ -1,49 +1,174 @@
+/* Navbar styles */
+/* CM Logo */
+.img-fluid-logo {
+  margin-left: 15%;
+}
+
+.nav-btn {
+  margin-left: 4%;
+  margin-right: 35px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #53b9eb !important;
+}
+
+.dropdown-toggle {
+  color: #00246a;
+}
+.dropdown-menu {
+  /* background:  #1B9BDC ; */
+  color: white;
+}
+
+.dropdown-menu a:hover {
+  color: #1b9bdc;
+}
+
+.nav-link {
+  margin-left: 10px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-item-seperator {
+  display: none;
+}
+
 .header-nav a {
-    font-size: 16px;
-    color: #ffffff;
-    font-family: Poppins;
-  }
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Poppins;
+}
+
+.nav-item {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Poppins;
+  gap: 40px;
+  color: #1b9bdc;
+  margin-left: 60px;
+  /* font-weight: 600; */
+}
+.nav-item .dropdown {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: Poppins;
+  gap: 40px;
+  color: #1b9bdc;
+  margin-left: 50px;
+
+  margin-left: 0px;
+}
+
+.mr-auto {
+}
+
+.dropdown-item {
+  font-family: Poppins;
+  /* color:#0072AD; */
+}
+/*fixed navbar*/
+.navbar {
+  display: -moz-inline-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* background: rgba(255, 255, 255, 0.8);  */
+  transition: background 0.3s ease;
+  z-index: 1000;
+  height: 60px;
+}
+
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.header-nav .navbar-nav {
+  gap: 40px;
+}
+
+.header-nav a.active {
+  color: #1b9bdc;
+  font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .navbar-container{
+      /* background-color: #172631; */
+      background: linear-gradient(90deg, rgba(31, 32, 37, 1) 0%, rgba(2, 0, 36, 1) 35%, rgba(7, 68, 100, 1) 100%);
   
+    } 
+  
+    .nav-item-container {
+      font-size: 1.23rem;
+      margin-left: 4.5%;
+    }
+  
+    .nav-item-seperator {
+      display: block;
+      margin-left: 4.5%;
+      margin-right: 4.5%;
+    }
+  }
+
+/* phone view */
+@media only screen and (max-width: 767px) {
+    .header-nav a {
+        font-size: 14px;
+    }
+}
+
+
+/*styling is not working ,we have to media query*/
+/* @media only screen and (max-width: 1279px) {
   .nav-item {
-    font-size: 16px;
-    color: #ffffff;
-    font-family: Poppins;
-    gap: 40px;
-    color: #1b9bdc;
-    margin-left: 60px;
-    /* font-weight: 600; */
+    margin-left: 40px;
   }
-  .nav-item .dropdown {
-    font-size: 16px;
-    color: #ffffff;
-    font-family: Poppins;
-    gap: 40px;
-    color: #1b9bdc;
-    margin-left: 50px;
-  
-    margin-left: 0px;
+}
+@media only screen and (max-width: 1219px) {
+  .nav-item {
+    margin-left: 35px;
   }
-  
-  .mr-auto {
+}
+@media only screen and (max-width: 1190px) {
+  .nav-item {
+    margin-left: 30px;
   }
-  
-  .dropdown-item {
-    font-family: Poppins;
-    /* color:#0072AD; */
-  }
-  /*fixed navbar*/
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    /* background: rgba(255, 255, 255, 0.8);  */
-    transition: background 0.3s ease;
-    z-index: 1000;
-    height: 60px;
-  }
-  
-  .navbar .navbar-toggler:focus,
-  .navbar .navbar-toggler:active {
-    outline: none;
-    box-shadow: none;
-  }
+} */
+
+@media only screen and (max-width: 1160px) {
+    /* .nav-item {
+      margin-left: 25px;
+    }
+    @media only screen and (max-width: 1130px) {
+      .nav-item {
+        margin-left: 20px;
+      }
+    } */
+    /* @media only screen and (max-width: 1100px) {
+      .nav-item {
+        margin-left: 15px;
+      }
+    }
+    @media only screen and (max-width: 1070px) {
+      .nav-item {
+        margin-left: 10px;
+      }
+    }
+    @media only screen and (max-width: 1040px) {
+      .nav-item {
+        margin-left: 5px;
+      }
+    }
+    @media only screen and (max-width: 1010px) {
+      .nav-item {
+        margin-left: 0px;
+      }
+    } */
+}  
