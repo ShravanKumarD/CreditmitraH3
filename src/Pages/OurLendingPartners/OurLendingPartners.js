@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../../Components/Header";
+import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer";
 import venus from "../../assets/images/venus.png";
 import agf from "../../assets/images/agf.jpeg";

@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
+import Header from "../../Components/Header/Header";
 function GrievienceRedressal(props) {
   return (
     <>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "../../Components/Header";
+import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer";
 import { Collapse } from "reactstrap";
 import { Link } from "react-router-dom";

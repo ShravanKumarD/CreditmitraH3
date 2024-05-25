@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../../../Components/Footer";
-import Header from "../../../../Components/Header";
+import Header from "../../../../Components/Header/Header";
 import blogImage from "../../../../assets/images/blogs/8_tips_to_improve_your_cibil_score_blog.png";
 import SEO from "../../../../Components/SEO/SEO";
 import "../BlogPage.css";

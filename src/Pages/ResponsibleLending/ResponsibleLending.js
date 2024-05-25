@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Header from "../../Components/Header";
+import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer";
 import SEO from '../../Components/SEO/SEO';
 

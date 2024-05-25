@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Header from '../Header';
+import Header from '../Header/Header';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import './../PersonalsLoansDropDown/InstantPersonalLoansByLocation.css';
