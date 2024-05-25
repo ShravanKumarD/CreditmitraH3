@@ -166,7 +166,7 @@ text-align: center;
   height: 400px;
   position: absolute;
   align-items: right;
-  right: 35px;
+  right: 25px;
   top: 40px;
 }
 @keyframes vertical-shake {
