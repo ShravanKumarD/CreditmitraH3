@@ -71,12 +71,17 @@ function Header() {
 
   return (
     <div className="navbar-dad" style={{display:"flex"}}>
-    <nav
+    {/* <nav
       style={{ color: "white", display:"flex"}}
       className={`navbar navbar-expand-lg navbar-light fixed ${
-        disableBackground ? "" : "custom-background"
+        disableBackground ? "custom-background" : "custom-background"
       }`}
-    >
+    > */}
+            <nav
+        style={{ color: "white", display: "flex" }}
+        className={`navbar navbar-expand-lg navbar-light custom-background ${isNavOpen ? "nav-open" : ""}`}
+      >
+
       {/* CM Image Link */}
       <Link
         className="navbar-brand"
@@ -181,7 +186,7 @@ function Header() {
             </li>
           ))}
           <button className="nav-btn btn brand-secondary lg">Login</button>
-        <button className="nav-btn btn brand-primary lg">Download</button>
+        <button className="nav-btn btn brand-primary lg">Get App</button>
         </ul>
         {/* Navbar Items here */}
         

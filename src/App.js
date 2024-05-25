@@ -29,6 +29,7 @@ import Calculator from './Pages/Calculators/PersonalEmiCalculator/Calculator';
 
 import Sitemap from './Components/SEO/Sitemap';
 import UnderstandingPersonalLoanRecovery from './Pages/Blogs/BlogPages/UnderstandingPersonalLoanRecovery';
+import InstantPersonalsLoansAtHyd from "./Components/PersonalsLoansDropDown/InstantPersonalLoansAtHyd";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -74,6 +75,9 @@ function App() {
 
           {/* Sitemap Route */}
           <Route path="/sitemap.xml" element={<Sitemap />} />
+
+          {/* Instant-Personals-Loans-dropdown in Footer */}
+          <Route path="/instant-personal-loan-hyderabad" element={<InstantPersonalsLoansAtHyd routePath="/http://www.creditmitra.in/instant-personal-loan-hyderabad"/>}/>
 
         
       </Routes>
