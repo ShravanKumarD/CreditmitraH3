@@ -21,14 +21,26 @@ function Contact(props) {
             <div className="content mb-5">
               <img src={message} className="mb-3" height="140px"/>
               <h6 className="">Got a question? We're here to help!</h6>
-              <p className="mt-0 mb-5">
+              {/* <p className="mt-0 mb-5">
+                Feel free to connect with us with any questions or queries.
+                We're<br></br> dedicated to providing you with the best possible
+                experience
+              </p> */}
+            </div>
+            <div className="aboutus-card">
+            <div className="emailLink">
+               <p className="contact-us-font">
                 Feel free to connect with us with any questions or queries.
                 We're<br></br> dedicated to providing you with the best possible
                 experience
               </p>
-             
-            </div>
-            <div className="form-container">
+       </div>
+    </div>
+                     
+
+
+
+             <div className="form-container">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" placeholder="Your name"/>
                 </div>
@@ -48,8 +60,14 @@ function Contact(props) {
             
             
             <div class="website-text">
-              Email: Support@creditmitra.in<br/>
-              Phone:  9666042345
+
+            {/* <div className="aboutus-card">
+            <div className="emailLink"> */}
+      <p className="contact-us-bottomline">For customer support related to loan products email us at<a href="mailto: support@creditmitra.in"><br/> Support@creditmitra.in</a></p>
+    {/* </div>
+    </div> */}
+              {/* Email: Support@creditmitra.in<br/> */}
+              {/* Phone:  9666042345 */}
             </div>
             
           </div>

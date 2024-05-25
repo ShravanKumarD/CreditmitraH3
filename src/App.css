@@ -710,11 +710,13 @@ text-align: center;
 
 .contact-submit-button {
   border-radius: 20px !important;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
+  border: 1px  #fff;
   background: linear-gradient(91deg, #3caff5 -2.45%, #1a69a3 97.01%);
   color: #fff;
-  font-weight: 700;
-  height: 60px;
+  font-weight: 400;
+  /* height: 60px; */
+  height: 46px;
   font-family: Poppins;
   text-align: center;
   padding: 10px;
@@ -1968,4 +1970,34 @@ th {
   }
   .hero-section .content p {
   } */
+}
+
+.aboutus-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  /* padding: 10px 0 20px 80px; */
+  border-radius: 34px;
+  background: linear-gradient(140deg, #5e7784 5.94%, #2a363b 90.73%);
+  color: #ffffff;
+  /* height: 120px; */
+  /* width: 100%; */
+  margin-bottom:40px;
+}
+@media(max-width:768px){
+  .aboutus-card{
+  margin: 40px;
+  } 
+}
+.emailLink{
+  /* padding-left: 100px;
+  padding-top: 20px; */
+  padding: 15px;
+}
+.contact-us-font{
+  font-size: 26px
+}
+.contact-us-bottomline{
+  margin-top: 50px;
 }

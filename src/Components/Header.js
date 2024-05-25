@@ -65,7 +65,7 @@ function Header() {
     { displayName: "Products", redirection: "/products" },
     { displayName: "About Us", redirection: "/about" },
     { displayName: "Responsible Lending", redirection: "/responsibleLending" },
-    { displayName: "Contact", redirection: "/contact" },
+    { displayName: "Contact Us", redirection: "/contact" },
     { displayName: "FAQ", redirection: "/faq" },
   ];
 
