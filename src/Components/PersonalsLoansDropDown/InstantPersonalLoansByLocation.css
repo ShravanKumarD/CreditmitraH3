@@ -1,0 +1,326 @@
+.Location-section {
+    padding-bottom: 50px; 
+    text-align: center;
+  
+    small {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 44px;
+      display: block;
+      font-family: Poppins;
+    }
+  
+    p {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 0;
+      font-family: Poppins;
+    }
+  }
+  .header {
+    background: linear-gradient(
+      91deg,
+      #1b9bdc -2.45%,
+      #76d1ff 51.77%,
+      #1b9bdc 97.01%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Poppins;
+    margin: 50px;
+  }
+
+  /* chart-cards */
+  .chart-cards{ 
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    .card-container {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+  
+      .each-card {
+        padding: 10px;
+        border-radius: 30px;
+        align-items: center;
+        background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+        .card-body {
+          padding: 0;
+          text-align: center;
+          .comment {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 48px;
+            width: 100%;
+            padding-top: 20px;
+          }
+          .user-name {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .inner-card{
+    border-radius: 18px;
+    background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+    color: #ffffff;
+    font-family: Poppins;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 400;
+    height: 50px;
+    font-family: Poppins;
+    font-size: 20px;
+    padding: auto;
+    padding-top:8px
+    /* padding: 8px 40px; */
+  } 
+
+
+
+
+
+select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+label {
+    margin-right: 10px;
+}
+/* .dropdown-item{
+    background-color:blue;
+}
+
+.dropdown-menu{
+    padding: 0px;
+}
+*/
+/* .dropdown-toggleFooter {
+    color: #00246a;
+  } */
+
+  .dropdown-toggleFooter {
+    color: #fff;
+    /* white-space: pre-line; */
+    margin-left: -15px;
+} 
+@media (max-width: 1300px) {
+  .dropdown-toggleFooter {
+    white-space: pre-line;
+} 
+}
+@media (max-width:575px) {
+  .dropdown-toggleFooter {
+    white-space: pre;
+    margin-left: -32%;
+} 
+}
+
+
+
+  .dropdown-menu {
+    /* background:  #1B9BDC ; */
+    color: white;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #070070;
+  }
+  .custom-dropdown-menu {
+    color: #151b1e;
+    background-color: #4873cf !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.dropdownFooter-item{
+  color: #151b1e;
+}
+
+.custom-dropdown-item {
+    padding: 4px 8px !important; 
+}
+
+.custom-dropdown-item .dropdown-item {
+    padding: 4px 8px !important; 
+}
+.sub-title{
+    padding-top: 80px;
+}
+h2{
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 44px;
+    font-family: Poppins;
+    color:#fff;
+}
+
+.processCard{
+    margin: 20px;
+
+}
+/* .four-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .each-card {
+        display: flex;
+        flex-direction: column;
+      text-align: center;
+      padding: 10px;
+      border-radius: 30px;
+      align-items: center;
+      background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+      height: 200px;
+      width: 200px;
+    }
+    .data{
+        width: min-content;
+        padding: 10px;
+    }
+} */
+.card-container, .four-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .card, .processCard {
+    /* background: #fff; */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card-body, .each-card {
+    padding: 20px;
+    background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+  }
+  
+  .header, .sub-title h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* .description-section .content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  } */
+  
+    /* .description-section .img-container {
+      text-align: center;
+    }
+    
+    .description-section img {
+      max-width: 100%;
+      height: auto;
+    }
+    */
+  .product-apply-button {
+    margin-top: 40px;
+  }
+  
+.headline{
+    color:#3099ca;
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: Poppins;
+}
+
+.gplay{
+    width: 40%;
+}
+
+
+
+
+/* General styles for the card */
+.card-container, .four-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .each-card {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .each-card {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .each-card {
+      flex: 1 1 100%;
+    }
+  }
+  
+  /* Additional styling for other elements */
+  /* .page-container {
+    padding: 20px;
+  }
+  .header, .sub-title h2 {
+    text-align: center;
+    margin: 20px 0;
+  } */
+  /* .description-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+     
+  } */
+  /* .description-section .content {
+    margin-bottom: 20px;
+  } */
+  /* 
+  .img-container img {
+    max-width: 100%;
+  } */
+  .product-apply-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  } 
+.footer-note{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: Poppins;
+    text-align: center;
+}
+  
