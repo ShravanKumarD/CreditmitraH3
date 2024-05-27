@@ -85,6 +85,7 @@ function Footer(props) {
                                {isDropdownOpen && (
                                    <ul className="dropdown-menu custom-dropdown-menu show">
                                        {locations.map((location) => (
+                                        <>
                                            <li
                                                key={location.displayName}
                                                onClick={() => handleLocationSelect(location)}
@@ -94,6 +95,8 @@ function Footer(props) {
                                                    {location.displayName}
                                                </Link>
                                            </li>
+                                           <hr style={{margin:"0px"}}/>
+                                           </>
                                        ))}
                                    </ul>
                                )}
