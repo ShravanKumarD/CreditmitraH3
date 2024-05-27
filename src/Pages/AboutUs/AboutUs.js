@@ -27,7 +27,7 @@ function AboutUs(props) {
     {
       quote: "Quick and Convenient Personal Loans",
       description:
-        "CreditMitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products.",
+        "We offer easy and quick personal loans to satisfy your immediate financial needs, guaranteeing a smooth and hassle-free application to disbursement process.",
     },
   ];
 
