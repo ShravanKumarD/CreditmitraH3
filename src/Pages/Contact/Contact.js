@@ -19,7 +19,7 @@ function Contact(props) {
         <div className="page-container contact-us">
           <div className="contact-us-section">
             <div className="content mb-5">
-              <img src={message} className="mb-3" height="140px"/>
+              <img src={message} className="mb-3" height="140px" />
               <h6 className="">Got a question? We're here to help!</h6>
               {/* <p className="mt-0 mb-5">
                 Feel free to connect with us with any questions or queries.
@@ -27,49 +27,64 @@ function Contact(props) {
                 experience
               </p> */}
             </div>
-            <div className="aboutus-card">
-            <div className="emailLink">
-               <p className="contact-us-font">
-                Feel free to connect with us with any questions or queries.
-                We're<br></br> dedicated to providing you with the best possible
-                experience
-              </p>
-       </div>
-    </div>
-                     
-
-
-
-             <div className="form-container">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Your name"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="email" placeholder="Email Address"/>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="Contact" placeholder="Contact"/>
-                </div>
-                <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Message" style={{resize:"none", height: "214px"}}></textarea>
-                </div>
-                <button type="submit" class="contact-submit-button">
-                Send Message
-                </button>
+            <div className="aboutus-card" style={{
+              border: "3px solid rgba(159, 205, 233)", // 0.5 is the opacity
+            }}>
+              <div className="emailLink">
+                <p className="contact-us-font">
+                  Feel free to connect with us with any questions or queries.
+                  We're<br></br> dedicated to providing you with the best possible
+                  experience
+                </p>
+              </div>
             </div>
-            
-            
+
+
+
+
+            <div className="form-container">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="email" placeholder="Email Address" />
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="Contact" placeholder="Contact" />
+              </div>
+              <div class="form-group">
+                <div className="mainDiv">
+                <label for="cars" class="form-control-dd" id="issues-dropdown" >Select an Issue</label>
+                <select name="cars"  class="form-control-dd" id="issues-dropdown" placeholder="Please Select">Please Select
+                <option value="" class="form-control-dd-options" >Please Select</option>
+                  <option value="" class="form-control-dd-options">Delete my data</option>
+                  <option value="" class="form-control-dd-options">Unable to Apply</option>
+                  <option value="" class="form-control-dd-options">Transaction issue</option>
+                  <option value="" class="form-control-dd-options">Bill Repayment issue</option>
+                  <option class="form-control-dd-options">Others</option>
+                </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="message" placeholder="Message" style={{ resize: "none", height: "214px" }}></textarea>
+              </div>
+              <button type="submit" class="contact-submit-button">
+                Send Message
+              </button>
+            </div>
+
+
             <div class="website-text">
 
-            {/* <div className="aboutus-card">
+              {/* <div className="aboutus-card">
             <div className="emailLink"> */}
-      <p className="contact-us-bottomline">For customer support related to loan products email us at<a href="mailto: support@creditmitra.in"><br/> Support@creditmitra.in</a></p>
-    {/* </div>
+              <p className="contact-us-bottomline">For customer support related to loan products email us at<a style={{textDecoration:"none"}} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a></p>
+              {/* </div>
     </div> */}
               {/* Email: Support@creditmitra.in<br/> */}
               {/* Phone:  9666042345 */}
             </div>
-            
+
           </div>
         </div>
         <Footer />

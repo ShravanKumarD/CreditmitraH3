@@ -30,6 +30,8 @@ import Calculator from './Pages/Calculators/PersonalEmiCalculator/Calculator';
 import Sitemap from './Components/SEO/Sitemap';
 import UnderstandingPersonalLoanRecovery from './Pages/Blogs/BlogPages/UnderstandingPersonalLoanRecovery';
 import InstantPersonalsLoansAtHyd from "./Components/PersonalsLoansDropDown/InstantPersonalLoansAtHyd";
+import InstantPersonalLoansAtBangalore from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtBangalore';
+import InstantPersonalLoansAtMumbai from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtMumbai';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -78,8 +80,8 @@ function App() {
 
           {/* Instant-Personals-Loans-dropdown in Footer */}
           <Route path="/instant-personal-loan-hyderabad" element={<InstantPersonalsLoansAtHyd routePath="/http://www.creditmitra.in/instant-personal-loan-hyderabad"/>}/>
-
-        
+         <Route path="/instant-personal-loan-Bangalore" element={<InstantPersonalLoansAtBangalore routePath="/instant-personal-loan-Bangalore"/>}/>
+        <Route  path='/instant-personal-loan-mumbai' element={<InstantPersonalLoansAtMumbai routePath="/instant-personal-loan-mumbai"/>}/>
       </Routes>
       </Wrapper>
     </BrowserRouter>

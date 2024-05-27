@@ -12,12 +12,12 @@ function AboutUs(props) {
     {
       quote: "Empowering Millennials      with Innovative Loans",
       description:
-        "CreditMitra offers innovative loans to help millennials achieve a life that they desire.We differentiate in the otherwise cluttered Personal Loan segment and deliver fastest Personal Loans at customer friendly terms.",
+        "CreditMitra offers innovative loans to help millennials achieve a life that they desire. We differentiate in the otherwise cluttered Personal Loan segment and deliver fastest Personal Loans at customer friendly terms.",
     },
     {
       quote: "Customer-Centric Loan Solutions",
       description:
-        "Credit Mitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products.",
+        "CreditMitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products. We offer flexible amounts and tenures, allowing customers to choose according to their individual needs.",
     },
     {
       quote: "Trusted  Leadership  in  FinTech",
@@ -27,7 +27,7 @@ function AboutUs(props) {
     {
       quote: "Quick and Convenient Personal Loans",
       description:
-        "Credit Mitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products.",
+        "CreditMitra has in-house RBI registered NBFC. Our focus is to delight our customers by helping them choose the best loan products.",
     },
   ];
 
@@ -89,7 +89,7 @@ function AboutUs(props) {
           <div className="about-us-container">
             <div className="content">
               <h6 className="heading abtus">
-                Welcome to Credit Mitra
+                Welcome to CreditMitra
                 <br />
                 Your Digital Lending Partner!
               </h6>

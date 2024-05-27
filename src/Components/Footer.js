@@ -22,8 +22,8 @@ function Footer(props) {
 
     const locations = [
         { displayName: "Hyderabad", redirectTo: "/instant-personal-loan-hyderabad" },
-        // { displayName: "Mumbai", redirectTo: "/instant-personal-loan-mumbai" },
-        // { displayName: "Pune", redirectTo: "/instant-personal-loan-pune" }
+        { displayName: "Mumbai", redirectTo: "/instant-personal-loan-mumbai" },
+        { displayName: "Bangalore", redirectTo: "/instant-personal-loan-Bangalore" }
     ];
 
     const links = [
