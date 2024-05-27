@@ -844,7 +844,7 @@ text-align: center;
 
       .application-process-card {
         padding: 22px;
-        height: 240px;
+        height: 220px;
 
         .content {
           width: 100%;
@@ -1634,13 +1634,13 @@ text-align: center;
 
   /* About Us */
   .aboutcard {
-    margin-left: 2%;
-    margin-right: 2%;
+    /* margin-left: 2%;
+    margin-right: 2%; */
     .content {
       padding-left: 3%;
       padding-right: 3%;
 
-      padding-top: 4%;
+      /* padding-top: 4%; */
       h6 {
         font-size: 19px !important;
         font-weight: 700 !important;
@@ -1975,7 +1975,7 @@ h3 {
     & .about-points-container {
       & .each-point {
         & .application-process-card {
-          height: 190px !important;
+          height: 200px !important;
           & .content {
             p {
               padding: 0%;
