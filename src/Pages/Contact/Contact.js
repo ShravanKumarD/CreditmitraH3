@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header/Header";
-import message from '../../assets/images/message.png'
+import message from '../../assets/images/contactMainImg.png';
+import Hangout from "../../assets/images/hangout.png";
 import SEO from "../../Components/SEO/SEO";
 
 function Contact(props) {
+  const [selectedOption, setSelectedOption] = useState('');
+  const options = [
+    { value: '"delete_data"', label: 'Delete my data' },
+    { value: 'unable_to_apply', label: 'Unable to Apply' },
+    { value: 'transaction_issue', label: 'Transaction issue' },
+    { value: 'bill_repayment_issue', label: 'Bill Repayment issue' },
+    { value: 'others', label: 'others' },
+  ];
+
+  const handleSelect = (e) => {
+    setSelectedOption(e.target.value);
+  };
   return (
     <>
       <Header routePath={props.routePath} />
@@ -16,77 +29,67 @@ function Contact(props) {
         type="article"
       />
       <section>
-        <div className="page-container contact-us">
-          <div className="contact-us-section">
-            <div className="content mb-5">
-              <img src={message} className="mb-3" height="140px" />
-              <h6 className="">Got a question? We're here to help!</h6>
-              {/* <p className="mt-0 mb-5">
+        <div className="page-container" >
+          <div className="mainDivAtContact">
+            <div className="textContent">
+              <div className="mainHeaderatContactSection">Got a question?<br /> We're here to help!</div>
+              <div className="subHeaderAtContactSection">
                 Feel free to connect with us with any questions or queries.
-                We're<br></br> dedicated to providing you with the best possible
+                We're<br /> dedicated to providing you with the best possible
                 experience
-              </p> */}
-            </div>
-            <div className="aboutus-card" style={{
-              border: "3px solid rgba(159, 205, 233)", // 0.5 is the opacity
-            }}>
-              <div className="emailLink">
-                <p className="contact-us-font">
-                  Feel free to connect with us with any questions or queries.
-                  We're<br></br> dedicated to providing you with the best possible
-                  experience
-                </p>
               </div>
             </div>
+            <div className="betweenSpace" style={{ padding: "10vw" }}></div>
+            <img src={message} className="imageInContact" height="140px" alt="message" />
+          </div>
+        </div>
+        <section>
 
-
-
-
-            <div className="form-container">
-              <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Your name" />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="email" placeholder="Email Address" />
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="Contact" placeholder="Contact" />
-              </div>
-              <div class="form-group">
-                <div className="mainDiv">
-                <label for="cars" class="form-control-dd" id="issues-dropdown" >Select an Issue</label>
-                <select name="cars"  class="form-control-dd" id="issues-dropdown" placeholder="Please Select">Please Select
-                <option value="" class="form-control-dd-options" >Please Select</option>
-                  <option value="" class="form-control-dd-options">Delete my data</option>
-                  <option value="" class="form-control-dd-options">Unable to Apply</option>
-                  <option value="" class="form-control-dd-options">Transaction issue</option>
-                  <option value="" class="form-control-dd-options">Bill Repayment issue</option>
-                  <option class="form-control-dd-options">Others</option>
-                </select>
+          <h2  className="contactUsMain">Contact Us</h2>
+          <div className="row-container">
+            <div className=""></div>
+            <div className="col-sm-6">
+              <div className="form-container">
+                <div className="form-group">
+                  <input type="text" className="form-control" id="name" placeholder="Your name" />
+                  <div className="spacer" style={{ padding: "1vw" }}></div>
+                  <input type="text" className="form-control" id="email" placeholder="Email Address" />
                 </div>
+                <div className="form-group">
+                  <select value={selectedOption} className="dropdown contactUsDropdown " onChange={handleSelect}>
+                    <option value="" style={{color:"black"}}>Select an Issue</option>
+                    {options.map((option) => (
+                      <option key={option.value} value={option.value} style={{color:"black"}}>
+                        {option.label}
+                      </option>
+                    ))}
+                  </select>
+                  <div className="spacer" style={{ padding: "1vw" }}></div>
+
+                  <input type="text" className="form-control" id="contact" placeholder="Contact" />
+                </div>
+                <div className="form-group">
+                  <textarea className="form-control" id="message" placeholder="Message" style={{ resize: "none", height: "100px" }}></textarea>
+                </div>
+                <button type="submit" className="contact-submit-button">
+                  Submit
+                </button>
               </div>
-              <div class="form-group">
-                <textarea class="form-control" id="message" placeholder="Message" style={{ resize: "none", height: "214px" }}></textarea>
-              </div>
-              <button type="submit" class="contact-submit-button">
-                Send Message
-              </button>
             </div>
-
-
-            <div class="website-text">
-
-              {/* <div className="aboutus-card">
-            <div className="emailLink"> */}
-              <p className="contact-us-bottomline">For customer support related to loan products email us at<a style={{textDecoration:"none"}} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a></p>
-              {/* </div>
-    </div> */}
-              {/* Email: Support@creditmitra.in<br/> */}
-              {/* Phone:  9666042345 */}
+            <div className="">
+              <div className="vl"></div>
+            </div>
+            <div className="col-sm-4">
+              <div className="emailLink">
+                <img src={Hangout} className="hangout" alt="Hangout" />
+                <p style={{ color: "white" }}>Email Us<a style={{ textDecoration: "none" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a></p>
+              </div>
             </div>
 
           </div>
-        </div>
+        </section>
+
+
         <Footer />
       </section>
     </>
