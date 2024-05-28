@@ -119,7 +119,7 @@ function Footer(props) {
                 <img src={FooterImg} className='footer-globe img-fluid' alt="Footer Globe" />
                 <div className='footer-content'>
                     <div className='footer-container row'>
-                        <div className='col-sm-4'>
+                        <div className='col-md-4'>
                             <img src={Logo} className='img-fluid mb-3' alt="Logo" />
                             <p className='pinFooter'>
                                 Welcome to CreditMitra, Your Gateway to Financial Empowerment! At CreditMitra, you can
@@ -127,7 +127,7 @@ function Footer(props) {
                             </p>
                             <SocialComponentsDesktop />
                         </div>
-                        <div className='col-sm-4 navigation-container'>
+                        <div className='col-sm-8 navigation-container'>
                             {getFooterNavLinks()}
                         </div>
                     </div>
