@@ -32,6 +32,7 @@ import UnderstandingPersonalLoanRecovery from './Pages/Blogs/BlogPages/Understan
 import InstantPersonalsLoansAtHyd from "./Components/PersonalsLoansDropDown/InstantPersonalLoansAtHyd";
 import InstantPersonalLoansAtBangalore from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtBangalore';
 import InstantPersonalLoansAtMumbai from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtMumbai';
+import WeAreHiring from './Pages/HiringPages/WeAreHiring';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -82,6 +83,7 @@ function App() {
           <Route path="/instant-personal-loan-hyderabad" element={<InstantPersonalsLoansAtHyd routePath="/http://www.creditmitra.in/instant-personal-loan-hyderabad"/>}/>
          <Route path="/instant-personal-loan-Bangalore" element={<InstantPersonalLoansAtBangalore routePath="/instant-personal-loan-Bangalore"/>}/>
         <Route  path='/instant-personal-loan-mumbai' element={<InstantPersonalLoansAtMumbai routePath="/instant-personal-loan-mumbai"/>}/>
+        <Route path="/we-are-hiring" element={<WeAreHiring routePath="we-are-hiring"/>}/>
       </Routes>
       </Wrapper>
     </BrowserRouter>

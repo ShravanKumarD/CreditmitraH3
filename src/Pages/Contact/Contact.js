@@ -9,9 +9,9 @@ function Contact(props) {
   const [selectedOption, setSelectedOption] = useState('');
   const options = [
     { value: '"delete_data"', label: 'Delete my data' },
-    { value: 'unable_to_apply', label: 'Unable to Apply' },
+    { value: 'unable_to_apply', label: 'Unable to apply' },
     { value: 'transaction_issue', label: 'Transaction issue' },
-    { value: 'bill_repayment_issue', label: 'Bill Repayment issue' },
+    { value: 'bill_repayment_issue', label: 'Bill repayment issue' },
     { value: 'others', label: 'others' },
   ];
 
@@ -53,13 +53,13 @@ function Contact(props) {
                 <div className="form-group">
                   <input type="text" className="form-control" id="name" placeholder="Your name" />
                   <div className="spacer" style={{ padding: "1vw" }}></div>
-                  <input type="text" className="form-control" id="email" placeholder="Email Address" />
+                  <input type="text" className="form-control" id="email" placeholder="Email ddress" />
                 </div>
                 <div className="form-group">
                   <select value={selectedOption} className="dropdown contactUsDropdown " onChange={handleSelect}>
-                    <option value="" style={{color:"black"}}>Select an Issue</option>
+                    <option value="" style={{color:"black"}}>Select an issue</option>
                     {options.map((option) => (
-                      <option key={option.value} value={option.value} style={{color:"black"}}>
+                      <option key={option.value} value={option.value} style={{color:"white",backgroundColor:"#3D4F74"}}>
                         {option.label}
                       </option>
                     ))}

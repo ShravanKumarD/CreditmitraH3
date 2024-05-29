@@ -687,7 +687,7 @@ text-align: center;
   width: 100%;
   opacity: 0.9;
   width:auto;
-  margin-left: 35%
+  margin-left: 38%
 }
 
 /* contact-us-section ends */
@@ -1954,6 +1954,7 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
+    flex-wrap: wrap;
 }
 
 .mainDivAtContact {
@@ -2060,7 +2061,7 @@ th {
 
 
 .contact-submit-button {
-  padding: 10px 24px;
+  padding: 8px 40px;
   background-color: #007bff;
   color: white;
   border: none;
@@ -2116,6 +2117,9 @@ th {
 }
 
 @media (max-width: 760px) {
+  .contact-submit-button {
+    margin-left: 30%
+  }
   .contactUsMain{
     text-align: center;
         margin-right:7vw;

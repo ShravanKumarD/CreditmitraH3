@@ -38,7 +38,7 @@ function Footer(props) {
             heading: "Our Company",
             navLinks: [
                 { displayName: "About us", redirectTo: "/about" },
-                { displayName: "We are hiring", redirectTo: "/" },
+                { displayName: "We are hiring", redirectTo: "/we-are-hiring" },
                 { displayName: "Digital Lending Partners", redirectTo: "/ourLendingPartners" }
             ]
         },
