@@ -39,7 +39,7 @@ function Contact(props) {
                 experience
               </div>
             </div>
-            <div className="betweenSpace" style={{ padding: "10vw" }}></div>
+            <div className="betweenSpace" style={{ padding: "12vw" }}></div>
             <img src={message} className="imageInContact" height="140px" alt="message" />
           </div>
         </div>
