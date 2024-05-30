@@ -13,6 +13,37 @@ text-align: center;
 
 
 } */
+li {
+  margin-bottom: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 1rem;
+}
+.th-products{
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 400;
+  font-family: Poppins
+}
+.th-products-header{
+  margin-bottom: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Poppins
+}
+.th-products-desc{
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 400;
+  font-family: Poppins;
+  /* width:100vw; */
+}
+.table-data-products{
+  color: #fff;
+        font-size: 18px;
+        font-family: Poppins;
+}
 .slide-in-left {
   animation: slideInLeft 5s ease;
 }
