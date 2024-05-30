@@ -69,7 +69,7 @@ const WeAreHiring = (props) => {
                             </div>
                             <div>
                             <img height="300px" className="like" src={Like} />
-                            <p className='like-text'>save</p>
+                            <p className='like-text'>Save</p>
                             </div>
                             <hr/>
                         </div>
