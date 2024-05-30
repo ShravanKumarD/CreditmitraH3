@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import ApplicationProcessingCard from "../../Components/ApplicationProcessingCard";
 import SEO from "../../Components/SEO/SEO";
 import MissionImage from "../../assets/images/aboutus//Mission3D.png";
-import VisionImage from "../../assets/images/aboutus/Vision3.png";
+import VisionImage from "../../assets/images/aboutus/Vision3D_3.png";
 import aboutus from "../../assets/images/aboutus.png";
 
 function AboutUs(props) {
