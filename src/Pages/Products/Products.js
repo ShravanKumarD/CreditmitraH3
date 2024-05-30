@@ -44,7 +44,7 @@ function Products(props) {
             ]}
             img={StepsImg2}
           />
-        <div className='uncolored-heading'>Instant Personal Loan Details</div>
+        <div className='uncolored-heading'>Personal Loan Details</div>
         <div className="row rowProduct">
           <div className="col-sm-12">
             <p className="table-data-products">
