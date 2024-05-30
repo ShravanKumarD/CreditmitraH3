@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Footer from '../../Components/Footer';
 import Header from '../../Components/Header/Header';
 import './../HiringPages/wearehiring.css';
+import Like from "./../../assets/images/like.png";
 
 const WeAreHiring = (props) => {
     const [selectedOption, setSelectedOption] = useState('');
@@ -66,7 +67,11 @@ const WeAreHiring = (props) => {
                                     <span key={modeIndex} className='mode'>{mode}</span>
                                 ))}
                             </div>
-                            <div  className='hl'></div>
+                            <div>
+                            <img height="300px" className="like" src={Like} />
+                            <p className='like-text'>save</p>
+                            </div>
+                            <hr/>
                         </div>
                     ))
                 }
@@ -96,7 +101,6 @@ const WeAreHiring = (props) => {
                     <section>
                         <div className='job-container'>
                             <RenderJobPosts jobPosts={jobPosts} />
-
                         </div>
                     </section>
                 </div>
