@@ -188,7 +188,78 @@ import React from 'react'
                 ]}
                 img={StepsImg2}
               />
-           
+              <div className='uncolored-heading'>Travel Loan Details</div>
+        <div className="row rowProduct">
+          <div className="col-sm-12">
+            <p className="table-data-products">
+            CreditMitra provides clear information regarding interest fees and additional expenses linked to extending credit. Below table is a basic summary of what you can anticipate.
+            </p >
+            <p className="table-data-products">
+            CreditMitra offers appealing rates for individuals requiring immediate personal loans. Remember to factor in the total expenses of the loan, such as interest rates and processing fees, when determining your choice.
+            </p>
+          </div>
+          <div className="col-sm-10">
+          <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th className="th-products-header">Parameter</th>
+                <th className="th-products-header" >Amount payable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className="th-products">Loan Amount </td>
+                <td className="th-products-desc">
+                5,000 to 2,00,000 depending upon the requirement and profile
+                </td>
+            </tr>
+            <tr>
+                <td className="th-products">Interest Rate</td>
+                <td className="th-products-desc">
+                Starting as low as 3% per month
+                </td>
+            </tr>
+            <tr>
+                <td className="th-products">Age</td>
+                <td className="th-products-desc">
+                21 - 55 Years
+                </td>
+            </tr>
+            <tr>
+ 
+               <td className="th-products">Processing Fee</td>
+               <td className="th-products-desc">
+               Varies from 2% to 10% on every loan
+               </td>
+           </tr>
+           <tr>
+               
+               <td className="th-products">Loan Tenure</td>
+               <td className="th-products-desc">
+               3 - 18 Months
+               </td>
+           </tr>
+           <tr>
+               
+               <td className="th-products">Late Payment Fee</td>
+               <td className="th-products-desc">
+               Penal charges & late fees will be charged to your total outstanding loan or 50 rupees on a daily basis 
+               </td>
+           </tr>
+           <tr>
+               
+               <td className="th-products">Pre closure charges</td>
+               <td className="th-products-desc">
+               5% to 10% of the outstanding amount 
+               </td>
+           </tr>
+          
+          
+        </tbody>
+    </table>
+          </div>
+        </div>
+
               {/* old code */}
               <div className="btn-container text-center"></div>
 
