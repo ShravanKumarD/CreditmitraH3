@@ -3,8 +3,8 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer";
 import ApplicationProcessingCard from "../../Components/ApplicationProcessingCard";
 import SEO from "../../Components/SEO/SEO";
-import Image1 from "../../assets/images/mission.png";
-import Image2 from "../../assets/images/vision.png";
+import MissionImage from "../../assets/images/aboutus//Mission3D.png";
+import VisionImage from "../../assets/images/aboutus/Vision3.png";
 import aboutus from "../../assets/images/aboutus.png";
 
 function AboutUs(props) {
@@ -133,12 +133,12 @@ function AboutUs(props) {
             </div>
             <VisionCard
               heading="Our Mission"
-              img={Image1}
+              img={MissionImage}
               description="Our core mission is to champion financial liberation for all. We focus on breaking away from conventional lending practices, eliminating the requirement for collateral and democratizing access to financial resources. We specialize in providing flexible loan options tailored to diverse needs, accompanied by repayment terms designed for utmost convenience. We strive to emerge as the leading financial Mitra for both ambitious and salaried individuals, delivering transformative solutions that fuel aspirations."
             />
             <VisionCard
               heading="Our Vision"
-              img={Image2}
+              img={VisionImage}
               description="We as a company, envision a future where financial freedom is within reach for everyone. We want to revolutionize the lending landscape by challenging traditional norms and barriers. We aspire to create a world where collateral-free loans are the norm, granting equal opportunities to all individuals. We see ourselves as catalysts for positive change, empowering individuals to pursue their dreams and achieve their goals with confidence."
             />
           </div>
