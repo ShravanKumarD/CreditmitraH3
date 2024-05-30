@@ -679,7 +679,7 @@ text-align: center;
 }
 
 .contact-submit-button {
-  background-color: #4CAF50;
+  background-color: #0bb2e6;
   color: white;
   /* padding: 15px 20px; */
   border: none;
@@ -1950,12 +1950,12 @@ th {
 
 /* contact us renewd styles */
 
-.page-container {
+/* .page-container {
   display: flex;
   justify-content: center;
   align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 .mainDivAtContact {
   display: flex;

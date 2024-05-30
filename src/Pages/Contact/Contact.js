@@ -11,7 +11,7 @@ function Contact(props) {
     { value: '"delete_data"', label: 'Delete my data' },
     { value: 'unable_to_apply', label: 'Unable to apply' },
     { value: 'transaction_issue', label: 'Transaction issue' },
-    { value: 'bill_repayment_issue', label: 'Bill repayment issue' },
+    { value: 'repayment_issue', label: 'Repayment issue' },
     { value: 'others', label: 'others' },
   ];
 
