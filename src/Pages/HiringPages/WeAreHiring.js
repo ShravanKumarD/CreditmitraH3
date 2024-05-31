@@ -5,14 +5,14 @@ import './../HiringPages/wearehiring.css';
 import Like from "./../../assets/images/like.png";
 
 const WeAreHiring = (props) => {
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption, setSelectedOption] = useState('all');
     const options = [
         { value: 'all', label: 'All' },
         { value: 'development', label: 'Development' },
         { value: 'design', label: 'Design' },
         { value: 'marketing', label: 'Marketing' },
         { value: 'finance', label: 'Finance' },
-        { value: 'customer_service', label: 'Customer Service'},
+        { value: 'customer_service', label: 'Customer Service' },
     ];
 
     const jobPosts = [
@@ -38,17 +38,21 @@ const WeAreHiring = (props) => {
         },
     ];
 
-    const handleSelect = (e) => {
-        setSelectedOption(e.target.value);
+    const handleOptionClick = (value) => {
+        setSelectedOption(value);
     };
 
     const Categories = ({ options }) => {
         return (
             <div className="list-row">
                 {options.map((option, index) => (
-                    <div key={index} className="list-item">
+                    <button
+                        key={index}
+                        className={`hiring-button ${selectedOption === option.value ? 'selected' : ''}`}
+                        onClick={() => handleOptionClick(option.value)}
+                    >
                         {option.label}
-                    </div>
+                    </button>
                 ))}
             </div>
         );
@@ -57,25 +61,23 @@ const WeAreHiring = (props) => {
     const RenderJobPosts = ({ jobPosts }) => {
         return (
             <div className='job-list'>
-                {
-                    jobPosts.map((job, index) => (
-                        <div key={index} className='job-card'>
-                            <div className='designation'>{job.Designation}</div>
-                            <div className='head-line'>{job.headLine}</div>
-                            <div className='modes'>
-                                {job.modes.map((mode, modeIndex) => (
-                                    <span key={modeIndex} className='mode'>{mode}</span>
-                                ))}
-                            </div>
-                            <div>
-                            <img height="300px" className="like" src={Like} />
+                {jobPosts.map((job, index) => (
+                    <div key={index} className='job-card'>
+                        <div className='designation'>{job.Designation}</div>
+                        <div className='like-container'>
+                            <img className="like" src={Like} alt="Like" />
                             <p className='like-text'>Save</p>
-                            </div>
-                            <hr/>
                         </div>
-                    ))
-                }
-                
+                        <div className='head-line'>{job.headLine}</div>
+                        <div className='modes'>
+                            {job.modes.map((mode, modeIndex) => (
+                                <span key={modeIndex} className='mode'>{mode}</span>
+                            ))}
+                        </div>
+                       
+                        <hr />
+                    </div>
+                ))}
             </div>
         );
     };
@@ -89,7 +91,7 @@ const WeAreHiring = (props) => {
                     <p className="subHeading">
                         We're looking for passionate people to join us on our mission. We value flat hierarchies, clear communication, and full ownership and responsibility.
                     </p>
-                    <h2 style={{fontSize:"32px",margin:"10px"}}>We're hiring!</h2>
+                    <h2 className="hiring-heading">We're hiring!</h2>
                     <section>
                         <div className="row">
                             <div className="category-container">
@@ -97,7 +99,6 @@ const WeAreHiring = (props) => {
                             </div>
                         </div>
                     </section>
-
                     <section>
                         <div className='job-container'>
                             <RenderJobPosts jobPosts={jobPosts} />
