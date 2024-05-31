@@ -34,6 +34,8 @@ import InstantPersonalLoansAtBangalore from './Components/PersonalsLoansDropDown
 import InstantPersonalLoansAtMumbai from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtMumbai';
 import WeAreHiring from './Pages/HiringPages/WeAreHiring';
 
+import TawkMessengerThing from './Components/Chatbot/Chatbot';
+
 function App() {
   const Wrapper = ({ children }) => {
     const location = useLocation()
@@ -87,6 +89,7 @@ function App() {
       </Routes>
       </Wrapper>
     </BrowserRouter>
+    <TawkMessengerThing />
 
     </div>
   );
