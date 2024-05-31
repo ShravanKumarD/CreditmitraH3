@@ -28,7 +28,7 @@ h3{
 }
 
 .slider-container {
-    width: 40%;
+    width: 50%;
     padding: 10px;
     height: 10px;
 }
@@ -50,7 +50,55 @@ h3{
     height: 10px;
     background-color: #333;
 } */
-.form-range{
-    width: 50%;
+.form-range-slider{
+    width: 60%;
+}
+
+.slider-container {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s;
+    margin: 20px;
+    border: 1px solid #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mt-7{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.753);
+    /* border-radius: 8px; */
+    /* font-size: 18px; */
+    /* height: 48px; */
+    border: 1px solid #fff;
+    width: 10vw;
+    margin-left: 14vw
+
+}
+
+
+.pie-chart-container{
+    background-color: transparent;
+    width: 100%;
+    height: 80%;
+    transition: transform 0.2s;
+    margin: 20px;
+    border: 1px solid #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.output-container{
+    background-color: transparent;
+    width: 100%;
+    height: 10%;
+    transition: transform 0.2s;
+    margin: 20px;
+    border: 1px solid #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
