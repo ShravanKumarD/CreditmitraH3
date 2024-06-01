@@ -56,7 +56,6 @@ const Calculator = (props) => {
             <h3 className="text-xl font-semibold mb-4">Personal Loan EMI Calculator</h3>
             <section>
                 <div className="row">
-                    
                     <div className="col-sm-5">
                         <div className="slider-container">
                             <div className="text-center mb-4">
@@ -70,14 +69,6 @@ const Calculator = (props) => {
                                     className="form-range-slider"
                                     list="loanAmountTicks"
                                 />
-                                <datalist id="loanAmountTicks">
-                                    <option value="0" label="0"></option>
-                                    <option value="200000" label="200k"></option>
-                                    <option value="400000" label="400k"></option>
-                                    <option value="600000" label="600k"></option>
-                                    <option value="800000" label="800k"></option>
-                                    <option value="1000000" label="1M"></option>
-                                </datalist>
                                 <input
                                     type="number"
                                     min="0"
@@ -100,13 +91,6 @@ const Calculator = (props) => {
                                     className="form-range-slider"
                                     list="roiTicks"
                                 />
-                                <datalist id="roiTicks">
-                                    <option value="0" label="0%"></option>
-                                    <option value="5" label="5%"></option>
-                                    <option value="10" label="10%"></option>
-                                    <option value="15" label="15%"></option>
-                                    <option value="20" label="20%"></option>
-                                </datalist>
                                 <input
                                     type="number"
                                     min="0"
@@ -129,15 +113,6 @@ const Calculator = (props) => {
                                     className="form-range-slider"
                                     list="tenureTicks"
                                 />
-                                <datalist id="tenureTicks">
-                                    <option value="1" label="1"></option>
-                                    <option value="60" label="60"></option>
-                                    <option value="120" label="120"></option>
-                                    <option value="180" label="180"></option>
-                                    <option value="240" label="240"></option>
-                                    <option value="300" label="300"></option>
-                                    <option value="360" label="360"></option>
-                                </datalist>
                                 <input
                                     type="number"
                                     min="1"
@@ -149,19 +124,22 @@ const Calculator = (props) => {
                             </div>
                         </div>
                     </div>
-                    
-                    <div className="col-sm-5">
-                        <div className="pie-chart-container">
-                        <div className="output-container"></div>
+                    <div className='col-sm-5'>
+                        <div className="output-container">
+                        <h5 className="mb-3 fade-in" style={{fontSize:"20px",fontWeight:"normal",marginTop:"30px"}}>Equated Monthly Installments(EMI): ₹{totalInterest.toFixed(2)}</h5>
+                                    <h5 className="mb-3 fade-in" style={{fontSize:"20px",fontWeight:"normal"}}>Total Amt Payable: ₹{totalPayment.toFixed(2)}</h5>
+                        </div>
+                        <div className="pie-chart-container mt-4">
                             <div className="text-center mt-5">
                                 {(totalInterest === 0 || isNaN(totalInterest)) ?
                                 <div>
                                     <h5 className="mb-3 fade-in">Total Interest: ₹0</h5>
                                     <h5 className="mb-3 fade-in">Total Payment: ₹0</h5>
                                     <PieChart
+                                    className='pie'
                                         data={[
-                                            { title: 'Interest', value: 0, color: '#E38627' },
-                                            { title: 'Principal', value: 0, color: '#C13C37' }
+                                            { title: 'Interest', value:10, color: '#6f42c1' },
+                                            { title: 'Principal', value:20, color: '#0d6efd'}
                                         ]}
                                     />
                                 </div>
@@ -170,9 +148,10 @@ const Calculator = (props) => {
                                     <h5 className="mb-3 fade-in">Total Interest: ₹{totalInterest.toFixed(2)}</h5>
                                     <h5 className="mb-3 fade-in">Total Payment: ₹{totalPayment.toFixed(2)}</h5>
                                     <PieChart
+                                      className='pie'
                                         data={[
-                                            { title: 'Interest', value: parseFloat(totalInterest.toFixed(2)), color: '#E38627' },
-                                            { title: 'Principal', value: parseFloat(loanAmount), color: '#C13C37' }
+                                            { title: 'Interest', value: totalInterest.toFixed(2),  color: '#6f42c1'},
+                                            { title: 'Principal', value:totalPayment.toFixed(2), color: '#0d6efd' }
                                         ]}
                                     />
                                 </div>

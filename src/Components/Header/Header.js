@@ -187,6 +187,8 @@ function Header() {
           ))}
           <button className="nav-btn btn brand-secondary lg">Login</button>
         <button className="nav-btn btn brand-primary lg">Get App</button>
+
+        
         </ul>
         {/* Navbar Items here */}
         
