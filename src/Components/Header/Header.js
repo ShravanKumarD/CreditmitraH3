@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import Toggle from "../../assets/images/toggle.png";
 import "./Header.css";
+import CallImg from "./../../assets/images/phone.png";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -186,9 +187,9 @@ function Header() {
             </li>
           ))}
           <button className="nav-btn btn brand-secondary lg">Login</button>
-        <button className="nav-btn btn brand-primary lg">Get App</button>
-
-        
+          <button className="nav-btn btn brand-primary">
+          <img src={CallImg} className="CallImg" />
+           9666042345</button>
         </ul>
         {/* Navbar Items here */}
         

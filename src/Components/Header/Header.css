@@ -117,6 +117,11 @@
   color: #1b9bdc;
   font-weight: 600;
 }
+.CallImg{
+  height: 20px;
+  width: 20px;
+  margin-right: 1vw;
+}
 
 /* hamburger kicks in */
 @media (max-width: 991px) {

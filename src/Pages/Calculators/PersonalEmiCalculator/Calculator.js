@@ -131,15 +131,15 @@ const Calculator = (props) => {
                         </div>
                         <div className="pie-chart-container mt-4">
                             <div className="text-center mt-5">
-                                {(totalInterest === 0 || isNaN(totalInterest)) ?
+                                {(totalInterest==0 && isNaN(totalInterest)) ?
                                 <div>
-                                    <h5 className="mb-3 fade-in">Total Interest: ₹0</h5>
-                                    <h5 className="mb-3 fade-in">Total Payment: ₹0</h5>
+                                    <h5 className="mb-3 fade-in" style={{fontSize:"20px"}}>Total Interest: ₹0</h5>
+                                    <h5 className="mb-3 fade-in" style={{fontSize:"20px"}}>Total Payment: ₹0</h5>
                                     <PieChart
-                                    className='pie'
+                                       className='pie'
                                         data={[
-                                            { title: 'Interest', value:10, color: '#6f42c1' },
-                                            { title: 'Principal', value:20, color: '#0d6efd'}
+                                            { title: 'Interest', value: totalInterest, color: '#E38627' },
+                                            { title: 'Principal', value: isNaN(totalInterest), color: '#C13C37' }
                                         ]}
                                     />
                                 </div>
@@ -148,10 +148,10 @@ const Calculator = (props) => {
                                     <h5 className="mb-3 fade-in">Total Interest: ₹{totalInterest.toFixed(2)}</h5>
                                     <h5 className="mb-3 fade-in">Total Payment: ₹{totalPayment.toFixed(2)}</h5>
                                     <PieChart
-                                      className='pie'
+                                     className='pie'
                                         data={[
-                                            { title: 'Interest', value: totalInterest.toFixed(2),  color: '#6f42c1'},
-                                            { title: 'Principal', value:totalPayment.toFixed(2), color: '#0d6efd' }
+                                            { title: 'Interest', value: parseFloat(totalInterest.toFixed(2)), color: '#E38627' },
+                                            { title: 'Principal', value: parseFloat(loanAmount), color: '#C13C37' }
                                         ]}
                                     />
                                 </div>
