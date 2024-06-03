@@ -14,14 +14,14 @@ const CardList = ({ cards }) => (
       <div key={index} className="blog-item">
         <div className="blog-card">
           <div className="feature-card">
-            {/* <Link to={`/blogs/${card.blogSlug}`} className="feature-blog-link"> */}
+            <Link to={`/blogs/${card.blogSlug}`} className="feature-blog-link">
               <img
                 className="blog-feature-image"
                 src={card.imageLink}
                 alt={card.title}
               />
               <h5 className="blog-feature-title">{card.title}</h5>
-            {/* </Link> */}
+            </Link>
             <p className="blog-feature-date">{card.date}</p>
             <p className="blog-feature-summary">{card.summary}</p>
             <Link to={`/blogs/${card.blogSlug}`} className="read-more-link">

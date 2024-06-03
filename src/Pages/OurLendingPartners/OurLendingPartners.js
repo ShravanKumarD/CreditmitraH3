@@ -26,7 +26,7 @@ function OurLendingPartners(props) {
                 CreditMitra is acting as a Digital Lending Platform on behalf of
                 the following RBI Registered NBFC
               </p>
-              <div className="company-container mb-5">
+              {/* <div className="company-container mb-5">
                 <img height="100px" src={venus} />
                 <h6>VENUS BARTER</h6>
                 <p>Venus Barter Private Limited</p>
@@ -38,10 +38,10 @@ function OurLendingPartners(props) {
                   Phone: 9666042345
                 </div>
                 <h6 className="mt-5">&</h6>
-              </div>
+              </div> */}
               <div className="company-container mt-3">
                 <img height="100px" src={agf} />
-                <h6>A.G.F Finlease </h6>
+                <h6>A.G.F Finlease </h6>  
                 <p>A.G.F Finlease (India) Limited</p>
                 <div className="website-text">
                   Website: <a href="https://agffinlease.com/" target="_blank">https://agffinlease.com</a>

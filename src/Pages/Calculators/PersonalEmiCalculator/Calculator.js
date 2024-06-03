@@ -27,7 +27,7 @@ const Calculator = (props) => {
         const calculateEMI = (principal, rate, time) => {
             rate = rate / (12 * 100);
             time = time * 12; 
-            return (principal * rate * Math.pow(1 + rate, time)) / (Math.pow(1 + rate, time) - 1);
+            return (principal * rate * Math.pow((1 + rate)^time)) / (Math.pow((1 + rate), (time-1)) );
         };
 
         if (loanAmount > 0 && roi > 0 && tenure > 0) {
@@ -131,20 +131,7 @@ const Calculator = (props) => {
                         </div>
                         <div className="pie-chart-container mt-4">
                             <div className="text-center mt-5">
-                                {(totalInterest==0 && isNaN(totalInterest)) ?
-                                <div>
-                                    <h5 className="mb-3 fade-in" style={{fontSize:"20px"}}>Total Interest: ₹0</h5>
-                                    <h5 className="mb-3 fade-in" style={{fontSize:"20px"}}>Total Payment: ₹0</h5>
-                                    <PieChart
-                                       className='pie'
-                                        data={[
-                                            { title: 'Interest', value: totalInterest, color: '#E38627' },
-                                            { title: 'Principal', value: isNaN(totalInterest), color: '#C13C37' }
-                                        ]}
-                                    />
-                                </div>
-                                :
-                                <div>
+                                                                <div>
                                     <h5 className="mb-3 fade-in">Total Interest: ₹{totalInterest.toFixed(2)}</h5>
                                     <h5 className="mb-3 fade-in">Total Payment: ₹{totalPayment.toFixed(2)}</h5>
                                     <PieChart
@@ -155,7 +142,7 @@ const Calculator = (props) => {
                                         ]}
                                     />
                                 </div>
-                                }
+                                
                             </div>
                         </div>
                     </div>

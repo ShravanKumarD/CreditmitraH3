@@ -4,6 +4,7 @@ import Header from "../../Components/Header/Header";
 import message from '../../assets/images/contactMainImg.png';
 import Hangout from "../../assets/images/hangout.png";
 import SEO from "../../Components/SEO/SEO";
+import emailjs from 'emailjs-com';
 
 function Contact(props) {
   const [selectedOption, setSelectedOption] = useState('');
@@ -14,10 +15,48 @@ function Contact(props) {
     { value: 'repayment_issue', label: 'Repayment issue' },
     { value: 'others', label: 'others' },
   ];
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    contact: '',
+    message: '',
+  });
+  const [formStatus, setFormStatus] = useState('');
+
 
   const handleSelect = (e) => {
     setSelectedOption(e.target.value);
   };
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hello svdhadvngwm")
+
+    emailjs.send(
+      'service_vjn84f9',
+      'template_l0o0f3o', formData,
+      'HMzzxdYV3qtn3cYUR'
+    )
+      .then((response) => {
+        console.log('SUCCESS!', response);
+        alert("complaint saved!")
+        setFormStatus('SUCCESS');
+        setFormData({ name: '', email: '', message: '',reason:'',contact:'' });
+      }, (error) => {
+        console.log('FAILED...', error);
+        setFormStatus('ERROR');
+      });
+  };
+
+
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -45,35 +84,62 @@ function Contact(props) {
         </div>
         <section>
 
-          <h2  className="contactUsMain">Contact Us</h2>
+          <h2 className="contactUsMain">Contact Us</h2>
           <div className="row-container">
             <div className=""></div>
             <div className="col-sm-6">
               <div className="form-container">
-                <div className="form-group">
-                  <input type="text" className="form-control" id="name" placeholder="Your name" />
+                <form onSubmit={handleSubmit}>
+                <div className="form-group" >
+                  
+                  <input type="text"
+                    className="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    formData={formData.name}
+                    onChange={handleChange}
+                    required />
                   <div className="spacer" style={{ padding: "1vw" }}></div>
-                  <input type="text" className="form-control" id="email" placeholder="Email ddress" />
+                  <input type="text" name="email"
+                    formData={formData.email}
+                    className="form-control" id="email" placeholder="Email ddress" required />
                 </div>
                 <div className="form-group">
-                  <select value={selectedOption} className="dropdown contactUsDropdown " onChange={handleSelect}>
-                    <option value="" style={{color:"black"}}>Select an issue</option>
+                  <select value={selectedOption}
+                  name="reason"
+                  formData={formData.reason}
+                  className="dropdown contactUsDropdown " onChange={handleSelect}  >
+                    <option value="" style={{ color: "black" }}>Select an issue</option>
                     {options.map((option) => (
-                      <option key={option.value} value={option.value} style={{color:"white",backgroundColor:"#3D4F74"}}>
+                      <option key={option.value} value={option.value} style={{ color: "white", backgroundColor: "#3D4F74" }}>
                         {option.label}
                       </option>
                     ))}
                   </select>
                   <div className="spacer" style={{ padding: "1vw" }}></div>
 
-                  <input type="text" className="form-control" id="contact" placeholder="Contact" />
+                  <input type="text"
+                    name="contact"
+                    formData={formData.contact}
+                    onChange={handleChange}
+                    className="form-control"
+                     id="contact"
+                      placeholder="Contact" required />
                 </div>
                 <div className="form-group">
-                  <textarea className="form-control" id="message" placeholder="Message" style={{ resize: "none", height: "100px" }}></textarea>
+                  <textarea className="form-control"
+                    name="message"
+                    formData={formData.message}
+                    onChange={handleChange}
+                    id="message" placeholder="Message"
+                     style={{ resize: "none", height: "100px" }}
+                    required ></textarea>
                 </div>
-                <button type="submit" className="contact-submit-button">
+                <button type="submit" onSubmit={handleSubmit} className="contact-submit-button">
                   Submit
                 </button>
+                </form>
               </div>
             </div>
             <div className="">
@@ -87,6 +153,8 @@ function Contact(props) {
             </div>
 
           </div>
+          {formStatus === 'SUCCESS' && <p>Message sent successfully!</p>}
+          {formStatus === 'ERROR' && <p>Failed to send message. Please try again.</p>}
         </section>
 
 
