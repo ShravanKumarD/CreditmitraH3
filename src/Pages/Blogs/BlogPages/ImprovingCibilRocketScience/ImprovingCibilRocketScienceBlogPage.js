@@ -16,6 +16,7 @@ function Contact(props) {
         keywords="instant personal loan in india, personal loan approval"
         name="Credit Mitra"
         type="article"
+        imageUrl={blogImage}
       />
       <section>
         {/* blog-content prefix is used here */}
