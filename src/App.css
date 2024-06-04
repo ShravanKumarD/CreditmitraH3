@@ -1190,6 +1190,12 @@ text-align: center;
   background: #198bc7;
   color: #ffffff;
   font-family: Poppins;
+  border-image-source: linear-gradient(to left, #1b9bdc, #a9e2ff, #1b9bdc);
+  border-width: 1px;
+  border-image-slice: 1;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-repeat: round;
 }
 
 .brand-primary.lg {

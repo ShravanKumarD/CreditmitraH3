@@ -36,8 +36,7 @@ function Contact(props) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("hello svdhadvngwm")
+    e.preventDefault(); 
 
     emailjs.send(
       'service_vjn84f9',
