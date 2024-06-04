@@ -46,7 +46,7 @@ function AboutUs(props) {
               {cardInfo.description}
             </p>
           </div>
-          <img height="300px" src={cardInfo.img} />
+          <img height="300px" src={cardInfo.img} alt="vision"/>
         </div>
       </>
     );
@@ -109,7 +109,7 @@ function AboutUs(props) {
                     interest rates
                   </p>
                 </div>
-                <img height="300px" className="aboutus" src={aboutus} />
+                <img height="300px" className="aboutus" src={aboutus} alt="creditmitra card"/>
               </div>
             </div>
             <div className="about-points-container row">

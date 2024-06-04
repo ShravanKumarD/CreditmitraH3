@@ -79,7 +79,7 @@ function Footer(props) {
                                    { 'Loans By Location'}
                                    <img
                                     //    src="path-to-arrow-image.png"
-                                    //    alt="Arrow"
+                                       alt="Arrow"
                                        style={{ marginLeft: '10px', }}
                                    />
                                </button>

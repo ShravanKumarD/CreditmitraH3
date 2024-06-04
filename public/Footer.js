@@ -35,7 +35,8 @@ function Footer(props) {
                 {displayName: "About us", redirectTo: "/about"},
                 {displayName: "Responsible lending", redirectTo: "/responsibleLending"},
                 {displayName: "FAQ", redirectTo: "/faq"},
-                {displayName: "Blog", redirectTo: "/"}
+                {displayName: "Blog", redirectTo: "/blogs"},
+                {displayName:"Calculator",redirectTo:"/calculator"}
             ]
         },
     ];

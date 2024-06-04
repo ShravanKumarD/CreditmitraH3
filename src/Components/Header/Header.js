@@ -96,8 +96,8 @@ function Header() {
           className="nav-logo-creditmitra"
           style={{ width: 180 }}
           src={Logo}
-          title="Credit mitra"
-          alt="Credit mitra"
+          title="CreditMitra"
+          alt="Creditmitra"
         />
       </Link>
       {/* Image ends here */}
@@ -188,7 +188,7 @@ function Header() {
           ))}
           <button className="nav-btn btn brand-secondary lg">Login</button>
           <button className="nav-btn btn brand-primary">
-          <img src={CallImg} className="CallImg" />
+          <img src={CallImg} alt="phone" className="CallImg" />
            9666042345</button>
         </ul>
         {/* Navbar Items here */}

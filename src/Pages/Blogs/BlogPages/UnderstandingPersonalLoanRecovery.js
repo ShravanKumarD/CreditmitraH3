@@ -35,7 +35,7 @@ const UnderstandingPersonalLoanRecovery = (props) => {
             <div className="blog-content-date">May 21, 2024</div>
 
             <div className="blog-content-image">
-              <img src={blogImage} className="blog-image-container" />
+              <img src={blogImage} className="blog-image-container" alt="blog img"/>
             </div>
             <div className="blog-content-text">
               <div className="credit-score-tips">

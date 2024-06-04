@@ -15,7 +15,7 @@ function DescriptionSection(props) {
                 </ol>
             </div>
             <div className='img-container'>
-                    <img className='' src={props.img} />
+                    <img className='' src={props.img} alt='phone img'/>
             </div>
         </div>
     );

@@ -40,7 +40,7 @@ function OurLendingPartners(props) {
                 <h6 className="mt-5">&</h6>
               </div> */}
               <div className="company-container mt-3">
-                <img height="100px" src={agf} />
+                <img height="100px" src={agf} alt="company logo"/>
                 <h6>A.G.F Finlease </h6>  
                 <p>A.G.F Finlease (India) Limited</p>
                 <div className="website-text">
