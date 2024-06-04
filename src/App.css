@@ -2195,4 +2195,7 @@ th {
   }
 }
 
-
+.responseText{
+  color: #ffffff;
+  text-align: left;
+}

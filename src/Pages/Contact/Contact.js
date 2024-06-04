@@ -46,7 +46,7 @@ function Contact(props) {
     )
       .then((response) => {
         console.log('SUCCESS!', response);
-        alert("complaint saved!")
+        alert("Thank you for you're message,we will get back to you shortly.")
         setFormStatus('SUCCESS');
         setFormData({ name: '', email: '', message: '',reason:'',contact:'' });
       }, (error) => {
@@ -151,10 +151,9 @@ function Contact(props) {
                 <p style={{ color: "white" }}>Email Us<a style={{ textDecoration: "none" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a></p>
               </div>
             </div>
-
           </div>
-          {formStatus === 'SUCCESS' && <p>Message sent successfully!</p>}
-          {formStatus === 'ERROR' && <p>Failed to send message. Please try again.</p>}
+          {formStatus === 'SUCCESS' && <p className="responseText">Thank you for you're message,we will get back to you shortly.</p>}
+          {formStatus === 'ERROR' && <p className="responseText">Failed to send message. Please try again.</p>}
         </section>
 
 
