@@ -11,7 +11,7 @@ function HeroSection(props) {
                     <buttton className="btn brand-secondary py-3 px-4">Download App</buttton>
                 </div>
             </div>
-            <img src={heroImage} className='img-home' alt='hero image'/>
+            <img src={heroImage} className='img-home' alt='hero image' loading="lazy"/>
         </div>
     );
 }
