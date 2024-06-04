@@ -77,11 +77,6 @@ function Footer(props) {
                                    type="button"
                                    onClick={handleDropdownToggle}>
                                    { 'Loans By Location'}
-                                   <img
-                                    //    src="path-to-arrow-image.png"
-                                       alt="Arrow"
-                                       style={{ marginLeft: '10px', }}
-                                   />
                                </button>
                                {isDropdownOpen && (
                                    <ul className="dropdown-menu custom-dropdown-menu show">
