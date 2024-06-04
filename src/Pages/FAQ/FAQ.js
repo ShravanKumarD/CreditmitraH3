@@ -17,17 +17,17 @@ function FAQ(props) {
         },
         {
           "How does CreditMitra Work?": 
-          `CreditMitra is where simplicity meets convenience. All you need to do is follow
-          through these steps to get an instant loan:
-          ● Download the CreditMitra app from Play Store.
-          ● Register effortlessly using Facebook, Gmail, or LinkedIn.
-          ● Check eligibility with basic details.
-          ● Complete the application with ease.
-          ● Upload documents' photos conveniently.
-          ● Add your bank account details securely.
-          ●   Upon verification, expect swift fund transfer to your account.`,
+          `CreditMitra is where simplicity meets convenience. All you need to do is follow through these steps to get an instant loan:
+          <ul>
+            <li> Download the CreditMitra app from Play Store.</li>
+            <li> Register effortlessly using Facebook, Gmail, or LinkedIn.</li>
+            <li> Check eligibility with basic details.</li>
+            <li> Complete the application with ease.</li>
+            <li> Upload documents' photos conveniently.</li>
+            <li> Add your bank account details securely.</li>
+            <li> Upon verification, expect swift fund transfer to your account.</li>
+          </ul>`,
         },
-
         {
           "Are you a Bank or an NBFC?": `CreditMitra is neither a Bank nor an NBFC. It is an user-friendly technology platform powered by Bluechip Finance Private Limited; an RBI-registered Non-Banking Financial Company (NBFC).`,
         },
@@ -103,12 +103,14 @@ function FAQ(props) {
     {
       Eligibility: [
         {
-          "What are the eligibility criteria for Personal Loan?": ` You are eligible to apply personal loan on satisfying the following criteria –
-          ● Should be an Indian citizen
-          ● Should be a salaried employee
-          ● Should have a minimum salary of Rs. 15,000/- p.m.
-          ● Salary should credit direct in the bank
-          ● Should be above 21yrs and not more than 50yrs. old`,
+          "What are the eligibility criteria for Personal Loan?": `You are eligible to apply personal loan on satisfying the following criteria –
+          <ul>
+          <li>● Should be an Indian citizen</li>
+          <li>● Should be a salaried employee</li>
+          <li>● Should have a minimum salary of Rs. 15,000/- p.m.</li>
+          <li>● Salary should be credited directly to the bank</li>
+          <li>● Should be above 21 years and not more than 50 years old</li>
+          </ul>`,
         },
         {
           " How quickly will I get my Loan?": ` Your loan is generally transferred immediately as soon as all your documents are
@@ -134,6 +136,7 @@ function FAQ(props) {
       ],
     },
   ];
+  
   const [tabActive, setTabActive] = useState(Object.keys(faqContent[0])[0]);
   const [faqAnswerOpened, setFaqAnswerOpened] = useState({});
 
@@ -141,9 +144,10 @@ function FAQ(props) {
     let temp = { ...faqAnswerOpened, [index]: !faqAnswerOpened[index] };
     setFaqAnswerOpened(temp);
   }
+
   function generateFaqQuestions() {
     let faqSelected = faqContent.filter((each) => {
-      return Object.keys(each)[0] == tabActive;
+      return Object.keys(each)[0] === tabActive;
     });
     faqSelected = faqSelected[0][tabActive];
     return (
@@ -176,7 +180,7 @@ function FAQ(props) {
                   </svg>
                 </div>
                 <Collapse isOpen={faqAnswerOpened[index]}>
-                  <p>{Object.values(each)[0]}</p>
+                  <p dangerouslySetInnerHTML={{ __html: Object.values(each)[0] }}></p>
                 </Collapse>
               </button>
             </div>
@@ -185,6 +189,7 @@ function FAQ(props) {
       </div>
     );
   }
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -201,33 +206,14 @@ function FAQ(props) {
             <div className="content">
               <h6 className="heading">We Have Answers </h6>
               <div className="faq-container mx-auto">
-                {/* <div className="input-box"> */}
-                  {/* <input
-
-    type="search"
-
-    name="search-form"
-
-    id="search-form"
-
-    className="search-input"
-
-    //  onChange={(e) => setSearchQuery(e.target.value)}
-
-    placeholder="Enter your search term here"
-
-/> */}
-                {/* </div> */}
-
-                <div className="faq-tab-container ">
+                <div className="faq-tab-container">
                   <div className="tab-buttons row faqheads">
                     {faqContent.map((each, index) => {
                       return (
-                        <div className="col-md-3">
+                        <div className="col-md-3" key={index}>
                           <button
-                            key={index}
                             className={`${
-                              tabActive == Object.keys(each)[0]
+                              tabActive === Object.keys(each)[0]
                                 ? "active-btn"
                                 : ""
                             } btn`}
@@ -244,8 +230,18 @@ function FAQ(props) {
                   <div className="answer-section">{generateFaqQuestions()}</div>
                 </div>
                 <div className="more-questions">
-                  <p style={{fontSize:"28px", fontFamily: "Poppins",}}>Haven't Found what you need?</p>
-                  <span style={{fontSize:"22px", fontFamily: "Poppins",fontWeight:"500"}}>Get in Touch, We are happy to help!</span>
+                  <p style={{ fontSize: "28px", fontFamily: "Poppins" }}>
+                    Haven't Found what you need?
+                  </p>
+                  <span
+                    style={{
+                      fontSize: "22px",
+                      fontFamily: "Poppins",
+                      fontWeight: "500",
+                    }}
+                  >
+                    Get in Touch, We are happy to help!
+                  </span>
                   <Link to={"/contact"} className="btn">
                     Contact Us
                   </Link>
