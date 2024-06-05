@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from "classnames";
 
 function PersonalLoansVSCreditCards() {
 
@@ -130,29 +129,29 @@ function PersonalLoansVSCreditCards() {
       <table>
         <tbody>
           <tr>
-            <td width="200">
+            <td>
               <p>
                 <strong>Basis</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 <strong>Personal Loan</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 <strong>Credit Card</strong>
               </p>
             </td>
           </tr>
           <tr>
-            <td width="200">
+            <td>
               <p>
                 <strong>Application Process &amp; availability</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 You can apply online, submit the documents online, and wait for
                 the approval. With{" "}
@@ -164,7 +163,7 @@ function PersonalLoansVSCreditCards() {
                 get disbursal within a few hours.
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 You can apply online or offline, if the bank or the financial
                 service you are opting for the credit card approves your
@@ -174,18 +173,18 @@ function PersonalLoansVSCreditCards() {
             </td>
           </tr>
           <tr>
-            <td width="200">
+            <td>
               <p>
                 <strong>Disbursal of loan</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 Once your application is approved, the loan is disbursed into
                 your bank account you link with the lender.
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 Credit card loans can be used anytime, you do not need separate
                 disbursals for each amount once you have the credit card with
@@ -195,12 +194,12 @@ function PersonalLoansVSCreditCards() {
             </td>
           </tr>
           <tr>
-            <td width="200">
+            <td>
               <p>
                 <strong>Loan amount</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 The loan amount varies as per the applicant&rsquo;s income
                 level, credit history, and credit score. With{" "}
@@ -211,7 +210,7 @@ function PersonalLoansVSCreditCards() {
                 <strong>personal loan.</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 The loan amount is restricted to the amount of credit limit set
                 for the credit card.
@@ -219,12 +218,12 @@ function PersonalLoansVSCreditCards() {
             </td>
           </tr>
           <tr>
-            <td width="200">
+            <td>
               <p>
                 <strong>Repayment Tenure</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 You can opt for a suitable repayment tenure, which ranges from a
                 few months to even a few years. With{" "}
@@ -234,7 +233,7 @@ function PersonalLoansVSCreditCards() {
                 , the repayment tenure starts from 65 days.
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 The amount used from the credit card in a billing cycle has to
                 be repaid within around 18-25 days from the statement date. This
@@ -244,17 +243,17 @@ function PersonalLoansVSCreditCards() {
             </td>
           </tr>
           <tr>
-            <td width="200">
+            <td>
               <p>
                 <strong>Interest Rate</strong>
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>
                 The interest rate is charged on the reducing balance method.
               </p>
             </td>
-            <td width="200">
+            <td>
               <p>It is usually charged a flat interest rate.</p>
             </td>
           </tr>

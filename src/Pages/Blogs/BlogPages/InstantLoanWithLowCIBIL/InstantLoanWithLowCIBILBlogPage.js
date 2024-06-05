@@ -1,19 +1,19 @@
 import React from "react";
 import Footer from "../../../../Components/Footer";
 import Header from "../../../../Components/Header/Header";
-import blogImage from "../../../../assets/images/blogs/comparing_loan_options_blog.png";
+import blogImage from "../../../../assets/images/blogs/instant_loan_with_low_cibil_blog.png";
 import SEO from "../../../../Components/SEO/SEO";
 import "../BlogPage.css";
-import PersonalLoansVSCreditCards from "./PersonalLoansVSCreditCards";
+import InstantLoanWithLowCIBIL from "./InstantLoanWithLowCIBIL";
 
 function BlogPage(props) {
   return (
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="Comparing Loan Options: Personal Loans vs Credit Cards | CreditMitra"
-        description="Explore the differences between personal loans and credit cards to make an informed decision on your borrowing options."
-        keywords="Personal Loans, Credit Cards, Loan Options, CreditMitra"
+        title="How To Get An Instant Loans With Low CIBIL Score | CreditMitra"
+        description="Learn how to secure an instant loan even with a low CIBIL score. Discover the key factors lenders consider beyond your credit score."
+        keywords="Instant Loans, Low CIBIL Score, CreditMitra"
         name="Credit Mitra"
         type="article"
         imageUrl={blogImage}
@@ -24,7 +24,7 @@ function BlogPage(props) {
           <div className="blog-content-section">
             {/* we should decouple this image asap */}
             <h1 className="blog-content-heading">
-              Comparing Loan Options: Personal Loans vs Credit Cards
+              How To Get An Instant Loans With Low CIBIL Score?
             </h1>
             <div className="blog-content-date">June 5, 2024</div>
 
@@ -36,7 +36,7 @@ function BlogPage(props) {
               />
             </div>
             <div className="blog-content-text">
-              <PersonalLoansVSCreditCards />
+              <InstantLoanWithLowCIBIL />
               <p className="blog-content-paragraph"></p>
               <p className="blog-content-paragraph"></p>
             </div>

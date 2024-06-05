@@ -17,6 +17,9 @@ import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
 import EightTipsToImproveYourCibilScoreBlogPage from './Pages/Blogs/BlogPages/EightTipsToImproveYourCibilScore/EightTipsToImproveYourCibilScoreBlogPage'
 import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/ImprovingCibilRocketScience/ImprovingCibilRocketScienceBlogPage'
+import PersonalLoansVSCreditCardsBlogPage from './Pages/Blogs/BlogPages/PersonalLoansVSCreditCards/PersonalLoansVSCreditCardsBlogPage'
+import InstantLoanWithLowCIBIL from './Pages/Blogs/BlogPages/InstantLoanWithLowCIBIL/InstantLoanWithLowCIBILBlogPage'
+import AvoidMistakesApplyingPersonalLoans from './Pages/Blogs/BlogPages/AvoidMistakesApplyingPersonalLoans/AvoidMistakesApplyingPersonalLoansBlogPage'
 
 import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
 import InstantPersonalLoan from './Pages/Products/VariousPersonalLoans/InstantPersonalLoan';
@@ -65,8 +68,11 @@ function App() {
           <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={< EightTipsToImproveYourCibilScoreBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
           <Route path="/blogs/improving-your-cibil-score-is-not-rocket-science" element={<ImprovingCibilRocketScienceBlogPage routePath="/blogs/improving-your-cibil-score-is-not-rocket-science"/>} />
           <Route path="/blogs/understanding-personal-loan-recovery" element={<UnderstandingPersonalLoanRecovery routePath="/blogs/understanding-personal-loan-recovery"/>}/>
+          <Route path="/blogs/personal-loans-vs-credit-cards" element={<PersonalLoansVSCreditCardsBlogPage routePath="/blogs/personal-loans-vs-credit-cards"/>}/>
+          <Route path="/blogs/how-to-get-an-instant-loans-with-low-cibil-score" element={<InstantLoanWithLowCIBIL routePath="/blogs/how-to-get-an-instant-loans-with-low-cibil-score"/>}/>
+          <Route path="/blogs/avoid-these-mistakes-while-applying-for-personal-loans" element={<AvoidMistakesApplyingPersonalLoans routePath="/blogs/avoid-these-mistakes-while-applying-for-personal-loans"/>}/>
 
-          
+
           {/* blogs end */}
 
           {/* product routes */}

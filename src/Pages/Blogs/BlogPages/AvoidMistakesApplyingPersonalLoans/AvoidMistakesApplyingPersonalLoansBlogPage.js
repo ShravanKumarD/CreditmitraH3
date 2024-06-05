@@ -1,19 +1,19 @@
 import React from "react";
 import Footer from "../../../../Components/Footer";
 import Header from "../../../../Components/Header/Header";
-import blogImage from "../../../../assets/images/blogs/comparing_loan_options_blog.png";
+import blogImage from "../../../../assets/images/blogs/avoid_these_mistakes_while_applying_loan_blog.png";
 import SEO from "../../../../Components/SEO/SEO";
 import "../BlogPage.css";
-import PersonalLoansVSCreditCards from "./PersonalLoansVSCreditCards";
+import PersonalLoansVSCreditCards from "./AvoidMistakesApplyingPersonalLoans";
 
 function BlogPage(props) {
   return (
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="Comparing Loan Options: Personal Loans vs Credit Cards | CreditMitra"
-        description="Explore the differences between personal loans and credit cards to make an informed decision on your borrowing options."
-        keywords="Personal Loans, Credit Cards, Loan Options, CreditMitra"
+        title="Avoid These Mistakes While Applying for Personal Loans | CreditMitra"
+        description="Avoid common pitfalls when applying for personal loans. Learn what to look out for to ensure your loan application is successful."
+        keywords="Personal Loans, Loan Application Mistakes, CreditMitra"
         name="Credit Mitra"
         type="article"
         imageUrl={blogImage}
@@ -24,7 +24,7 @@ function BlogPage(props) {
           <div className="blog-content-section">
             {/* we should decouple this image asap */}
             <h1 className="blog-content-heading">
-              Comparing Loan Options: Personal Loans vs Credit Cards
+            Avoid These Mistakes While Applying for Personal Loans
             </h1>
             <div className="blog-content-date">June 5, 2024</div>
 
