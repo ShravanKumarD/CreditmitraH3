@@ -64,8 +64,10 @@ function App() {
           {/* routes to blogs */}
           <Route path="/blogs/8-tips-to-improve-your-cibil-score" element={< EightTipsToImproveYourCibilScoreBlogPage routePath="/blogs/8-tips-to-improve-your-cibil-score"/>} />
           <Route path="/blogs/improving-your-cibil-score-is-not-rocket-science" element={<ImprovingCibilRocketScienceBlogPage routePath="/blogs/improving-your-cibil-score-is-not-rocket-science"/>} />
-          {/* 8-tips-to-improve-your-cibil-score */}
           <Route path="/blogs/understanding-personal-loan-recovery" element={<UnderstandingPersonalLoanRecovery routePath="/blogs/understanding-personal-loan-recovery"/>}/>
+
+          
+          {/* blogs end */}
 
           {/* product routes */}
           <Route path="/emergency-loan" element={<EmergencyLoan routePath="/emergency-loan"/>} />
