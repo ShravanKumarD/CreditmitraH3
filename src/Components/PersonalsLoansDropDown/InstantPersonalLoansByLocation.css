@@ -205,10 +205,11 @@ h2 {
   text-align: center;
 }
 
+/* bad style here */
 .card-body,
 .each-card {
   padding: 20px;
-  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+  /* background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%); */
 }
 
 .header,
@@ -264,7 +265,7 @@ h2 {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #fff;
+  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
 }
 
 @media (max-width: 768px) {

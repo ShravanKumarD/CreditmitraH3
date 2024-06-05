@@ -53,6 +53,7 @@ function UserFeedback(props) {
           height="64px"
           width="64px"
           src={each.img}
+          loading="lazy"
         />
         <div className="card-body">
           <div className="feedback-ratings">
