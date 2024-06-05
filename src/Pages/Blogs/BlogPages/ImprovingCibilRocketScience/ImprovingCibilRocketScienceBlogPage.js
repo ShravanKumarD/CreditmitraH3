@@ -6,14 +6,14 @@ import SEO from "../../../../Components/SEO/SEO";
 import "../BlogPage.css";
 import InstantLoanWithLowCibil from "./ImprovingCibilRocketScience";
 
-function Contact(props) {
+function BlogPage(props) {
   return (
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="Contact Us | instant personal loan in india | CreditMitra"
-        description="CreditMitra understand the importance of customer satisfaction and personal service. You can reach our Customer Care team or one of our Dedicated Loan Officers at any time, Feel free to give us a call!"
-        keywords="instant personal loan in india, personal loan approval"
+        title="Improving your CIBIL score is not rocket science | CreditMitra"
+        description="Learn how to improve your CIBIL score with simple and effective methods. It's not rocket science!"
+        keywords="CIBIL score, improve CIBIL score, credit score, CreditMitra"
         name="Credit Mitra"
         type="article"
         imageUrl={blogImage}
@@ -23,19 +23,22 @@ function Contact(props) {
         <div className="page-container blog-content-page">
           <div className="blog-content-section">
             {/* we should decouple this image asap */}
-            <h1 className="blog-content-heading">Improving your CIBIL score is not rocket science</h1>
+            <h1 className="blog-content-heading">
+              Improving your CIBIL score is not rocket science
+            </h1>
             <div className="blog-content-date">May 14, 2024</div>
 
             <div className="blog-content-image">
-              <img src={blogImage} className="blog-image-container" alt="blog img"/>
+              <img
+                src={blogImage}
+                className="blog-image-container"
+                alt="blog img"
+              />
             </div>
             <div className="blog-content-text">
               <InstantLoanWithLowCibil />
-              <p className="blog-content-paragraph">
-
-              </p>
-              <p className="blog-content-paragraph">
-              </p>
+              <p className="blog-content-paragraph"></p>
+              <p className="blog-content-paragraph"></p>
             </div>
           </div>
         </div>
@@ -45,4 +48,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default BlogPage;

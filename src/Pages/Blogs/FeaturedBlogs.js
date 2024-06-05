@@ -35,6 +35,27 @@ function FeaturedBlogs(props) {
       blogSlug:"understanding-personal-loan-recovery",
       summary:"With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...", 
     },
+    {
+      title: "new 4",
+      date: "5th June, 2024",
+      imageLink: require("../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png"),
+      blogSlug:"understanding-personal-loan-recovery",
+      summary:"With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...", 
+    },{
+      title: "new 5",
+      date: "5th June, 2024",
+      imageLink: require("../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png"),
+      blogSlug:"understanding-personal-loan-recovery",
+      summary:"With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...", 
+    },
+    {
+      title: "new 6",
+      date: "5th June, 2024",
+      imageLink: require("../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png"),
+      blogSlug:"understanding-personal-loan-recovery",
+      summary:"With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...", 
+    },
+    
     
   ];
 

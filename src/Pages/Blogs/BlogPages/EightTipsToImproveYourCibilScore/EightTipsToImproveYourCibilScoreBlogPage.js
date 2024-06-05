@@ -6,7 +6,7 @@ import SEO from "../../../../Components/SEO/SEO";
 import "../BlogPage.css";
 import EightTipsToImproveYourCibilScore from "./EightTipsToImproveYourCibilScore";
 
-function Contact(props) {
+function BlogPage(props) {
   return (
     <>
       <Header routePath={props.routePath} />
@@ -45,4 +45,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default BlogPage;

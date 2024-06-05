@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "../../../Components/Footer";
-import Header from "../../../Components/Header/Header";
-import blogImage from "../../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png";
-import SEO from "../../../Components/SEO/SEO";
-import "../BlogPages/BlogPage.css";
+import Footer from "../../../../Components/Footer";
+import Header from "../../../../Components/Header/Header";
+import blogImage from "../../../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png";
+import SEO from "../../../../Components/SEO/SEO";
+import "../../BlogPages/BlogPage.css";
 import classNames from 'classnames';
 
 

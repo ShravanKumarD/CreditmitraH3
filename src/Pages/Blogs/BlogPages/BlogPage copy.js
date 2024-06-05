@@ -5,7 +5,7 @@ import blogImage from "../../../assets/images/blogs/8_tips_to_improve_your_cibil
 import SEO from "../../../Components/SEO/SEO";
 import "./BlogPage.css";
 
-function Contact(props) {
+function BlogPage(props) {
   return (
     <>
       <Header routePath={props.routePath} />
@@ -55,4 +55,4 @@ function Contact(props) {
   );
 }
 
-export default Contact;
+export default BlogPage;

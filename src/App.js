@@ -15,7 +15,7 @@ import GrievanceRedressal from './Pages/Policies/GrievanceRedressal';
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy';
 import TermsAndConditions from './Pages/Policies/TermsAndConditions';
 import FeaturedBlogs from './Pages/Blogs/FeaturedBlogs'
-import EightTipsToImproveYourCibilScoreBlogPage from './Pages/Blogs/BlogPages/InstantLoanWithCibil/EightTipsToImproveYourCibilScoreBlogPage'
+import EightTipsToImproveYourCibilScoreBlogPage from './Pages/Blogs/BlogPages/EightTipsToImproveYourCibilScore/EightTipsToImproveYourCibilScoreBlogPage'
 import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/ImprovingCibilRocketScience/ImprovingCibilRocketScienceBlogPage'
 
 import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
@@ -28,7 +28,7 @@ import WeddingLoan from './Pages/Products/VariousPersonalLoans/WeddingLoan';
 import Calculator from './Pages/Calculators/PersonalEmiCalculator/Calculator';
 
 import Sitemap from './Components/SEO/Sitemap';
-import UnderstandingPersonalLoanRecovery from './Pages/Blogs/BlogPages/UnderstandingPersonalLoanRecovery';
+import UnderstandingPersonalLoanRecovery from './Pages/Blogs/BlogPages/UnderstandingPersonalLoanRecovery/UnderstandingPersonalLoanRecovery';
 import InstantPersonalsLoansAtHyd from "./Components/PersonalsLoansDropDown/InstantPersonalLoansAtHyd";
 import InstantPersonalLoansAtBangalore from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtBangalore';
 import InstantPersonalLoansAtMumbai from './Components/PersonalsLoansDropDown/InstantPersonalLoansAtMumbai';
