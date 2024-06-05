@@ -30,7 +30,6 @@ const Calculator = (props) => {
         const calculateEMI = (principal, annualRate, tenureMonths) => {
             const monthlyRate = annualRate / (12 * 100); 
             const totalMonths = tenureMonths; 
-            console.log(totalMonths, "totalmonths")
 
             const emi =
                 (principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) /
@@ -43,6 +42,7 @@ const Calculator = (props) => {
             const emiValue = calculateEMI(loanAmount, roi, tenure);
             const totalInterestValue = emiValue * tenure - loanAmount;
             const totalPaymentValue = loanAmount + totalInterestValue;
+            console.log(totalInterestValue, totalPaymentValue, "calculated values")
 
             setEmi(emiValue);
             setTotalInterest(totalInterestValue);
@@ -70,11 +70,11 @@ const Calculator = (props) => {
                     <div className="col-sm-5">
                         <div className="slider-container">
                             <div className="text-center mb-4">
-                                <h4 className="mb-3">Loan Amount: ₹{loanAmount}</h4>
+                                <h4 className="mb-3">Loan Amount</h4>
                                 <input
                                     type="range"
                                     min="0"
-                                    max="1000000"
+                                    max="500000"
                                     value={loanAmount}
                                     onChange={handleChangeLoanAmount}
                                     className="form-range-slider"
@@ -83,40 +83,40 @@ const Calculator = (props) => {
                                 <input
                                     type="number"
                                     min="0"
-                                    max="1000000"
+                                    max="500000"
                                     value={loanAmount}
                                     onChange={handleChangeLoanAmount}
-                                    className="form-control mt-7"
+                                    className="form-cc"
                                 />
                             </div>
                             <div className="text-center mb-4">
-                                <h4 className="mb-3">Rate Of Interest: {roi}%</h4>
+                                <h4 className="mb-3">Rate Of Interest</h4>
                                 <input
                                     type="range"
                                     min="0"
-                                    max="20"
+                                    max="36"
                                     step="0.1"
                                     value={roi}
                                     onChange={handleChangeROI}
                                     className="form-range-slider"
-                                    list="roiTicks"
                                 />
                                 <input
                                     type="number"
                                     min="0"
-                                    max="20"
+                                    max="36"
                                     step="0.1"
                                     value={roi}
+                                    placeholder='₹'
                                     onChange={handleChangeROI}
-                                    className="form-control mt-7"
+                                    className="form-cc"
                                 />
                             </div>
                             <div className="text-center mb-4">
-                                <h4 className="mb-3">Tenure: {tenure} Months</h4>
+                                <h4 className="mb-3">Tenure</h4>
                                 <input
                                     type="range"
                                     min="1"
-                                    max="360"
+                                    max="36"
                                     value={tenure}
                                     onChange={handleChangeTenure}
                                     className="form-range-slider"
@@ -128,14 +128,14 @@ const Calculator = (props) => {
                                     max="360"
                                     value={tenure}
                                     onChange={handleChangeTenure}
-                                    className="form-control mt-7"
+                                    className="form-cc"
                                 />
                             </div>
                         </div>
                     </div>
                     <div className='col-sm-5'>
                         <div className="output-container">
-                            <h5 className="mb-3 fade-in" style={{ fontSize: "20px", fontWeight: "normal", marginTop: "30px" }}>
+                            <h5 className="mb-3 fade-in" style={{ fontSize: "20px", fontWeight: "normal", marginTop: "10px" }}>
                                 Equated Monthly Installments (EMI): ₹{emi.toFixed(2)}
                             </h5>
                             <h5 className="mb-3 fade-in" style={{ fontSize: "20px", fontWeight: "normal" }}>
@@ -144,16 +144,34 @@ const Calculator = (props) => {
                         </div>
                         <div className="pie-chart-container mt-4">
                             <div className="text-center mt-5">
-                                <div>
-                                    <h5 className="mb-3 fade-in">Total Interest: ₹{totalInterest.toFixed(2)}</h5>
-                                    <h5 className="mb-3 fade-in">Total Payment: ₹{totalPayment.toFixed(2)}</h5>
+                                <div>{
+                                     loanAmount===0?
+                                     <>
+                                     <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal"}}>Total Interest: ₹{totalInterest.toFixed(2)}</h5>
+                                     <h5 className="fade-in"style={{ fontSize: "20px", fontWeight: "normal" }}>Total Payment: ₹{totalPayment.toFixed(2)}</h5>
                                     <PieChart
-                                        className='pie'
-                                        data={[
-                                            { title: 'Interest', value: parseFloat(totalInterest.toFixed(2)), color: '#E38627' },
-                                            { title: 'Principal', value: parseFloat(totalPayment.toFixed(2)), color: '#C13C37' }
-                                        ]}
-                                    />
+                                         className='pie'
+                                         data={[
+                                             { title: 'Interest', value: 0.1, color: '#C13C37 ' },
+                                             { title: 'Principal', value: 0, color: '#E38627' }
+                                         ]}
+                                     />
+                                     </>
+                                    :
+                                    <>
+                                      <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal" }}>Total Interest: ₹{totalInterest.toFixed(2)}</h5>
+                                     <h5 className=" fade-in"style={{ fontSize: "20px", fontWeight: "normal" }}>Total Payment: ₹{totalPayment.toFixed(2)}</h5>
+                                     <PieChart
+                                         className='pie'
+                                         data={[
+                                             { title: 'Interest', value: totalInterest, color: '#E38627' },
+                                             { title: 'Principal', value: loanAmount, color: '#C13C37' }
+                                         ]}
+                                     />
+                                    </>
+                                    
+                                    }
+                                  
                                 </div>
                             </div>
                         </div>
