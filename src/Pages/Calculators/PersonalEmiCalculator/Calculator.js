@@ -64,7 +64,7 @@ const Calculator = (props) => {
                 name="Credit Mitra"
                 type="article"
             />
-            <h3 className="text-xl font-semibold mb-4">Personal Loan EMI Calculator</h3>
+            <h3 className="text-xl font-semibold mb-4" style={{marginTop:"100px"}}>Personal Loan EMI Calculator</h3>
             <section>
                 <div className="row">
                     <div className="col-sm-5">
