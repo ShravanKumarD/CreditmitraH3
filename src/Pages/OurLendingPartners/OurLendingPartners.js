@@ -15,7 +15,7 @@ function OurLendingPartners(props) {
         description="Apply for an instant personal loan online in india to 2 lakhs from CreditMitra. Get approved today!"
         keywords="instant personal loan, instant personal loan online, instant personal loan in india, instant personal loan for salaried, best instant personal loan"
         name="CreditMitra"
-        type="article"
+        type="LendingService"
       />
       <section>
         <div className="page-container lending-partners">

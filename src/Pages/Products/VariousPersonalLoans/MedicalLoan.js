@@ -18,7 +18,7 @@ import React from 'react';
             description="Facing a medical emergency? Get a quick medical loan with CreditMitra. Enjoy fast approval, easy processing, and flexible repayment options to cover your medical expenses. Apply now!"
             keywords=" medical loan, Medical Loan for Emergency"
             name="CreditMitra"
-            type="article"
+            type="LendingService"
           />
           <section>
             <div className="page-container products-page">

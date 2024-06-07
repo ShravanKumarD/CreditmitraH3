@@ -18,7 +18,7 @@
             description="Looking for a 10000 emergency loan? CreditMitra provides quick and easy emergency loans with fast approval and flexible repayment terms. Get the funds you need instantly. Apply today!"
             keywords="emergency loan, emergency loan 10000"
             name="CreditMitra"
-            type="article"
+            type="LendingService"
           />
           <section>
             <div className="page-container products-page">

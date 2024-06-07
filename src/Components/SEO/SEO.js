@@ -20,6 +20,7 @@ export default function SEO({ title, description, name, type, keywords, imageUrl
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
+      <meta property="og:type" content={type} data-react-helmet="true"/>
       {imageUrl && <meta property="og:image" content={imageUrl} />}
       {/* End Facebook tags */}
       {/* Twitter tags */}

@@ -18,7 +18,7 @@ const InstantPersonalLoan = (props) => {
             description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
             keywords="personal loan, instant personal loan, personal loan online"
             name="CreditMitra"
-            type="article"
+            type="LendingService"
           />
           <section>
             <div className="page-container products-page">

@@ -18,7 +18,7 @@ function Products(props) {
         description="Apply for Personal Loans Online with CreditMitra.100% Digital Process and Quick Approvals. Apply Now to Check Your Eligibility."
         keywords="personal loan, instant personal loan, personal loan online"
         name="CreditMitra"
-        type="article"
+        type="LendingService"
       />
       <section>
         <div className="page-container products-page">

@@ -18,7 +18,7 @@ const PersonalLoanforSalaried = (props) => {
                 description="Looking for a personal loan tailored for salaried professionals? CreditMitra offers quick, easy, and affordable personal loans with flexible repayment options. Apply now and get fast approval!"
                 keywords="personal loan for salaried"
                 name="CreditMitra"
-                type="article"
+                type="LendingService"
             />
             <section>
                 <div className="page-container products-page">

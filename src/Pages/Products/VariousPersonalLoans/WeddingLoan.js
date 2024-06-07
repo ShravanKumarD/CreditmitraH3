@@ -18,7 +18,7 @@ const WeddingLoan = (props) => {
         description="Planning a wedding? Get a marriage loan with CreditMitra for all your wedding expenses. Enjoy quick approval, flexible terms, and competitive rates. Apply for your wedding loan now!"
         keywords="Marriage Loan, wedding loan"
         name="CreditMitra"
-        type="article"
+        type="LendingService"
       />
       <section>
         <div className="page-container products-page">

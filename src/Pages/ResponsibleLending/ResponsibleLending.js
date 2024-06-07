@@ -59,7 +59,7 @@ function ResponsibleLending(props) {
         description="CreditMitra is a quick and easy process. You can apply for money in just 5 minutes, for any purpose: Home Improvement, Education, Medical emergencies and Debt Consolidation"
         keywords="best instant personal loan in india, instant personal loan for salaried"
         name="CreditMitra"
-        type="article"
+        type="LendingService"
       />
       <section>
         <div className="page-container responsible-lending-page">

@@ -81,7 +81,7 @@ function AboutUs(props) {
         description="CreditMitra is the best instant personal loan in india. We offer instant personal loans upto 2 lakhs with attractive interest rates. Apply for your instant personal loan now."
         keywords="best instant personal loan in india, best personal loan in india, instant personal loans in hyderabad"
         name="CreditMitra"
-        type="article"
+        type="LendingService"
       />
 
       <section>

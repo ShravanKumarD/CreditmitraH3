@@ -18,7 +18,7 @@ import React from 'react'
             description="Turn your travel dreams into reality with a travel loan (personal travel loan) for your next adventure. Get competitive rates, flexible repayment options, and easy online application. Explore holiday loans today!"
             keywords="travel loan, Personal Loan for Travel, holiday loans"
             name="CreditMitra"
-            type="article"
+            type="LendingService"
           />
           <section>
             <div className="page-container products-page">
