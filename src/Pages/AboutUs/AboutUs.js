@@ -77,7 +77,7 @@ function AboutUs(props) {
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="best instant personal loan in India | Hyderabad | CreditMitra"
+        title="Best instant personal loan in India | Hyderabad | CreditMitra"
         description="CreditMitra is the best instant personal loan in india. We offer instant personal loans upto 2 lakhs with attractive interest rates. Apply for your instant personal loan now."
         keywords="best instant personal loan in india, best personal loan in india, instant personal loans in hyderabad"
         name="CreditMitra"
