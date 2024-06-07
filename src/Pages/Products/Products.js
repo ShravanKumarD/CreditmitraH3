@@ -14,8 +14,8 @@ function Products(props) {
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
-        description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
+        title="Apply for Online Personal Loans | Fast Cash Today!"
+        description="Apply for Personal Loans Online with CreditMitra.100% Digital Process and Quick Approvals. Apply Now to Check Your Eligibility."
         keywords="personal loan, instant personal loan, personal loan online"
         name="CreditMitra"
         type="article"

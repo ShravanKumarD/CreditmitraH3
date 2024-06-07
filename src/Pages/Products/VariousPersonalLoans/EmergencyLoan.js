@@ -14,9 +14,9 @@
         <>
           <Header routePath={props.routePath} />
           <SEO
-            title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
-            description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
-            keywords="personal loan, instant personal loan, personal loan online"
+            title="Apply Emergency Loan | Fast Approval for 10000 Emergency Loan with CreditMitra"
+            description="Looking for a 10000 emergency loan? CreditMitra provides quick and easy emergency loans with fast approval and flexible repayment terms. Get the funds you need instantly. Apply today!"
+            keywords="emergency loan, emergency loan 10000"
             name="CreditMitra"
             type="article"
           />

@@ -14,9 +14,9 @@ const WeddingLoan = (props) => {
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
-        description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
-        keywords="personal loan, instant personal loan, personal loan online"
+        title="Marriage Loan | Wedding Loan | Quick Approval with CreditMitra"
+        description="Planning a wedding? Get a marriage loan with CreditMitra for all your wedding expenses. Enjoy quick approval, flexible terms, and competitive rates. Apply for your wedding loan now!"
+        keywords="Marriage Loan, wedding loan"
         name="CreditMitra"
         type="article"
       />

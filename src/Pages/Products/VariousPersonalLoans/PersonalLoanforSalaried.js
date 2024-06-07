@@ -14,9 +14,9 @@ const PersonalLoanforSalaried = (props) => {
         <>
             <Header routePath={props.routePath} />
             <SEO
-                title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
-                description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
-                keywords="personal loan, instant personal loan, personal loan online"
+                title="Personal Loan for Salaried Individuals | Quick & Easy Loans with CreditMitra"
+                description="Looking for a personal loan tailored for salaried professionals? CreditMitra offers quick, easy, and affordable personal loans with flexible repayment options. Apply now and get fast approval!"
+                keywords="personal loan for salaried"
                 name="CreditMitra"
                 type="article"
             />

@@ -14,9 +14,9 @@ import React from 'react';
         <>
           <Header routePath={props.routePath} />
           <SEO
-            title="Instant Personal Loans Online - Apply in Minutes | CreditMitra"
-            description="Get Instant Personal Loans Online in Minutes with CreditMitra. Secure & Easy Application Process. Apply Now!"
-            keywords="personal loan, instant personal loan, personal loan online"
+            title="Get Medical Loan for Emergency | Fast Approval with CreditMitra"
+            description="Facing a medical emergency? Get a quick medical loan with CreditMitra. Enjoy fast approval, easy processing, and flexible repayment options to cover your medical expenses. Apply now!"
+            keywords=" medical loan, Medical Loan for Emergency"
             name="CreditMitra"
             type="article"
           />

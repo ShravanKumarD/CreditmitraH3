@@ -12,7 +12,7 @@ function Home(props) {
     <>
       <Header routePath={props.routePath} />
       <SEO
-        title="CreditMitra| instant personal loan online | instant personal loan for salaried"
+      title="CreditMitra - Instant Personal Loan Online & Fast Cash Approvals."
         description="Apply for an instant personal loan online in india to 2 lakhs from CreditMitra. Get approved today!"
         keywords="instant personal loan, instant personal loan online, instant personal loan in india, instant personal loan for salaried, best instant personal loan"
         name="CreditMitra"
