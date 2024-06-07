@@ -81,7 +81,7 @@ function GrievienceRedressal(props) {
           Customers can reach out to our Support Team at{" "}
           <a href="mailto:support@creditmitra.in">support@creditmitra.in</a> for
           any query regarding our services. Customers shall ensure that they
-          quote their Loan ID number in every correspondence with Creditmitra
+          quote their Loan ID number in every correspondence with CreditMitra
           regarding their grievances. Any complaint registered has to be
           acknowledged by the Support Team.
         </li>

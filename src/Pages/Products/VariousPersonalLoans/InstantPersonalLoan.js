@@ -323,7 +323,7 @@ const InstantPersonalLoan = (props) => {
                   fontWeight: "normal",
                   marginBottom:"-60px"
                 }}>
-            Don't let your dreams sit on the shelf forever! Hop on with your best finance Mitra, Creditmitra today and unlock the door to endless possibilities. Let Creditmitra's instant personal loan help you target your financial goal!
+            Don't let your dreams sit on the shelf forever! Hop on with your best finance Mitra, CreditMitra today and unlock the door to endless possibilities. Let Creditmitra's instant personal loan help you target your financial goal!
               </h6>
             </div>
             <Footer />

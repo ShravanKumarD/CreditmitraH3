@@ -8,7 +8,7 @@ function ProductsHeroSection(props) {
       Creditmitra's Personal Loans: Key to Your Financial Freedom
       </small>
       <p>
-      Life comes with all sorts of twists and turns, and sometimes we need a little financial assistance to handle them. What better way to get this assistance than your lending Mitra: Creditmitra. Because when a friend helps, it opens the world of possibilities, no matter the journey.
+      Life comes with all sorts of twists and turns, and sometimes we need a little financial assistance to handle them. What better way to get this assistance than your lending Mitra: CreditMitra. Because when a friend helps, it opens the world of possibilities, no matter the journey.
       </p>
       <div className="btn-container">
         <div className="row productsDiv">

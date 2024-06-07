@@ -30,7 +30,7 @@ const WeddingLoan = (props) => {
 
             </small>
             <p>
-              Your special day deserves to be nothing short of magical, and Creditmitra is here to make your fairy-tale wedding a reality. Introducing our Wedding Loan - the perfect Mitra to help you create the celebration of your dreams without compromise
+              Your special day deserves to be nothing short of magical, and CreditMitra is here to make your fairy-tale wedding a reality. Introducing our Wedding Loan - the perfect Mitra to help you create the celebration of your dreams without compromise
             </p>
             <div className="btn-container">
               <div className="row productsDiv">

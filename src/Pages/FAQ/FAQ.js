@@ -10,7 +10,7 @@ function FAQ(props) {
     {
       General: [
         {
-          "What is Credit Mitra ?": `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling unexpected emergencies, CreditMitra has you covered.`,
+          "What is CreditMitra ?": `CreditMitra is your go-to solution for all your financial needs. Whether it's timely EMI payments, fulfilling long-awaited purchases, planning a well-deserved vacation, or tackling unexpected emergencies, CreditMitra has you covered.`,
         },
         {
           "What is the Eligibility Criteria to apply for a loan?": `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan application process.`,
@@ -55,7 +55,7 @@ function FAQ(props) {
             " We have made sure that the loan request process on our platforms is smooth and bug-free. If you are using our website for your loan application, we recommend that you save your application frequently. And if your app crashes at any point in time, you will be able to start from the same step where the app crashed previously. Still  if you face any difficulty, please get in touch with us at support@creditmitra.in along with the details of the issue",
         },
         {
-          "Why can't I see the loans section on my Credit Mitra app whereas my friends can see such a section on theirs?": ` If you can't see the Loans tab on your Credit Mitra app, please make sure to
+          "Why can't I see the loans section on my CreditMitra app whereas my friends can see such a section on theirs?": ` If you can't see the Loans tab on your CreditMitra app, please make sure to
           update the app to the latest version`,
         },
         {
@@ -63,7 +63,7 @@ function FAQ(props) {
           to update your contact details.`,
         },
         {
-          " Why is the Credit Mitra Personal App not loading on my device?": ` If you're experiencing issues with the Credit Mitra Personal App not loading, there
+          " Why is the CreditMitra Personal App not loading on my device?": ` If you're experiencing issues with the CreditMitra Personal App not loading, there
           could be several reasons behind this problem. Ensure that your internet connection
           is stable, and try restarting the app. If the issue persists, consider updating the app to
           the latest version or checking for any system updates on your device.`,
@@ -88,7 +88,7 @@ function FAQ(props) {
           " I received/Downloaded the Bank Statement in Email from my Bank. However,when I am trying to upload it's not getting accepted?": ` Many times the bank statement sent or downloaded is not in the right format. To
           ensure your loan is processed at the earliest, please download the bank statement in
           PDF from your bank website or the one received in your registered email id and
-          upload it on our Credit Mitra app.`,
+          upload it on our CreditMitra app.`,
         },
         {
           "Recently, I changed my bank account. It shows income/salary credit of only 1/2 months. Can I upload bank statements from both the banks to meet the 3 month bank statement requirement?":
@@ -118,11 +118,11 @@ function FAQ(props) {
           documents in the necessary formats and make sure they are clear and legible.`,
         },
         {
-          " What is the maximum and minimum loan amount that I can apply for?": ` The minimum amount that you can borrow on Credit Mitra loans is Rs.5,000. The
+          " What is the maximum and minimum loan amount that I can apply for?": ` The minimum amount that you can borrow on CreditMitra loans is Rs.5,000. The
           maximum loan amount is calculated by our algorithm and can go up to Rs.2 Lakhs.`,
         },
         {
-          " I am a self-employed individual, am I eligible for a loan from Credit Mitra?": `No, Credit Mitra Personal loan is only for Salaried as of now.`,
+          " I am a self-employed individual, am I eligible for a loan from CreditMitra?": `No, CreditMitra Personal loan is only for Salaried as of now.`,
         },
         {
           " Will I get a loan if I get my salary in cash?": ` At this point in time, we only give loans to those individuals who get their salary
@@ -130,7 +130,7 @@ function FAQ(props) {
           those individuals who get their salaries in cash.`,
         },
         {
-          " I have one loan running with Credit Mitra. Can I apply for another loan?": ` No, we don't provide the option of applying for a new loan if a user already has an
+          " I have one loan running with CreditMitra. Can I apply for another loan?": ` No, we don't provide the option of applying for a new loan if a user already has an
            existing one.`,
         },
       ],
@@ -197,7 +197,7 @@ function FAQ(props) {
         title="Frequently Asked Questions | CreditMitra"
         description="Learn about CreditMitra Online Personal Loan. Here you will find F.A.Qs to help you get started."
         keywords="online instant personal loan"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="faq"
       />
       <section>

@@ -61,7 +61,7 @@ const Calculator = (props) => {
                 title="Contact Us | instant personal loan in India | CreditMitra"
                 description="CreditMitra understands the importance of customer satisfaction and personal service. You can reach our Customer Care team or one of our Dedicated Loan Officers at any time. Feel free to give us a call!"
                 keywords="instant personal loan in India, personal loan approval"
-                name="Credit Mitra"
+                name="CreditMitra"
                 type="article"
             />
             <h3 className="text-xl font-semibold mb-4" style={{marginTop:"100px"}}>Personal Loan EMI Calculator</h3>

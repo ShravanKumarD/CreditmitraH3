@@ -14,7 +14,7 @@ function BlogPage(props) {
         title="Avoid These Mistakes While Applying for Personal Loans | CreditMitra"
         description="Avoid common pitfalls when applying for personal loans. Learn what to look out for to ensure your loan application is successful."
         keywords="Personal Loans, Loan Application Mistakes, CreditMitra"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
         imageUrl={blogImage}
       />

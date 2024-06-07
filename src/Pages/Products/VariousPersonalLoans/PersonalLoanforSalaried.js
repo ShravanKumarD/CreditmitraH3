@@ -29,7 +29,7 @@ const PersonalLoanforSalaried = (props) => {
                         Get Empower with your Finance Mitra
                         </small>
                         <p>
-                        Creditmitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
+                        CreditMitra understands the value of a steady income and the aspirations that come with it. Our personal loan for salaried Individuals is designed to be your trusted companion on your financial journey, offering customised solutions just for you and your ambitions
 
                         </p>
                         <div className="btn-container">
@@ -171,9 +171,9 @@ const PersonalLoanforSalaried = (props) => {
                     <DescriptionSection
                         heading="Why Creditmitra's Personal Loan for Salaried?"
                         points={[
-                            "Seamless Access: Getting funds shouldn't be a long task. With Creditmitra, salaried individuals can seamlessly access personal loans. We ensure that financial support is always within reach.",
+                            "Seamless Access: Getting funds shouldn't be a long task. With CreditMitra, salaried individuals can seamlessly access personal loans. We ensure that financial support is always within reach.",
                               "Flexible Options: We recognize that every individual has different needs. Whether it's consolidating debt, funding education, or planning a wedding, our flexible loan options help you to take a step towards your goals without any compromise.",
-                              "Competitive Interest Rates: With us, the high interest rates will not weigh you down. Creditmitra offers competitive rates, allowing you to borrow responsibly without breaking your wallet.",
+                              "Competitive Interest Rates: With us, the high interest rates will not weigh you down. CreditMitra offers competitive rates, allowing you to borrow responsibly without breaking your wallet.",
                               "Efficient Processing: Time is money, especially when it comes to addressing financial literal money. Our streamlined application and approval process makes sure you receive the funds as quickly as possible.",
                         ]}
                         img={StepsImg} />

@@ -15,7 +15,7 @@ function Home(props) {
         title="CreditMitra| instant personal loan online | instant personal loan for salaried"
         description="Apply for an instant personal loan online in india to 2 lakhs from CreditMitra. Get approved today!"
         keywords="instant personal loan, instant personal loan online, instant personal loan in india, instant personal loan for salaried, best instant personal loan"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
       />
       <section>

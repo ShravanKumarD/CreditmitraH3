@@ -24,10 +24,10 @@ function Products(props) {
         <div className="page-container products-page">
           <ProductsHeroSection />
           <DescriptionSection
-            heading="Why Choose Creditmitra for Your Personal Loan?"
+            heading="Why Choose CreditMitra for Your Personal Loan?"
             points={[
               "Versatile Solutions: Whether you're planning a vacation, covering medical expenses, or pursuing an education abroad, our personal Loans are customized to meet your unique needs and aspirations.",
-              "Quick and Convenient: We know that lengthy approval processes are boring. With Creditmitra, you can apply for a personal loan online in minutes, giving you more time to focus on what truly matters.",
+              "Quick and Convenient: We know that lengthy approval processes are boring. With CreditMitra, you can apply for a personal loan online in minutes, giving you more time to focus on what truly matters.",
               "Transparent Terms: We believe in honesty and transparency every step of the way. Rest assured knowing that our Personal Loans come with clear terms and competitive interest rates.",
               "Expert Support: Our dedicated team of financial experts is here to guide you through the loan process, answer your questions, and provide tailored assistance to make sure you make informed decisions."
             ]}
@@ -35,9 +35,9 @@ function Products(props) {
           />
           
    <DescriptionSection
-            heading="How to Apply for a Creditmitra Personal Loan?"
+            heading="How to Apply for a CreditMitra Personal Loan?"
             points={[
-              "Sign-Up and Apply: Visit Creditmitra's secure website to access our user-friendly loan application platform. Fill out the required details in the application form, by providing accurate information about your personal and financial background.",
+              "Sign-Up and Apply: Visit CreditMitra's secure website to access our user-friendly loan application platform. Fill out the required details in the application form, by providing accurate information about your personal and financial background.",
               "Upload Necessary Documents: Submit essential documents such as proof of identity, address, income, and any other relevant documentation to support your application.",
               "Receive Approval: Once your application is submitted, our team will review it and provide you with instant approval for your Personal Loan.",
               "Get Your Funds: Upon approval, the loan amount will be disbursed directly to your bank account, enabling you to pursue your financial goals with confidence."

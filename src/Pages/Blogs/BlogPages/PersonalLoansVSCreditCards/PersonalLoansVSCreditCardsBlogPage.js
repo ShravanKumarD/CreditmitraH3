@@ -14,7 +14,7 @@ function BlogPage(props) {
         title="Comparing Loan Options: Personal Loans vs Credit Cards | CreditMitra"
         description="Explore the differences between personal loans and credit cards to make an informed decision on your borrowing options."
         keywords="Personal Loans, Credit Cards, Loan Options, CreditMitra"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
         imageUrl={blogImage}
       />

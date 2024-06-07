@@ -27,7 +27,7 @@ import React from 'react';
       <h6>Medical Loan
 </h6>
       <small>
-     Credit mitra supports you when you're in need!
+     CreditMitra supports you when you're in need!
       </small>
       <p>
       At CreditMitra, we understand the financial stress unexpected medical emergencies can cause. That's why we offer convenient and accessible medical loans to help you manage healthcare costs. A medical loan is a type of personal loan designed specifically to cover medical expenses. This can include hospital stays, doctor visits, surgery costs, prescription medications, and even dental procedures. Unlike medical insurance, a medical loan allows you to cover a wider range of expenses, providing flexibility during a challenging time

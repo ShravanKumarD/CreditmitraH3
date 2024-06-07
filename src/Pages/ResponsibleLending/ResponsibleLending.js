@@ -58,7 +58,7 @@ function ResponsibleLending(props) {
         title="Responsible Lending | best instant personal loan in india | CreditMitra"
         description="CreditMitra is a quick and easy process. You can apply for money in just 5 minutes, for any purpose: Home Improvement, Education, Medical emergencies and Debt Consolidation"
         keywords="best instant personal loan in india, instant personal loan for salaried"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
       />
       <section>

@@ -97,7 +97,7 @@ function Header() {
           style={{ width: 180 }}
           src={Logo}
           title="CreditMitra"
-          alt="Creditmitra"
+          alt="CreditMitra"
         />
       </Link>
       {/* Image ends here */}

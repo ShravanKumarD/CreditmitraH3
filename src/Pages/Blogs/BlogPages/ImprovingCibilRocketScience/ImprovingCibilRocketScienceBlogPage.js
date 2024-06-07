@@ -14,7 +14,7 @@ function BlogPage(props) {
         title="Improving your CIBIL score is not rocket science | CreditMitra"
         description="Learn how to improve your CIBIL score with simple and effective methods. It's not rocket science!"
         keywords="CIBIL score, improve CIBIL score, credit score, CreditMitra"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
         imageUrl={blogImage}
       />

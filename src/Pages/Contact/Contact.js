@@ -63,7 +63,7 @@ function Contact(props) {
         title="Contact Us | instant personal loan in india | CreditMitra"
         description="CreditMitra understand the importance of customer satisfaction and personal service. You can reach our Customer Care team or one of our Dedicated Loan Officers at any time, Feel free to give us a call!"
         keywords="instant personal loan in india, personal loan approval"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
       />
       <section>

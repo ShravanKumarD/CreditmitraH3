@@ -14,7 +14,7 @@ function BlogPage(props) {
         title="How To Get An Instant Loans With Low CIBIL Score | CreditMitra"
         description="Learn how to secure an instant loan even with a low CIBIL score. Discover the key factors lenders consider beyond your credit score."
         keywords="Instant Loans, Low CIBIL Score, CreditMitra"
-        name="Credit Mitra"
+        name="CreditMitra"
         type="article"
         imageUrl={blogImage}
       />
