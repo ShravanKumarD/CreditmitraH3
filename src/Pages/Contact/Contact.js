@@ -107,6 +107,7 @@ function Contact(props) {
                 <div className="form-group">
                   <select value={selectedOption}
                   name="reason"
+                  id="reason"
                   formData={formData.reason}
                   className="dropdown contactUsDropdown " onChange={handleSelect}  >
                     <option value="" style={{ color: "black" }}>Select an issue</option>
