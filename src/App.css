@@ -169,8 +169,8 @@ text-align: center;
 
   &.faq {
     padding-top: 96px;
-    padding-right: 336px;
-    padding-left: 336px;
+    /* padding-right: 336px;
+    padding-left: 336px; */
   }
 }
 
@@ -1019,14 +1019,14 @@ text-align: center;
       }
     }
     .faqBottomHeaderLine{
-       font-size: "28px"; 
-       font-family: "Poppins"
+       font-size: 28px; 
+       font-family: Poppins;
     }
 
     .faqBottomLine{
-      font-size: "22px";
-      font-family: "Poppins";
-      font-weight: "500";
+      font-size: 22px;
+      font-family: Poppins;
+      font-weight: 500;
     }
         .more-questions {
       color: #fff;
@@ -1944,7 +1944,7 @@ h3 {
   .contact-us-section,
   .faq-section {
     .btn {
-      text-align: left;
+      text-align: center;
     }
   }
   .footer-content .navigation-container {
