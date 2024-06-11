@@ -988,7 +988,7 @@ text-align: center;
             justify-content: space-between;
             align-items: center;
             color: #fff;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             line-height: normal;
             text-align: left;
@@ -1009,7 +1009,7 @@ text-align: center;
           p {
             margin-bottom: 0;
             color: #ffffff;
-            font-size: 16px;
+            font-size: 14px;
             text-align: left;
             padding: 14px;
             padding-top: 0;
@@ -1018,8 +1018,17 @@ text-align: center;
         }
       }
     }
+    .faqBottomHeaderLine{
+       font-size: "28px"; 
+       font-family: "Poppins"
+    }
 
-    .more-questions {
+    .faqBottomLine{
+      font-size: "22px";
+      font-family: "Poppins";
+      font-weight: "500";
+    }
+        .more-questions {
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -1049,6 +1058,7 @@ text-align: center;
         font-size: 24px;
         font-weight: 700;
         background: linear-gradient(91deg, #3caff5 -2.45%, #1a69a3 97.01%);
+        text-align: center;
       }
     }
   }

@@ -227,16 +227,10 @@ function FAQ(props) {
                   <div className="answer-section">{generateFaqQuestions()}</div>
                 </div>
                 <div className="more-questions">
-                  <p style={{ fontSize: "28px", fontFamily: "Poppins" }}>
+                  <p className="faqBottomHeaderLine">
                     Haven't Found what you need?
                   </p>
-                  <span
-                    style={{
-                      fontSize: "22px",
-                      fontFamily: "Poppins",
-                      fontWeight: "500",
-                    }}
-                  >
+                  <span className="faqBottomLine">
                     Get in Touch, We are happy to help!
                   </span>
                   <Link to={"/contact"} className="btn">
