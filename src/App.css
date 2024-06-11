@@ -991,6 +991,9 @@ text-align: center;
             font-size: 16px;
             font-weight: 500;
             line-height: normal;
+            text-align: left;
+            font-family: Poppins;
+          
 
             svg {
               &.isopened {
@@ -1006,10 +1009,11 @@ text-align: center;
           p {
             margin-bottom: 0;
             color: #ffffff;
-            font-size: 18px;
+            font-size: 16px;
             text-align: left;
-            padding: 24px;
+            padding: 14px;
             padding-top: 0;
+            font-family: Poppins;
           }
         }
       }

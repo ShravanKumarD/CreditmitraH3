@@ -41,9 +41,6 @@ function FAQ(props) {
           "Is CreditMitra app Legal ? ": `Yes, CreditMitra is 100% legal. It is registered on Google Playstore and only offer loans through RBI-registered NBFCs.`,
         },
         {
-          "Are you a Bank or an NBFC ?": `CreditMitra is neither a Bank nor an NBFC. It is an user-friendly technology platform powered by Bluechip Finance Private Limited; an RBI-registered Non-Banking Financial Company (NBFC).`,
-        },
-        {
           "Where can I reach for a support ? ": `For any needed support related to CreditMitra, you can contact us at support@creditmitra.in`,
         },
       ],
@@ -73,11 +70,11 @@ function FAQ(props) {
     {
       Document: [
         {
-          " What documents are required while applying for a Personal Loan from CreditMitra?": ` PAN card
-           Latest salary slip from the same employer
-           Present Address Proof – Aadhar/Electricity bill/Gas Bill/Telephone
-           bill/Creditcard/Internet/HR Letter/PG Invoice
-           Proof of Employment - Company ID/Payslip
+          " What documents are required while applying for a Personal Loan from CreditMitra?": ` PAN card,
+           Latest salary slip, from the same employer
+           Present Address Proof – Electricity bill/Gas Bill/Telephone
+           bill/Creditcard/Internet/HR Letter/PG Invoice,
+           Proof of Employment - Company ID/Payslip,
            Latest statement of your Bank Account, reflecting salary credit for last 3 months
            `,
         },
@@ -105,11 +102,11 @@ function FAQ(props) {
         {
           "What are the eligibility criteria for Personal Loan?": `You are eligible to apply personal loan on satisfying the following criteria –
           <ul>
-          <li>● Should be an Indian citizen</li>
-          <li>● Should be a salaried employee</li>
-          <li>● Should have a minimum salary of Rs. 15,000/- p.m.</li>
-          <li>● Salary should be credited directly to the bank</li>
-          <li>● Should be above 21 years and not more than 50 years old</li>
+          <li>Should be an Indian citizen</li>
+          <li> Should be a salaried employee</li>
+          <li> Should have a minimum salary of Rs. 15,000/- p.m.</li>
+          <li> Salary should be credited directly to the bank</li>
+          <li> Should be above 21 years and not more than 55 years old</li>
           </ul>`,
         },
         {
