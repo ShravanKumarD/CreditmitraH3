@@ -27,21 +27,42 @@ function Contact(props) {
   const handleSelect = (e) => {
     setSelectedOption(e.target.value);
     setFormData({
-      ...formData,
-      reason: e.target.value
+        ...formData,
+        reason: e.target.value
     });
-  };
+};
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+const handleChange = (e) => {
+    const { name, value } = e.target; 
+    if (name === 'contact') {
+        const numericValue = value.replace(/\D/g, '');
+        setFormData({
+            ...formData,
+            [name]: numericValue
+        });
+    } else {
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    }
+};
+
+
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    let mobile = { contact: formData.contact };
+    const mobileNumber = ((mobile) => {
+      const mobileNumberPattern = /^[5-9]\d{9}$/; 
+    if (mobileNumberPattern.test(mobile.contact)) {
+        console.log("true");
+      } else {
+        alert("enter a valid mobile number")
+      }
+    })(mobile)
+    console.log(formData,"formdata")
     emailjs.send(
       'service_vjn84f9',
       'template_l0o0f3o', formData,
@@ -125,10 +146,11 @@ function Contact(props) {
                       ))}
                     </select>
                     <div className="spacer" style={{ padding: "1vw" }}></div>
-                    <input type="text"
+                    <input 
                       name="contact"
                       value={formData.contact}
                       onChange={handleChange}
+                      maxLength={10}
                       className="form-control"
                       id="contact"
                       placeholder="Contact"
