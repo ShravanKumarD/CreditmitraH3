@@ -67,7 +67,7 @@ function AboutUs(props) {
             </div>
           )}
           {props.heading && <h6>{props.heading}</h6>}
-          <p style={{ fontWeight: "300" }}>{props.description}</p>
+          <p style={{ fontSize: "16px", fontWeight: "300" }}>{props.description}</p>
         </div>
         {props.img && <img className="inmageHome" src={props.img} />}
       </div>
