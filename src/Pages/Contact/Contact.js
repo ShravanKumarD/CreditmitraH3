@@ -62,14 +62,12 @@ const handleChange = (e) => {
         alert("enter a valid mobile number")
       }
     })(mobile)
-    console.log(formData,"formdata")
     emailjs.send(
       'service_vjn84f9',
       'template_l0o0f3o', formData,
       'HMzzxdYV3qtn3cYUR'
     )
       .then((response) => {
-        console.log('SUCCESS!', response);
         alert("Thank you for your message, we will get back to you shortly.");
         setFormStatus('SUCCESS');
         setFormData({ name: '', email: '', message: '', reason: '', contact: '' });
