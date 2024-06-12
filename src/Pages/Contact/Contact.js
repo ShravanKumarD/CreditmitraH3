@@ -170,7 +170,7 @@ function Contact(props) {
                   <div className="checkbox-container">
                     <input type="checkbox" id="notifications" name="notifications" value="accepted" required />
                     <label htmlFor="notifications" className="contactusCheckBox">
-                    I hereby authorize to receive notifications, SMS, and informational emails
+                    I hereby authorize to receive notifications, SMS and informational emails
                     </label>
                   </div>
 
