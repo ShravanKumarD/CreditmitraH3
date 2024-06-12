@@ -46,7 +46,7 @@ function AboutUs(props) {
               {cardInfo.description}
             </p>
           </div>
-          <img height="300px" src={cardInfo.img} alt="vision"/>
+          <img height="200px" src={cardInfo.img} alt="vision"/>
         </div>
       </>
     );
