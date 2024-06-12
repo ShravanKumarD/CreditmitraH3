@@ -91,7 +91,7 @@ function Footer(props) {
                                                    {location.displayName}
                                                </Link>
                                            </li>
-                                           <hr style={{margin:"0px"}}/>
+                                           <hr className='dropdownUnderLine'/>
                                            </>
                                        ))}
                                    </ul>

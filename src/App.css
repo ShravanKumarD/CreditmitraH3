@@ -2239,3 +2239,51 @@ th {
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff86;
 }
+
+
+/*inline-stylings*/
+.applicationProcessCard{
+  font-size:16px;
+  font-weight:300
+}
+.dropdownUnderLine{
+  margin:0px;
+}
+.nav-logo-creditmitra{
+  width: 180;
+}
+.headerMainDiv{
+  display:flex;
+}
+.headerSecondDiv{
+  color: white;
+   display: flex;
+}
+.productDropDownBg{
+   color: white;
+}
+.buttonInLocation{
+  color: #fff; 
+  text-decoration: none;
+}
+
+.contactusCheckBox{
+  color: #fff; 
+}
+.contactusCheckBoxLegal{
+  text-decoration: none;
+}
+.checkbox-container {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.contactusCheckBox {
+  margin-left: 10px;
+}
+
+.contactusCheckBoxLegal {
+  margin-left: 5px;
+}
+

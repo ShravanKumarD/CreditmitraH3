@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "../../Components/Footer";
 import Header from "../../Components/Header/Header";
 import message from '../../assets/images/contactMainImg.png';
@@ -9,23 +9,27 @@ import emailjs from 'emailjs-com';
 function Contact(props) {
   const [selectedOption, setSelectedOption] = useState('');
   const options = [
-    { value: '"delete_data"', label: 'Delete my data' },
+    { value: 'delete_data', label: 'Delete my data' },
     { value: 'unable_to_apply', label: 'Unable to apply' },
     { value: 'transaction_issue', label: 'Transaction issue' },
     { value: 'repayment_issue', label: 'Repayment issue' },
-    { value: 'others', label: 'others' },
+    { value: 'others', label: 'Others' },
   ];
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     contact: '',
     message: '',
+    reason: '',
   });
   const [formStatus, setFormStatus] = useState('');
 
-
   const handleSelect = (e) => {
     setSelectedOption(e.target.value);
+    setFormData({
+      ...formData,
+      reason: e.target.value
+    });
   };
 
   const handleChange = (e) => {
@@ -36,7 +40,7 @@ function Contact(props) {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     emailjs.send(
       'service_vjn84f9',
@@ -45,17 +49,18 @@ function Contact(props) {
     )
       .then((response) => {
         console.log('SUCCESS!', response);
-        alert("Thank you for you're message,we will get back to you shortly.")
+        alert("Thank you for your message, we will get back to you shortly.");
         setFormStatus('SUCCESS');
-        setFormData({ name: '', email: '', message: '',reason:'',contact:'' });
+        setFormData({ name: '', email: '', message: '', reason: '', contact: '' });
+        setSelectedOption('');
       }, (error) => {
         console.log('FAILED...', error);
         setFormStatus('ERROR');
       });
   };
-
-
-
+  useEffect(() => {
+    console.log(formData, "formdata")
+  }, [])
   return (
     <>
       <Header routePath={props.routePath} />
@@ -67,14 +72,12 @@ function Contact(props) {
         type="LendingService"
       />
       <section>
-        <div className="page-container" >
+        <div className="page-container">
           <div className="mainDivAtContact">
             <div className="textContent">
               <div className="mainHeaderatContactSection">Got a question?<br /> We're here to help!</div>
               <div className="subHeaderAtContactSection">
-                Feel free to connect with us with any questions or queries.
-                We're<br /> dedicated to providing you with the best possible
-                experience
+                Feel free to connect with us with any questions or queries. We're<br /> dedicated to providing you with the best possible experience
               </div>
             </div>
             <div className="betweenSpace" style={{ padding: "12vw" }}></div>
@@ -82,63 +85,101 @@ function Contact(props) {
           </div>
         </div>
         <section>
-
           <h2 className="contactUsMain">Contact Us</h2>
           <div className="row-container">
             <div className=""></div>
             <div className="col-sm-6">
               <div className="form-container">
                 <form onSubmit={handleSubmit}>
-                <div className="form-group" >
-                  
-                  <input type="text"
-                    className="form-control"
-                    id="name"
-                    name="name"
-                    placeholder="Your name"
-                    formData={formData.name}
-                    onChange={handleChange}
-                    required />
-                  <div className="spacer" style={{ padding: "1vw" }}></div>
-                  <input type="text" name="email"
-                    formData={formData.email}
-                    className="form-control" id="email" placeholder="Email ddress" required />
-                </div>
-                <div className="form-group">
-                  <select value={selectedOption}
-                  name="reason"
-                  id="reason"
-                  formData={formData.reason}
-                  className="dropdown contactUsDropdown " onChange={handleSelect}  >
-                    <option value="" style={{ color: "black" }}>Select an issue</option>
-                    {options.map((option) => (
-                      <option key={option.value} value={option.value} style={{ color: "white", backgroundColor: "#3D4F74" }}>
-                        {option.label}
-                      </option>
-                    ))}
-                  </select>
-                  <div className="spacer" style={{ padding: "1vw" }}></div>
+                  <div className="form-group">
+                    <input type="text"
+                      className="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required />
+                    <div className="spacer" style={{ padding: "1vw" }}></div>
+                    <input type="email"
+                      name="email"
+                      value={formData.email}
+                      className="form-control"
+                      id="email"
+                      placeholder="Email address"
+                      onChange={handleChange}
+                      required />
+                  </div>
+                  <div className="form-group">
+                    <select value={selectedOption}
+                      name="reason"
+                      id="reason"
+                      className="dropdown contactUsDropdown"
+                      onChange={handleSelect}
+                      required>
+                      <option value="" style={{ color: "black" }}>Select an issue</option>
+                      {options.map((option) => (
+                        <option key={option.value} value={option.value} style={{ color: "white", backgroundColor: "#3D4F74" }}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                    <div className="spacer" style={{ padding: "1vw" }}></div>
+                    <input type="text"
+                      name="contact"
+                      value={formData.contact}
+                      onChange={handleChange}
+                      className="form-control"
+                      id="contact"
+                      placeholder="Contact"
+                      required />
+                  </div>
+                  <div className="form-group">
+                    <textarea className="form-control"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      id="message"
+                      placeholder="Message"
+                      style={{ resize: "none", height: "100px" }}
+                      required></textarea>
+                  </div>
 
-                  <input type="text"
-                    name="contact"
-                    formData={formData.contact}
-                    onChange={handleChange}
-                    className="form-control"
-                     id="contact"
-                      placeholder="Contact" required />
-                </div>
-                <div className="form-group">
-                  <textarea className="form-control"
-                    name="message"
-                    formData={formData.message}
-                    onChange={handleChange}
-                    id="message" placeholder="Message"
-                     style={{ resize: "none", height: "100px" }}
-                    required ></textarea>
-                </div>
-                <button type="submit" onSubmit={handleSubmit} className="contact-submit-button">
-                  Submit
-                </button>
+                  {/* <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="accepted" required />
+                  <label htmlFor="privacyPolicy" className="contactusCheckBox">
+                    By submitting this form, you agree to Creditmitra's
+                    <a className="contactusCheckBoxLegal" href="/privacypolicy"> Privacy Policy</a> &
+                    <a className="contactusCheckBoxLegal" href="/termsAndConditions"> Terms and Conditions</a>.
+                  </label>
+
+                  <br />
+
+                  <input type="checkbox" id="notifications" name="notifications" value="accepted" required />
+                  <label htmlFor="notifications" className="contactusCheckBox">I hereby authorize to receive notifications and SMS,
+                    RCS Messages, Promotional or Information Messages.
+                  </label><br /> */}
+                       
+                       <div className="checkbox-container">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="accepted" required />
+                    <label htmlFor="privacyPolicy" className="contactusCheckBox">
+                      By submitting this form, you agree to Creditmitra's
+                      <a className="contactusCheckBoxLegal" href="/privacypolicy">Privacy Policy</a> &<a className="contactusCheckBoxLegal" href="/termsAndConditions">Terms and Conditions</a>
+                    </label>
+                  </div>
+                  
+                  <div className="checkbox-container">
+                    <input type="checkbox" id="notifications" name="notifications" value="accepted" required />
+                    <label htmlFor="notifications" className="contactusCheckBox">
+                    I hereby authorize to receive notifications, SMS, and informational emails
+                    </label>
+                  </div>
+
+
+                  <button type="submit" className="contact-submit-button">
+                    Submit
+                  </button>
+                  {formStatus === 'SUCCESS' && <p className="responseText">Thank you for your message, we will get back to you shortly.</p>}
+                  {formStatus === 'ERROR' && <p className="responseText">Failed to send message. Please try again.</p>}
                 </form>
               </div>
             </div>
@@ -152,11 +193,7 @@ function Contact(props) {
               </div>
             </div>
           </div>
-          {formStatus === 'SUCCESS' && <p className="responseText">Thank you for you're message,we will get back to you shortly.</p>}
-          {formStatus === 'ERROR' && <p className="responseText">Failed to send message. Please try again.</p>}
         </section>
-
-
         <Footer />
       </section>
     </>

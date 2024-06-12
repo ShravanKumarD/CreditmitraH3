@@ -115,7 +115,7 @@ Get Approved Within Minutes
           
           <div className="product-apply-button">
             <button className="btn brand-primary">
-              <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>Apply Now</Link>
+              <Link to="/" className='buttonInLocation'>Apply Now</Link>
             </button>
           </div>
 
