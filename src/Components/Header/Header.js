@@ -71,7 +71,7 @@ function Header() {
   ];
 
   return (
-    <div className="navbar-dad headerMainDiv">
+    <div className="navbar-dad" style={{display:"flex"}}>
     {/* <nav
       style={{ color: "white", display:"flex"}}
       className={`navbar navbar-expand-lg navbar-light fixed ${
@@ -79,8 +79,8 @@ function Header() {
       }`}
     > */}
             <nav
-        // style={{ color: "white", display: "flex" }}
-        className={`navbar navbar-expand-lg navbar-light custom-background ${isNavOpen ? "nav-open" : ""} headerSecondDiv`}
+        style={{ color: "white", display: "flex" }}
+        className={`navbar navbar-expand-lg navbar-light custom-background ${isNavOpen ? "nav-open" : ""}`}
       >
 
       {/* CM Image Link */}
@@ -94,7 +94,7 @@ function Header() {
       >
         <img
           className="nav-logo-creditmitra"
-          // style={{ width: 180 }}
+          style={{ width: 180 }}
           src={Logo}
           title="CreditMitra"
           alt="CreditMitra"
@@ -131,14 +131,13 @@ function Header() {
                       className={`nav-link dropdown-toggle ${
                         // if url is already /products or /products/*, then 'active' class will be added
                         location.pathname.startsWith("/products") ? "active" : ""
-                      } productDropDownBg`}
+                      }`}
                       // title is product
                       title={item.displayName}
                       aria-haspopup="true"
                       aria-expanded={isDropdownOpen ? "true" : "false"}
                       // activated products, will give white color
-                      // style={{ color: "white"}} 
-
+                      style={{ color: "white"}} 
                       onClick={handleDropdownToggle}
                     >
                       {/*  display "Products" */}

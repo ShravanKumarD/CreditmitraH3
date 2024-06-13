@@ -111,7 +111,7 @@ label {
 .dropdown-toggleFooter {
   color: #fff;
   /* white-space: pre-line; */
-  margin-left: -12px;
+  margin-left: -13px;
 }
 @media (max-width: 1300px) {
   .dropdown-toggleFooter {

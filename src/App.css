@@ -772,6 +772,11 @@ text-align: center;
   .aboutus {
     padding-top: 6%;
   }
+  @media(max-width:768px) {
+    .aboutus {
+      margin: 20px;
+    }
+  }
   .about-points-container {
     margin-bottom: 160px;
 
