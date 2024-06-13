@@ -20,6 +20,9 @@ import ImprovingCibilRocketScienceBlogPage from './Pages/Blogs/BlogPages/Improvi
 import PersonalLoansVSCreditCardsBlogPage from './Pages/Blogs/BlogPages/PersonalLoansVSCreditCards/PersonalLoansVSCreditCardsBlogPage'
 import InstantLoanWithLowCIBIL from './Pages/Blogs/BlogPages/InstantLoanWithLowCIBIL/InstantLoanWithLowCIBILBlogPage'
 import AvoidMistakesApplyingPersonalLoans from './Pages/Blogs/BlogPages/AvoidMistakesApplyingPersonalLoans/AvoidMistakesApplyingPersonalLoansBlogPage'
+import NegotiatingLowerInterestRatesoPersonalLoans from './Pages/Blogs/BlogPages/NegotiatingLowerInterestRatesonPersonalLoans/NegotiatingLowerInterestRatesonPersonalLoansBlog'
+import HowDoesaPersonalLoanImpactTaxFiling from './Pages/Blogs/BlogPages/HowDoesaPersonalLoanImpactTaxFiling/HowDoesaPersonalLoanImpactTaxFilingBlog';
+
 
 import EmergencyLoan from './Pages/Products/VariousPersonalLoans/EmergencyLoan';
 import InstantPersonalLoan from './Pages/Products/VariousPersonalLoans/InstantPersonalLoan';
@@ -71,7 +74,8 @@ function App() {
           <Route path="/blogs/personal-loans-vs-credit-cards" element={<PersonalLoansVSCreditCardsBlogPage routePath="/blogs/personal-loans-vs-credit-cards"/>}/>
           <Route path="/blogs/how-to-get-an-instant-loans-with-low-cibil-score" element={<InstantLoanWithLowCIBIL routePath="/blogs/how-to-get-an-instant-loans-with-low-cibil-score"/>}/>
           <Route path="/blogs/avoid-these-mistakes-while-applying-for-personal-loans" element={<AvoidMistakesApplyingPersonalLoans routePath="/blogs/avoid-these-mistakes-while-applying-for-personal-loans"/>}/>
-
+          <Route path='/blogs/negotiating-lower-interest-rates-on-personal-loans' element={<NegotiatingLowerInterestRatesoPersonalLoans routePath="blogs/negotiating-lower-interest-rates-on-personal-loans"/>}/>
+          <Route path='/blogs/how-does-a-personal-loan-impact-tax-filing' element={<HowDoesaPersonalLoanImpactTaxFiling routePath="blogs/how-does-a-personal-loan-impact-tax-filing"/>}/>
 
           {/* blogs end */}
 

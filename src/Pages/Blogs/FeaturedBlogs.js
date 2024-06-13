@@ -55,7 +55,22 @@ function FeaturedBlogs(props) {
       blogSlug:"avoid-these-mistakes-while-applying-for-personal-loans",
       summary:"Instant personal loans can be a savior in times of crisis and emergencies, however, you need to know what not to do while applying for these loans. Often people applying for these loans...", 
     },
-    
+    {
+      title: "Negotiating Lower Interest Rates on Personal Loans",
+      date: "13th June, 2024",
+      imageLink: require("../../assets/images/blogs/2.jpg"),
+      blogSlug:"negotiating-lower-interest-rates-on-personal-loans",
+      summary:`How much it makes you happy when you get your favorite piece of clothing at a price, which
+you bargained for? A lot, isn’t it? It can make your day, right? However, the amount you save
+is a one-time saving, isn’t it?...`, 
+    },
+    {
+      title: "How does a personal loan impact tax filing ?",
+      date: "13th June, 2024",
+      imageLink: require("../../assets/images/blogs/1.jpg"),
+      blogSlug:"how-does-a-personal-loan-impact-tax-filing",
+      summary:"The time to file your Income Tax for the FY23-24 is nearing with the last date of July 31,2024. You must be busy sorting out your investments, which you can claim for exemptions,but have you ever thought about what impact your loan has on your income tax?...", 
+    },
     
   ];
 
