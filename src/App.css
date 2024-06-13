@@ -1204,7 +1204,7 @@ text-align: center;
 }
 
 .brand-primary {
-  border: 1px solid #198bc7;
+  /* border: 1px solid #198bc7; */
   border-radius: 4px;
   background: #198bc7;
   color: #ffffff;
