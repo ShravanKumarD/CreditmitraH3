@@ -122,7 +122,12 @@
   width: 20px;
   margin-right: 1vw;
 }
-
+.info{
+  margin-top: -20px;
+  font-size: 14px;
+  justify-content: space-around;
+  font-family: Poppins;
+}
 /* hamburger kicks in */
 @media (max-width: 991px) {
   .navbar-container {

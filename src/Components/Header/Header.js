@@ -187,9 +187,13 @@ function Header() {
             </li>
           ))}
           <button className="nav-btn btn brand-secondary lg">Login</button>
-          <button className="nav-btn btn brand-primary">
-          <img src={CallImg} alt="phone" className="CallImg" />
-           9666042345</button>
+          {/* <button className="nav-btn btn brand-primary lg"> */}
+          <div className="info"><a style={{ textDecoration: "none",color:"#ffff" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
+          <br/>+91 9666042345</div>
+          {/* <img src={CallImg} alt="phone" className="CallImg" /> */}
+           {/* <p className="info"><a style={{ textDecoration: "none" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
+            <br/>9666042345</p> */}
+           {/* </button> */}
         </ul>
         {/* Navbar Items here */}
         
