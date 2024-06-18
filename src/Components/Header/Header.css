@@ -124,9 +124,20 @@
 }
 .info{
   margin-top: -20px;
-  font-size: 14px;
+  font-size: 10px;
   justify-content: space-around;
   font-family: Poppins;
+  text-align: right;
+  font-weight:500;
+  /* margin-top: 0px;ss  */
+}
+/* .info:hover{
+  color:#8159ff;
+} */
+.timeStamp{
+  font-size: 9px;
+  font-family: Poppins;
+  font-weight:300;
 }
 /* hamburger kicks in */
 @media (max-width: 991px) {
@@ -163,6 +174,7 @@
 
 /* phone view */
 @media only screen and (max-width: 767px) {
+  .info{text-align: center;margin-top: -10px;}
   .header-nav a {
     font-size: 14px;
   }

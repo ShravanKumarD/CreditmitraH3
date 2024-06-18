@@ -186,10 +186,14 @@ function Header() {
               )}
             </li>
           ))}
-          <button className="nav-btn btn brand-secondary lg">Login</button>
+          
           {/* <button className="nav-btn btn brand-primary lg"> */}
-          <div className="info"><a style={{ textDecoration: "none",color:"#ffff" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
-          <br/>+91 9666042345</div>
+          <div className="info">
+            <a style={{ textDecoration: "none",color:"#ffff",fontWeight:500 }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
+          <br/>+91 9666042345
+          <div className="timeStamp">Mon-Sun:9:30AM to 7:00PM</div>
+          </div>
+          <button className="nav-btn btn brand-secondary lg">Login</button>
           {/* <img src={CallImg} alt="phone" className="CallImg" /> */}
            {/* <p className="info"><a style={{ textDecoration: "none" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
             <br/>9666042345</p> */}

@@ -7,7 +7,7 @@ function HeroSection(props) {
                 <h6 className='hero-content'>Your Trusted Loan Mitra<br/>Loans Made Easy & Friendly</h6>
                 <p>At CreditMitra, we understand that life doesn't always wait for payday. That's why we're here to offer you instant personal loans with no hassle and no waiting. </p>
                 <div className='hero-content-button'>
-                    <buttton className="btn brand-primary py-3 px-4">Apply Now</buttton>
+                    <buttton className="btn brand-primary py-3 px-4"onClick={() => window.location.href="https://samcintsolutions.uat.cloudbankin.com/onboard/#/login"}>Apply Now</buttton>
                     <buttton className="btn brand-secondary py-3 px-4">Download App</buttton>
                 </div>
             </div>
