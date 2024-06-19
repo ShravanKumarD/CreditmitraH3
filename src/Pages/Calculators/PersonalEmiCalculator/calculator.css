@@ -1,111 +1,220 @@
-  
-h3{
+h3 {
     margin-top: 60px;
-        background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
-        background-clip: text;
-        color: transparent;
-        font-size: 45px;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        line-height: normal;
-        text-align: center;
-        font-family: Poppins;
+    background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: normal;
+    text-align: center;
+    font-family: Poppins;
 }
+
 .page-container.calculator {
     padding: 200px;
-
-}
-
-.mainDivSlider {
-    /* margin-top: 20px; */
 }
 
 .row.main-slider {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 20px; */
-}
-.form-range-slider{
-    width: 60%;
 }
 
-.slider-container {
-    background-color: transparent;
-    transition: transform 0.2s;
-  border: 2px solid transparent; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-    border-image-source: linear-gradient(to left, #1b9bdc, #a9e2ff, #1b9bdc);
-    border-image-slice: 1;
-    border-image-width: 2;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    text-align-last: start;
-    margin: 20px;
- }
- 
- 
-.mt-7{
+.form-range-slider {
+    width: 60%;
+    display: flex;
+}
+
+.mt-7 {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.753);
     border: 1px solid #fff;
     width: 10vw;
     height: 5vh;
-    margin-left: 14vw
+    margin-left: 14vw;
 }
-.mb-4{
+
+.mb-4 {
     margin: 30px;
 }
 
-.pie-chart-container{
-    background-color: transparent;
-    transition: transform 0.2s;
-    border: 2px solid  #1b9bdc; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-    border-image-source: linear-gradient(to left, #1b9bdc, #a9e2ff, #1b9bdc);
-    border-image-slice: 1;
-    border-image-width: 2;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-    margin: 20px;
-    padding: 7px;
-}
-.output-container{
-    background-color: cornflowerblue;
-    transition: transform 0.2s;
-    border: 2px solid  #1b9bdc; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-    border-image-source: linear-gradient(to left, #1b9bdc, #a9e2ff, #1b9bdc);
-    border-image-slice: 1;
-    border-image-width: 2;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
+.slider-container {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: #f9f9f9;
     margin: 20px;
 }
 
-.pie{
+.input-section {
+    margin-bottom: 20px;
+}
+
+.text-and-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-bottom:80px;
+    justify-content: space-between;
+}
+
+.headers {
+    color: #1b9bdc;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-size: 1.25rem;
+    font-weight:500;
+    font-family:Poppins;
+}
+
+.form-cc {
+    /* flex: 1; */
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width:10vw
+}
+
+.form-range-slider {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.applyNow {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.applyNow:hover {
+    background-color: #0056b3;
+}
+
+.pie {
     height: 30vh;
-     width: 30vw;
-}
-.form-cc{
-    float: right;
-    margin: -110px 50px;
-    height: 4vh;
-    width: 10vw;
-    font-size: 20px;
+    width: 30vw;
+    margin-left: 55px;
 }
 
-@media (max-width:768px) {
-    .form-cc{
+@media (max-width: 768px) {
+    .caclulator-card {
+        margin: 20px;
+        padding: 0
+    }
+    .form-cc {
         margin: -85px 45px;
         width: 20vw;
         font-size: 16px;
     }
-    .pie{
+    .pie {
         height: 30vh;
-         width: 80vw;
-    }
+        width: 80vw;
+        margin-left: 30px;
+    }   
+.interestAndPay{
+    margin-top: -40px
+}
+    
+}
+
+.caclulator-card {
+    border-radius: 32px;
+    background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+    color: #ffffff;
+    margin: 10px;
+    border:1px solid #3caff5;
+    /* margin: 50px;
+    padding: 150px 50px; */
+}
+
+.applyNow {
+    border-radius: 0px !important;
+    border: 1px solid #fff;
+    background: linear-gradient(91deg, #3caff5 -2.45%, #1a69a3 97.01%);
+    color: #fff;
+    /* font-weight: 700; */
+    border-image-source: linear-gradient(to left, #1b9bdc, #a9e2ff, #1b9bdc);
+    border-width: 1px;
+    border-image-slice: 1;
+    border-image-width: 1;
+    border-image-outset: 0;
+    border-image-repeat: round;
+    font-size: 18px;
+    font-family: Poppins;
+    padding: 6px;
+    /* margin: 30%; */
+    /* margin-left:230px */
+}
+
+.text-header {
+    background: linear-gradient(180deg, rgb(27, 155, 220) 0%, rgb(117.94, 208.84, 255) 54.51%, rgb(27, 155, 220) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: normal;
+    font-family: Poppins;
+    width: 100%;
+    text-align: left;
+}
+
+.colors {
+    display: flex;
+    justify-content:center;
+    height: 10px;
+    font-size: 18px;
+    margin: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.lightBlue {
+    border-left: 10px solid #0d6efd;
+    height: 10px;
+    font-size: 18px;
+    margin: 10px 10px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.thickBlue {
+    border-left: 10px solid #ffff;
+    height: 10px;
+    font-size: 18px;
+    margin: 10px 10px;
+    color: #fff;
+    font-weight: 400;
+}
+.interestAndPay{
+    display: flex;
+    justify-content: center;
+}
+.vlCalci {
+    /* border-left: 2px solid #052c65; */
+    font-size: 18px;
+    margin:auto;
+}
+.aboutEmi{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    color: #fff;
+    font-family: Poppins;
+}
+.EmiElements{
+    font-size: 18px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    color: #fff;
+    font-family: Poppins; 
 }
