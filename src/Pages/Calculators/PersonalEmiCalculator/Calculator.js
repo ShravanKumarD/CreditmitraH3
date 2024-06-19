@@ -1,286 +1,382 @@
-import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './calculator.css';
-import Header from '../../../Components/Header/Header';
-import Footer from '../../../Components/Footer';
-import SEO from '../../../Components/SEO/SEO';
-import { PieChart } from 'react-minimal-pie-chart';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./calculator.css";
+import Header from "../../../Components/Header/Header";
+import Footer from "../../../Components/Footer";
+import SEO from "../../../Components/SEO/SEO";
+import { PieChart } from "react-minimal-pie-chart";
+import { Link } from "react-router-dom";
 
 const Calculator = (props) => {
-    const [loanAmount, setLoanAmount] = useState(10000);
-    const [roi, setROI] = useState(5);
-    const [tenure, setTenure] = useState(6);
-    const [totalInterest, setTotalInterest] = useState(0);
-    const [totalPayment, setTotalPayment] = useState(0);
-    const [emi, setEmi] = useState(0);
+  const [loanAmount, setLoanAmount] = useState(10000);
+  const [roi, setROI] = useState(5);
+  const [tenure, setTenure] = useState(6);
+  const [totalInterest, setTotalInterest] = useState(0);
+  const [totalPayment, setTotalPayment] = useState(0);
+  const [emi, setEmi] = useState(0);
 
-    const handleChangeLoanAmount = (event) => {
-        setLoanAmount(Number(event.target.value));
+  const handleChangeLoanAmount = (event) => {
+    setLoanAmount(Number(event.target.value));
+  };
+
+  const handleChangeROI = (event) => {
+    setROI(Number(event.target.value));
+  };
+
+  const handleChangeTenure = (event) => {
+    setTenure(Number(event.target.value));
+  };
+
+  useEffect(() => {
+    const calculateEMI = (principal, annualRate, tenureMonths) => {
+      const monthlyRate = annualRate / (12 * 100);
+      const totalMonths = tenureMonths;
+
+      const emi =
+        (principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) /
+        (Math.pow(1 + monthlyRate, totalMonths) - 1);
+
+      return emi;
     };
 
-    const handleChangeROI = (event) => {
-        setROI(Number(event.target.value));
-    };
+    if (loanAmount > 0 && roi > 0 && tenure > 0) {
+      const emiValue = calculateEMI(loanAmount, roi, tenure);
+      const totalInterestValue = emiValue * tenure - loanAmount;
+      const totalPaymentValue = loanAmount + totalInterestValue;
+      console.log(totalInterestValue, totalPaymentValue, "calculated values");
 
-    const handleChangeTenure = (event) => {
-        setTenure(Number(event.target.value));
-    };
+      setEmi(emiValue);
+      setTotalInterest(totalInterestValue);
+      setTotalPayment(totalPaymentValue);
+    } else {
+      setEmi(0);
+      setTotalInterest(0);
+      setTotalPayment(0);
+    }
+  }, [loanAmount, roi, tenure]);
 
-    useEffect(() => {
-        const calculateEMI = (principal, annualRate, tenureMonths) => {
-            const monthlyRate = annualRate / (12 * 100);
-            const totalMonths = tenureMonths;
+  return (
+    <>
+      <Header routePath={props.routePath} />
+      <SEO
+        title="Calculator | Personal loan EMI Calculator | CreditMitra"
+        description="CreditMitra understands the importance of customer satisfaction and personal service. You can reach our Customer Care team or one of our Dedicated Loan Officers at any time. Feel free to give us a call!"
+        keywords="instant personal loan in India, personal loan approval"
+        name="CreditMitra"
+        type="LendingService"
+      />
+      <h3 className="text-xl font-semibold mb-4" style={{ marginTop: "100px" }}>
+        Personal Loan EMI Calculator
+      </h3>
+      <section>
+        <div className="caclulator-card ">
+          <div className="row">
+            <div className="col-sm-6">
+              <div className="slider-container">
+                <div className="input-section mb-4">
+                  <div className="text-and-input d-flex align-items-center">
+                    <h4 className="headers mb-0 mr-2">Loan Amount</h4>
+                    <input
+                      type="number"
+                      min="0"
+                      max="500000"
+                      value={loanAmount}
+                      onChange={handleChangeLoanAmount}
+                      className="form-cc"
+                    />
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="500000"
+                    value={loanAmount}
+                    onChange={handleChangeLoanAmount}
+                    className="form-range-slider"
+                    list="loanAmountTicks"
+                  />
+                </div>
 
-            const emi =
-                (principal * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) /
-                (Math.pow(1 + monthlyRate, totalMonths) - 1);
+                <div className="input-section mb-4">
+                  <div className="text-and-input d-flex align-items-center">
+                    <h4 className="headers mb-0 mr-2">
+                      Monthly Rate of Interest
+                    </h4>
+                    <input
+                      type="number"
+                      min="0"
+                      max="36"
+                      step="0.1"
+                      value={roi}
+                      onChange={handleChangeROI}
+                      className="form-cc"
+                      placeholder="0"
+                    />
+                  </div>
+                  <input
+                    type="range"
+                    min="0"
+                    max="36"
+                    step="0.1"
+                    value={roi}
+                    onChange={handleChangeROI}
+                    className="form-range-slider"
+                  />
+                </div>
 
-            return emi;
-        };
+                <div className="input-section mb-4">
+                  <div className="text-and-input d-flex align-items-center">
+                    <h4 className="headers mb-0 mr-2">Tenure (in months)</h4>
+                    <input
+                      type="number"
+                      min="1"
+                      max="36"
+                      value={tenure}
+                      onChange={handleChangeTenure}
+                      className="form-cc"
+                    />
+                  </div>
+                  <input
+                    type="range"
+                    min="1"
+                    max="36"
+                    value={tenure}
+                    onChange={handleChangeTenure}
+                    className="form-range-slider"
+                    list="tenureTicks"
+                  />
+                </div>
 
-        if (loanAmount > 0 && roi > 0 && tenure > 0) {
-            const emiValue = calculateEMI(loanAmount, roi, tenure);
-            const totalInterestValue = emiValue * tenure - loanAmount;
-            const totalPaymentValue = loanAmount + totalInterestValue;
-            console.log(totalInterestValue, totalPaymentValue, "calculated values")
+                <button className="applyNow">
+                  <Link
+                    to="/"
+                    style={{ color: "#fff", textDecoration: "none" }}
+                  >
+                    Apply Now
+                  </Link>
+                </button>
+              </div>
+            </div>
 
-            setEmi(emiValue);
-            setTotalInterest(totalInterestValue);
-            setTotalPayment(totalPaymentValue);
-        } else {
-            setEmi(0);
-            setTotalInterest(0);
-            setTotalPayment(0);
-        }
-    }, [loanAmount, roi, tenure]);
-
-    return (
-        <>
-            <Header routePath={props.routePath} />
-            <SEO
-                title="Calculator | Personal loan EMI Calculator | CreditMitra"
-                description="CreditMitra understands the importance of customer satisfaction and personal service. You can reach our Customer Care team or one of our Dedicated Loan Officers at any time. Feel free to give us a call!"
-                keywords="instant personal loan in India, personal loan approval"
-                name="CreditMitra"
-                type="LendingService"
-            />
-            <h3 className="text-xl font-semibold mb-4" style={{ marginTop: "100px" }}>Personal Loan EMI Calculator</h3>
-            <section>
-
-                <div className='caclulator-card '>
-                    <div className="row">
-                        <div className="col-sm-6">
-                            <div className="slider-container">
-                                <div className="input-section mb-4">
-                                    <div className="text-and-input d-flex align-items-center">
-                                        <h4 className="headers mb-0 mr-2">Loan Amount</h4>
-                                        <input
-                                            type="number"
-                                            min="0"
-                                            max="500000"
-                                            value={loanAmount}
-                                            onChange={handleChangeLoanAmount}
-                                            className="form-cc"
-                                        />
-                                    </div>
-                                    <input
-                                        type="range"
-                                        min="0"
-                                        max="500000"
-                                        value={loanAmount}
-                                        onChange={handleChangeLoanAmount}
-                                        className="form-range-slider"
-                                        list="loanAmountTicks"
-                                    />
-                                </div>
-
-                                <div className="input-section mb-4">
-                                    <div className="text-and-input d-flex align-items-center">
-                                        <h4 className="headers mb-0 mr-2">Rate of Interest</h4>
-                                        <input
-                                            type="number"
-                                            min="0"
-                                            max="36"
-                                            step="0.1"
-                                            value={roi}
-                                            onChange={handleChangeROI}
-                                            className="form-cc"
-                                            placeholder="0"
-                                        />
-                                    </div>
-                                    <input
-                                        type="range"
-                                        min="0"
-                                        max="36"
-                                        step="0.1"
-                                        value={roi}
-                                        onChange={handleChangeROI}
-                                        className="form-range-slider"
-                                    />
-                                </div>
-
-                                <div className="input-section mb-4">
-                                    <div className="text-and-input d-flex align-items-center">
-                                        <h4 className="headers mb-0 mr-2">Tenure (in months)</h4>
-                                        <input
-                                            type="number"
-                                            min="1"
-                                            max="36"
-                                            value={tenure}
-                                            onChange={handleChangeTenure}
-                                            className="form-cc"
-                                        />
-                                    </div>
-                                    <input
-                                        type="range"
-                                        min="1"
-                                        max="36"
-                                        value={tenure}
-                                        onChange={handleChangeTenure}
-                                        className="form-range-slider"
-                                        list="tenureTicks"
-                                    />
-                                </div>
-
-                                <button className="applyNow">
-                                    <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
-                                        Apply Now
-                                    </Link>
-                                </button>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <div className='col-sm-5'>
-                            <div className="output-container">
-                                {/* <h5 className="headers fade-in" style={{ fontSize: "20px", fontWeight: "normal", marginTop: "10px" }}>
+            <div className="col-sm-5">
+              <div className="output-container">
+                {/* <h5 className="headers fade-in" style={{ fontSize: "20px", fontWeight: "normal", marginTop: "10px" }}>
                                     Equated Monthly Installments (EMI): ₹{emi.toFixed(2)}
                                 </h5> */}
-                                {/* <h5 className="headers fade-in" style={{ fontSize: "20px", fontWeight: "normal" }}>
+                {/* <h5 className="headers fade-in" style={{ fontSize: "20px", fontWeight: "normal" }}>
                                     Total Amount Payable: ₹{totalPayment.toFixed(2)}
                                 </h5> */}
-                                <h5 style={{ textAlign: 'center', marginTop: '30px' }}  >Your Monthly EMI is <br /> ₹{emi.toFixed(2)}</h5>
-                                <div className="pie-chart-container mt-4">
-                                    <div className="text-header ">
-                                        <div>{
-                                            loanAmount === 0 ?
-                                                <>
-                                                    <div className='interestAndPay'>
-                                                        <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Interest<br /> ₹{totalInterest.toFixed(2)}</h5>
-                                                        <div className='vlCalci'></div>
-                                                        <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Payment<br /> ₹{totalPayment.toFixed(2)}</h5>
-
-                                                    </div>
-                                                    <PieChart
-                                                        className='pie'
-                                                        data={[
-                                                            { title: 'Interest', value: 0.1, color: '#0d6efd' },//big part
-                                                            { title: 'Principal', value: 0, color: '#052c65' }
-                                                        ]}
-                                                    />
-                                                </>
-                                                :
-                                                <>
-                                                    <div className='interestAndPay'>
-                                                        <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Interest<br /> ₹{totalInterest.toFixed(2)}</h5>
-                                                        <div className='vlCalci'></div>
-                                                        <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Payment<br /> ₹{totalPayment.toFixed(2)}</h5>
-
-                                                    </div>
-                                                    <PieChart
-                                                        className='pie'
-                                                        data={[
-                                                            { title: 'Interest', value: totalInterest, color: '#ffff' },
-                                                            { title: 'Principal', value: loanAmount, color: '#0d6efd' }
-                                                        ]}
-                                                    />
-                                                </>
-
-                                        }
-                                            <div className='colors'>
-                                                <div className='lightBlue'>
-                                                </div>     Loan Amount: {loanAmount}
-                                              </div>
-                                              <div className='colors'>
-                                                <div className='thickBlue'>
-
-                                                </div>      Interest Rate: {roi}
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
+                <h5 style={{ textAlign: "center", marginTop: "30px" }}>
+                  Your Monthly EMI is <br /> ₹{emi.toFixed(2)}
+                </h5>
+                <div className="pie-chart-container mt-4">
+                  <div className="text-header ">
+                    <div>
+                      {loanAmount === 0 ? (
+                        <>
+                          <div className="interestAndPay">
+                            <h5
+                              className="fade-in"
+                              style={{
+                                fontSize: "20px",
+                                fontWeight: "normal",
+                                textAlign: "center",
+                              }}
+                            >
+                              Loan Amount: ₹ {loanAmount}
+                            </h5>
+                            <div className="vlCalci"></div>
+                            <h5
+                              className="fade-in"
+                              style={{
+                                fontSize: "20px",
+                                fontWeight: "normal",
+                                textAlign: "center",
+                              }}
+                            >
+                              Interest Rate: {roi} %
+                            </h5>
+                          </div>
+                          <PieChart
+                            className="pie"
+                            data={[
+                              {
+                                title: "Interest",
+                                value: 0.1,
+                                color: "#0d6efd",
+                              }, //big part
+                              {
+                                title: "Principal",
+                                value: 0,
+                                color: "#052c65",
+                              },
+                            ]}
+                          />
+                        </>
+                      ) : (
+                        <>
+                          <div className="interestAndPay">
+                            <h5
+                              className="fade-in"
+                              style={{
+                                fontSize: "20px",
+                                fontWeight: "normal",
+                                textAlign: "center",
+                              }}
+                            >
+                              Loan Amount: ₹ {loanAmount}
+                              <br />
+                            </h5>
+                            <div className="vlCalci"></div>
+                            <h5
+                              className="fade-in"
+                              style={{
+                                fontSize: "20px",
+                                fontWeight: "normal",
+                                textAlign: "center",
+                              }}
+                            >
+                              Interest Rate: {roi} %
+                            </h5>
+                          </div>
+                          <PieChart
+                            className="pie"
+                            data={[
+                              {
+                                title: "Interest",
+                                value: totalInterest,
+                                color: "#ffff",
+                              },
+                              {
+                                title: "Principal",
+                                value: loanAmount,
+                                color: "#0d6efd",
+                              },
+                            ]}
+                          />
+                        </>
+                      )}
+                      <div className="colors">
+                        <div className="lightBlue"></div>
+                        Total Payment: ₹{totalPayment.toFixed(2)}
+                      </div>
+                      <div className="colors">
+                        <div className="thickBlue"></div>
+                        Total Interest: ₹{totalInterest.toFixed(2)}
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </section>
-            <section>
-                <div className='row'>
-                    <div className='col-sm-10'>
-                    <p>
-                            &nbsp;
-                        </p>
-                        <h1>What is a Personal Loan EMI calculator?</h1>
-                        <p className='aboutEmi'>A Personal Loan EMI (Equated Monthly Installment) calculator is an online tool that helps you estimate the monthly installments you would need to pay if you take a personal loan. The EMI is the fixed payment amount made by a borrower to a lender at a specified date each calendar month. This installment includes both the principal and the interest components of the loan.</p>
-                        <br />
-                        <h2  style={{marginLeft:'10px'}}>Key Features and Components of a Personal Loan EMI Calculator</h2>
-                        <ul>
-                            <li className='EmiElements'><strong>Loan Amount:</strong> The total amount of money borrowed.</li>
-                            <li className='EmiElements'><strong>Interest Rate:</strong> The rate at which interest is charged on the loan amount.</li>
-                            <li className='EmiElements'><strong>Loan Tenure: </strong>The duration over which the loan will be repaid, usually expressed in months or years.</li>
-                            <li className='EmiElements'><strong>EMI Calculation Formula: </strong>EMI = [P x R x (1+R) ^N]/ [(1+R) ^ (N-1)]</li>
-                        </ul>
-                        <p>
-                            &nbsp;
-                        </p>
-                        <h2  style={{marginLeft:'10px',fontWeight:400,fontSize:'20px'}}>Where:</h2>
-                        <ul>
-                            <li className='EmiElements'>P is the principal loan amount</li>
-                            <li className='EmiElements'>r is the monthly interest rate (annual rate divided by 12)</li>
-                            <li className='EmiElements'>n is the loan tenure in months</li>
-                        </ul>
-                        <p>
-                            &nbsp;
-                        </p>
-                        <h2  style={{marginLeft:'10px'}}>Benefits of Using a Personal Loan EMI Calculator</h2>
-                        <ul>
-                            <li className='EmiElements'><strong>Financial Planning:</strong>Helps you plan your finances better by giving you a clear idea of your monthly outflow.
-                            </li>
-                            <li className='EmiElements'><strong>Comparison:</strong>Allows you to compare different loan offers by changing the loan amount, tenure, and interest rate.</li>
-                            <li className='EmiElements'><strong>Time-Saving:</strong>Quickly gives you accurate EMI figures without needing manual calculations.</li>
-                            <li className='EmiElements'><strong>Interest and Principal Breakdown:</strong> Some calculators provide a detailed breakdown of the interest and principal repaid over the tenure of the loan.</li>
-                        </ul>
-                       
-                        <h2  style={{marginLeft:'10px'}}> How to Use a Personal Loan EMI Calculator</h2>
-                        <ul>
-                        <li className='EmiElements'>Enter the Loan Amount: Input the total amount you wish to borrow.
-                        </li>
-                        <li className='EmiElements'>Enter the Interest Rate: Input the annual interest rate offered by the lender.</li>
-                        <li className='EmiElements'>Enter the Loan Tenure: Input the period over which you plan to repay the loan.</li>
-                        <li className='EmiElements'>Calculate: Click on the calculate button to get the EMI amount.
-                        </li>
-                        </ul>
-                        <p>
-                            &nbsp;
-                        </p>
-                        <p>
-                            &nbsp;
-                        </p>
-                        <p className='aboutEmi'>Overall, a Personal Loan EMI calculator is a useful tool for anyone looking to understand their repayment obligations and make informed borrowing decisions.</p>
-                    </div>
-                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="row">
+          <div className="col-sm-10">
+            <p>&nbsp;</p>
+            <h1>What is a Personal Loan EMI calculator?</h1>
+            <p className="aboutEmi">
+              A Personal Loan EMI (Equated Monthly Installment) calculator is an
+              online tool that helps you estimate the monthly installments you
+              would need to pay if you take a personal loan. The EMI is the
+              fixed payment amount made by a borrower to a lender at a specified
+              date each calendar month. This installment includes both the
+              principal and the interest components of the loan.
+            </p>
+            <br />
+            <h2 style={{ marginLeft: "10px" }}>
+              Key Features and Components of a Personal Loan EMI Calculator
+            </h2>
+            <ul>
+              <li className="EmiElements">
+                <strong>Loan Amount:</strong> The total amount of money
+                borrowed.
+              </li>
+              <li className="EmiElements">
+                <strong>Interest Rate:</strong> The rate at which interest is
+                charged on the loan amount.
+              </li>
+              <li className="EmiElements">
+                <strong>Loan Tenure: </strong>The duration over which the loan
+                will be repaid, usually expressed in months or years.
+              </li>
+              <li className="EmiElements">
+                <strong>EMI Calculation Formula: </strong>EMI = [P x R x (1+R)
+                ^N]/ [(1+R) ^ (N-1)]
+              </li>
+            </ul>
+            <p>&nbsp;</p>
+            <h2
+              style={{ marginLeft: "10px", fontWeight: 400, fontSize: "20px" }}
+            >
+              Where:
+            </h2>
+            <ul>
+              <li className="EmiElements">P is the principal loan amount</li>
+              <li className="EmiElements">
+                r is the monthly interest rate (annual rate divided by 12)
+              </li>
+              <li className="EmiElements">n is the loan tenure in months</li>
+            </ul>
+            <p>&nbsp;</p>
+            <h2 style={{ marginLeft: "10px" }}>
+              Benefits of Using a Personal Loan EMI Calculator
+            </h2>
+            <ul>
+              <li className="EmiElements">
+                <strong>Financial Planning:</strong>Helps you plan your finances
+                better by giving you a clear idea of your monthly outflow.
+              </li>
+              <li className="EmiElements">
+                <strong>Comparison:</strong>Allows you to compare different loan
+                offers by changing the loan amount, tenure, and interest rate.
+              </li>
+              <li className="EmiElements">
+                <strong>Time-Saving:</strong>Quickly gives you accurate EMI
+                figures without needing manual calculations.
+              </li>
+              <li className="EmiElements">
+                <strong>Interest and Principal Breakdown:</strong> Some
+                calculators provide a detailed breakdown of the interest and
+                principal repaid over the tenure of the loan.
+              </li>
+            </ul>
 
-            </section>
-            <Footer />
-        </>
-    );
+            <h2 style={{ marginLeft: "10px" }}>
+              {" "}
+              How to Use a Personal Loan EMI Calculator
+            </h2>
+            <ul>
+              <li className="EmiElements">
+                Enter the Loan Amount: Input the total amount you wish to
+                borrow.
+              </li>
+              <li className="EmiElements">
+                Enter the Interest Rate: Input the annual interest rate offered
+                by the lender.
+              </li>
+              <li className="EmiElements">
+                Enter the Loan Tenure: Input the period over which you plan to
+                repay the loan.
+              </li>
+              <li className="EmiElements">
+                Calculate: Click on the calculate button to get the EMI amount.
+              </li>
+            </ul>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p className="aboutEmi">
+              Overall, a Personal Loan EMI calculator is a useful tool for
+              anyone looking to understand their repayment obligations and make
+              informed borrowing decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </>
+  );
 };
 
 export default Calculator;
