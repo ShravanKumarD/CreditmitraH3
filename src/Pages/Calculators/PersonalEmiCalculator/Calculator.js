@@ -75,6 +75,7 @@ const Calculator = (props) => {
                                 <div className="input-section mb-4">
                                     <div className="text-and-input d-flex align-items-center">
                                         <h4 className="headers mb-0 mr-2">Loan Amount</h4>
+                                        <div class="input-wrapper-principle">
                                         <input
                                             type="number"
                                             min="0"
@@ -83,6 +84,7 @@ const Calculator = (props) => {
                                             onChange={handleChangeLoanAmount}
                                             className="form-cc"
                                         />
+                                        </div>
                                     </div>
                                     <input
                                         type="range"
@@ -98,7 +100,7 @@ const Calculator = (props) => {
                                 <div className="input-section mb-4">
                                     <div className="text-and-input d-flex align-items-center">
                                         <h4 className="headers mb-0 mr-2">Rate of Interest</h4>
-                                        <input
+                                        {/* <input
                                             type="number"
                                             min="0"
                                             max="36"
@@ -107,7 +109,20 @@ const Calculator = (props) => {
                                             onChange={handleChangeROI}
                                             className="form-cc"
                                             placeholder="0"
-                                        />
+                                        /> */}
+                                        <div class="input-wrapper">
+    <input
+        type="number"
+        min="0"
+        max="36"
+        step="0.1"
+        value={roi}
+        onChange={handleChangeROI}
+        className="form-cc"
+        placeholder="0"
+    />
+</div>
+
                                     </div>
                                     <input
                                         type="range"
@@ -163,16 +178,16 @@ const Calculator = (props) => {
                                 {/* <h5 className="headers fade-in" style={{ fontSize: "20px", fontWeight: "normal" }}>
                                     Total Amount Payable: ₹{totalPayment.toFixed(2)}
                                 </h5> */}
-                                <h5 style={{ textAlign: 'center', marginTop: '30px' }}  >Your Monthly EMI is <br /> ₹{emi.toFixed(2)}</h5>
+                                <h5 style={{ textAlign: 'center', marginTop: '30px' }}  >Your Monthly EMI is <br /> ₹ {emi.toFixed(2)}</h5>
                                 <div className="pie-chart-container mt-4">
                                     <div className="text-header ">
                                         <div>{
                                             loanAmount === 0 ?
                                                 <>
                                                     <div className='interestAndPay'>
-                                                        <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Interest<br /> ₹{totalInterest.toFixed(2)}</h5>
+                                                        <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Interest<br /> ₹ {totalInterest.toFixed(2)}</h5>
                                                         <div className='vlCalci'></div>
-                                                        <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Payment<br /> ₹{totalPayment.toFixed(2)}</h5>
+                                                        <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Payment<br /> ₹ {totalPayment.toFixed(2)}</h5>
 
                                                     </div>
                                                     <PieChart
@@ -186,9 +201,9 @@ const Calculator = (props) => {
                                                 :
                                                 <>
                                                     <div className='interestAndPay'>
-                                                        <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Interest<br /> ₹{totalInterest.toFixed(2)}</h5>
+                                                        <h5 className="     fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Interest<br /> ₹ {totalInterest.toFixed(2)}</h5>
                                                         <div className='vlCalci'></div>
-                                                        <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Payment<br /> ₹{totalPayment.toFixed(2)}</h5>
+                                                        <h5 className="fade-in" style={{ fontSize: "20px", fontWeight: "normal", textAlign: "center" }}>Total Payment<br /> ₹ {totalPayment.toFixed(2)}</h5>
 
                                                     </div>
                                                     <PieChart
