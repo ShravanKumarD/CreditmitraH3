@@ -126,7 +126,7 @@ h3 {
 .pie {
     height: 30vh;
     width: 30vw;
-    margin-left: 55px;
+    margin-left: 60px;
 }
 
 @media (max-width: 768px) {
