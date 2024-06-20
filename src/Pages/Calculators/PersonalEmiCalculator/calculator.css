@@ -186,8 +186,17 @@ h3 {
     font-weight: 400;
 }
 
-.thickBlue {
+.whiteBox {
     border-left: 10px solid #ffff;
+    height: 10px;
+    font-size: 18px;
+    margin: 10px 10px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.purpleBox{
+    border-left:10px solid #6610f2;
     height: 10px;
     font-size: 18px;
     margin: 10px 10px;

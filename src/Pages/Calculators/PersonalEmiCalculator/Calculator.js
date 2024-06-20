@@ -179,7 +179,7 @@ const Calculator = (props) => {
                                                         className='pie'
                                                         data={[
                                                             { title: 'Interest', value: 0.1, color: '#0d6efd' },//big part
-                                                            { title: 'Principal', value: 0, color: '#052c65' }
+                                                            { title: 'Principal', value: 0, color: '#052c65' },
                                                         ]}
                                                     />
                                                 </>
@@ -195,7 +195,8 @@ const Calculator = (props) => {
                                                         className='pie'
                                                         data={[
                                                             { title: 'Interest', value: totalInterest, color: '#ffff' },
-                                                            { title: 'Principal', value: loanAmount, color: '#0d6efd' }
+                                                            { title: 'Principal', value: loanAmount, color: '#0d6efd' },
+                                                            {title:'tenure',value:tenure,color:'#6610f2'}
                                                         ]}
                                                     />
                                                 </>
@@ -204,12 +205,18 @@ const Calculator = (props) => {
                                             <div className='colors'>
                                                 <div className='lightBlue'>
                                                 </div>     Loan Amount: {loanAmount}
-                                              </div>
-                                              <div className='colors'>
-                                                <div className='thickBlue'>
-
-                                                </div>      Interest Rate: {roi}
                                             </div>
+                                            <div className='colors'>
+                                                <div className='whiteBox'>
+
+                                                </div>   Rate of Interest: {roi}
+                                            </div>
+                                            <div className='colors'>
+                                                <div className='purpleBox'>
+
+                                                </div>      Tenure: {tenure}
+                                            </div>
+
 
                                         </div>
                                     </div>
@@ -224,13 +231,13 @@ const Calculator = (props) => {
             <section>
                 <div className='row'>
                     <div className='col-sm-10'>
-                    <p>
+                        <p>
                             &nbsp;
                         </p>
                         <h1>What is a Personal Loan EMI calculator?</h1>
                         <p className='aboutEmi'>A Personal Loan EMI (Equated Monthly Installment) calculator is an online tool that helps you estimate the monthly installments you would need to pay if you take a personal loan. The EMI is the fixed payment amount made by a borrower to a lender at a specified date each calendar month. This installment includes both the principal and the interest components of the loan.</p>
                         <br />
-                        <h2  style={{marginLeft:'10px'}}>Key Features and Components of a Personal Loan EMI Calculator</h2>
+                        <h2 style={{ marginLeft: '10px' }}>Key Features and Components of a Personal Loan EMI Calculator</h2>
                         <ul>
                             <li className='EmiElements'><strong>Loan Amount:</strong> The total amount of money borrowed.</li>
                             <li className='EmiElements'><strong>Interest Rate:</strong> The rate at which interest is charged on the loan amount.</li>
@@ -240,7 +247,7 @@ const Calculator = (props) => {
                         <p>
                             &nbsp;
                         </p>
-                        <h2  style={{marginLeft:'10px',fontWeight:400,fontSize:'20px'}}>Where:</h2>
+                        <h2 style={{ marginLeft: '10px', fontWeight: 400, fontSize: '20px' }}>Where:</h2>
                         <ul>
                             <li className='EmiElements'>P is the principal loan amount</li>
                             <li className='EmiElements'>R is the monthly interest rate (annual rate divided by 12)</li>
@@ -249,7 +256,7 @@ const Calculator = (props) => {
                         <p>
                             &nbsp;
                         </p>
-                        <h2  style={{marginLeft:'10px'}}>Benefits of Using a Personal Loan EMI Calculator</h2>
+                        <h2 style={{ marginLeft: '10px' }}>Benefits of Using a Personal Loan EMI Calculator</h2>
                         <ul>
                             <li className='EmiElements'><strong>Financial Planning:</strong>Helps you plan your finances better by giving you a clear idea of your monthly outflow.
                             </li>
@@ -257,15 +264,15 @@ const Calculator = (props) => {
                             <li className='EmiElements'><strong>Time-Saving:</strong>Quickly gives you accurate EMI figures without needing manual calculations.</li>
                             <li className='EmiElements'><strong>Interest and Principal Breakdown:</strong> Some calculators provide a detailed breakdown of the interest and principal repaid over the tenure of the loan.</li>
                         </ul>
-                       
-                        <h2  style={{marginLeft:'10px'}}> How to Use a Personal Loan EMI Calculator</h2>
+
+                        <h2 style={{ marginLeft: '10px' }}> How to Use a Personal Loan EMI Calculator</h2>
                         <ul>
-                        <li className='EmiElements'>Enter the Loan Amount: Input the total amount you wish to borrow.
-                        </li>
-                        <li className='EmiElements'>Enter the Interest Rate: Input the annual interest rate offered by the lender.</li>
-                        <li className='EmiElements'>Enter the Loan Tenure: Input the period over which you plan to repay the loan.</li>
-                        <li className='EmiElements'>Calculate: Click on the calculate button to get the EMI amount.
-                        </li>
+                            <li className='EmiElements'>Enter the Loan Amount: Input the total amount you wish to borrow.
+                            </li>
+                            <li className='EmiElements'>Enter the Interest Rate: Input the annual interest rate offered by the lender.</li>
+                            <li className='EmiElements'>Enter the Loan Tenure: Input the period over which you plan to repay the loan.</li>
+                            <li className='EmiElements'>Calculate: Click on the calculate button to get the EMI amount.
+                            </li>
                         </ul>
                         <p>
                             &nbsp;
