@@ -162,17 +162,25 @@ const Calculator = (props) => {
                   />
                 </div>
               </div>
-              <button className="applyNow">
-                <Link
-                  to="/"
-                  style={{
-                    color: "#fff",
-                    textDecoration: "none",
-                  }}
-                >
-                  Apply Now
-                </Link>
-              </button>
+              <div
+                style={{
+                  alignItems: "center",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <button className="applyNow">
+                  <Link
+                    to="/"
+                    style={{
+                      color: "#fff",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Apply Now
+                  </Link>
+                </button>
+              </div>
             </div>
 
             <div className="col-sm-5">
@@ -217,7 +225,7 @@ const Calculator = (props) => {
                   <br />
                 </h5>
                 <div className="pie-chart-container">
-                  <div className="text-header ">
+                  <div className="text-header">
                     <div>
                       {loanAmount === 0 ? (
                         <>
@@ -245,21 +253,23 @@ const Calculator = (props) => {
                               Rate of Interest: {roi.toFixed(0)}%
                             </h5>
                           </div> */}
-                          <PieChart
-                            className="pie"
-                            data={[
-                              {
-                                title: "Interest",
-                                value: 0.1,
-                                color: "#0d6efd",
-                              }, //big part
-                              {
-                                title: "Principal",
-                                value: 0,
-                                color: "#052c65",
-                              },
-                            ]}
-                          />
+                          <div style={{ display: "flex" }}>
+                            <PieChart
+                              className="pie"
+                              data={[
+                                {
+                                  title: "Interest",
+                                  value: 0.1,
+                                  color: "#0d6efd",
+                                }, //big part
+                                {
+                                  title: "Principal",
+                                  value: 0,
+                                  color: "#052c65",
+                                },
+                              ]}
+                            />
+                          </div>
                         </>
                       ) : (
                         <>
@@ -286,21 +296,28 @@ const Calculator = (props) => {
                               Rate of Interest: {roi.toFixed(0)}%
                             </h5>
                           </div> */}
-                          <PieChart
-                            className="pie"
-                            data={[
-                              {
-                                title: "Interest",
-                                value: totalInterest,
-                                color: "#ffff",
-                              },
-                              {
-                                title: "Principal",
-                                value: loanAmount,
-                                color: "#0d6efd",
-                              },
-                            ]}
-                          />
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <PieChart
+                              className="pie"
+                              data={[
+                                {
+                                  title: "Interest",
+                                  value: totalInterest,
+                                  color: "#ffff",
+                                },
+                                {
+                                  title: "Principal",
+                                  value: loanAmount,
+                                  color: "#0d6efd",
+                                },
+                              ]}
+                            />
+                          </div>
                         </>
                       )}
                       <div

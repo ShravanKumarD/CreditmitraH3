@@ -29,6 +29,7 @@ h3 {
 .form-range-slider {
   width: 60%;
   display: flex;
+  border: 10px solid green; /* Adds a white border */
 }
 
 .mt-7 {
@@ -53,7 +54,7 @@ h3 {
 }
 
 .input-section {
-  margin-bottom: 55px !important;
+  margin-bottom: 8% !important;
 }
 
 .text-and-input {
@@ -120,6 +121,7 @@ h3 {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  width: 60%;
 }
 
 .applyNow:hover {
@@ -129,7 +131,6 @@ h3 {
 .pie {
   height: 30vh;
   width: 30vw;
-  margin-left: 60px;
 }
 
 @media (max-width: 768px) {
@@ -142,6 +143,9 @@ h3 {
   }
   .colors {
     margin-bottom: 14% !important;
+  }
+  .slider-container {
+    padding: 0px;
   }
 
   .form-cc {
@@ -276,4 +280,6 @@ h3 {
   align-items: baseline;
   margin-top: 30px;
   font-size: 1.4rem;
+  padding-left: 2%;
+  padding-right: 2%;
 }
