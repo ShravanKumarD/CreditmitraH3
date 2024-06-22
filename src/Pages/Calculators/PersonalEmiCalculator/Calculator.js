@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./calculator.css";
+import "./calculator_mobile.css";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer";
 import SEO from "../../../Components/SEO/SEO";
@@ -65,7 +66,10 @@ const Calculator = (props) => {
         name="CreditMitra"
         type="LendingService"
       />
-      <h3 className="text-xl font-semibold mb-4" style={{ marginTop: "100px" }}>
+      <h3
+        className="text-xl font-semibold mb-4 loan-calc-heading"
+        style={{ marginTop: "100px" }}
+      >
         Personal Loan EMI Calculator
       </h3>
       <section>
@@ -84,7 +88,7 @@ const Calculator = (props) => {
                         step="1000"
                         value={loanAmount}
                         onChange={handleChangeLoanAmount}
-                        className="form-cc"
+                        className="form-cc no-spinner uniform-width"
                       />
                     </div>
                   </div>
@@ -123,7 +127,7 @@ const Calculator = (props) => {
                         step="1"
                         value={roi}
                         onChange={handleChangeROI}
-                        className="form-cc"
+                        className="form-cc no-spinner uniform-width"
                         placeholder="0"
                       />
                     </div>
@@ -141,14 +145,14 @@ const Calculator = (props) => {
 
                 <div className="input-section mb-4">
                   <div className="text-and-input d-flex align-items-center">
-                    <h4 className="headers mb-0 mr-2">Tenure (in months)</h4>
+                    <h4 className="headers mb-0 mr-2">Tenure</h4>
                     <input
                       type="number"
                       min="3"
                       max="72"
                       value={tenure}
                       onChange={handleChangeTenure}
-                      className="form-cc"
+                      className="form-cc no-spinner uniform-width"
                     />
                   </div>
                   <input
@@ -168,6 +172,7 @@ const Calculator = (props) => {
                   display: "flex",
                   justifyContent: "center",
                 }}
+                className="applyNowContainerLaptop"
               >
                 <button className="applyNow">
                   <Link
@@ -320,24 +325,25 @@ const Calculator = (props) => {
                           </div>
                         </>
                       )}
-                      <div
-                        className="colors"
-                        style={{
-                          justifyContent: "space-between",
-                          marginTop: "7%",
-                        }}
-                      >
+                      <div className="colors">
                         <div>
-                          <span className="lightBlue"></span> Loan Amount:{" "}
-                          {new Intl.NumberFormat("en-IN").format(
-                            loanAmount.toFixed(0)
-                          )}
+                          <span className="lightBlue"></span>
+                          <span className="legendText">
+                            Loan Amount:{" "}
+                            {new Intl.NumberFormat("en-IN").format(
+                              loanAmount.toFixed(0)
+                            )}
+                          </span>
                         </div>
                         <div style={{ display: "block" }}>
-                          <span className="whiteBox"></span> Interest Amount:{" "}
-                          {new Intl.NumberFormat("en-IN").format(
-                            totalInterest.toFixed(0)
-                          )}
+                          <span className="whiteBox"></span>
+                          <span className="legendText">
+                            {" "}
+                            Interest Amount:{" "}
+                            {new Intl.NumberFormat("en-IN").format(
+                              totalInterest.toFixed(0)
+                            )}
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -346,6 +352,19 @@ const Calculator = (props) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="applyNowContainerMobile">
+          <button className="applyNow">
+            <Link
+              to="/"
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+              }}
+            >
+              Apply Now
+            </Link>
+          </button>
         </div>
       </section>
       <section>
