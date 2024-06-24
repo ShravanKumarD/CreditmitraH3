@@ -19,6 +19,7 @@
   }
   .slider-container {
     padding: 0px;
+    height: 90%;
     .headers {
       font-size: 1rem;
     }

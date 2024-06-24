@@ -16,6 +16,28 @@
 
 /* Styles End */
 
+/* infographic start */
+/* .info-trigger {
+  cursor: pointer;
+  margin-left: 5px;
+} */
+
+/* .loan-infographic {
+  display: none;
+  position: absolute;
+  width: 200px; 
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 100; 
+} */
+
+/* .info-trigger:hover + .loan-infographic {
+  display: block;
+} */
+/* infographic end */
+
 h3 {
   margin-top: 60px;
   background: linear-gradient(
@@ -69,6 +91,10 @@ h3 {
   border-radius: 30px;
   background-color: #f9f9f9;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  justify-content: center;
 }
 
 .input-section {
@@ -203,12 +229,17 @@ h3 {
 .colors {
   display: flex;
   justify-content: space-between;
-  margin-top: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
   height: 10px;
   font-size: 16px;
-  margin: 20px;
+  /* margin: 20px; */
   color: #fff;
   font-weight: 400;
+  .legendText {
+    font-size: 1rem;
+  }
 }
 
 .lightBlue {
@@ -269,4 +300,7 @@ h3 {
   font-size: 1.4rem;
   padding-left: 2%;
   padding-right: 2%;
+}
+.glow {
+  box-shadow: 0 0 13px rgba(79, 255, 255, 0.44); /* Example glow effect */
 }

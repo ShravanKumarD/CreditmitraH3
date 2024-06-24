@@ -7,6 +7,7 @@ import Footer from "../../../Components/Footer";
 import SEO from "../../../Components/SEO/SEO";
 import { PieChart } from "react-minimal-pie-chart";
 import { Link } from "react-router-dom";
+import { Tooltip } from "../../../Components/Tooltip";
 
 const Calculator = (props) => {
   const [loanAmount, setLoanAmount] = useState(100000);
@@ -17,15 +18,21 @@ const Calculator = (props) => {
   const [emi, setEmi] = useState(0);
 
   const handleChangeLoanAmount = (event) => {
-    setLoanAmount(Number(event.target.value));
+    const inputValue = Number(event.target.value);
+    const value = inputValue > 500000 ? 500000 : inputValue;
+    setLoanAmount(value);
   };
 
   const handleChangeROI = (event) => {
-    setROI(Number(event.target.value));
+    const inputValue = Number(event.target.value);
+    const value = inputValue > 120 ? 120 : inputValue;
+    setROI(value);
   };
 
   const handleChangeTenure = (event) => {
-    setTenure(Number(event.target.value));
+    const inputValue = Number(event.target.value);
+    const value = inputValue > 72 ? 72 : inputValue;
+    setTenure(value);
   };
 
   useEffect(() => {
@@ -56,6 +63,31 @@ const Calculator = (props) => {
     }
   }, [loanAmount, roi, tenure]);
 
+  //   glow on inactivity
+
+  const [isGlowing, setIsGlowing] = useState(false);
+
+  useEffect(() => {
+    let idleTimer = null;
+
+    const resetTimer = () => {
+      setIsGlowing(false);
+      clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => setIsGlowing(true), 5000);
+    };
+
+    window.addEventListener("mousemove", resetTimer);
+    window.addEventListener("keypress", resetTimer);
+
+    resetTimer();
+
+    return () => {
+      clearTimeout(idleTimer);
+      window.removeEventListener("mousemove", resetTimer);
+      window.removeEventListener("keypress", resetTimer);
+    };
+  }, []);
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -76,10 +108,15 @@ const Calculator = (props) => {
         <div className="caclulator-card">
           <div className="row">
             <div className="col-sm-6">
-              <div className="slider-container">
+              <div className={`slider-container ${isGlowing ? "glow" : ""}`}>
                 <div className="input-section mb-4">
                   <div className="text-and-input d-flex align-items-center">
-                    <h4 className="headers mb-0 mr-2">Loan Amount</h4>
+                    <h4 className="headers mb-0 mr-2">
+                      <Tooltip text="The principal (P) taken from the lender.">
+                        Loan Amount{" "}
+                      </Tooltip>
+                    </h4>
+
                     <div class="input-wrapper-principle">
                       <input
                         type="number"
@@ -107,7 +144,9 @@ const Calculator = (props) => {
                 <div className="input-section mb-4">
                   <div className="text-and-input d-flex align-items-center">
                     <h4 className="headers mb-0 mr-2">
-                      Annual Rate of Interest
+                      <Tooltip text="Rate of Interest calculated annually.">
+                        Rate of Interest
+                      </Tooltip>
                     </h4>
                     {/* <input
                                             type="number"
@@ -145,7 +184,12 @@ const Calculator = (props) => {
 
                 <div className="input-section mb-4">
                   <div className="text-and-input d-flex align-items-center">
-                    <h4 className="headers mb-0 mr-2">Tenure</h4>
+                    <h4 className="headers mb-0 mr-2">
+                      {" "}
+                      <Tooltip text="The time in months by which the whole amount should be repaid.">
+                        Tenure (in months)
+                      </Tooltip>
+                    </h4>
                     <input
                       type="number"
                       min="3"
@@ -199,7 +243,8 @@ const Calculator = (props) => {
                 <h5
                   style={{
                     textAlign: "left",
-                    marginTop: "20px",
+                    marginTop: "0px",
+                    marginLeft: "0px",
                     marginBottom: "0px",
                   }}
                 >
@@ -258,7 +303,12 @@ const Calculator = (props) => {
                               Rate of Interest: {roi.toFixed(0)}%
                             </h5>
                           </div> */}
-                          <div style={{ display: "flex" }}>
+                          <div
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                            }}
+                          >
                             <PieChart
                               className="pie"
                               data={[
@@ -417,9 +467,9 @@ const Calculator = (props) => {
             <ul>
               <li className="EmiElements">P is the principal loan amount</li>
               <li className="EmiElements">
-                R is the monthly interest rate (annual rate divided by 12)
+                r is the monthly interest rate (annual rate divided by 12)
               </li>
-              <li className="EmiElements">N is the loan tenure in months</li>
+              <li className="EmiElements">n is the loan tenure in months</li>
             </ul>
             <p>&nbsp;</p>
             <h2 style={{ marginLeft: "10px" }}>
