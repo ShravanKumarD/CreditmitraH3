@@ -24,8 +24,7 @@ import React from 'react';
             <div className="page-container products-page">
               {/* <ProductsHeroSection /> */}
               <div className="products-hero-section ">
-      <h6>Medical Loan
-</h6>
+              <div className='productHeader'>Medical Loan</div>
       <small>
      CreditMitra supports you when you're in need!
       </small>

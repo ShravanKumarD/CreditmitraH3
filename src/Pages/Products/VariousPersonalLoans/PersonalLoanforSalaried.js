@@ -24,7 +24,7 @@ const PersonalLoanforSalaried = (props) => {
                 <div className="page-container products-page">
 
                     <div className="products-hero-section ">
-                        <h6>Personal Loan for Salaried</h6>
+                    <div className='productHeader'>Personal Loan for Salaried</div>
                         <small>
                         Get Empower with your Finance Mitra
                         </small>

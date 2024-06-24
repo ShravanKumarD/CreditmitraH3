@@ -24,7 +24,7 @@
             <div className="page-container products-page">
               {/* <ProductsHeroSection /> */}
               <div className="products-hero-section ">
-      <h6> Emergency Loan</h6>
+              <div className='productHeader'>Emergency Loan</div>
       {/* <small>
       </small> */}
       <p>
