@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./calculator.css";
-import "./calculator_mobile.css";
+import "./calculatorTablet.css";
+import "./calculatorMobile.css";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer";
 import SEO from "../../../Components/SEO/SEO";
 import { PieChart } from "react-minimal-pie-chart";
 import { Link } from "react-router-dom";
 import { Tooltip } from "../../../Components/Tooltip";
+import TableHelper from "./TableHelper";
 
 const Calculator = (props) => {
   const [loanAmount, setLoanAmount] = useState(100000);
@@ -117,7 +119,7 @@ const Calculator = (props) => {
                       </Tooltip>
                     </h4>
 
-                    <div class="input-wrapper-principle">
+                    <div className="input-wrapper-principle">
                       <input
                         type="number"
                         min="0"
@@ -158,7 +160,7 @@ const Calculator = (props) => {
                                             className="form-cc"
                                             placeholder="0"
                                         /> */}
-                    <div class="input-wrapper">
+                    <div className="input-wrapper">
                       <input
                         type="number"
                         min="1"
@@ -421,6 +423,11 @@ const Calculator = (props) => {
         <div className="row">
           <div className="col-sm-10">
             <p>&nbsp;</p>
+            <TableHelper
+              principal={loanAmount}
+              roiAnnualyPercent={roi}
+              tenureMonthly={tenure}
+            ></TableHelper>
             <h1>What is a Personal Loan EMI calculator?</h1>
             <p className="aboutEmi">
               A Personal Loan EMI (Equated Monthly Installment) calculator is an

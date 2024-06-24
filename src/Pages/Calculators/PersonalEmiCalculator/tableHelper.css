@@ -1,0 +1,107 @@
+.emi-table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.emi-table-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+.emi-table {
+  width: 100%;
+  border-color: lightblue;
+}
+
+.emi-table-th {
+  padding: 10px;
+  border: 1px solid lightblue;
+  background-color: #199cdb;
+  text-align: center !important;
+  font-size: 1.5rem;
+}
+
+.emi-table-td {
+  padding: 10px;
+  border: 1px solid lightblue;
+  text-align: center !important;
+  font-size: 1.2rem;
+}
+
+.view-more-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure the container has a height */
+  margin-top: 1%;
+}
+
+.view-more {
+  display: block; /* Make it a block-level element if it's not already */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  background-color: transparent !important;
+  color: white;
+}
+.view-more:hover {
+  color: #199cdb;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .emi-table-title {
+    font-size: 1.8rem;
+    font-weight: 550;
+  }
+  .emi-table-th {
+    font-size: 0.95rem;
+  }
+  .emi-table-td {
+    font-size: 0.8rem;
+  }
+
+  .view-more {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .emi-table {
+    width: 90%;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .emi-table-td-closing {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .emi-table-title {
+    font-size: 1.6rem;
+    font-weight: 540;
+  }
+  .emi-table-th {
+    font-size: 0.8rem;
+  }
+  .emi-table-td {
+    font-size: 0.8rem;
+  }
+
+  .view-more {
+    font-size: 0.82rem;
+    padding: 5px 10px;
+  }
+
+  .emi-table {
+    width: 90%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .emi-table-td-closing {
+    display: none;
+  }
+}
