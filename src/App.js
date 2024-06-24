@@ -41,6 +41,10 @@ import InstantPersonalLoansAtMumbai from './Components/PersonalsLoansDropDown/In
 import WeAreHiring from './Pages/HiringPages/WeAreHiring';
 
 import TawkMessengerThing from './Components/Chatbot/Chatbot';
+import UX_UIDesigner from './Pages/HiringPages/Jds/UX_UIDesigner';
+import DigitalMarketing from './Pages/HiringPages/Jds/DigitalMarketing';
+import FinanceManger from './Pages/HiringPages/Jds/FinanceManger';
+import CollectingManager from './Pages/HiringPages/Jds/CollectingManager';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -97,7 +101,11 @@ function App() {
           <Route path="/instant-personal-loan-hyderabad" element={<InstantPersonalsLoansAtHyd routePath="/http://www.creditmitra.in/instant-personal-loan-hyderabad"/>}/>
          <Route path="/instant-personal-loan-Bangalore" element={<InstantPersonalLoansAtBangalore routePath="/instant-personal-loan-Bangalore"/>}/>
         <Route  path='/instant-personal-loan-mumbai' element={<InstantPersonalLoansAtMumbai routePath="/instant-personal-loan-mumbai"/>}/>
-        <Route path="/we-are-hiring" element={<WeAreHiring routePath="we-are-hiring"/>}/>
+        <Route path="/we-are-hiring" element={<WeAreHiring routePath="/we-are-hiring"/>}/>
+        <Route path='/we-are-hiring/ux/ui-designer' element={<UX_UIDesigner routePath="/we-are-hiring/ux/ui-designer"/>}/>
+        <Route path="/we-are-hiring/digital-marketing-specialist" element={<DigitalMarketing routePath="/we-are-hiring/digital-marketing-specialist"/>}/>
+        <Route path="/we-are-hiring/finance-manager" element={<FinanceManger routePath="/we-are-hiring/finance-manager"/>}/>
+        <Route path="/we-are-hiring/collecting-manager" element={<CollectingManager routePath="/we-are-hiring/collecting-manager"/>}/>
       </Routes>
       </Wrapper>
     </BrowserRouter>

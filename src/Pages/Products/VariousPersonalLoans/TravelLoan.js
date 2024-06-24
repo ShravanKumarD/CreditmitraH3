@@ -24,7 +24,7 @@ import React from 'react'
             <div className="page-container products-page">
               {/* <ProductsHeroSection /> */}
               <div className="products-hero-section ">
-      <h6>Travel Loan</h6>
+              <div className='productHeader'>Travel Loan</div>
       {/* <small>
       Get Ready to Say "I Do" to Your Dream Wedding
 

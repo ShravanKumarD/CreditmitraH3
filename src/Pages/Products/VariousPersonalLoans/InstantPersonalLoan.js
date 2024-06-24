@@ -23,7 +23,7 @@ const InstantPersonalLoan = (props) => {
         <div className="page-container products-page">
           {/* <ProductsHeroSection /> */}
           <div className="products-hero-section ">
-            <h6>Instant Personal Loan</h6>
+          <div className='productHeader'>Instant Personal Loan</div>
             <small>
               Unlock Your Dreams with Creditmitra's Instant Personal Loan!
             </small>

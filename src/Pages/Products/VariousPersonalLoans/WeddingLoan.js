@@ -24,7 +24,7 @@ const WeddingLoan = (props) => {
         <div className="page-container products-page">
           {/* <ProductsHeroSection /> */}
           <div className="products-hero-section ">
-            <h6>Wedding Loan</h6>
+          <div className='productHeader'>Wedding Loan</div>
             <small>
               Get Ready to Say "I Do" to Your Dream Wedding
 

@@ -3,6 +3,7 @@ import Footer from '../../Components/Footer';
 import Header from '../../Components/Header/Header';
 import './../HiringPages/wearehiring.css';
 import Like from "./../../assets/images/like.png";
+import { Link, redirect } from "react-router-dom";
 
 const WeAreHiring = (props) => {
     const [selectedOption, setSelectedOption] = useState('all');
@@ -17,24 +18,31 @@ const WeAreHiring = (props) => {
 
     const jobPosts = [
         {
-            Designation: "Product Designer",
-            headLine: "We're looking for a mid-level product designer to join our team",
-            modes: ["Remote", "Full Time"],
+            Designation: "UX/UI Designer",
+            headLine: "We are looking for a skilled UX/UI Designer to collaborate with our team for our fintech based product.",
+            modes: ["Full Time"],
+            redirect:'ux/ui-designer'
         },
         {
-            Designation: "Software Developer",
-            headLine: "We're looking for a senior developer to join our team.",
-            modes: ["Remote", "Full Time"],
+            Designation: "Digital marketing specialist",
+            headLine: `We are seeking a highly motivated and creative Digital Marketer to join our team and play 
+a key role in developing and executing our digital marketing strategy.`,
+            modes: ["Full Time"],
+            redirect:'digital-marketing-specialist'
         },
         {
-            Designation: "Graphic Designer",
-            headLine: "We're looking for a mid-level designer to join our team.",
-            modes: ["Remote", "Full Time"],
+            Designation: "Collection Manager",
+            headLine: `We are a leading fintech company specialising in personal loans. Our mission is to 
+provide accessible financial solutions to salaried individuals.`,
+            modes: ["Full Time"],
+            redirect:'collecting-manager'
         },
         {
-            Designation: "Junior Accountant",
-            headLine: "We're looking for a mid-level accountant to join our team.",
-            modes: ["Remote", "Full Time"],
+            Designation: "Finance Manager",
+            headLine:`We are a leading fintech company specialising in personal loans. Our mission is to 
+provide accessible financial solutions to salaried individuals.`,
+            modes: ["Full Time"],
+            redirect:'finance-manager'
         },
     ];
 
@@ -63,12 +71,14 @@ const WeAreHiring = (props) => {
             <div className='job-list'>
                 {jobPosts.map((job, index) => (
                     <div key={index} className='job-card'>
+                        <Link to={job.redirect} style={{ color: "#fff",textDecoration:"none"  }}>
                         <div className='designation'>{job.Designation}</div>
                         <div className='like-container'>
                             <img className="like" src={Like} alt="Like" />
                             <p className='like-text'>Save</p>
                         </div>
                         <div className='head-line'>{job.headLine}</div>
+                        </Link>
                         <div className='modes'>
                             {job.modes.map((mode, modeIndex) => (
                                 <span key={modeIndex} className='mode'>{mode}</span>
