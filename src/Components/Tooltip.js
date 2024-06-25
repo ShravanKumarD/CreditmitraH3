@@ -4,14 +4,46 @@ import { useState } from "react";
 export const Tooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const [hoverVisible, setHoverVisible] = useState(false);
+  const [clickVisible, setClickVisible] = useState(false);
+
+  // Handle mouse enter and leave for hover
+  const handleMouseEnter = () => setHoverVisible(true);
+  const handleMouseLeave = () => setHoverVisible(false);
+
+  // Toggle visibility on click
+  const handleClick = () => setClickVisible(!clickVisible);
+
+  // Determine if the tooltip should be shown
+  const isTooltipVisible = hoverVisible || clickVisible;
+
   return (
     <div
       onMouseEnter={() => setIsVisible(true)}
       onMouseLeave={() => setIsVisible(false)}
       style={{ position: "relative", display: "inline-block" }}
     >
-      {children}
-      {isVisible && (
+      {children}{" "}
+      <span
+        style={{
+          width: "16px",
+          height: "16px",
+          backgroundColor: "lightblue",
+          borderRadius: "50%",
+          display: "inline-flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+          fontSize: "13px",
+          cursor: "pointer",
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onClick={handleClick}
+      >
+        ?
+      </span>
+      {isTooltipVisible && (
         <div
           style={{
             position: "absolute",
