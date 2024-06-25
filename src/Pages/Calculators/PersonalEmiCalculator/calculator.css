@@ -98,7 +98,7 @@ h3 {
 }
 
 .input-section {
-  margin-bottom: 8% !important;
+  margin-bottom: 4% !important;
 }
 
 .text-and-input {
@@ -238,7 +238,7 @@ h3 {
   color: #fff;
   font-weight: 400;
   .legendText {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -280,6 +280,8 @@ h3 {
 .aboutEmi {
   text-align: left;
   font-size: 18px;
+  padding-left: 2.8%;
+  padding-right: 2.8%;
   margin-bottom: 0px;
   font-weight: 300;
   color: #fff;
