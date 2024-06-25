@@ -465,7 +465,6 @@ const Calculator = (props) => {
                 </span>
               </li>
             </ul>
-            <p>&nbsp;</p>
             <h2
               style={{ marginLeft: "10px", fontWeight: 400, fontSize: "20px" }}
             >
@@ -484,19 +483,21 @@ const Calculator = (props) => {
             </h2>
             <ul>
               <li className="EmiElements">
-                <strong>Financial Planning:</strong>Helps you plan your finances
-                better by giving you a clear idea of your monthly outflow.
+                <strong>Financial Planning: </strong>Helps you plan your
+                finances better by giving you a clear idea of your monthly
+                outflow.
               </li>
               <li className="EmiElements">
-                <strong>Comparison:</strong>Allows you to compare different loan
-                offers by changing the loan amount, tenure, and interest rate.
+                <strong>Comparison: </strong>Allows you to compare different
+                loan offers by changing the loan amount, tenure, and interest
+                rate.
               </li>
               <li className="EmiElements">
-                <strong>Time-Saving:</strong>Quickly gives you accurate EMI
+                <strong>Time-Saving: </strong>Quickly gives you accurate EMI
                 figures without needing manual calculations.
               </li>
               <li className="EmiElements">
-                <strong>Interest and Principal Breakdown:</strong> Some
+                <strong>Interest and Principal Breakdown: </strong> Some
                 calculators provide a detailed breakdown of the interest and
                 principal repaid over the tenure of the loan.
               </li>
@@ -523,8 +524,6 @@ const Calculator = (props) => {
                 Calculate: Click on the calculate button to get the EMI amount.
               </li>
             </ul>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
             <p className="aboutEmi">
               Overall, a Personal Loan EMI calculator is a useful tool for
               anyone looking to understand their repayment obligations and make

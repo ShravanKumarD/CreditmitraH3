@@ -278,10 +278,8 @@ h3 {
   margin: auto;
 }
 .aboutEmi {
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
-  padding-left: 2.8%;
-  padding-right: 2.8%;
   margin-bottom: 0px;
   font-weight: 300;
   color: #fff;

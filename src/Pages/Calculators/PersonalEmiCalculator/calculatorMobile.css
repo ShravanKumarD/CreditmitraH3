@@ -60,4 +60,9 @@
     align-items: center;
     justify-content: center;
   }
+
+  .aboutEmi {
+    padding-left: 2.8%;
+    padding-right: 2.8%;
+  }
 }
