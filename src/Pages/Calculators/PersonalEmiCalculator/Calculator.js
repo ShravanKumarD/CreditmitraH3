@@ -53,7 +53,6 @@ const Calculator = (props) => {
       const emiValue = calculateEMI(loanAmount, roi, tenure);
       const totalInterestValue = emiValue * tenure - loanAmount;
       const totalPaymentValue = loanAmount + totalInterestValue;
-      console.log(totalInterestValue, totalPaymentValue, "calculated values");
 
       setEmi(emiValue);
       setTotalInterest(totalInterestValue);
@@ -274,7 +273,6 @@ const Calculator = (props) => {
                       )}
                     </span>
                   </div>
-                  <br />
                 </h5>
                 <div className="pie-chart-container">
                   <div className="text-header">
@@ -317,12 +315,12 @@ const Calculator = (props) => {
                                 {
                                   title: "Interest",
                                   value: 0.1,
-                                  color: "#0d6efd",
+                                  color: "#fff",
                                 }, //big part
                                 {
                                   title: "Principal",
                                   value: 0,
-                                  color: "#052c65",
+                                  color: "#199cdb",
                                 },
                               ]}
                             />
@@ -365,12 +363,12 @@ const Calculator = (props) => {
                                 {
                                   title: "Interest",
                                   value: totalInterest,
-                                  color: "#ffff",
+                                  color: "#fff",
                                 },
                                 {
                                   title: "Principal",
                                   value: loanAmount,
-                                  color: "#0d6efd",
+                                  color: "#199cdb",
                                 },
                               ]}
                             />

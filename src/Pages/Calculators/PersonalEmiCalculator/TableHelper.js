@@ -31,9 +31,6 @@ function TableHelper({ principal, roiAnnualyPercent, tenureMonthly }) {
 
   const balances = calculateBalances(principal, roiMonthly, tenureMonthly, emi);
 
-  console.log(balances);
-  console.log(balances[0]);
-
   const [displayLimit, setDisplayLimit] = useState(6);
 
   const viewMore = () => {

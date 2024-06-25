@@ -170,6 +170,11 @@ h3 {
   background-color: #0056b3;
 }
 
+.pie-chart-container {
+  margin-top: 6%;
+  margin-bottom: 8%;
+}
+
 .pie {
   height: 30vh;
   width: 30vw;
@@ -243,7 +248,7 @@ h3 {
 }
 
 .lightBlue {
-  border-left: 10px solid #0d6efd;
+  border-left: 10px solid #199cdb;
   height: 10px;
   font-size: 18px;
   margin: 10px 10px;

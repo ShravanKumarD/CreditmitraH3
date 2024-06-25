@@ -19,6 +19,7 @@
     h5 {
       margin-left: 0px;
     }
+    margin-bottom: 5%;
   }
   .slider-container {
     padding: 0px;
@@ -64,5 +65,16 @@
   .aboutEmi {
     padding-left: 2.8%;
     padding-right: 2.8%;
+  }
+  .col-sm-5 {
+    display: block !important;
+    width: 100%; /* Makes the element take the full width */
+  }
+  .col-sm-6 {
+    display: block !important;
+    width: 100%; /* Makes the element take the full width */
+  }
+  .pie-chart-container {
+    margin: 0px;
   }
 }

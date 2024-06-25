@@ -1,11 +1,18 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-export default function SEO({ title, description, name, type, keywords, imageUrl, canonicalUrl }) {
-
-  useEffect(()=>{
-    console.log(title,imageUrl,"seo params");
-  })
+export default function SEO({
+  title,
+  description,
+  name,
+  type,
+  keywords,
+  imageUrl,
+  canonicalUrl,
+}) {
+  useEffect(() => {
+    // console.log(title,imageUrl,"seo params");
+  });
   return (
     <Helmet>
       <title>{title}</title>
@@ -20,7 +27,7 @@ export default function SEO({ title, description, name, type, keywords, imageUrl
       <meta property="og:type" content={type} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content={type} data-react-helmet="true"/>
+      <meta property="og:type" content={type} data-react-helmet="true" />
       {imageUrl && <meta property="og:image" content={imageUrl} />}
       {/* End Facebook tags */}
       {/* Twitter tags */}
