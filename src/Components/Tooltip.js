@@ -4,25 +4,21 @@ import { useState } from "react";
 export const Tooltip = ({ children, text }) => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const [hoverVisible, setHoverVisible] = useState(false);
-  const [clickVisible, setClickVisible] = useState(false);
+  // const [hoverVisible, setHoverVisible] = useState(false);
+  // const [clickVisible, setClickVisible] = useState(false);
 
-  // Handle mouse enter and leave for hover
-  const handleMouseEnter = () => setHoverVisible(true);
-  const handleMouseLeave = () => setHoverVisible(false);
+  // // Handle mouse enter and leave for hover
+  // const handleMouseEnter = () => setHoverVisible(true);
+  // const handleMouseLeave = () => setHoverVisible(false);
 
-  // Toggle visibility on click
-  const handleClick = () => setClickVisible(!clickVisible);
+  // // Toggle visibility on click
+  // const handleClick = () => setClickVisible(!clickVisible);
 
-  // Determine if the tooltip should be shown
-  const isTooltipVisible = hoverVisible || clickVisible;
+  // // Determine if the tooltip should be shown
+  // const isTooltipVisible = hoverVisible || clickVisible;
 
   return (
-    <div
-      onMouseEnter={() => setIsVisible(true)}
-      onMouseLeave={() => setIsVisible(false)}
-      style={{ position: "relative", display: "inline-block" }}
-    >
+    <div style={{ position: "relative", display: "inline-block" }}>
       {children}{" "}
       <span
         style={{
@@ -37,13 +33,15 @@ export const Tooltip = ({ children, text }) => {
           fontSize: "13px",
           cursor: "pointer",
         }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        onClick={handleClick}
+        // onMouseEnter={handleMouseEnter}
+        // onMouseLeave={handleMouseLeave}
+        // onClick={handleClick}
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false)}
       >
         ?
       </span>
-      {isTooltipVisible && (
+      {isVisible && (
         <div
           style={{
             position: "absolute",

@@ -2,7 +2,7 @@
   .loan-calc-heading {
     font-size: 2.1rem;
   }
-  .caclulator-card {
+  .calculator-card {
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -84,4 +84,5 @@
   .pie-chart-container {
     margin: 0px;
   }
+  
 }

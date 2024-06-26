@@ -122,7 +122,7 @@ const Calculator = (props) => {
         Personal Loan EMI Calculator
       </h3>
       <section>
-        <div className="caclulator-card">
+        <div className="calculator-card">
           <div className="row">
             <div className="col-sm-6">
               <div className={`slider-container ${isGlowing ? "glow" : ""}`}>
