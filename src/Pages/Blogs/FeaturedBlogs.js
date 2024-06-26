@@ -5,12 +5,12 @@ import SEO from "../../Components/SEO/SEO";
 import CardList from "./CardList";
 import "./../../styles.css";
 
-function slugify(title) {
-  return title
-    .toLowerCase()
-    .replace(/ /g, "-")
-    .replace(/[^\w-]+/g, "");
-}
+// function slugify(title) {
+//   return title
+//     .toLowerCase()
+//     .replace(/ /g, "-")
+//     .replace(/[^\w-]+/g, "");
+// }
 
 function FeaturedBlogs(props) {
   const arrayOfCards = [
@@ -19,64 +19,71 @@ function FeaturedBlogs(props) {
       date: "13th May, 2024",
       imageLink: require("../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png"),
       blogSlug: "8-tips-to-improve-your-cibil-score",
-      summary:" While many lending institutions consider a CIBIL score above 700 or 750 to be good, CIBIL itself rates its score as given in the table above...",
+      summary:
+        " While many lending institutions consider a CIBIL score above 700 or 750 to be good, CIBIL itself rates its score as given in the table above...",
     },
     {
       title: "Improving your CIBIL score is not rocket science",
       date: "14th May, 2024",
       imageLink: require("../../assets/images/blogs/Improving_your_CIBIL_score_is_not_rocket_science.png"),
       blogSlug: "improving-your-cibil-score-is-not-rocket-science",
-      summary:"  Have you ever faced rejection for your loan application due to a low CIBIL score? Don't worry you are not alone. There are thousands of loan applications daily that get rejected due to low CIBIL scores...", 
+      summary:
+        "  Have you ever faced rejection for your loan application due to a low CIBIL score? Don't worry you are not alone. There are thousands of loan applications daily that get rejected due to low CIBIL scores...",
     },
     {
       title: "Understanding Personal Loan Recovery: Process & RBI Guidelines",
       date: "21th May, 2024",
       imageLink: require("../../assets/images/blogs/Understanding_Personal_Loan_Recovery.png"),
-      blogSlug:"understanding-personal-loan-recovery",
-      summary:"With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...", 
+      blogSlug: "understanding-personal-loan-recovery",
+      summary:
+        "With the advent of new-age financial services, availing of instant personal loans is super easy. However, as a borrower, you must consider that any loan is a financial liability, which you need to repay...",
     },
     {
       title: "Comparing Loan Options: Personal Loans vs Credit Cards",
       date: "5th June, 2024",
       imageLink: require("../../assets/images/blogs/comparing_loan_options.png"),
-      blogSlug:"personal-loans-vs-credit-cards",
-      summary:"The need for funds can arise without giving any intimation. With the rising cost of living, inflation, medical treatment costs skyrocketing, child's education costs increasing every year...", 
-    },{
+      blogSlug: "personal-loans-vs-credit-cards",
+      summary:
+        "The need for funds can arise without giving any intimation. With the rising cost of living, inflation, medical treatment costs skyrocketing, child's education costs increasing every year...",
+    },
+    {
       title: "How To Get An Instant Loans With Low CIBIL Score",
       date: "5th June, 2024",
       imageLink: require("../../assets/images/blogs/instant_loan_with_low_cibil.png"),
-      blogSlug:"how-to-get-an-instant-loans-with-low-cibil-score",
-      summary:"CIBIL score is the credit score that is generated taking into account your credit history and its length, repayment history, credit utilization, and also the type of credits availed. The score...", 
+      blogSlug: "how-to-get-an-instant-loans-with-low-cibil-score",
+      summary:
+        "CIBIL score is the credit score that is generated taking into account your credit history and its length, repayment history, credit utilization, and also the type of credits availed. The score...",
     },
     {
       title: "Avoid These Mistakes While Applying for Personal Loans",
       date: "5th June, 2024",
       imageLink: require("../../assets/images/blogs/avoid_these_mistakes_while_applying_loan.png"),
-      blogSlug:"avoid-these-mistakes-while-applying-for-personal-loans",
-      summary:"Instant personal loans can be a savior in times of crisis and emergencies, however, you need to know what not to do while applying for these loans. Often people applying for these loans...", 
+      blogSlug: "avoid-these-mistakes-while-applying-for-personal-loans",
+      summary:
+        "Instant personal loans can be a savior in times of crisis and emergencies, however, you need to know what not to do while applying for these loans. Often people applying for these loans...",
     },
     {
       title: "Negotiating Lower Interest Rates on Personal Loans",
       date: "13th June, 2024",
       imageLink: require("../../assets/images/blogs/2.jpg"),
-      blogSlug:"negotiating-lower-interest-rates-on-personal-loans",
-      summary:`How much it makes you happy when you get your favorite piece of clothing at a price, which
+      blogSlug: "negotiating-lower-interest-rates-on-personal-loans",
+      summary: `How much it makes you happy when you get your favorite piece of clothing at a price, which
 you bargained for? A lot, isn’t it? It can make your day, right? However, the amount you save
-is a one-time saving, isn’t it?...`, 
+is a one-time saving, isn’t it?...`,
     },
     {
       title: "How does a personal loan impact tax filing ?",
       date: "13th June, 2024",
       imageLink: require("../../assets/images/blogs/1.jpg"),
-      blogSlug:"how-does-a-personal-loan-impact-tax-filing",
-      summary:"The time to file your Income Tax for the FY23-24 is nearing with the last date of July 31,2024. You must be busy sorting out your investments, which you can claim for exemptions,but have you ever thought about what impact your loan has on your income tax?...", 
+      blogSlug: "how-does-a-personal-loan-impact-tax-filing",
+      summary:
+        "The time to file your Income Tax for the FY23-24 is nearing with the last date of July 31,2024. You must be busy sorting out your investments, which you can claim for exemptions,but have you ever thought about what impact your loan has on your income tax?...",
     },
-    
   ];
 
   arrayOfCards.sort((a, b) => {
-    const dateA = new Date(a.date.replace(/(\d+)(st|nd|rd|th)/, '$1'));
-    const dateB = new Date(b.date.replace(/(\d+)(st|nd|rd|th)/, '$1'));
+    const dateA = new Date(a.date.replace(/(\d+)(st|nd|rd|th)/, "$1"));
+    const dateB = new Date(b.date.replace(/(\d+)(st|nd|rd|th)/, "$1"));
     return dateB - dateA;
   });
 
@@ -97,7 +104,11 @@ is a one-time saving, isn’t it?...`,
             <div className="content1">
               <h1
                 className="heading"
-                style={{ fontSize: "3rem", marginBottom: "5%",marginTop:"100px" }}
+                style={{
+                  fontSize: "3rem",
+                  marginBottom: "5%",
+                  marginTop: "100px",
+                }}
               >
                 Featured Blogs
               </h1>

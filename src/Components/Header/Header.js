@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/images/logo.png";
 import Toggle from "../../assets/images/toggle.png";
 import "./Header.css";
-import CallImg from "./../../assets/images/phone.png";
+// import CallImg from "./../../assets/images/phone.png";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -53,8 +53,14 @@ function Header() {
   };
 
   const products = [
-    { name: "Instant Personal Loan", redirection: "/instant-personal-loan-online" },
-    { name: "Personal Loan for Salaried", redirection: "/personal-loan-for-salaried" },
+    {
+      name: "Instant Personal Loan",
+      redirection: "/instant-personal-loan-online",
+    },
+    {
+      name: "Personal Loan for Salaried",
+      redirection: "/personal-loan-for-salaried",
+    },
     { name: "Wedding Loan", redirection: "/marriage-loan" },
     { name: "Travel Loan", redirection: "/travel-loan" },
     { name: "Medical Loan", redirection: "/medical-loan" },
@@ -71,140 +77,159 @@ function Header() {
   ];
 
   return (
-    <div className="navbar-dad" style={{display:"flex"}}>
-    {/* <nav
+    <div className="navbar-dad" style={{ display: "flex" }}>
+      {/* <nav
       style={{ color: "white", display:"flex"}}
       className={`navbar navbar-expand-lg navbar-light fixed ${
         disableBackground ? "custom-background" : "custom-background"
       }`}
     > */}
-            <nav
+      <nav
         style={{ color: "white", display: "flex" }}
-        className={`navbar navbar-expand-lg navbar-light custom-background ${isNavOpen ? "nav-open" : ""}`}
+        className={`navbar navbar-expand-lg navbar-light custom-background ${
+          isNavOpen ? "nav-open" : ""
+        }`}
       >
+        {/* CM Image Link */}
+        <Link
+          className="navbar-brand"
+          to="/"
+          onClick={() => {
+            setDisableBackground(false);
+            setIsNavOpen(false);
+          }}
+        >
+          <img
+            className="nav-logo-creditmitra"
+            style={{ width: 180 }}
+            src={Logo}
+            title="CreditMitra"
+            alt="CreditMitra"
+          />
+        </Link>
+        {/* Image ends here */}
 
-      {/* CM Image Link */}
-      <Link
-        className="navbar-brand"
-        to="/"
-        onClick={() => {
-          setDisableBackground(false);
-          setIsNavOpen(false);
-        }}
-      >
-        <img
-          className="nav-logo-creditmitra"
-          style={{ width: 180 }}
-          src={Logo}
-          title="CreditMitra"
-          alt="CreditMitra"
-        />
-      </Link>
-      {/* Image ends here */}
+        {/* We can add x on toggle */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={handleNavToggle}
+        >
+          <img src={Toggle} alt="Toggle" />
+        </button>
+        {/* Toggle Ends here */}
 
-      {/* We can add x on toggle */}
-      <button className="navbar-toggler" type="button" onClick={handleNavToggle}>
-        <img src={Toggle} alt="Toggle" />
-      </button>
-      {/* Toggle Ends here */}
-
-
-      {/* Navbar Items Collapsible begins */}
-      <div className={`navbar-container collapse navbar-collapse  ${isNavOpen ? "show" : ""}`}>
-        <ul className="navbar-nav">
-          {navigations.map((item, index) => (
-            <li className="nav-item" key={index}>
-              {item.displayName === "Products" ? (
-                // if item is Products
-                <div
-                  ref={dropdownRef}
-                  className="dropdown"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <hr className="nav-item-seperator"/>
-
-                  <div className="nav-item-container">
-                    <Link
-                      // This links to /products
-                      to={item.redirection}
-                      className={`nav-link dropdown-toggle ${
-                        // if url is already /products or /products/*, then 'active' class will be added
-                        location.pathname.startsWith("/products") ? "active" : ""
-                      }`}
-                      // title is product
-                      title={item.displayName}
-                      aria-haspopup="true"
-                      aria-expanded={isDropdownOpen ? "true" : "false"}
-                      // activated products, will give white color
-                      style={{ color: "white"}} 
-                      onClick={handleDropdownToggle}
-                    >
-                      {/*  display "Products" */}
-                      {item.displayName}
-                    </Link>
-                  </div>
-
-                  {/* dropdown for product */}
+        {/* Navbar Items Collapsible begins */}
+        <div
+          className={`navbar-container collapse navbar-collapse  ${
+            isNavOpen ? "show" : ""
+          }`}
+        >
+          <ul className="navbar-nav">
+            {navigations.map((item, index) => (
+              <li className="nav-item" key={index}>
+                {item.displayName === "Products" ? (
+                  // if item is Products
                   <div
-                    className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}
-                    aria-labelledby="navbarDropdown"
+                    ref={dropdownRef}
+                    className="dropdown"
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                   >
-                    {products.map((product, index) => (
+                    <hr className="nav-item-seperator" />
+
+                    <div className="nav-item-container">
                       <Link
-                        key={index}
-                        className="dropdown-item"
-                        to={product.redirection}
-                        onClick={closeDropdown}
+                        // This links to /products
+                        to={item.redirection}
+                        className={`nav-link dropdown-toggle ${
+                          // if url is already /products or /products/*, then 'active' class will be added
+                          location.pathname.startsWith("/products")
+                            ? "active"
+                            : ""
+                        }`}
+                        // title is product
+                        title={item.displayName}
+                        aria-haspopup="true"
+                        aria-expanded={isDropdownOpen ? "true" : "false"}
+                        // activated products, will give white color
+                        style={{ color: "white" }}
+                        onClick={handleDropdownToggle}
                       >
-                        {product.name}
+                        {/*  display "Products" */}
+                        {item.displayName}
                       </Link>
-                    ))}
+                    </div>
+
+                    {/* dropdown for product */}
+                    <div
+                      className={`dropdown-menu ${
+                        isDropdownOpen ? "show" : ""
+                      }`}
+                      aria-labelledby="navbarDropdown"
+                    >
+                      {products.map((product, index) => (
+                        <Link
+                          key={index}
+                          className="dropdown-item"
+                          to={product.redirection}
+                          onClick={closeDropdown}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </div>
+                    {/* dropdown for products ends */}
                   </div>
-                  {/* dropdown for products ends */}
-                </div>
-              ) : (
-                // else part of ternary operator, if item.displayName != "Products"
-                <>
-                <hr className="nav-item-seperator"/>
-                <div className="nav-item-container"> 
-                  <Link
-                    to={item.redirection}
-                    // if url is already /itemname then 'active' class will be added
-                    className={`nav-link ${
-                      item.redirection === location.pathname ? "active" : ""
-                    }`}
-                    title={item.displayName}
-                    onClick={handleLinkClick}
-                  >
-                    {/* not products */}
-                    {item.displayName}
-                  </Link>
+                ) : (
+                  // else part of ternary operator, if item.displayName != "Products"
+                  <>
+                    <hr className="nav-item-seperator" />
+                    <div className="nav-item-container">
+                      <Link
+                        to={item.redirection}
+                        // if url is already /itemname then 'active' class will be added
+                        className={`nav-link ${
+                          item.redirection === location.pathname ? "active" : ""
+                        }`}
+                        title={item.displayName}
+                        onClick={handleLinkClick}
+                      >
+                        {/* not products */}
+                        {item.displayName}
+                      </Link>
+                    </div>
+                  </>
+                )}
+              </li>
+            ))}
 
-                </div>
-                </>
-              )}
-            </li>
-          ))}
-          
-          {/* <button className="nav-btn btn brand-primary lg"> */}
-          <div className="info">
-            <a style={{ textDecoration: "none",color:"#ffff",fontWeight:500 }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
-          <br/>+91 9666042345
-          <div className="timeStamp">Mon-Sun:9:30AM to 7:00PM</div>
-          </div>
-          <button className="nav-btn btn brand-secondary lg">Login</button>
-          {/* <img src={CallImg} alt="phone" className="CallImg" /> */}
-           {/* <p className="info"><a style={{ textDecoration: "none" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
+            {/* <button className="nav-btn btn brand-primary lg"> */}
+            <div className="info">
+              <a
+                style={{
+                  textDecoration: "none",
+                  color: "#ffff",
+                  fontWeight: 500,
+                }}
+                href="mailto: support@creditmitra.in"
+              >
+                <br /> support@creditmitra.in
+              </a>
+              <br />
+              +91 9666042345
+              <div className="timeStamp">Mon-Sun:9:30AM to 7:00PM</div>
+            </div>
+            <button className="nav-btn btn brand-secondary lg">Login</button>
+            {/* <img src={CallImg} alt="phone" className="CallImg" /> */}
+            {/* <p className="info"><a style={{ textDecoration: "none" }} href="mailto: support@creditmitra.in"><br /> support@creditmitra.in</a>
             <br/>9666042345</p> */}
-           {/* </button> */}
-        </ul>
-        {/* Navbar Items here */}
-        
-
-      </div>
-      {/* Navbar Items Collapsible ends */}
-    </nav>
+            {/* </button> */}
+          </ul>
+          {/* Navbar Items here */}
+        </div>
+        {/* Navbar Items Collapsible ends */}
+      </nav>
     </div>
   );
 }
