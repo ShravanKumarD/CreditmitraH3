@@ -14,6 +14,21 @@
   width: 100px; /* Set your desired width */
 }
 
+.border-subtle-blue {
+  border: 1px solid #7ec5e8;
+  color: rgb(27, 155, 220);
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f0f8ff;
+}
+
+.border-subtle-blue:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #55c6ff; /* Changes the border color on focus */
+  box-shadow: 0 0 5px rgba(27, 155, 220, 0.5); /* Adds a subtle glow effect */
+}
+
 /* Styles End */
 
 /* infographic start */
@@ -68,7 +83,7 @@ h3 {
 
 .form-range-slider {
   margin-top: 0px;
-  width: 60%;
+  width: 100%;
   -webkit-appearance: none;
 
   height: 15px;
@@ -112,15 +127,15 @@ h3 {
 }
 
 .slider-container {
-  padding: 15px;
+  padding: 0 15px;
   border: 1px solid #ddd;
   border-radius: 30px;
   background-color: #f9f9f9;
   margin: 20px;
   display: flex;
   flex-direction: column;
-  height: 85%;
-  justify-content: center;
+  height: 79%;
+  justify-content: space-evenly;
 }
 
 .input-section {
@@ -155,7 +170,7 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  color: black;
+  color: #199cdb;
 }
 
 .input-wrapper-principle {
@@ -169,7 +184,7 @@ h3 {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  color: black;
+  color: #199cdb;
 }
 .form-cc {
   padding-right: 10px; /* Adjust to make space for the symbol */
@@ -325,13 +340,29 @@ h3 {
 }
 .emi-details {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: flex-start;
   margin-top: 30px;
   font-size: 1.4rem;
   padding-left: 2%;
   padding-right: 2%;
 }
+
+.emi-left {
+  flex: 6.5;
+  text-align: left;
+  /* Additional styles for left column if needed */
+}
+
+.emi-right {
+  flex: 2.3;
+  text-align: left;
+  color: #fff;
+  /* Additional styles for right column if needed */
+}
+
 .glow {
   box-shadow: 0 0 13px rgba(79, 255, 255, 0.44); /* Example glow effect */
+  transition: box-shadow 0.5s ease-in-out;
 }

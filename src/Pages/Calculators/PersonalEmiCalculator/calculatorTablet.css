@@ -3,6 +3,12 @@
     span {
       font-size: 1.05rem;
     }
+    .emi-left {
+      flex: 4.4;
+    }
+    .emi-right {
+      flex: 2;
+    }
   }
   .colors {
     .legendText {
@@ -13,5 +19,10 @@
     text-align: justify;
   }
 
-  
+  .input-section {
+    margin-bottom: 3% !important;
+    margin-top: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

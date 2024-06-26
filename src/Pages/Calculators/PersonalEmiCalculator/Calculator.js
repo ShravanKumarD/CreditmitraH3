@@ -19,20 +19,36 @@ const Calculator = (props) => {
   const [totalPayment, setTotalPayment] = useState(0);
   const [emi, setEmi] = useState(0);
 
+  // Function to format number to Indian currency style
+  const formatToIndianCurrency = (number) => {
+    return number.toLocaleString("en-IN");
+  };
+
   const handleChangeLoanAmount = (event) => {
+    // Convert formatted string back to number before setting state
+    // Remove non-numeric characters except commas, then remove commas
     const inputValue = Number(event.target.value);
     const value = inputValue > 500000 ? 500000 : inputValue;
     setLoanAmount(value);
   };
 
   const handleChangeROI = (event) => {
-    const inputValue = Number(event.target.value);
-    const value = inputValue > 120 ? 120 : inputValue;
-    setROI(value);
+    const input = event.target;
+    const oldVal = roi;
+    const newVal = input.value;
+    const regex = new RegExp(input.pattern, "g");
+
+    if (Number(newVal) > 120) {
+      setROI(120);
+    } else if (regex.test(newVal)) {
+      setROI(newVal); // Update only if new value matches the pattern
+    } else {
+      setROI(oldVal); // Revert to old value if new value does not match
+    }
   };
 
   const handleChangeTenure = (event) => {
-    const inputValue = Number(event.target.value);
+    const inputValue = Number(event.target.value.replace(/[^\d]/g, ""));
     const value = inputValue > 72 ? 72 : inputValue;
     setTenure(value);
   };
@@ -74,7 +90,7 @@ const Calculator = (props) => {
     const resetTimer = () => {
       setIsGlowing(false);
       clearTimeout(idleTimer);
-      idleTimer = setTimeout(() => setIsGlowing(true), 5000);
+      idleTimer = setTimeout(() => setIsGlowing(true), 20000);
     };
 
     window.addEventListener("mousemove", resetTimer);
@@ -120,13 +136,13 @@ const Calculator = (props) => {
 
                     <div className="input-wrapper-principle">
                       <input
-                        type="number"
+                        type="text"
                         min="0"
                         max="500000"
                         step="1000"
-                        value={loanAmount}
+                        value={formatToIndianCurrency(loanAmount)}
                         onChange={handleChangeLoanAmount}
-                        className="form-cc no-spinner uniform-width"
+                        className="form-cc no-spinner uniform-width border-subtle-blue"
                       />
                     </div>
                   </div>
@@ -161,13 +177,14 @@ const Calculator = (props) => {
                                         /> */}
                     <div className="input-wrapper">
                       <input
-                        type="number"
+                        type="text"
                         min="1"
                         max="120"
-                        step="1"
+                        pattern="^\d*(\.\d{0,2})?$"
+                        step="0.25"
                         value={roi}
                         onChange={handleChangeROI}
-                        className="form-cc no-spinner uniform-width"
+                        className="form-cc no-spinner uniform-width border-subtle-blue"
                         placeholder="0"
                       />
                     </div>
@@ -176,7 +193,7 @@ const Calculator = (props) => {
                     type="range"
                     min="1"
                     max="120"
-                    step="1"
+                    step="0.25"
                     value={roi}
                     onChange={handleChangeROI}
                     className="form-range-slider"
@@ -192,12 +209,12 @@ const Calculator = (props) => {
                       </Tooltip>
                     </h4>
                     <input
-                      type="number"
+                      type="text"
                       min="3"
                       max="72"
                       value={tenure}
                       onChange={handleChangeTenure}
-                      className="form-cc no-spinner uniform-width"
+                      className="form-cc no-spinner uniform-width border-subtle-blue"
                     />
                   </div>
                   <input
@@ -250,14 +267,14 @@ const Calculator = (props) => {
                   }}
                 >
                   <div className="emi-details">
-                    <span>Your Monthly EMI is</span>
-                    <span style={{ color: "#FFDB58" }}>
+                    <span className="emi-left">Your Monthly EMI</span>
+                    <span className="emi-right">
                       ₹ {new Intl.NumberFormat("en-IN").format(emi.toFixed(0))}
                     </span>
                   </div>
                   <div className="emi-details">
-                    <span>Total Payable Amount is</span>
-                    <span style={{ color: "#FFDB58" }}>
+                    <span className="emi-left">Total Payable Amount</span>
+                    <span className="emi-right">
                       ₹{" "}
                       {new Intl.NumberFormat("en-IN").format(
                         totalPayment.toFixed(0)
@@ -265,8 +282,8 @@ const Calculator = (props) => {
                     </span>
                   </div>
                   <div className="emi-details">
-                    <span>Total Interest is</span>
-                    <span style={{ color: "#FFDB58" }}>
+                    <span className="emi-left">Total Interest</span>
+                    <span className="emi-right">
                       ₹{" "}
                       {new Intl.NumberFormat("en-IN").format(
                         totalInterest.toFixed(0)

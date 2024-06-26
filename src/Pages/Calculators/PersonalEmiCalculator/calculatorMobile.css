@@ -48,6 +48,13 @@
     span {
       font-size: 1rem;
     }
+    .emi-left {
+      flex: 6;
+    }
+    .emi-right {
+      flex: 5;
+      text-align: right;
+    }
   }
   .legendText {
     font-size: 1rem;
