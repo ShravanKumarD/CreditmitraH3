@@ -11,6 +11,11 @@ import { Link } from "react-router-dom";
 import { Tooltip } from "../../../Components/Tooltip";
 import TableHelper from "./TableHelper";
 
+// Function to format number to Indian currency style
+export const formatToIndianCurrency = (number) => {
+  return number.toLocaleString("en-IN");
+};
+
 const Calculator = (props) => {
   const [loanAmount, setLoanAmount] = useState(100000);
   const [roi, setROI] = useState(12);
@@ -18,11 +23,6 @@ const Calculator = (props) => {
   const [totalInterest, setTotalInterest] = useState(0);
   const [totalPayment, setTotalPayment] = useState(0);
   const [emi, setEmi] = useState(0);
-
-  // Function to format number to Indian currency style
-  const formatToIndianCurrency = (number) => {
-    return number.toLocaleString("en-IN");
-  };
 
   const handleChangeLoanAmount = (event) => {
     // Convert formatted string back to number before setting state

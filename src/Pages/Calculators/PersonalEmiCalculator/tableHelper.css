@@ -104,4 +104,9 @@
   .emi-table-td-closing {
     display: none;
   }
+
+  .emi-table-td-month {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 }
