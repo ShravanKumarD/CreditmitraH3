@@ -274,6 +274,7 @@ h3 {
 
 .colors {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -285,6 +286,9 @@ h3 {
   font-weight: 400;
   .legendText {
     font-size: 1rem;
+    display: inline-flex;
+    /* transform: translateY(-40%); */
+
   }
 }
 
@@ -292,18 +296,23 @@ h3 {
   border-left: 10px solid #199cdb;
   height: 10px;
   font-size: 18px;
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
+  margin-right: 10px;
+
   color: #fff;
   font-weight: 400;
+  display: inline-flex;
 }
 
 .whiteBox {
   border-left: 10px solid #ffff;
   height: 10px;
   font-size: 18px;
-  margin: 10px 10px;
+  /* margin: 10px 10px; */
+  margin-right: 10px;
   color: #fff;
   font-weight: 400;
+  display: inline-flex;
 }
 
 .purpleBox {

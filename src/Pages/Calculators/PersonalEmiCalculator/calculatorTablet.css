@@ -12,7 +12,10 @@
   }
   .colors {
     .legendText {
-      font-size: 0.8rem;
+      font-size: 0.99rem;
+      .legendValue {
+        display: none;
+      }
     }
   }
   .aboutEmi {

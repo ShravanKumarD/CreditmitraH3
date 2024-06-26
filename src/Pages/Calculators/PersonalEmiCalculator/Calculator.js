@@ -394,23 +394,29 @@ const Calculator = (props) => {
                       )}
                       <div className="colors">
                         <div>
-                          <span className="lightBlue"></span>
-                          <span className="legendText">
-                            Loan Amount:{" "}
-                            {new Intl.NumberFormat("en-IN").format(
-                              loanAmount.toFixed(0)
-                            )}
-                          </span>
+                          <div className="lightBlue"></div>
+                          <div className="legendText">
+                            Loan Amount
+                            <span className="legendValue">
+                              :{" "}
+                              {new Intl.NumberFormat("en-IN").format(
+                                loanAmount.toFixed(0)
+                              )}
+                            </span>
+                          </div>
                         </div>
                         <div style={{ display: "block" }}>
-                          <span className="whiteBox"></span>
-                          <span className="legendText">
+                          <div className="whiteBox"></div>
+                          <div className="legendText">
                             {" "}
-                            Interest Amount:{" "}
-                            {new Intl.NumberFormat("en-IN").format(
-                              totalInterest.toFixed(0)
-                            )}
-                          </span>
+                            Interest Amount
+                            <span className="legendValue">
+                              :{" "}
+                              {new Intl.NumberFormat("en-IN").format(
+                                totalInterest.toFixed(0)
+                              )}
+                            </span>
+                          </div>
                         </div>
                       </div>
                     </div>

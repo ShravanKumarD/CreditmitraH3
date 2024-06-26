@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./tableHelper.css";
+import moment from "moment";
 
 function TableHelper({ principal, roiAnnualyPercent, tenureMonthly }) {
   const roiMonthly = roiAnnualyPercent / (12 * 100);
@@ -7,7 +8,10 @@ function TableHelper({ principal, roiAnnualyPercent, tenureMonthly }) {
   const emi =
     (principal * roiMonthly) / (1 - Math.pow(1 + roiMonthly, -tenureMonthly));
 
-  const dateRightNow = new Date().toLocaleString();
+  const dateRightNow = new Date().toLocaleString("en-IN", {
+    month: "long",
+    year: "2-digit",
+  });
 
   function calculateBalances(principal, roiMonthly, tenureMonthly, emi) {
     let balances = [];
@@ -56,7 +60,7 @@ function TableHelper({ principal, roiAnnualyPercent, tenureMonthly }) {
           <tbody>
             {balances.slice(0, displayLimit).map((balance, index) => (
               <tr key={index}>
-                <td className="emi-table-td">{balance.month}</td>
+                <td className="emi-table-td">{dateRightNow + balance.month}</td>
                 <td className="emi-table-td">
                   {Number(balance.openingBalance).toFixed(0)}
                 </td>
