@@ -261,7 +261,7 @@ const Calculator = (props) => {
                     <h4 className="headers mb-0 mr-2">
                       {" "}
                       <Tooltip text="The time in months by which the whole amount should be repaid.">
-                        Tenure
+                        Tenure (in months)
                       </Tooltip>
                     </h4>
                     <input
