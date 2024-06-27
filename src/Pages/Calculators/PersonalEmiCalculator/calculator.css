@@ -214,10 +214,12 @@ h3 {
 .pie-chart-container {
   margin-top: 4.8%;
   margin-bottom: 8%;
+  overflow: visible;
 }
 
 .pie {
   width: 45%;
+  overflow: visible;
 }
 
 .calculator-card {
@@ -269,6 +271,10 @@ h3 {
   font-family: Poppins;
   width: 100%;
   text-align: left;
+}
+
+.emi-details-container{
+  
 }
 
 .colors {
