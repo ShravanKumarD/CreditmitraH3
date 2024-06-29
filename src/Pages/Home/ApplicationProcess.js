@@ -155,7 +155,9 @@ function ApplicationProcess(props) {
                 </div>
             </div>
             <div className='applpcardbuttons'>
-                <button className="btn brand-primary py-3 px-4" style={{ color: "#fff", textDecoration: "none" }}>Apply Now</button>
+                <button className="btn brand-primary py-3 px-4" style={{ color: "#fff", textDecoration: "none" }}
+                  onClick={() => (window.location.href ="https://creditmitra.cloudbankin.com/onboard/#/login")}
+                >Apply Now</button>
                 <button className="btn brand-secondary py-3 px-4">
                     <Link to="/contact" style={{ color: "#fff", textDecoration: "none" }}>Contact Us</Link>
                 </button>

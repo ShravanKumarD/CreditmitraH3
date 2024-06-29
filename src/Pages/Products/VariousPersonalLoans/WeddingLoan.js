@@ -307,12 +307,14 @@ const WeddingLoan = (props) => {
             justifyContent: "center"
           }}>
             {/* margin-left: 0 for fixing this */}
-            <buttton style={{ marginLeft: "0px" }} className="btn brand-primary py-3 px-4">
+          
               {" "}
-              <Link to="/" style={{ color: "#fff",textDecoration:"none"  }}>
+              <Link to="https://creditmitra.cloudbankin.com/onboard/#/login" style={{ color: "#fff",textDecoration:"none"  }}>
+              <buttton style={{ marginLeft: "0px" }} className="btn brand-primary py-3 px-4">
                 Apply Now
+                </buttton>
               </Link>
-            </buttton>
+            
           </div>
 
           <h6

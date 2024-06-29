@@ -294,7 +294,7 @@ const Calculator = (props) => {
               >
                 <button className="applyNow">
                   <Link
-                    to="/"
+                    to="https://creditmitra.cloudbankin.com/onboard/#/login"
                     style={{
                       color: "#fff",
                       textDecoration: "none",
@@ -462,7 +462,7 @@ const Calculator = (props) => {
         <div className="applyNowContainerMobile">
           <button className="applyNow">
             <Link
-              to="/"
+              to="https://creditmitra.cloudbankin.com/onboard/#/login"
               style={{
                 color: "#fff",
                 textDecoration: "none",
