@@ -16,6 +16,20 @@ export const formatToIndianCurrency = (number) => {
   return number.toLocaleString("en-IN");
 };
 
+function calculateMidpointAngleForSegment(data, index) {
+  const totalValue = data.reduce((acc, entry) => acc + entry.value, 0);
+  let startAngle = 0;
+
+  for (let i = 0; i < index; i++) {
+    startAngle += (data[i].value / totalValue) * 360; // Convert proportion to degrees
+  }
+
+  const segmentAngle = (data[index].value / totalValue) * 360;
+  const midpointAngle = startAngle + segmentAngle / 2;
+
+  return midpointAngle;
+}
+
 const Calculator = (props) => {
   const [loanAmount, setLoanAmount] = useState(100000);
   const [roi, setROI] = useState(12);
@@ -104,6 +118,48 @@ const Calculator = (props) => {
       window.removeEventListener("keypress", resetTimer);
     };
   }, []);
+
+  // hover on piechart
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoverTimeoutId, setHoverTimeoutId] = useState(10000);
+
+  const pieChartData = [
+    {
+      title: "Interest",
+      value: totalInterest,
+      color: "#fff",
+    },
+    {
+      title: "Principal",
+      value: loanAmount,
+      color: "#199cdb",
+    },
+  ];
+  const handleMouseOver = (_, index) => {
+    // Clear any existing timeout to prevent it from resetting hoveredIndex prematurely
+    if (hoverTimeoutId) {
+      clearTimeout(hoverTimeoutId);
+    }
+
+    // Immediately set the hovered index
+    setHoveredIndex(index);
+
+    // Set a new timeout to reset the hovered index after 3 seconds
+    const timeoutId = setTimeout(() => {
+      setHoveredIndex(null);
+    }, 1200); // 3000 milliseconds = 3 seconds
+
+    // Store the timeout ID so it can be cleared if necessary
+    setHoverTimeoutId(timeoutId);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (hoverTimeoutId) {
+        clearTimeout(hoverTimeoutId);
+      }
+    };
+  }, [hoverTimeoutId]);
 
   return (
     <>
@@ -205,7 +261,7 @@ const Calculator = (props) => {
                     <h4 className="headers mb-0 mr-2">
                       {" "}
                       <Tooltip text="The time in months by which the whole amount should be repaid.">
-                        Tenure
+                        Tenure (in months)
                       </Tooltip>
                     </h4>
                     <input
@@ -258,12 +314,10 @@ const Calculator = (props) => {
                 {/* <h5 className="headers fade-in" style={{ fontSize: "20px", fontWeight: "normal" }}>
                                     Total Amount Payable: ₹{totalPayment.toFixed(2)}
                                 </h5> */}
-                <h5
+                <div
+                  className="emi-details-container"
                   style={{
-                    textAlign: "left",
-                    marginTop: "0px",
-                    marginLeft: "0px",
-                    marginBottom: "0px",
+                    fontFamily: "Poppins",
                   }}
                 >
                   <div className="emi-details">
@@ -290,36 +344,12 @@ const Calculator = (props) => {
                       )}
                     </span>
                   </div>
-                </h5>
+                </div>
                 <div className="pie-chart-container">
                   <div className="text-header">
                     <div>
                       {loanAmount === 0 ? (
                         <>
-                          {/* <div className="interestAndPay">
-                            <h5
-                              className="fade-in"
-                              style={{
-                                fontSize: "20px",
-                                fontWeight: "normal",
-                                textAlign: "center",
-                                marginLeft: "0px",
-                              }}
-                            >
-                              Loan Amount: ₹ {loanAmount.toFixed(0)}
-                            </h5>
-                            <div className="vlCalci"></div>
-                            <h5
-                              className="fade-in"
-                              style={{
-                                fontSize: "20px",
-                                fontWeight: "normal",
-                                textAlign: "center",
-                              }}
-                            >
-                              Rate of Interest: {roi.toFixed(0)}%
-                            </h5>
-                          </div> */}
                           <div
                             style={{
                               display: "flex",
@@ -333,41 +363,19 @@ const Calculator = (props) => {
                                   title: "Interest",
                                   value: 0.1,
                                   color: "#fff",
-                                }, //big part
+                                },
                                 {
                                   title: "Principal",
                                   value: 0,
                                   color: "#199cdb",
                                 },
                               ]}
+                              lineWidth={60}
                             />
                           </div>
                         </>
                       ) : (
                         <>
-                          {/* <div className="interestAndPay">
-                            <h5
-                              className="fade-in"
-                              style={{
-                                fontSize: "20px",
-                                fontWeight: "normal",
-                                textAlign: "center",
-                              }}
-                            >
-                              Loan Amount: ₹ {loanAmount.toFixed(0)}
-                            </h5>
-                            <div className="vlCalci"></div>
-                            <h5
-                              className="fade-in"
-                              style={{
-                                fontSize: "20px",
-                                fontWeight: "normal",
-                                textAlign: "center",
-                              }}
-                            >
-                              Rate of Interest: {roi.toFixed(0)}%
-                            </h5>
-                          </div> */}
                           <div
                             style={{
                               display: "flex",
@@ -376,18 +384,43 @@ const Calculator = (props) => {
                           >
                             <PieChart
                               className="pie"
-                              data={[
-                                {
-                                  title: "Interest",
-                                  value: totalInterest,
-                                  color: "#fff",
-                                },
-                                {
-                                  title: "Principal",
-                                  value: loanAmount,
-                                  color: "#199cdb",
-                                },
-                              ]}
+                              data={pieChartData}
+                              lineWidth={40}
+                              label={
+                                ({ dataEntry, dataIndex }) =>
+                                  hoveredIndex === dataIndex
+                                    ? `₹${dataEntry.value.toFixed(0)}`
+                                    : "" // Step 5
+                              }
+                              labelStyle={{
+                                fontSize: "5px",
+                                fontFamily: "sans-serif",
+                                fill: "#fff",
+                              }}
+                              segmentsStyle={(index) => {
+                                const midpointAngle =
+                                  calculateMidpointAngleForSegment(
+                                    pieChartData,
+                                    index
+                                  );
+                                // Convert midpoint angle to radians and calculate translation or transformation based on it
+                                // For example, to translate away from the center based on the midpoint angle
+                                const angleRadians =
+                                  midpointAngle * (Math.PI / 180);
+                                const distance =
+                                  index === hoveredIndex ? 10 : 0;
+                                const translateX =
+                                  distance * Math.cos(angleRadians);
+                                const translateY =
+                                  distance * Math.sin(angleRadians);
+
+                                return {
+                                  cursor: "pointer",
+                                  transition: "transform 0.3s ease-out",
+                                  transform: `translate(${translateX}px, ${translateY}px) `,
+                                };
+                              }}
+                              onMouseOver={handleMouseOver}
                             />
                           </div>
                         </>
@@ -409,7 +442,7 @@ const Calculator = (props) => {
                           <div className="whiteBox"></div>
                           <div className="legendText">
                             {" "}
-                            Interest Amount
+                            Total Interest
                             <span className="legendValue">
                               :{" "}
                               {new Intl.NumberFormat("en-IN").format(
