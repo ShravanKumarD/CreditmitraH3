@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import Header from "./../../../Components/Header/Header";
 import Footer from "./../../../Components/Footer";
 import ProductsHeroSection from "./../ProductsHeroSection";
@@ -7,8 +7,19 @@ import StepsImg from "./../../../assets/images/mobile.png";
 import StepsImg2 from "./../../../assets/images/pad.png";
 import { Link } from "react-router-dom";
 import SEO from "../../../Components/SEO/SEO";
+import Loader from "../../../Components/Loader";
 
 const InstantPersonalLoan = (props) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      window.location.href = "https://creditmitra.cloudbankin.com/onboard/#/login";
+    }, 5000);
+  };
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -299,27 +310,19 @@ const InstantPersonalLoan = (props) => {
           </div>
           {/* new from here */}
           {/* new class */}
-          <div
-            className="product-apply-button"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+          <div  className="product-apply-button"
+            style={{ display: "flex", justifyContent: "center",}}>
             {/* margin-left: 0 for fixing this */}
-            <buttton
-              style={{ marginLeft: "0px" }}
-              className="btn brand-primary py-3 px-4"
-            >
-              {" "}
-              <Link
-                to="https://creditmitra.cloudbankin.com/onboard/#/login"
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
-                Apply Now
-              </Link>
-            </buttton>
-          </div>
+            <button
+          style={{ marginLeft: "0px" }}
+          className="btn brand-primary py-3 px-4"
+          onClick={handleClick}
+          disabled={loading}>
+          {loading ? "Loading..." : "Apply Now"}
+        </button>
+      </div>
+
+      {loading && <Loader />}
 
           <h6
             style={{

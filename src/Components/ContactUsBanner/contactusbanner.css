@@ -1,0 +1,30 @@
+.fixed-banner {
+    position: fixed;
+    bottom: -110px;
+    left: 0;
+    width: 100%;
+    background-color: #dfe2e4;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    transition: bottom 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .fixed-banner.visible {
+    bottom: 0;
+  }
+  
+  .fixed-banner .btn {
+    color: #fff;
+    text-decoration: none;
+  }
+  @media (max-width:768px){
+    .container{
+        display: none;
+    }
+    .fixed-banner{
+        display:none;
+    }
+  }
+  

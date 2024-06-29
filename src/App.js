@@ -45,6 +45,7 @@ import UX_UIDesigner from './Pages/HiringPages/Jds/UX_UIDesigner';
 import DigitalMarketing from './Pages/HiringPages/Jds/DigitalMarketing';
 import FinanceManger from './Pages/HiringPages/Jds/FinanceManger';
 import CollectingManager from './Pages/HiringPages/Jds/CollectingManager';
+import Banner from './Components/ContactUsBanner/ContactUsBanner';
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -107,6 +108,7 @@ function App() {
         <Route path="/we-are-hiring/finance-manager" element={<FinanceManger routePath="/we-are-hiring/finance-manager"/>}/>
         <Route path="/we-are-hiring/collecting-manager" element={<CollectingManager routePath="/we-are-hiring/collecting-manager"/>}/>
       </Routes>
+      {/* <Banner/> */}
       </Wrapper>
     </BrowserRouter>
     <TawkMessengerThing />

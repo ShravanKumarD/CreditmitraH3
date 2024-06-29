@@ -1332,6 +1332,7 @@ text-align: center;
   margin-bottom: 1rem;
   line-height: normal;
   font-family: Poppins;
+  margin:20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2302,12 +2303,13 @@ th {
 }
 .checkbox-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 .contactusCheckBox {
   margin-left: 10px;
+  font-size: 13px;
 }
 
 .contactusCheckBoxLegal {

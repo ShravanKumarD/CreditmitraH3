@@ -1,12 +1,34 @@
-import React, { useEffect, useRef } from "react";
+import React, {useState, useEffect, useRef } from "react";
 import SectionHeading from "../../Components/SectionHeading";
+import Modal from "../../Components/Modal/Modal";
+import "./../../Components/Modal/modal.css";
 
 function UserFeedback(props) {
   const sectionRef = useRef(null);
+  const [open, setOpen] = React.useState(false);
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    contact: '',
+    message: '',
+    rating: '',
+  });
+ 
+  const handleClose = () => {
+      setOpen(false);
+      console.log("closed")
+      alert("response saved!")
+  };
+
+  const handleOpen = () => {
+      setOpen(true);
+  };
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      (entries) => {
+      (entries) => {  
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const cards = sectionRef.current.querySelectorAll('.each-feedback-card');
@@ -79,11 +101,106 @@ function UserFeedback(props) {
       </div>
     ));
   }
+  const handleChange = (e) => {
+    const { name, value } = e.target; 
+    if (name === 'contact') {
+        const numericValue = value.replace(/\D/g, '');
+        setFormData({
+            ...formData,
+            [name]: numericValue
+        });
+    } else {
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    }
+};
+
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  let mobile = { contact: formData.contact };
+  const mobileNumber = ((mobile) => {
+    const mobileNumberPattern = /^[5-9]\d{9}$/; 
+  if (mobileNumberPattern.test(mobile.contact)) {
+      console.log("true");
+      handleClose();
+    } else {
+      alert("enter a valid mobile number")
+    }
+  })(mobile)
+};
+
+
 
   return (
     <div className="user-feedback-section" ref={sectionRef}>
       <SectionHeading heading={"What Our Users Say About Us?"} />
       <div className="feedback-card-container">{getFeedbackCard()}</div>
+      {/* <div className="ModalContainer">
+       <button className="feedBackButton" onClick={handleOpen}>
+              Want to tell something about us . . . .
+            </button>
+            <Modal isOpen={open}>
+            <div className="form-container">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-group">
+                    <input type="text"
+                      className="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required />
+                    <div className="spacer" style={{ padding: "1vw" }}></div>
+                    <input type="email"
+                      name="email"
+                      value={formData.email}
+                      className="form-control"
+                      id="email"
+                      placeholder="Email address"
+                      onChange={handleChange}
+                      required />
+                  </div>
+                    <input 
+                      name="contact"
+                      value={formData.contact}
+                      onChange={handleChange}
+                      maxLength={10}
+                      className="form-control"
+                      id="contact"
+                      placeholder="Contact"
+                      required/>
+                        <input 
+                      name="Rating"
+                      value={formData.rating}
+                      onChange={handleChange}
+                      type="number"
+                      maxLength={1}
+                      className="form-control"
+                      id="Rating"
+                      placeholder="Rate us out of five(5)"
+                      required/>
+          
+                  <div className="form-group">
+                    <textarea className="form-control"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      id="message"
+                      placeholder="Message"
+                      style={{ resize: "none", height: "100px" }}
+                      required></textarea>
+                  </div>
+                  <button type="submit" onClose={handleClose} className="contact-submit-button">
+                    Submit
+                  </button>
+                 </form>
+              </div>
+            </Modal>
+      </div> */}
     </div>
   );
 }

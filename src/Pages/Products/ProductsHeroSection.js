@@ -3,7 +3,7 @@ import React from "react";
 function ProductsHeroSection(props) {
   return (
     <div className="products-hero-section ">
-      <h6>Personal Loans</h6>
+    <div className='productHeader'>Personal Loans</div>
       <small>
       Creditmitra's Personal Loans: Key to Your Financial Freedom
       </small>
