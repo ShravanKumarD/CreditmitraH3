@@ -77,7 +77,7 @@ function Footer(props) {
         },
         { displayName: "FAQ", redirectTo: "/faq" },
         { displayName: "Blog", redirectTo: "/blogs" },
-        // {displayName:"Calculator", redirectTo:"/calculator"},
+        { displayName: "Calculator", redirectTo: "/calculator" },
       ],
     },
   ];
