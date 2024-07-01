@@ -323,14 +323,20 @@ const InstantPersonalLoan = (props) => {
           disabled={loading}>
           {loading ? "Loading..." : "Apply Now"}
         </button> */}
+            <Link
+              to="https://creditmitra.cloudbankin.com/onboard/#/login"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              <buttton
+                style={{ marginLeft: "0px" }}
+                className="btn brand-primary py-3 px-4"
+              >
+                Apply Now
+              </buttton>
+            </Link>{" "}
+          </div>
 
-<Link to="https://creditmitra.cloudbankin.com/onboard/#/login" style={{ color: "#fff",textDecoration:"none"  }}>
-                  <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
-                    Apply Now
-                    </buttton>
-                  </Link>      </div>
-
-      {/* {loading && <Loader />} */}
+          {/* {loading && <Loader />} */}
 
           <h6
             style={{

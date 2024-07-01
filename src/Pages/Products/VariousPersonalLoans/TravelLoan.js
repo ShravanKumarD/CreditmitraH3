@@ -260,74 +260,88 @@ const TravelLoan = (props) => {
           {/* old code */}
           <div className="btn-container text-center"></div>
 
-              <div className='uncolored-heading eligibility'>Eligibility Criteria</div>
-                    <div className="products-hero-section ">
-                        <div className="btn-container">
-                            <div className="row productsDiv">
-                                <div className="col-12 col-sm-4 productsDivBtn">
-                                    <button className="btn primary-gradient-btn">
-                                    Indian Citizen 
-                                    </button>
-                                </div>
-                                <div className="col-12 col-sm-4 productsDivBtn">
-                                    <button className="btn primary-gradient-btn">
-                                    Age Limit: 21- 55 Years
-                                    </button>
-                                </div>
-                                <div className="col-12 col-sm-4 productsDivBtn">
-                                    <button className="btn primary-gradient-btn">
-                                    Salaried Individual
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="row productsDiv" >
-                                <div className="col-sm-2"></div>
-                                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
-                                Monthly Income: {">"}INR 15,000
-                                </button></div>
-                                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
-                                  A good credit score
-                                </button></div>
-                                <div className="col-sm-2"></div>
-
-                            </div>
-
-                        </div>
-                    </div>
-              {/* new from here */}
-              {/* new class */}
-              <div className="product-apply-button" style={{
-                display:"flex",
-                justifyContent: "center"
-              }}>
-                {/* margin-left: 0 for fixing this */}
-                <buttton style={{ marginLeft: "0px" }}  className="btn brand-primary py-3 px-4">
-                  {" "}
-                  <Link to="/" style={{ color: "#fff",textDecoration:"none"  }}>
-                    Apply Now
-                  </Link>
-                </buttton>
+          <div className="uncolored-heading eligibility">
+            Eligibility Criteria
+          </div>
+          <div className="products-hero-section ">
+            <div className="btn-container">
+              <div className="row productsDiv">
+                <div className="col-12 col-sm-4 productsDivBtn">
+                  <button className="btn primary-gradient-btn">
+                    Indian Citizen
+                  </button>
+                </div>
+                <div className="col-12 col-sm-4 productsDivBtn">
+                  <button className="btn primary-gradient-btn">
+                    Age Limit: 21- 55 Years
+                  </button>
+                </div>
+                <div className="col-12 col-sm-4 productsDivBtn">
+                  <button className="btn primary-gradient-btn">
+                    Salaried Individual
+                  </button>
+                </div>
               </div>
-    
-              <h6
-                style={{
-                  color: "#fff",
-                  fontSize: "18px",
-                  fontFamily: "poppins",
-                  marginTop: "3rem",
-                  textAlign: "center",
-                  fontWeight: "normal",
-                  marginBottom:"-60px"
-                }}
-              >
-             Get our travel loans with a simple application process. We'll ensure a smooth journey, both financially and physically, so you can set off on your dream adventure!
-              </h6>
+              <div className="row productsDiv">
+                <div className="col-sm-2"></div>
+                <div className="col-sm-4 productsDivBtn">
+                  <button className="btn primary-gradient-btn">
+                    Monthly Income: {">"}INR 15,000
+                  </button>
+                </div>
+                <div className="col-sm-4 productsDivBtn">
+                  {" "}
+                  <button className="btn primary-gradient-btn">
+                    A good credit score
+                  </button>
+                </div>
+                <div className="col-sm-2"></div>
+              </div>
             </div>
-            <Footer />
-          </section>
-        </>
-      );
-   
-    
-}
+          </div>
+          {/* new from here */}
+          {/* new class */}
+          <div
+            className="product-apply-button"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            {/* margin-left: 0 for fixing this */}
+            <Link
+              to="https://creditmitra.cloudbankin.com/onboard/#/login"
+              style={{ color: "#fff", textDecoration: "none" }}
+            >
+              <buttton
+                style={{ marginLeft: "0px" }}
+                className="btn brand-primary py-3 px-4"
+              >
+                {" "}
+                Apply Now
+              </buttton>
+            </Link>
+          </div>
+
+          <h6
+            style={{
+              color: "#fff",
+              fontSize: "18px",
+              fontFamily: "poppins",
+              marginTop: "3rem",
+              textAlign: "center",
+              fontWeight: "normal",
+              marginBottom: "-60px",
+            }}
+          >
+            Get our travel loans with a simple application process. We'll ensure
+            a smooth journey, both financially and physically, so you can set
+            off on your dream adventure!
+          </h6>
+        </div>
+        <Footer />
+      </section>
+    </>
+  );
+};
 export default TravelLoan;

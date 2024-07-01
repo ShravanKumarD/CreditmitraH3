@@ -1,5 +1,6 @@
 import React from "react";
 import heroImage from "../../assets/images/hero-image1.png";
+import { Link } from "react-router-dom";
 function HeroSection(props) {
   return (
     <div className="hero-section">
@@ -16,12 +17,9 @@ function HeroSection(props) {
         </p>
         <div className="hero-content-button">
           {/* apply now was directing to samcint, now it's redirecting to same page */}
-          <buttton
-            className="btn brand-primary py-3 px-4"
-            onClick={() => (window.location.href ="https://creditmitra.cloudbankin.com/onboard/#/login")}
-          >
-            Apply Now
-          </buttton>
+          <Link to="https://creditmitra.cloudbankin.com/onboard/#/login">
+            <buttton className="btn brand-primary py-3 px-4">Apply Now</buttton>
+          </Link>
           <buttton className="btn brand-secondary py-3 px-4">
             Download App
           </buttton>
