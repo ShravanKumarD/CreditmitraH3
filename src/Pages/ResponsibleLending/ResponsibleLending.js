@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer";
-import SEO from '../../Components/SEO/SEO';
+import Footer from "../../Components/Footer/Footer";
+import SEO from "../../Components/SEO/SEO";
 
 function ApplicationProcessingCard({ orderNo, heading, description, img }) {
   const cardRef = useRef(null);
@@ -13,16 +13,16 @@ function ApplicationProcessingCard({ orderNo, heading, description, img }) {
         const rect = card.getBoundingClientRect();
         const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
         if (isVisible) {
-          card.classList.add('animate');
+          card.classList.add("animate");
         }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); 
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -67,10 +67,16 @@ function ResponsibleLending(props) {
             <div className="content">
               <h6>Responsible Lending</h6>
               <p>
-                CreditMitra operates as a platform facilitating loan transactions between borrowers and NBFCs. Approval and sanctioning of all loan applications are carried out by NBFCs registered with RBI, and this information is communicated upfront during the loan application process.
+                CreditMitra operates as a platform facilitating loan
+                transactions between borrowers and NBFCs. Approval and
+                sanctioning of all loan applications are carried out by NBFCs
+                registered with RBI, and this information is communicated
+                upfront during the loan application process.
               </p>
             </div>
-            <h5 className="section-heading">Our Pledge as a Responsible Lender</h5>
+            <h5 className="section-heading">
+              Our Pledge as a Responsible Lender
+            </h5>
             <div className="list-container">
               {pledgePoints.map((each, index) => (
                 <div className="col-sm-12 lending" key={index}>

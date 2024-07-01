@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./../../../Components/Header/Header";
-import Footer from "./../../../Components/Footer";
+import Footer from "./../../../Components/Footer/Footer";
 // import ProductsHeroSection from "./../ProductsHeroSection";
 import DescriptionSection from "./../DescriptionSection";
 import StepsImg from "./../../../assets/images/mobile.png";

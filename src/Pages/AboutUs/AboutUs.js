@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer/Footer";
 import ApplicationProcessingCard from "../../Components/ApplicationProcessingCard";
 import SEO from "../../Components/SEO/SEO";
 import MissionImage from "../../assets/images/aboutus//Mission3D.png";
@@ -46,7 +46,7 @@ function AboutUs(props) {
               {cardInfo.description}
             </p>
           </div>
-          <img height="200px" src={cardInfo.img} alt="vision"/>
+          <img height="200px" src={cardInfo.img} alt="vision" />
         </div>
       </>
     );
@@ -109,7 +109,12 @@ function AboutUs(props) {
                     interest rates
                   </p>
                 </div>
-                <img height="300px" className="aboutus" src={aboutus} alt="creditmitra card"/>
+                <img
+                  height="300px"
+                  className="aboutus"
+                  src={aboutus}
+                  alt="creditmitra card"
+                />
               </div>
             </div>
             <div className="about-points-container row">

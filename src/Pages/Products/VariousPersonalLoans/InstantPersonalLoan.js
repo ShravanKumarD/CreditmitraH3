@@ -1,6 +1,6 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./../../../Components/Header/Header";
-import Footer from "./../../../Components/Footer";
+import Footer from "./../../../Components/Footer/Footer";
 import ProductsHeroSection from "./../ProductsHeroSection";
 import DescriptionSection from "./../DescriptionSection";
 import StepsImg from "./../../../assets/images/mobile.png";
@@ -16,7 +16,8 @@ const InstantPersonalLoan = (props) => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      window.location.href = "https://creditmitra.cloudbankin.com/onboard/#/login";
+      window.location.href =
+        "https://creditmitra.cloudbankin.com/onboard/#/login";
     }, 5000);
   };
 
@@ -34,7 +35,7 @@ const InstantPersonalLoan = (props) => {
         <div className="page-container products-page">
           {/* <ProductsHeroSection /> */}
           <div className="products-hero-section ">
-          <div className='productHeader'>Instant Personal Loan</div>
+            <div className="productHeader">Instant Personal Loan</div>
             <small>
               Unlock Your Dreams with Creditmitra's Instant Personal Loan!
             </small>
@@ -310,19 +311,22 @@ const InstantPersonalLoan = (props) => {
           </div>
           {/* new from here */}
           {/* new class */}
-          <div  className="product-apply-button"
-            style={{ display: "flex", justifyContent: "center",}}>
+          <div
+            className="product-apply-button"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             {/* margin-left: 0 for fixing this */}
             <button
-          style={{ marginLeft: "0px" }}
-          className="btn brand-primary py-3 px-4"
-          onClick={handleClick}
-          disabled={loading}>
-          {loading ? "Loading..." : "Apply Now"}
-        </button>
-      </div>
+              style={{ marginLeft: "0px" }}
+              className="btn brand-primary py-3 px-4"
+              onClick={handleClick}
+              disabled={loading}
+            >
+              {loading ? "Loading..." : "Apply Now"}
+            </button>
+          </div>
 
-      {loading && <Loader />}
+          {loading && <Loader />}
 
           <h6
             style={{

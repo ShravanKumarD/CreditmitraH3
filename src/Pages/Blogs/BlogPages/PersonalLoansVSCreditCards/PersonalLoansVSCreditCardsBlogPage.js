@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../../../Components/Footer";
+import Footer from "../../../../Components/Footer/Footer";
 import Header from "../../../../Components/Header/Header";
 import blogImage from "../../../../assets/images/blogs/comparing_loan_options_blog.png";
 import SEO from "../../../../Components/SEO/SEO";

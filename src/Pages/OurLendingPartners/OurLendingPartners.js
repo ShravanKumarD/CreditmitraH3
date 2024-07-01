@@ -1,10 +1,9 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer/Footer";
 import venus from "../../assets/images/venus.png";
 import agf from "../../assets/images/agf.jpeg";
 import SEO from "../../Components/SEO/SEO";
-
 
 function OurLendingPartners(props) {
   return (
@@ -40,11 +39,14 @@ function OurLendingPartners(props) {
                 <h6 className="mt-5">&</h6>
               </div> */}
               <div className="company-container mt-3">
-                <img height="100px" src={agf} alt="company logo"/>
-                <h6>A.G.F Finlease </h6>  
+                <img height="100px" src={agf} alt="company logo" />
+                <h6>A.G.F Finlease </h6>
                 <p>A.G.F Finlease (India) Limited</p>
                 <div className="website-text">
-                  Website: <a href="https://agffinlease.com/" target="_blank">https://agffinlease.com</a>
+                  Website:{" "}
+                  <a href="https://agffinlease.com/" target="_blank">
+                    https://agffinlease.com
+                  </a>
                   <br />
                   Email: support@agffinlease.in
                   <br />

@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import Header from "./../../../Components/Header/Header";
-import Footer from "./../../../Components/Footer";
+import Footer from "./../../../Components/Footer/Footer";
 import ProductsHeroSection from "./../ProductsHeroSection";
 import DescriptionSection from "./../DescriptionSection";
 import StepsImg from "./../../../assets/images/mobile.png";
 import StepsImg2 from "./../../../assets/images/pad.png";
 import { Link } from "react-router-dom";
 import SEO from "../../../Components/SEO/SEO";
-
 
 const WeddingLoan = (props) => {
   return (
@@ -24,13 +23,13 @@ const WeddingLoan = (props) => {
         <div className="page-container products-page">
           {/* <ProductsHeroSection /> */}
           <div className="products-hero-section ">
-          <div className='productHeader'>Wedding Loan</div>
-            <small>
-              Get Ready to Say "I Do" to Your Dream Wedding
-
-            </small>
+            <div className="productHeader">Wedding Loan</div>
+            <small>Get Ready to Say "I Do" to Your Dream Wedding</small>
             <p>
-              Your special day deserves to be nothing short of magical, and CreditMitra is here to make your fairy-tale wedding a reality. Introducing our Wedding Loan - the perfect Mitra to help you create the celebration of your dreams without compromise
+              Your special day deserves to be nothing short of magical, and
+              CreditMitra is here to make your fairy-tale wedding a reality.
+              Introducing our Wedding Loan - the perfect Mitra to help you
+              create the celebration of your dreams without compromise
             </p>
             <div className="btn-container">
               <div className="row productsDiv">
@@ -114,58 +113,54 @@ const WeddingLoan = (props) => {
                     Low Interest & Flexi tenures
                   </button>
                 </div>
-
-
-
               </div>
 
-
-
-              <div className="row productsDiv" >
+              <div className="row productsDiv">
                 <div className="col-sm-2"></div>
-                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_399_1732)">
+                <div className="col-sm-4 productsDivBtn">
+                  <button className="btn primary-gradient-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_399_1732)">
+                        <path
+                          d="M6.75 15.75V15.375C6.75 14.6788 7.02656 14.0111 7.51884 13.5188C8.01113 13.0266 8.67881 12.75 9.375 12.75C10.0712 12.75 10.7389 13.0266 11.2312 13.5188C11.7234 14.0111 12 14.6788 12 15.375V15.51C12 16.1505 11.778 16.77 11.37 17.265L6.75 22.875V23.25H12.75M20.25 20.25H14.25V19.875C15.7171 17.6744 16.5 15.0888 16.5 12.444V12M20.25 20.25V15M20.25 20.25V24M24 12V19.125M24 19.125C24 18.4288 24.2766 17.7611 24.7688 17.2688C25.2611 16.7766 25.9288 16.5 26.625 16.5C27.3212 16.5 27.9889 16.7766 28.4812 17.2688C28.9734 17.7611 29.25 18.4288 29.25 19.125V24M24 19.125V24M18 35.25C8.4735 35.25 0.75 27.5265 0.75 18C0.75 8.4735 8.4735 0.75 18 0.75C27.5265 0.75 35.25 8.4735 35.25 18C35.25 27.5265 27.5265 35.25 18 35.25Z"
+                          stroke="white"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_399_1732">
+                          <rect width="36" height="36" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Available 24*7
+                  </button>
+                </div>
+                <div className="col-sm-4 productsDivBtn">
+                  {" "}
+                  <button className="btn primary-gradient-btn">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                    >
                       <path
-                        d="M6.75 15.75V15.375C6.75 14.6788 7.02656 14.0111 7.51884 13.5188C8.01113 13.0266 8.67881 12.75 9.375 12.75C10.0712 12.75 10.7389 13.0266 11.2312 13.5188C11.7234 14.0111 12 14.6788 12 15.375V15.51C12 16.1505 11.778 16.77 11.37 17.265L6.75 22.875V23.25H12.75M20.25 20.25H14.25V19.875C15.7171 17.6744 16.5 15.0888 16.5 12.444V12M20.25 20.25V15M20.25 20.25V24M24 12V19.125M24 19.125C24 18.4288 24.2766 17.7611 24.7688 17.2688C25.2611 16.7766 25.9288 16.5 26.625 16.5C27.3212 16.5 27.9889 16.7766 28.4812 17.2688C28.9734 17.7611 29.25 18.4288 29.25 19.125V24M24 19.125V24M18 35.25C8.4735 35.25 0.75 27.5265 0.75 18C0.75 8.4735 8.4735 0.75 18 0.75C27.5265 0.75 35.25 8.4735 35.25 18C35.25 27.5265 27.5265 35.25 18 35.25Z"
-                        stroke="white"
+                        d="M34.0481 8.91413C33.9671 8.86346 33.8744 8.83429 33.779 8.82937C33.6835 8.82445 33.5883 8.84394 33.5025 8.886C27.263 11.9348 22.8473 10.5229 18.1744 9.02663C13.5014 7.53038 8.65266 5.97929 2.0025 9.22632C1.90783 9.2727 1.8281 9.34476 1.77241 9.43427C1.71671 9.52378 1.68729 9.62714 1.6875 9.73257V26.6076C1.68731 26.7032 1.71148 26.7972 1.75774 26.8809C1.804 26.9645 1.87081 27.035 1.95188 27.0857C2.03294 27.1364 2.12558 27.1655 2.22104 27.1704C2.31651 27.1754 2.41166 27.1559 2.4975 27.1138C8.73703 24.0651 13.1527 25.4769 17.8256 26.9732C20.4778 27.8169 23.1806 28.6874 26.235 28.6874C28.5708 28.6874 31.1133 28.1812 33.9947 26.7735C34.0894 26.7271 34.1691 26.6551 34.2248 26.5655C34.2805 26.476 34.3099 26.3727 34.3097 26.2673V9.39225C34.3102 9.29692 34.2864 9.20303 34.2407 9.1194C34.1949 9.03576 34.1287 8.96513 34.0481 8.91413ZM33.1875 25.9129C27.1139 28.7633 22.7672 27.3726 18.1716 25.9016C15.5194 25.0579 12.8166 24.1888 9.76219 24.1888C7.65281 24.1888 5.36344 24.6107 2.8125 25.7273V10.0869C8.88609 7.23647 13.2328 8.62725 17.8284 10.0982C22.3172 11.5312 26.9536 13.0176 33.1875 10.2726V25.9129ZM18 14.0624C17.2212 14.0624 16.46 14.2933 15.8124 14.726C15.1649 15.1587 14.6602 15.7736 14.3622 16.4931C14.0642 17.2126 13.9862 18.0043 14.1382 18.7681C14.2901 19.5319 14.6651 20.2335 15.2158 20.7841C15.7664 21.3348 16.468 21.7098 17.2318 21.8618C17.9956 22.0137 18.7873 21.9357 19.5068 21.6377C20.2263 21.3397 20.8413 20.835 21.2739 20.1875C21.7066 19.54 21.9375 18.7787 21.9375 17.9999C21.9375 16.9556 21.5227 15.9541 20.7842 15.2157C20.0458 14.4773 19.0443 14.0624 18 14.0624ZM18 20.8124C17.4437 20.8124 16.9 20.6475 16.4375 20.3384C15.9749 20.0294 15.6145 19.5901 15.4016 19.0762C15.1887 18.5623 15.133 17.9968 15.2415 17.4512C15.3501 16.9056 15.6179 16.4045 16.0113 16.0112C16.4046 15.6178 16.9057 15.35 17.4513 15.2415C17.9969 15.1329 18.5624 15.1886 19.0763 15.4015C19.5902 15.6144 20.0295 15.9749 20.3385 16.4374C20.6476 16.8999 20.8125 17.4437 20.8125 17.9999C20.8125 18.7458 20.5162 19.4612 19.9887 19.9886C19.4613 20.5161 18.7459 20.8124 18 20.8124ZM7.3125 13.4999V20.2499C7.3125 20.3991 7.25324 20.5422 7.14775 20.6477C7.04226 20.7531 6.89919 20.8124 6.75 20.8124C6.60082 20.8124 6.45774 20.7531 6.35225 20.6477C6.24676 20.5422 6.1875 20.3991 6.1875 20.2499V13.4999C6.1875 13.3507 6.24676 13.2077 6.35225 13.1022C6.45774 12.9967 6.60082 12.9374 6.75 12.9374C6.89919 12.9374 7.04226 12.9967 7.14775 13.1022C7.25324 13.2077 7.3125 13.3507 7.3125 13.4999ZM28.6875 22.4999V15.7499C28.6875 15.6007 28.7468 15.4577 28.8523 15.3522C28.9577 15.2467 29.1008 15.1874 29.25 15.1874C29.3992 15.1874 29.5423 15.2467 29.6478 15.3522C29.7532 15.4577 29.8125 15.6007 29.8125 15.7499V22.4999C29.8125 22.6491 29.7532 22.7922 29.6478 22.8977C29.5423 23.0031 29.3992 23.0624 29.25 23.0624C29.1008 23.0624 28.9577 23.0031 28.8523 22.8977C28.7468 22.7922 28.6875 22.6491 28.6875 22.4999Z"
+                        fill="white"
                       />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_399_1732">
-                        <rect width="36" height="36" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  Available 24*7
-                </button></div>
-                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="36"
-                    height="36"
-                    viewBox="0 0 36 36"
-                    fill="none"
-                  >
-                    <path
-                      d="M34.0481 8.91413C33.9671 8.86346 33.8744 8.83429 33.779 8.82937C33.6835 8.82445 33.5883 8.84394 33.5025 8.886C27.263 11.9348 22.8473 10.5229 18.1744 9.02663C13.5014 7.53038 8.65266 5.97929 2.0025 9.22632C1.90783 9.2727 1.8281 9.34476 1.77241 9.43427C1.71671 9.52378 1.68729 9.62714 1.6875 9.73257V26.6076C1.68731 26.7032 1.71148 26.7972 1.75774 26.8809C1.804 26.9645 1.87081 27.035 1.95188 27.0857C2.03294 27.1364 2.12558 27.1655 2.22104 27.1704C2.31651 27.1754 2.41166 27.1559 2.4975 27.1138C8.73703 24.0651 13.1527 25.4769 17.8256 26.9732C20.4778 27.8169 23.1806 28.6874 26.235 28.6874C28.5708 28.6874 31.1133 28.1812 33.9947 26.7735C34.0894 26.7271 34.1691 26.6551 34.2248 26.5655C34.2805 26.476 34.3099 26.3727 34.3097 26.2673V9.39225C34.3102 9.29692 34.2864 9.20303 34.2407 9.1194C34.1949 9.03576 34.1287 8.96513 34.0481 8.91413ZM33.1875 25.9129C27.1139 28.7633 22.7672 27.3726 18.1716 25.9016C15.5194 25.0579 12.8166 24.1888 9.76219 24.1888C7.65281 24.1888 5.36344 24.6107 2.8125 25.7273V10.0869C8.88609 7.23647 13.2328 8.62725 17.8284 10.0982C22.3172 11.5312 26.9536 13.0176 33.1875 10.2726V25.9129ZM18 14.0624C17.2212 14.0624 16.46 14.2933 15.8124 14.726C15.1649 15.1587 14.6602 15.7736 14.3622 16.4931C14.0642 17.2126 13.9862 18.0043 14.1382 18.7681C14.2901 19.5319 14.6651 20.2335 15.2158 20.7841C15.7664 21.3348 16.468 21.7098 17.2318 21.8618C17.9956 22.0137 18.7873 21.9357 19.5068 21.6377C20.2263 21.3397 20.8413 20.835 21.2739 20.1875C21.7066 19.54 21.9375 18.7787 21.9375 17.9999C21.9375 16.9556 21.5227 15.9541 20.7842 15.2157C20.0458 14.4773 19.0443 14.0624 18 14.0624ZM18 20.8124C17.4437 20.8124 16.9 20.6475 16.4375 20.3384C15.9749 20.0294 15.6145 19.5901 15.4016 19.0762C15.1887 18.5623 15.133 17.9968 15.2415 17.4512C15.3501 16.9056 15.6179 16.4045 16.0113 16.0112C16.4046 15.6178 16.9057 15.35 17.4513 15.2415C17.9969 15.1329 18.5624 15.1886 19.0763 15.4015C19.5902 15.6144 20.0295 15.9749 20.3385 16.4374C20.6476 16.8999 20.8125 17.4437 20.8125 17.9999C20.8125 18.7458 20.5162 19.4612 19.9887 19.9886C19.4613 20.5161 18.7459 20.8124 18 20.8124ZM7.3125 13.4999V20.2499C7.3125 20.3991 7.25324 20.5422 7.14775 20.6477C7.04226 20.7531 6.89919 20.8124 6.75 20.8124C6.60082 20.8124 6.45774 20.7531 6.35225 20.6477C6.24676 20.5422 6.1875 20.3991 6.1875 20.2499V13.4999C6.1875 13.3507 6.24676 13.2077 6.35225 13.1022C6.45774 12.9967 6.60082 12.9374 6.75 12.9374C6.89919 12.9374 7.04226 12.9967 7.14775 13.1022C7.25324 13.2077 7.3125 13.3507 7.3125 13.4999ZM28.6875 22.4999V15.7499C28.6875 15.6007 28.7468 15.4577 28.8523 15.3522C28.9577 15.2467 29.1008 15.1874 29.25 15.1874C29.3992 15.1874 29.5423 15.2467 29.6478 15.3522C29.7532 15.4577 29.8125 15.6007 29.8125 15.7499V22.4999C29.8125 22.6491 29.7532 22.7922 29.6478 22.8977C29.5423 23.0031 29.3992 23.0624 29.25 23.0624C29.1008 23.0624 28.9577 23.0031 28.8523 22.8977C28.7468 22.7922 28.6875 22.6491 28.6875 22.4999Z"
-                      fill="white"
-                    />
-                  </svg>
-                  Loan Disbursal in minutes
-                </button></div>
+                    </svg>
+                    Loan Disbursal in minutes
+                  </button>
+                </div>
                 <div className="col-sm-2"></div>
-
-
-
               </div>
-
             </div>
           </div>
           <DescriptionSection
@@ -175,9 +170,9 @@ const WeddingLoan = (props) => {
               "Unbeatable Flexibility: From venue bookings to designer outfits, catering services, and beyond, our Wedding Loan covers all aspects of your celebration. Say goodbye to budget constraints and meet the wedding of a lifetime.",
               "Stress-Free Financing: Planning a wedding can be overwhelming, but financing it shouldn't be. CreditMitra offers you peace of mind by taking care of your finances and allowing you to focus on creating priceless memories.",
               "Competitive Prices: Your wedding day is precious, but that doesn't mean you have to break the bank. Our Wedding Loan offers competitive interest rates, ensuring you get the most value for your investment.",
-
             ]}
-            img={StepsImg} />
+            img={StepsImg}
+          />
           <DescriptionSection
             heading="How to Make Your Dream Wedding a Reality?"
             points={[
@@ -190,83 +185,81 @@ const WeddingLoan = (props) => {
             img={StepsImg2}
           />
 
-<div className='uncolored-heading'>Wedding Loan Details</div>
-        <div className="row rowProduct">
-          <div className="col-sm-12">
-            <p className="table-data-products">
-            CreditMitra provides clear information regarding interest fees and additional expenses linked to extending credit. Below table is a basic summary of what you can anticipate.
-            </p >
-            <p className="table-data-products">
-            CreditMitra offers appealing rates for individuals requiring immediate personal loans. Remember to factor in the total expenses of the loan, such as interest rates and processing fees, when determining your choice.
-            </p>
+          <div className="uncolored-heading">Wedding Loan Details</div>
+          <div className="row rowProduct">
+            <div className="col-sm-12">
+              <p className="table-data-products">
+                CreditMitra provides clear information regarding interest fees
+                and additional expenses linked to extending credit. Below table
+                is a basic summary of what you can anticipate.
+              </p>
+              <p className="table-data-products">
+                CreditMitra offers appealing rates for individuals requiring
+                immediate personal loans. Remember to factor in the total
+                expenses of the loan, such as interest rates and processing
+                fees, when determining your choice.
+              </p>
+            </div>
+            <div className="col-sm-10">
+              <table border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                  <tr>
+                    <th className="th-products-header">Parameter</th>
+                    <th className="th-products-header">Amount payable</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="th-products">Loan Amount </td>
+                    <td className="th-products-desc">
+                      5,000 to 2,00,000 depending upon the requirement and
+                      profile
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="th-products">Interest Rate</td>
+                    <td className="th-products-desc">
+                      Starting as low as 3% per month
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="th-products">Age</td>
+                    <td className="th-products-desc">21 - 55 Years</td>
+                  </tr>
+                  <tr>
+                    <td className="th-products">Processing Fee</td>
+                    <td className="th-products-desc">
+                      Varies from 2% to 10% on every loan
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="th-products">Loan Tenure</td>
+                    <td className="th-products-desc">3 - 18 Months</td>
+                  </tr>
+                  <tr>
+                    <td className="th-products">Late Payment Fee</td>
+                    <td className="th-products-desc">
+                      Penal charges & late fees will be charged to your total
+                      outstanding loan or 50 rupees on a daily basis
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="th-products">Pre closure charges</td>
+                    <td className="th-products-desc">
+                      5% to 10% of the outstanding amount
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div className="col-sm-10">
-          <table border="1" cellspacing="0" cellpadding="5">
-        <thead>
-            <tr>
-                <th className="th-products-header">Parameter</th>
-                <th className="th-products-header" >Amount payable</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td className="th-products">Loan Amount </td>
-                <td className="th-products-desc">
-                5,000 to 2,00,000 depending upon the requirement and profile
-                </td>
-            </tr>
-            <tr>
-                <td className="th-products">Interest Rate</td>
-                <td className="th-products-desc">
-                Starting as low as 3% per month
-                </td>
-            </tr>
-            <tr>
-                <td className="th-products">Age</td>
-                <td className="th-products-desc">
-                21 - 55 Years
-                </td>
-            </tr>
-            <tr>
- 
-               <td className="th-products">Processing Fee</td>
-               <td className="th-products-desc">
-               Varies from 2% to 10% on every loan
-               </td>
-           </tr>
-           <tr>
-               
-               <td className="th-products">Loan Tenure</td>
-               <td className="th-products-desc">
-               3 - 18 Months
-               </td>
-           </tr>
-           <tr>
-               
-               <td className="th-products">Late Payment Fee</td>
-               <td className="th-products-desc">
-               Penal charges & late fees will be charged to your total outstanding loan or 50 rupees on a daily basis 
-               </td>
-           </tr>
-           <tr>
-               
-               <td className="th-products">Pre closure charges</td>
-               <td className="th-products-desc">
-               5% to 10% of the outstanding amount 
-               </td>
-           </tr>
-          
-          
-        </tbody>
-    </table>
-          </div>
-        </div>
-
 
           {/* old code */}
           <div className="btn-container text-center"></div>
 
-          <div className='uncolored-heading eligibility'>Eligibility Criteria</div>
+          <div className="uncolored-heading eligibility">
+            Eligibility Criteria
+          </div>
           <div className="products-hero-section ">
             <div className="btn-container">
               <div className="row productsDiv">
@@ -286,30 +279,39 @@ const WeddingLoan = (props) => {
                   </button>
                 </div>
               </div>
-              <div className="row productsDiv" >
+              <div className="row productsDiv">
                 <div className="col-sm-2"></div>
-                <div className="col-sm-4 productsDivBtn"><button className="btn primary-gradient-btn">
-                  Monthly Income: {">"}INR 15,000
-                </button></div>
-                <div className="col-sm-4 productsDivBtn">  <button className="btn primary-gradient-btn">
-                  A good credit score
-                </button></div>
+                <div className="col-sm-4 productsDivBtn">
+                  <button className="btn primary-gradient-btn">
+                    Monthly Income: {">"}INR 15,000
+                  </button>
+                </div>
+                <div className="col-sm-4 productsDivBtn">
+                  {" "}
+                  <button className="btn primary-gradient-btn">
+                    A good credit score
+                  </button>
+                </div>
                 <div className="col-sm-2"></div>
-
               </div>
-
             </div>
           </div>
           {/* new from here */}
           {/* new class */}
-          <div className="product-apply-button" style={{
-            display: "flex",
-            justifyContent: "center"
-          }}>
+          <div
+            className="product-apply-button"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             {/* margin-left: 0 for fixing this */}
-            <buttton style={{ marginLeft: "0px" }} className="btn brand-primary py-3 px-4">
+            <buttton
+              style={{ marginLeft: "0px" }}
+              className="btn brand-primary py-3 px-4"
+            >
               {" "}
-              <Link to="/" style={{ color: "#fff",textDecoration:"none"  }}>
+              <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
                 Apply Now
               </Link>
             </buttton>
@@ -323,17 +325,17 @@ const WeddingLoan = (props) => {
               marginTop: "3rem",
               textAlign: "center",
               fontWeight: "normal",
-              marginBottom:"-60px"
+              marginBottom: "-60px",
             }}
           >
-            Your wedding day is a celebration of love, commitment, and new beginnings. Let CreditMitra be your trusted partner in bringing your vision to life, and in making your wedding day Unforgettable.
+            Your wedding day is a celebration of love, commitment, and new
+            beginnings. Let CreditMitra be your trusted partner in bringing your
+            vision to life, and in making your wedding day Unforgettable.
           </h6>
         </div>
         <Footer />
       </section>
     </>
   );
-
-
-}
+};
 export default WeddingLoan;

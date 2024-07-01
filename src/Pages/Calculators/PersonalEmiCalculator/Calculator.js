@@ -4,7 +4,7 @@ import "./calculator.css";
 import "./calculatorTablet.css";
 import "./calculatorMobile.css";
 import Header from "../../../Components/Header/Header";
-import Footer from "../../../Components/Footer";
+import Footer from "../../../Components/Footer/Footer";
 import SEO from "../../../Components/SEO/SEO";
 import { PieChart } from "react-minimal-pie-chart";
 import { Link } from "react-router-dom";
@@ -370,7 +370,7 @@ const Calculator = (props) => {
                                   color: "#199cdb",
                                 },
                               ]}
-                              lineWidth={60}
+                              lineWidth={40}
                             />
                           </div>
                         </>

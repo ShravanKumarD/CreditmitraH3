@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
-import Footer from "../../Components/Footer";
+import Footer from "../../Components/Footer/Footer";
 import { Collapse } from "reactstrap";
 import { Link } from "react-router-dom";
 import SEO from "../../Components/SEO/SEO";
@@ -16,8 +16,7 @@ function FAQ(props) {
           "What is the Eligibility Criteria to apply for a loan?": `CreditMitra caters to salaried professionals aged 21 to 50 years. Qualify by maintaining a minimum net salary of Rs.15,000 with regular bank account credits for a seamless loan application process.`,
         },
         {
-          "How does CreditMitra Work?": 
-          `CreditMitra is where simplicity meets convenience. All you need to do is follow through these steps to get an instant loan:
+          "How does CreditMitra Work?": `CreditMitra is where simplicity meets convenience. All you need to do is follow through these steps to get an instant loan:
           <ul>
             <li> Download the CreditMitra app from Play Store.</li>
             <li> Register effortlessly using Facebook, Gmail, or LinkedIn.</li>
@@ -133,7 +132,7 @@ function FAQ(props) {
       ],
     },
   ];
-  
+
   const [tabActive, setTabActive] = useState(Object.keys(faqContent[0])[0]);
   const [faqAnswerOpened, setFaqAnswerOpened] = useState({});
 
@@ -177,7 +176,9 @@ function FAQ(props) {
                   </svg>
                 </div>
                 <Collapse isOpen={faqAnswerOpened[index]}>
-                  <p dangerouslySetInnerHTML={{ __html: Object.values(each)[0] }}></p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: Object.values(each)[0] }}
+                  ></p>
                 </Collapse>
               </button>
             </div>

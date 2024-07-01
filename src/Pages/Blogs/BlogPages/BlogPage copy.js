@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../../Components/Footer";
+import Footer from "../../../Components/Footer/Footer";
 import Header from "../../../Components/Header/Header";
 import blogImage from "../../../assets/images/blogs/8_tips_to_improve_your_cibil_score.png";
 import SEO from "../../../Components/SEO/SEO";
@@ -25,7 +25,11 @@ function BlogPage(props) {
             <div className="blog-content-date">May 14, 2024</div>
 
             <div className="blog-content-image">
-              <img src={blogImage} className="blog-image-container" alt="blog img" />
+              <img
+                src={blogImage}
+                className="blog-image-container"
+                alt="blog img"
+              />
             </div>
             <div className="blog-content-text">
               <p className="blog-content-paragraph">

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../../../Components/Footer";
+import Footer from "../../../../Components/Footer/Footer";
 import Header from "../../../../Components/Header/Header";
 import blogImage from "../../../../assets/images/blogs/avoid_these_mistakes_while_applying_loan_blog.png";
 import SEO from "../../../../Components/SEO/SEO";
@@ -24,7 +24,7 @@ function BlogPage(props) {
           <div className="blog-content-section">
             {/* we should decouple this image asap */}
             <h1 className="blog-content-heading">
-            Avoid These Mistakes While Applying for Personal Loans
+              Avoid These Mistakes While Applying for Personal Loans
             </h1>
             <div className="blog-content-date">June 5, 2024</div>
 
