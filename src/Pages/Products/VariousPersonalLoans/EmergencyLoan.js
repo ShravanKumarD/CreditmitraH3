@@ -25,7 +25,7 @@ const EmergencyLoan = (props) => {
           <div className="products-hero-section ">
             <div className="productHeader">Emergency Loan</div>
             {/* <small>
-      </small> */}
+  </small> */}
             <p>
               At CreditMitra, we understand that emergencies don't wait for
               payday. That's why we offer fast and reliable emergency loans to
@@ -309,15 +309,17 @@ const EmergencyLoan = (props) => {
             }}
           >
             {/* margin-left: 0 for fixing this */}
-            <buttton
-              style={{ marginLeft: "0px" }}
-              className="btn brand-primary py-3 px-4"
+            <Link
+              to="https://creditmitra.cloudbankin.com/onboard/#/login"
+              style={{ color: "#fff", textDecoration: "none" }}
             >
-              {" "}
-              <Link to="/" style={{ color: "#fff", textDecoration: "none" }}>
+              <buttton
+                style={{ marginLeft: "0px" }}
+                className="btn brand-primary py-3 px-4"
+              >
                 Apply Now
-              </Link>
-            </buttton>
+              </buttton>
+            </Link>
           </div>
 
           <h6

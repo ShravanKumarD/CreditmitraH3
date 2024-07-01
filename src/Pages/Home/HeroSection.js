@@ -18,7 +18,7 @@ function HeroSection(props) {
           {/* apply now was directing to samcint, now it's redirecting to same page */}
           <buttton
             className="btn brand-primary py-3 px-4"
-            onClick={() => (window.location.href = "/")}
+            onClick={() => (window.location.href ="https://creditmitra.cloudbankin.com/onboard/#/login")}
           >
             Apply Now
           </buttton>
