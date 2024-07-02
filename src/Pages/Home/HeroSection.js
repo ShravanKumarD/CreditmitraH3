@@ -13,7 +13,7 @@ function HeroSection(props) {
         <p>
           At CreditMitra, we understand that life doesn't always wait for
           payday. That's why we're here to offer you instant personal loans with
-          no hassle and no waiting.{" "}
+          no hassle and no waiting.
         </p>
         <div className="hero-content-button">
           {/* apply now was directing to samcint, now it's redirecting to same page */}
