@@ -180,6 +180,13 @@ text-align: center;
 
 /* hero section starts */
 
+.home-download {
+  display: none;
+}
+.home-apply {
+  width: 30%;
+}
+
 .brand-secondary {
   margin: 35px;
 }
@@ -718,6 +725,7 @@ text-align: center;
   opacity: 0.9;
   width: auto;
   margin-left: 38%;
+  font-family: Poppins;
 }
 
 /* contact-us-section ends */
@@ -2029,6 +2037,7 @@ th {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: Poppins;
 }
 
 .contact-submit-button:hover {
