@@ -1,5 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:https://stage.creditmitra.in
 
 Sitemap: https://creditmitra.in/sitemap.xml
