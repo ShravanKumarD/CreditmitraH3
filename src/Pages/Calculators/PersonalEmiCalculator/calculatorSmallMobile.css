@@ -1,0 +1,22 @@
+/* phones only */
+@media (max-width: 421px) {
+  .border-subtle-blue {
+    padding: 0px 5px;
+  }
+  .input-wrapper-principle::after {
+    font-size: 13px;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-43%);
+  }
+
+  .input-wrapper::after {
+    font-size: 13px;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-43%);
+  }
+  .form-cc {
+    font-size: 13px;
+  }
+}
