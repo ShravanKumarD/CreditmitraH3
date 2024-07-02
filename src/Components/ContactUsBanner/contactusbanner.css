@@ -19,12 +19,15 @@
     color: #fff;
     text-decoration: none;
   }
+  .banner-button{
+    margin-left:20px;
+  }
   @media (max-width:768px){
-    .container{
-        display: none;
+    .bannerText{
+      font-size: smaller;
     }
-    .fixed-banner{
-        display:none;
-    }
+    .banner-button {
+      margin-left: 0px;
+  }
   }
   

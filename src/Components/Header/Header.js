@@ -7,7 +7,7 @@ import "./Header.css";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [disableBackground, setDisableBackground] = useState(false);
+  // const [disableBackground, setDisableBackground] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
   const dropdownRef = useRef(null);
@@ -31,7 +31,7 @@ function Header() {
 
   const handleLinkClick = () => {
     setIsNavOpen(false);
-    setDisableBackground(true);
+    // setDisableBackground(true);
   };
 
   const handleDropdownToggle = () => {
@@ -95,7 +95,7 @@ function Header() {
           className="navbar-brand"
           to="/"
           onClick={() => {
-            setDisableBackground(false);
+            // setDisableBackground(false);
             setIsNavOpen(false);
           }}
         >

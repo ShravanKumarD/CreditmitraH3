@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useRef } from "react";
 import SectionHeading from "../../Components/SectionHeading";
-import Modal from "../../Components/Modal/Modal";
-import "./../../Components/Modal/modal.css";
+
 
 function UserFeedback(props) {
   const sectionRef = useRef(null);
@@ -138,69 +137,6 @@ const handleSubmit = (e) => {
     <div className="user-feedback-section" ref={sectionRef}>
       <SectionHeading heading={"What Our Users Say About Us?"} />
       <div className="feedback-card-container">{getFeedbackCard()}</div>
-      {/* <div className="ModalContainer">
-       <button className="feedBackButton" onClick={handleOpen}>
-              Want to tell something about us . . . .
-            </button>
-            <Modal isOpen={open}>
-            <div className="form-container">
-                <form onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <input type="text"
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required />
-                    <div className="spacer" style={{ padding: "1vw" }}></div>
-                    <input type="email"
-                      name="email"
-                      value={formData.email}
-                      className="form-control"
-                      id="email"
-                      placeholder="Email address"
-                      onChange={handleChange}
-                      required />
-                  </div>
-                    <input 
-                      name="contact"
-                      value={formData.contact}
-                      onChange={handleChange}
-                      maxLength={10}
-                      className="form-control"
-                      id="contact"
-                      placeholder="Contact"
-                      required/>
-                        <input 
-                      name="Rating"
-                      value={formData.rating}
-                      onChange={handleChange}
-                      type="number"
-                      maxLength={1}
-                      className="form-control"
-                      id="Rating"
-                      placeholder="Rate us out of five(5)"
-                      required/>
-          
-                  <div className="form-group">
-                    <textarea className="form-control"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      id="message"
-                      placeholder="Message"
-                      style={{ resize: "none", height: "100px" }}
-                      required></textarea>
-                  </div>
-                  <button type="submit" onClose={handleClose} className="contact-submit-button">
-                    Submit
-                  </button>
-                 </form>
-              </div>
-            </Modal>
-      </div> */}
     </div>
   );
 }

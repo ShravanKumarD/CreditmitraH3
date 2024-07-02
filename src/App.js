@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BrowserRouter,
   Route,
@@ -236,7 +236,7 @@ function App() {
             <Route path="/404" element={<Page404 />} />{" "}
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>
-          {/* <Banner/> */}
+          <Banner/>
         </Wrapper>
       </BrowserRouter>
       {/* <TawkMessengerThing /> */}
