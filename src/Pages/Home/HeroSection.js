@@ -18,9 +18,9 @@ function HeroSection(props) {
         <div className="hero-content-button">
           {/* apply now was directing to samcint, now it's redirecting to same page */}
           <Link to="https://creditmitra.cloudbankin.com/onboard/#/login">
-            <buttton className="btn brand-primary py-3 px-4">Apply Now</buttton>
+            <buttton className="btn brand-primary py-3 px-4 home-apply">Apply Now</buttton>
           </Link>
-          <buttton className="btn brand-secondary py-3 px-4">
+          <buttton className="btn brand-secondary py-3 px-4 home-download">
             Download App
           </buttton>
         </div>

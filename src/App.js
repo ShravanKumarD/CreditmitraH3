@@ -232,7 +232,7 @@ function App() {
           {/* <Banner/> */}
         </Wrapper>
       </BrowserRouter>
-      <TawkMessengerThing />
+      {/* <TawkMessengerThing /> */}
     </div>
   );
 }
