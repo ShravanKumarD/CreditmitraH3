@@ -7,6 +7,8 @@ import "../SocialComponents/SocialComponents.css";
 import SocialComponentsMobile from "../SocialComponents/SocialComponentsMobile";
 import "../../Components/PersonalsLoansDropDown/InstantPersonalLoansByLocation.css";
 import "./Footer.css";
+import "./FooterMobile.css";
+import "./FooterTablet.css";
 
 function Footer(props) {
   const [selectedLocation, setSelectedLocation] = useState("");
@@ -77,7 +79,10 @@ function Footer(props) {
         },
         { displayName: "FAQ", redirectTo: "/faq" },
         { displayName: "Blog", redirectTo: "/blogs" },
-        { displayName: "Calculator", redirectTo: "/calculator" },
+        {
+          displayName: "EMI Calculator",
+          redirectTo: "/personal-loan-emi-calculator",
+        },
       ],
     },
   ];

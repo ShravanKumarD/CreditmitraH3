@@ -166,10 +166,10 @@ const Calculator = (props) => {
       <Header routePath={props.routePath} />
       <SEO
         title="Calculator | Personal loan EMI Calculator | CreditMitra"
-        description="CreditMitra understands the importance of customer satisfaction and personal service. You can reach our Customer Care team or one of our Dedicated Loan Officers at any time. Feel free to give us a call!"
-        keywords="instant personal loan in India, personal loan approval"
+        description="Calculate your personal loan EMI effortlessly with CreditMitra's easy-to-use EMI Calculator. Get accurate monthly payment estimates and plan your finances better."
+        keywords="personal loan, EMI calculator, loan calculator, CreditMitra, monthly payment estimate, loan EMI, finance planning, loan repayment, easy loan calculator"
         name="CreditMitra"
-        type="LendingService"
+        type="Personal Loan EMI Calculator"
       />
       <h3
         className="text-xl font-semibold mb-4 loan-calc-heading"

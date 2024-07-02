@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+  useLocation,
+  Navigate,
+} from "react-router-dom";
 import { useLayoutEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -174,8 +180,8 @@ function App() {
             />
             {/* Calculator routes */}
             <Route
-              path="calculator"
-              element={<Calculator routePath="calculator" />}
+              path="/personal-loan-emi-calculator"
+              element={<Calculator routePath="/personal-loan-emi-calculator" />}
             />
             {/* Sitemap Route */}
             <Route path="/sitemap.xml" element={<Sitemap />} />
@@ -183,7 +189,7 @@ function App() {
             <Route
               path="/instant-personal-loan-hyderabad"
               element={
-                <InstantPersonalsLoansAtHyd routePath="/http://www.creditmitra.in/instant-personal-loan-hyderabad" />
+                <InstantPersonalsLoansAtHyd routePath="/instant-personal-loan-hyderabad" />
               }
             />
             <Route
@@ -227,7 +233,8 @@ function App() {
               }
             />
             {/* Keep this at last. */}
-            <Route path="*" element={<Page404 />} />{" "}
+            <Route path="/404" element={<Page404 />} />{" "}
+            <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>
           {/* <Banner/> */}
         </Wrapper>

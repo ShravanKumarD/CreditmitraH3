@@ -20,29 +20,29 @@ text-align: center;
   font-family: Poppins;
   font-size: 1rem;
 } */
-.th-products{
+.th-products {
   margin-bottom: 12px;
   color: #fff;
   font-weight: 400;
-  font-family: Poppins
+  font-family: Poppins;
 }
-.th-products-header{
+.th-products-header {
   margin-bottom: 16px;
   color: #fff;
   font-weight: bold;
-  font-family: Poppins
+  font-family: Poppins;
 }
-.th-products-desc{
+.th-products-desc {
   margin-bottom: 12px;
   color: #fff;
   font-weight: 400;
   font-family: Poppins;
   /* width:100vw; */
 }
-.table-data-products{
+.table-data-products {
   color: #fff;
-        font-size: 18px;
-        font-family: Poppins;
+  font-size: 18px;
+  font-family: Poppins;
 }
 .slide-in-left {
   animation: slideInLeft 5s ease;
@@ -701,12 +701,11 @@ text-align: center;
   }
 }
 
-.form-control-dd-options{
+.form-control-dd-options {
   padding: 10px;
   color: #151b1e;
 }
-.dropdown{
-
+.dropdown {
 }
 
 .contact-submit-button {
@@ -717,8 +716,8 @@ text-align: center;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-  width:auto;
-  margin-left: 38%
+  width: auto;
+  margin-left: 38%;
 }
 
 /* contact-us-section ends */
@@ -772,7 +771,7 @@ text-align: center;
   .aboutus {
     padding-top: 6%;
   }
-  @media(max-width:768px) {
+  @media (max-width: 768px) {
     .aboutus {
       margin: 20px;
     }
@@ -998,7 +997,6 @@ text-align: center;
             line-height: normal;
             text-align: left;
             font-family: Poppins;
-          
 
             svg {
               &.isopened {
@@ -1023,17 +1021,17 @@ text-align: center;
         }
       }
     }
-    .faqBottomHeaderLine{
-       font-size: 28px; 
-       font-family: Poppins;
+    .faqBottomHeaderLine {
+      font-size: 28px;
+      font-family: Poppins;
     }
 
-    .faqBottomLine{
+    .faqBottomLine {
       font-size: 22px;
       font-family: Poppins;
       font-weight: 500;
     }
-        .more-questions {
+    .more-questions {
       color: #fff;
       display: flex;
       flex-direction: column;
@@ -1090,7 +1088,6 @@ text-align: center;
 }
 
 /* faq-section ends */
-
 
 /* common styling starts */
 
@@ -1232,7 +1229,7 @@ text-align: center;
   margin-left: 5%;
   width: 90%;
 } */
-.productHeader{
+.productHeader {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(
@@ -1248,16 +1245,15 @@ text-align: center;
   margin-bottom: 1rem;
   line-height: normal;
   font-family: Poppins;
-  margin:20px;
+  margin: 20px;
 }
 
 @media only screen and (max-width: 767px) {
-  .mainDiv{
+  .mainDiv {
     display: grid;
-      justify-items: center;
+    justify-items: center;
   }
-  
- 
+
   .hero-heading {
     margin-top: 20px;
   }
@@ -1310,10 +1306,6 @@ text-align: center;
       margin-top: 30px;
       /* how it works */
     }
-  }
-
-  .pinFooter {
-    margin-left: 0px;
   }
 
   .a {
@@ -1377,14 +1369,6 @@ text-align: center;
   /* img{
     display: none;
   } */
-  .footer-content {
-    flex-direction: column;
-    font-size: 14px;
-  }
-
-  .footer-content .navigation-container {
-    flex-direction: column;
-  }
 
   .page-container {
     padding: 0 20px 60px;
@@ -1868,7 +1852,7 @@ h1 {
 
 h2 {
   font-size: 20px;
-    font-family: Poppins;
+  font-family: Poppins;
 }
 
 h3 {
@@ -1876,10 +1860,6 @@ h3 {
 }
 
 @media only screen and (max-width: 1160px) {
-  .footer-content {
-    flex-direction: column;
-    font-size: 14px;
-  }
   .products-hero-section,
   .responsible-lending-section,
   .contact-us-section,
@@ -1887,9 +1867,6 @@ h3 {
     .btn {
       text-align: center;
     }
-  }
-  .footer-content .navigation-container {
-    flex-direction: column;
   }
 
   .page-container {
@@ -1916,8 +1893,6 @@ h3 {
   }
 }
 
-
-
 td,
 th {
   border: 1px solid #ddd;
@@ -1925,8 +1900,7 @@ th {
   text-align: left;
 }
 
-
-.aboutus-card{
+.aboutus-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1934,11 +1908,9 @@ th {
   border-radius: 34px;
   background: linear-gradient(140deg, #5e7784 5.94%, #2a363b 90.73%);
   color: #ffffff;
-  margin-bottom:40px;
+  margin-bottom: 40px;
   width: 10px;
 }
-
-
 
 /* contact us renewd styles */
 
@@ -2037,20 +2009,18 @@ th {
   color: rgba(255, 255, 255, 0.753);
 }
 
-.contactUsDropdown{
+.contactUsDropdown {
   width: 100%;
   padding: 10px;
 
   /* width:201px; */
   /* padding-left: 16px; */
-  margin: 0px 0px 10px  0px;
+  margin: 0px 0px 10px 0px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.753);
   border: 1px solid #fff;
-  border-radius: 8px
+  border-radius: 8px;
 }
-
-
 
 .contact-submit-button {
   padding: 8px 40px;
@@ -2101,22 +2071,22 @@ th {
   border-left: 1px solid rgb(248, 248, 248);
   height: 270px;
 }
-.contactUsMain{
-  text-align:left; 
-  margin-left: 7.5%; 
+.contactUsMain {
+  text-align: left;
+  margin-left: 7.5%;
   font-size: 2rem;
-   margin-top: -10vw; 
+  margin-top: -10vw;
 }
 
 @media (max-width: 760px) {
   .contact-submit-button {
-    margin-left: 30%
+    margin-left: 30%;
   }
-  .contactUsMain{
+  .contactUsMain {
     text-align: center;
-        margin-right:7vw;
+    margin-right: 7vw;
   }
-  .contactUsDropdown{
+  .contactUsDropdown {
     margin: 0px 0px 10px 0px;
   }
   .mainDivAtContact {
@@ -2156,65 +2126,60 @@ th {
   }
 }
 
-.responseText{
+.responseText {
   color: #ffffff;
   text-align: center;
 }
 
 /*scroll-bar stylings*/
 ::-webkit-scrollbar {
-  width:9px;
+  width: 9px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgba(128, 128, 128, 0);
   background-color: #2a363b;
   border-radius: 0px;
 }
-::-webkit-scrollbar-thumb { 
-  background:rgba(255, 255, 255, 0.116);
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.116);
   border-radius: 10px;
   border-left: 2px solid #2a363b;
   border-right: 2px solid #2a363b;
-
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #ffffff86;
 }
 
-
 /*inline-stylings*/
-.applicationProcessCard{
-  font-size:16px;
-  font-weight:300
+.applicationProcessCard {
+  font-size: 16px;
+  font-weight: 300;
 }
-.dropdownUnderLine{
-  margin:0px;
+.dropdownUnderLine {
+  margin: 0px;
 }
-.nav-logo-creditmitra{
+.nav-logo-creditmitra {
   width: 180;
 }
-.headerMainDiv{
-  display:flex;
+.headerMainDiv {
+  display: flex;
 }
-.headerSecondDiv{
+.headerSecondDiv {
   color: white;
-   display: flex;
+  display: flex;
 }
-.productDropDownBg{
-   color: white;
+.productDropDownBg {
+  color: white;
 }
-.buttonInLocation{
-  color: #fff; 
+.buttonInLocation {
+  color: #fff;
   text-decoration: none;
 }
 
-
-
-
-.contactusCheckBox{
-  color: #fff; 
+.contactusCheckBox {
+  color: #fff;
 }
-.contactusCheckBoxLegal{
+.contactusCheckBoxLegal {
   text-decoration: none;
 }
 .checkbox-container {
@@ -2231,4 +2196,3 @@ th {
 .contactusCheckBoxLegal {
   margin-left: 5px;
 }
-

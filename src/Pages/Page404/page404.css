@@ -19,23 +19,29 @@
 }
 
 .para404 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   color: azure;
   font-family: Poppins, sans-serif;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .bottomPara404 {
-  padding-bottom: 5px;
   border-bottom: 2px solid rgba(25, 156, 219, 0.5);
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 .links404 {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  color: azure;
+  .space404 {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
 }
 
 .links404 a {
@@ -46,28 +52,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .para404 {
-    font-size: 1.3rem;
-  }
-
   .content404 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .gif404 {
-      width: 90%;
+      width: 80%;
     }
+  }
+  .para404 {
+    font-size: 1.2rem;
   }
 
   .links404 {
     font-size: 1.1rem;
-    color: azure;
     padding-left: 1%;
     padding-right: 1%;
-    .space404 {
-      margin-left: 1%;
-      margin-right: 1%;
-    }
   }
 }
