@@ -236,10 +236,14 @@ function App() {
             <Route path="/404" element={<Page404 />} />{" "}
             <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>
-          <Banner/>
+          <p>
+      &nbsp;
+     </p>
+      <Banner/>
         </Wrapper>
       </BrowserRouter>
       {/* <TawkMessengerThing /> */}
+   
     </div>
   );
 }

@@ -22,7 +22,7 @@ const FixedBanner = () => {
   return (
     <div className={`fixed-banner ${visible ? 'visible' : ''}`}>
       <div>
-        <h1 className='bannerText'>Get Personal Loan Upto ₹2 Lakhs in 5 Minutes   
+        <h1 className='bannerText'>Get Personal Loan Upto <strong>₹2 Lakhs in 5 Minutes</strong>   
           <a className="btn btn-primary banner-button" href="https://creditmitra.cloudbankin.com/onboard/#/login">  Apply Now</a></h1>
  
       </div>

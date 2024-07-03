@@ -3,7 +3,7 @@
     bottom: -110px;
     left: 0;
     width: 100%;
-    background-color: #dfe2e4;
+    background-color:  #dfe2e4;
     color: white;
     text-align: center;
     padding: 0px 0;
@@ -24,10 +24,11 @@
   }
   @media (max-width:768px){
     .bannerText{
-      font-size: smaller;
+      font-size: 0px;
+      /* margin-bottom: 4px; */
     }
     .banner-button {
       margin-left: 0px;
-  }
+  } 
   }
   
