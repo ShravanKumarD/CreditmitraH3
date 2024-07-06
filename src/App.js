@@ -53,6 +53,7 @@ import Banner from "./Components/ContactUsBanner/ContactUsBanner";
 
 // keep 404 last always
 import Page404 from "./Pages/Page404/Page404";
+import EasyLoan from "./Pages/EasyLoan";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -231,6 +232,12 @@ function App() {
               element={
                 <CollectingManager routePath="/we-are-hiring/collecting-manager" />
               }
+            />
+            <Route
+            path="easy-loan"
+            element={
+              <EasyLoan routePath="easy-loan" />
+            }
             />
             {/* Keep this at last. */}
             <Route path="/404" element={<Page404 />} />{" "}

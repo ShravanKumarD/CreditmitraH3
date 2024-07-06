@@ -2133,6 +2133,9 @@ th {
   .vl {
     display: none;
   }
+  .top-cards-container{
+        flex-direction: column;
+  }
 }
 
 .responseText {
@@ -2204,4 +2207,108 @@ th {
 
 .contactusCheckBoxLegal {
   margin-left: 5px;
+}
+
+
+/* easy loan stylings */
+.easyloan-container{
+overflow: hidden;
+padding-right: 20px;
+padding-left: 20px;
+}
+.easy-loan-main-logo{
+  align-self: start;
+}
+.pInEasyLoan{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-weight: 300;
+  font-family: Poppins;
+  color: #fff;
+}
+.top-cards-container {
+  display: flex; 
+  justify-content: center;
+}
+
+.top-cards {
+  text-align: center;
+  margin: 32px; 
+  flex: 1; 
+  border: 1px solid #00000061;
+  border-radius: 10px;
+  background-color: #00246a;
+}
+.bottom-cards{
+  text-align: center;
+  margin: 32px; 
+  flex: 1; 
+  border-color:  #00000061;
+  border-radius: 10px;
+  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+}
+.top-card-text{
+  color: #fff;
+  font-size: 12px;
+  font-family: Poppins;
+  margin: 10px;
+}
+.top-card-img{
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+.line {
+  border-left: 1px solid rgb(248, 248, 248);
+  height: 40px;
+}
+.banner-container{
+  display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+  padding: 50px;
+  flex-wrap: wrap
+}
+.banner-elements{
+  display: flex;
+  align-items: center;
+}
+.category-container {
+  width: 100%; /* Ensures the category container takes full width */
+}
+.fieldName{
+  color: #fff;
+  font-family: Poppins;
+  font-size: large;
+  width: 100%;
+}
+.easyloan-form-container{
+  display: flex;
+  justify-content: center;
+}
+.el-input{
+  display: inline
+}
+
+  .list-row-el {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.hiring-button-el{
+  background: transparent;
+  transition: background-color 0.3s ease;
+  color: #ffffff;
+  border: 1px solid #7ED2FF;
+  margin: 6px;
+  border-radius: 17px;
+}
+
+.hiring-button-el.selected {
+  background-color: rgb(160, 160, 164);
+}
+.el-button{
+  display: flex;
+  justify-content: center
 }
