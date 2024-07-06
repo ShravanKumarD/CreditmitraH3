@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useRef } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { Link } from 'react-router-dom';
@@ -115,7 +115,7 @@ Get Approved Within Minutes
           
           <div className="product-apply-button">
             <button className="btn brand-primary">
-              <Link to="/" className='buttonInLocation'>Apply Now</Link>
+              <Link to="https://creditmitra.cloudbankin.com/onboard/#/login" className='buttonInLocation'>Apply Now</Link>
             </button>
           </div>
 

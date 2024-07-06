@@ -110,20 +110,20 @@ function ApplicationProcess(props) {
         }
     ];
 
-    const additionalCards = [
-        {
-            orderNo: 6,
-            img: Image6,
-            heading: "Instant Approval & Disbursal",
-            description: "Easy online process for loan sanction and fast disbursal"
-        },
-        {
-            orderNo: 7,
-            img: Image7,
-            heading: "Flexible Repayment Option",
-            description: "Accelerated payment option towards principal outstanding"
-        }
-    ];
+    // const additionalCards = [
+    //     {
+    //         orderNo: 6,
+    //         img: Image6,
+    //         heading: "Instant Approval & Disbursal",
+    //         description: "Easy online process for loan sanction and fast disbursal"
+    //     },
+    //     {
+    //         orderNo: 7,
+    //         img: Image7,
+    //         heading: "Flexible Repayment Option",
+    //         description: "Accelerated payment option towards principal outstanding"
+    //     }
+    // ];
 
     return (
         <div className="application-process-section">

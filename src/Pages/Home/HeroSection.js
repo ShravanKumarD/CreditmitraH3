@@ -28,8 +28,8 @@ function HeroSection(props) {
       <img
         src={heroImage}
         className="img-home"
-        alt="hero image"
-        loading="lazy"
+        alt="img"
+        // loading="lazy"
       />
     </div>
   );

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Header from '../../../Components/Header/Header'
 import Footer from '../../../Components/Footer/Footer';
 import './../wearehiring.css';
 import { Link } from "react-router-dom";
-import UserDefinedModal from '../../../Components/Modal/Modal';
 import Modal from 'react-modal';
 
 Modal.setAppElement('#root'); 
@@ -85,79 +84,6 @@ function UX_UIDesigner(props) {
                     <li className='JobDescription'> Flexibility to adapt to changing product requirements and priorities.</li>
                 </ul>
 
-
-
-                {/* <div
-                    className="product-apply-button"
-                    style={{ display: "flex", justifyContent: "center" }}>
-                    <button
-                        onClick={handleOpen}
-                        style={{ marginLeft: "0px" }}
-                        className="btn brand-primary lg">
-                        Apply Now
-                    </button>
-                </div>
-
-<p>
-    &nbsp;
-</p>
-                    <Modal isOpen={open} >
-                        <>
-                            <div className="form-container">
-                                <form onSubmit={handleSubmit}>
-                                    <div className="form-group">
-                                        <input type="text"
-                                            className="form-control"
-                                            id="name"
-                                            name="name"
-                                            placeholder="Your name"
-                                            value={formData.name}
-                                            onChange={handleChange}
-                                            required />
-                                        <div className="spacer" style={{ padding: "1vw" }}></div>
-                                        <input type="email"
-                                            name="email"
-                                            value={formData.email}
-                                            className="form-control"
-                                            id="email"
-                                            placeholder="Email address"
-                                            onChange={handleChange}
-                                            required />
-                                    </div>
-                                    <input
-                                        name="contact"
-                                        value={formData.contact}
-                                        onChange={handleChange}
-                                        maxLength={10}
-                                        className="form-control"
-                                        id="contact"
-                                        placeholder="Contact"
-                                        required />
-                                   <input
-                                    type="file"
-                                     id="avatar" 
-                                     name="avatar"
-                                       className="form-control"
-                                       placeholder="Resume"
-                                      accept="image/png, image/jpeg, pdf" />
-
-                                    <div className="form-group">
-                                        <textarea className="form-control"
-                                            name="message"
-                                            value={formData.message}
-                                            onChange={handleChange}
-                                            id="message"
-                                            placeholder="Message"
-                                            style={{ resize: "none", height: "100px" }}
-                                            required></textarea>
-                                    </div>
-                                    <button type="submit" onClose={handleClose} className="btn brand-primary lg">
-                                        Submit
-                                    </button>
-                                </form>
-                            </div>
-                        </>
-                    </Modal> */}
  {/* <div className="ModalContainer">
       <button 
         className="btn brand-primary lg" 
@@ -184,10 +110,9 @@ function UX_UIDesigner(props) {
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '80%',
             height: '80%',
             padding: '20px',
-            background: '#fff',
+            background: '#151b1e',
             overflow: 'auto',
             WebkitOverflowScrolling: 'touch',
             borderRadius: '10px',
@@ -197,7 +122,6 @@ function UX_UIDesigner(props) {
         }}
       >
         <div className="form-container">
-          <button onClick={handleClose} style={{ float: 'right' }}>Close</button>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <input 
@@ -232,17 +156,10 @@ function UX_UIDesigner(props) {
               placeholder="Contact"
               required
             />
-            <input 
-              name="rating"
-              value={formData.rating}
-              onChange={handleChange}
-              type="number"
-              maxLength={1}
-              className="form-control"
-              id="rating"
-              placeholder="Rate us out of five (5)"
-              required
-            />
+            <label for="pdfInput">Upload a PDF file (Max size: 2 MB):</label>
+        <input type="file" id="pdfInput" accept=".pdf" required/>
+
+
             <div className="form-group">
               <textarea 
                 className="form-control"

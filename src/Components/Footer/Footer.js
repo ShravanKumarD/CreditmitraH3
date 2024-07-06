@@ -11,7 +11,7 @@ import "./FooterMobile.css";
 import "./FooterTablet.css";
 
 function Footer(props) {
-  const [selectedLocation, setSelectedLocation] = useState("");
+  // const [selectedLocation, setSelectedLocation] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleDropdownToggle = () => {
@@ -19,7 +19,7 @@ function Footer(props) {
   };
 
   const handleLocationSelect = (location) => {
-    setSelectedLocation(location.displayName);
+    // setSelectedLocation(location.displayName);
     setIsDropdownOpen(false);
   };
 

@@ -10,7 +10,7 @@ function InstantLoanWithLowCibil() {
     const olClass = classNames(defaultStyle, backgroundColorStyle, { paddingLeft: 0, listStyleType: 'decimal', color: '#222222' });
     const liClass = classNames({ marginLeft: '32.29pt', fontFamily: 'serif', color: '#222222' });
     // const strongSpanClass = classNames({ fontFamily: 'Calibri', color: '#222222' });
-    const strongSpanClass = classNames({});
+    // const strongSpanClass = classNames({});
 
     return (
         <div>
