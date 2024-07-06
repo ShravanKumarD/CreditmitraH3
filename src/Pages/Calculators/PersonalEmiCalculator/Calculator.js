@@ -42,7 +42,7 @@ const Calculator = (props) => {
   const handleChangeLoanAmount = (event) => {
     // Convert formatted string back to number before setting state
     // Remove non-numeric characters except commas, then remove commas
-    const inputValue = Number(event.target.value);
+    const inputValue = Number(event.target.value.replace(/[^\d]/g, ""));
     const value = inputValue > 500000 ? 500000 : inputValue;
     setLoanAmount(value);
   };
