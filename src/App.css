@@ -2135,7 +2135,7 @@ th {
   }
   .top-cards-container{
         flex-direction: column;
-  }
+  } 
 }
 
 .responseText {
@@ -2213,8 +2213,8 @@ th {
 /* easy loan stylings */
 .easyloan-container{
 overflow: hidden;
-padding-right: 20px;
-padding-left: 20px;
+/* padding-right: 20px;
+padding-left: 20px; */
 }
 .easy-loan-main-logo{
   align-self: start;
@@ -2238,7 +2238,8 @@ padding-left: 20px;
   flex: 1; 
   border: 1px solid #00000061;
   border-radius: 10px;
-  background-color: #00246a;
+  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e3b 90.73%);
+  box-shadow: 10px 20px 50px 10px rgb(0 0 0);
 }
 .bottom-cards{
   text-align: center;
@@ -2246,7 +2247,8 @@ padding-left: 20px;
   flex: 1; 
   border-color:  #00000061;
   border-radius: 10px;
-  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+  background:linear-gradient(140deg, #5e7784 5.94%, #151b1e3b 90.73%);
+  box-shadow: 10px 20px 50px 10px rgb(0 0 0);
 }
 .top-card-text{
   color: #fff;
@@ -2266,13 +2268,14 @@ padding-left: 20px;
 .banner-container{
   display: flex;
   justify-content: space-evenly;
-  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e3b 90.73%);
   padding: 50px;
   flex-wrap: wrap
 }
 .banner-elements{
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 .category-container {
   width: 100%; /* Ensures the category container takes full width */
@@ -2311,4 +2314,12 @@ padding-left: 20px;
 .el-button{
   display: flex;
   justify-content: center
+}
+
+.el-form{
+  border: 1px solid #151b1e;
+  padding: 60px;
+  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e3b 90.73%);
+  border-radius: 20px;
+  box-shadow: 10px 20px 50px 10px rgb(0 0 0);
 }

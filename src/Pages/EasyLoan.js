@@ -40,15 +40,15 @@ export default function EasyLoan() {
     const bottomCards = [
         {
             text: "Min Salary ₹18,000 ",
-            icon: require('./../assets/images/easyloan/minSalary.png')
+            icon: require('./../assets/images/easyloan/min_sal.png')
         },
         {
             text: "For salaried individuals",
-            icon: require('./../assets/images/easyloan/salaried-ind.png')
+            icon: require('./../assets/images/easyloan/salary.png')
         },
         {
             text: "Age: 21-55 years",
-            icon: require('./../assets/images/easyloan/age-limit.png')
+            icon: require('./../assets/images/easyloan/age-res.png')
         }
     ]
     const options = [
@@ -146,15 +146,23 @@ export default function EasyLoan() {
                     title="CreditMitra"
                     alt="CreditMitra"
                 />
+                <p>
+    &nbsp;
+</p>
                 <div className="row">
                     <div className="col-md-12">
                         <h1>Personal loan of up to ₹5 lacs</h1>
                         <p className="pInEasyLoan">We got your cash needs covered. Get approved on Fibe with 3 to 24 month flexible EMI options, minimum documentation, low interest rates starting 12%p.a.* and ZERO foreclosure charges</p>
+                        <p>
+    &nbsp;
+</p>
                         <div>{rederProcessArray()}</div>
                     </div>
-
+<p>
+    &nbsp;
+</p>
                     <div className="row easyloan-form-container">
-    <div className="col-sm-6">
+    <div className="col-sm-6 el-form">
         <div className="form-group">
             <label htmlFor="firstName" className="fieldName">First Name</label>
             <input
@@ -163,7 +171,7 @@ export default function EasyLoan() {
                 name="firstName"
                 value={text}
                 onChange={handleChange}
-                placeholder="Enter text..."
+                placeholder="Enter first name as per PAN"
                 className="form-control el-input"
             />
         </div>
@@ -176,7 +184,7 @@ export default function EasyLoan() {
                 name="lastName"
                 value={text}
                 onChange={handleChange}
-                placeholder="Enter text..."
+                placeholder="Enter last name as per PAN"
                 className="form-control el-input"
             />
         </div>
@@ -207,19 +215,21 @@ export default function EasyLoan() {
                 id="mobile"
                 name="mobile"
                 value={mobile}
-                placeholder="Enter text..."
+                placeholder="Enter 10 digits of number"
                 onChange={handleMobileChange}
                 className="form-control el-input"
             />
         </div>
         <div className="col-sm-6">
-            <button className="btn brand-primary">Submit</button>
+            <button className="btn brand-primary lg">Submit</button>
     </div>
     </div>
 
    
 </div>
-
+<p>
+    &nbsp;
+</p>
                     <p>
                         &nbsp;
                     </p>
