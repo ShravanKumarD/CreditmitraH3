@@ -83,9 +83,9 @@ function Footer(props) {
           displayName: "EMI Calculator",
           redirectTo: "/personal-loan-emi-calculator",
         },
-        {
-          displayName:"Easy Loan",redirectTo:"/easy-loan"
-        }
+        // {
+        //   displayName:"Easy Loan",redirectTo:"/easy-loan"
+        // }
       ],
     },
   ];
