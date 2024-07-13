@@ -32,6 +32,7 @@ const WeAreHiring = (props) => {
 a key role in developing and executing our digital marketing strategy.`,
       modes: ["Full Time"],
       redirect: "digital-marketing-specialist",
+       path:"/job-application-form"
     },
     {
       Designation: "Collection Manager",
@@ -39,6 +40,7 @@ a key role in developing and executing our digital marketing strategy.`,
 provide accessible financial solutions to salaried individuals.`,
       modes: ["Full Time"],
       redirect: "collecting-manager",
+       path:"/job-application-form"
     },
     {
       Designation: "Finance Manager",
@@ -46,6 +48,7 @@ provide accessible financial solutions to salaried individuals.`,
 provide accessible financial solutions to salaried individuals.`,
       modes: ["Full Time"],
       redirect: "finance-manager",
+       path:"/job-application-form"
     },
   ];
 

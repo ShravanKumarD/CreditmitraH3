@@ -1,7 +1,56 @@
-import React from "react";
+import React ,{useState}from "react";
+import Modal from "./../ApplicationForm";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer/Footer";
+
 export default function CollectingManager(props) {
+  const [open, setOpen] = React.useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    contact: '',
+    resume: null
+  });
+  const handleClose = () => {
+      setOpen(false);
+  };
+  const handleOpen = () => {
+      setOpen(true);
+  };
+  const handleChange = (e) => {
+    console.log(e,"eeee")
+    if (e.target.name === 'resume') {
+      setFormData({ ...formData, resume: e.target.files[0] });
+    } else {
+      setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('contact', formData.contact);
+      formDataToSend.append('resume', formData.resume);
+      const response = await fetch('http://3.111.198.234/internal-feed/job-post/newjob', {
+        method: 'POST',
+        body: formDataToSend
+      });
+
+      if (response.ok) {
+        console.log(response,"form")
+        alert('Application submitted successfully!');
+        handleClose();
+      } else {
+        alert('Error submitting application. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Error submitting application. Please try again.');
+    }
+  };
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -79,6 +128,75 @@ export default function CollectingManager(props) {
             interpersonal, and conflict-resolution skills.
           </li>
         </ul>
+        <div className="ModalContainer">
+      <button 
+        className="btn brand-primary lg" 
+        onClick={handleOpen} 
+        disabled={open}
+      >
+        Apply now
+      </button>
+    </div>
+    <Modal isOpen={open} closeModal={handleClose} >
+        <div className="form-in-hiring">
+          <h1>Application form</h1>
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <p  className='text-field'>Name</p>
+              <input 
+                type="text"
+                className="form-control"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
+                required 
+              />
+            </div>
+            <div className="form-group">
+              <p  className='text-field'>Email</p>
+              <input 
+                type="email"
+                name="email"
+                value={formData.email}
+                className="form-control"
+                id="email"
+                placeholder="Email address"
+                onChange={handleChange}
+                required 
+              />
+            </div>
+            <div className="form-group">
+              <p  className='text-field'>Mobile</p>
+              <input 
+                type="text"
+                name="contact"
+                value={formData.contact}
+                onChange={handleChange}
+                className="form-control"
+                id="contact"
+                placeholder="Contact"
+                maxLength={10}
+                required
+              />
+            </div>
+            <div className="form-group">
+            <p className='text-field'>Upload your resume:</p>
+            <input
+            type="file"
+            name="resume"
+            accept=".pdf"
+            onChange={handleChange}
+            required
+          />
+            </div>
+            <div className="product-apply-button">
+              <button type="submit" className="btn brand-primary lg">Apply now</button>
+            </div>
+          </form>
+        </div>
+      </Modal>
       </div>
       <Footer />
     </>

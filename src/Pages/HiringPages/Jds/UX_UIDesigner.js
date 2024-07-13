@@ -16,7 +16,6 @@ function UX_UIDesigner(props) {
     });
     const handleClose = () => {
         setOpen(false);
-        // alert('youre response saved,we will get back to you soon.')
     };
     const handleOpen = () => {
         setOpen(true);
@@ -86,13 +85,13 @@ function UX_UIDesigner(props) {
                 </ul>
 
   <div className="ModalContainer">
-      {/* <button 
+      <button 
         className="btn brand-primary lg" 
         onClick={handleOpen} 
         disabled={open}
       >
         Apply now
-      </button> */}
+      </button>
     </div>
     <Modal isOpen={open} closeModal={handleClose} >
         <div className="form-in-hiring">
