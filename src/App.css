@@ -2133,9 +2133,9 @@ th {
   .vl {
     display: none;
   }
-  .top-cards-container{
+  /* .top-cards-container{
         flex-direction: column;
-  } 
+  }  */
 }
 
 .responseText {
@@ -2218,14 +2218,18 @@ padding-left: 20px; */
 }
 .easy-loan-main-logo{
   align-self: start;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 .pInEasyLoan{
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0px;
   font-weight: 300;
   font-family: Poppins;
   color: #fff;
+  width: 90%;
+  margin: auto;
 }
 .top-cards-container {
   display: flex; 
@@ -2234,31 +2238,30 @@ padding-left: 20px; */
 
 .top-cards {
   text-align: center;
-  margin: 32px; 
-  flex: 1; 
   border: 1px solid #00000061;
   border-radius: 10px;
-  background: linear-gradient(140deg, #5e7784 5.94%, #151b1e3b 90.73%);
+  /* background:linear-gradient(140deg, #59666e 5.94%, #a0b3bd3b 90.73%); */
+  background-color: #4c606bac;
   box-shadow: 10px 20px 50px 10px rgb(0 0 0);
+  margin: 10px;
 }
 .bottom-cards{
   text-align: center;
-  margin: 32px; 
-  flex: 1; 
-  border-color:  #00000061;
+  border: 1px solid #00000061;
   border-radius: 10px;
   background:linear-gradient(140deg, #5e7784 5.94%, #151b1e3b 90.73%);
   box-shadow: 10px 20px 50px 10px rgb(0 0 0);
+  margin: 10px;
 }
 .top-card-text{
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
   font-family: Poppins;
   margin: 10px;
 }
 .top-card-img{
-  height: 100px;
-  width: 100px;
+  height: 40px;
+  width: 50px;
   margin: 10px;
 }
 .line {
@@ -2278,20 +2281,23 @@ padding-left: 20px; */
   padding: 20px;
 }
 .category-container {
-  width: 100%; /* Ensures the category container takes full width */
+  width: 100%; 
 }
 .fieldName{
   color: #fff;
   font-family: Poppins;
-  font-size: large;
+  font-size: 14px;
   width: 100%;
+  margin: 5px;
 }
 .easyloan-form-container{
   display: flex;
   justify-content: center;
 }
 .el-input{
-  display: inline
+  display: inline;
+  font-size: 12px;
+  height: 35px;;
 }
 
   .list-row-el {

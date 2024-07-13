@@ -50,6 +50,7 @@ import DigitalMarketing from "./Pages/HiringPages/Jds/DigitalMarketing";
 import FinanceManger from "./Pages/HiringPages/Jds/FinanceManger";
 import CollectingManager from "./Pages/HiringPages/Jds/CollectingManager";
 import Banner from "./Components/ContactUsBanner/ContactUsBanner";
+import JobApplicationForm from "./Pages/HiringPages/ApplicationForm";
 
 // keep 404 last always
 import Page404 from "./Pages/Page404/Page404";
@@ -239,6 +240,16 @@ function App() {
               <EasyLoan routePath="easy-loan" />
             }
             />
+            
+            <Route
+            path="job-application-form"
+            element={
+              <JobApplicationForm routePath="job-application-form" />
+              }
+              />
+
+
+
             {/* Keep this at last. */}
             <Route path="/404" element={<Page404 />} />{" "}
             <Route path="*" element={<Navigate to="/404" replace />} />

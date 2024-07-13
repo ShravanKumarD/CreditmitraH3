@@ -26,29 +26,29 @@ export default function EasyLoan() {
     const processArray = [
         {
             text: "Instant cash up to ₹5 lacs",
-            icon: require('./../assets/images/easyloan/money-bag.png')
+            icon: require('./../assets/images/easyloan/Instant_cash.png')
         },
         {
             text: "Approval in just 2 min",
-            icon: require('./../assets/images/easyloan/stopwatch.png')
+            icon: require('./../assets/images/easyloan/Approval.png')
         },
         {
             text: "No foreclosure charges",
-            icon: require('./../assets/images/easyloan/foreclosure.png')
+            icon: require('./../assets/images/easyloan/No_foreclosure.png')
         }
     ]
     const bottomCards = [
         {
             text: "Min Salary ₹18,000 ",
-            icon: require('./../assets/images/easyloan/min_sal.png')
+            icon: require('./../assets/images/easyloan/min_salary.png')
         },
         {
             text: "For salaried individuals",
-            icon: require('./../assets/images/easyloan/salary.png')
+            icon: require('./../assets/images/easyloan/Salaried_individuals.png')
         },
         {
             text: "Age: 21-55 years",
-            icon: require('./../assets/images/easyloan/age-res.png')
+            icon: require('./../assets/images/easyloan/21+.png')
         }
     ]
     const options = [
@@ -81,8 +81,9 @@ export default function EasyLoan() {
             <div className="top-cards-container">
                 {bottomCards.map((item, index) => (
                     <div className="bottom-cards" key={index}>
+                         <img src={item.icon} alt="icon" className="top-card-img" />
                         <p className="top-card-text">{item.text}</p>
-                        <img src={item.icon} alt="icon" className="top-card-img" />
+                       
                     </div>
                 ))}
             </div>
@@ -94,8 +95,9 @@ export default function EasyLoan() {
             <div className="top-cards-container">
                 {processArray.map((item, index) => (
                     <div className="top-cards" key={index}>
+                           <img src={item.icon} alt="icon" className="top-card-img" />
                         <p className="top-card-text">{item.text}</p>
-                        <img src={item.icon} alt="icon" className="top-card-img" />
+                     
                     </div>
                 ))}
             </div>

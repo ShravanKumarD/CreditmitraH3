@@ -4,6 +4,7 @@ import Header from "../../Components/Header/Header";
 import "./../HiringPages/wearehiring.css";
 import Like from "./../../assets/images/like.png";
 import { Link, redirect } from "react-router-dom";
+import { Button } from "reactstrap";
 
 const WeAreHiring = (props) => {
   const [selectedOption, setSelectedOption] = useState("all");
@@ -23,6 +24,7 @@ const WeAreHiring = (props) => {
         "We are looking for a skilled UX/UI Designer to collaborate with our team for our fintech based product.",
       modes: ["Full Time"],
       redirect: "ux/ui-designer",
+      path:"/job-application-form"
     },
     {
       Designation: "Digital marketing specialist",
@@ -79,10 +81,15 @@ provide accessible financial solutions to salaried individuals.`,
               style={{ color: "#fff", textDecoration: "none" }}
             >
               <div className="designation">{job.Designation}</div>
+              <Link to={job.redirect} style={{ color: "#fff", textDecoration: "none" }}>
               <div className="like-container">
-                <img className="like" src={Like} alt="Like" />
-                <p className="like-text">Save</p>
+                <button className="hiring-apply-now">
+                {/* <img className="like" src={Like} alt="Like" /> */}
+                {/* <p className="like-text">Apply Now</p> */}
+                Apply Now
+                </button>
               </div>
+              </Link>
               <div className="head-line">{job.headLine}</div>
             </Link>
             <div className="modes">
@@ -108,7 +115,7 @@ provide accessible financial solutions to salaried individuals.`,
           <h1 className="content-heading">Be a Part Of Our Mission</h1>
           <p className="subHeading">
             We're looking for passionate people to join us on our mission. We
-            value flat hierarchies, clear communication, and full ownership and
+            value flat hierarchies, clear communicati`on, and full ownership and
             responsibility.
           </p>
           <h2 className="hiring-heading">We're hiring!</h2>

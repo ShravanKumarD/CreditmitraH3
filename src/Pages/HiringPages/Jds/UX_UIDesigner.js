@@ -3,57 +3,58 @@ import Header from '../../../Components/Header/Header'
 import Footer from '../../../Components/Footer/Footer';
 import './../wearehiring.css';
 import { Link } from "react-router-dom";
-import Modal from 'react-modal';
+import Modal from "./../ApplicationForm";
 
-Modal.setAppElement('#root'); 
 
 function UX_UIDesigner(props) {
     const [open, setOpen] = React.useState(false);
     const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        contact: '',
-        message: '',
+      name: '',
+      email: '',
+      contact: '',
+      resume: null
     });
-
     const handleClose = () => {
         setOpen(false);
-        alert('youre response saved,we will get back to you soon.')
+        // alert('youre response saved,we will get back to you soon.')
     };
-
     const handleOpen = () => {
         setOpen(true);
     };
-
     const handleChange = (e) => {
-        const { name, value } = e.target;
-        if (name === 'contact') {
-            const numericValue = value.replace(/\D/g, '');
-            setFormData({
-                ...formData,
-                [name]: numericValue
-            });
+      console.log(e,"eeee")
+      if (e.target.name === 'resume') {
+        setFormData({ ...formData, resume: e.target.files[0] });
+      } else {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+      }
+    };
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('email', formData.email);
+        formDataToSend.append('contact', formData.contact);
+        formDataToSend.append('resume', formData.resume);
+        const response = await fetch('http://3.111.198.234/internal-feed/job-post/newjob', {
+          method: 'POST',
+          body: formDataToSend
+        });
+  
+        if (response.ok) {
+          console.log(response,"form")
+          alert('Application submitted successfully!');
+          handleClose();
         } else {
-            setFormData({
-                ...formData,
-                [name]: value
-            });
+          alert('Error submitting application. Please try again.');
         }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('Error submitting application. Please try again.');
+      }
     };
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        let mobile = { contact: formData.contact };
-        const mobileNumber = ((mobile) => {
-            const mobileNumberPattern = /^[5-9]\d{9}$/;
-            if (mobileNumberPattern.test(mobile.contact)) {
-                console.log("true");
-                handleClose();
-            } else {
-                alert("enter a valid mobile number")
-            }
-        })(mobile)
-    };
-
+  
     return (
         <>
             <Header routePath={props.routePath} />
@@ -84,46 +85,21 @@ function UX_UIDesigner(props) {
                     <li className='JobDescription'> Flexibility to adapt to changing product requirements and priorities.</li>
                 </ul>
 
- {/* <div className="ModalContainer">
-      <button 
+  <div className="ModalContainer">
+      {/* <button 
         className="btn brand-primary lg" 
         onClick={handleOpen} 
         disabled={open}
       >
         Apply now
-      </button>
-      <Modal 
-        isOpen={open} 
-        onRequestClose={handleClose}
-        style={{
-          overlay: {
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.75)',
-            zIndex: 1000
-          },
-          content: {
-            position: 'fixed',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            height: '80%',
-            padding: '20px',
-            background: '#151b1e',
-            overflow: 'auto',
-            WebkitOverflowScrolling: 'touch',
-            borderRadius: '10px',
-            outline: 'none',
-            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-          }
-        }}
-      >
-        <div className="form-container">
+      </button> */}
+    </div>
+    <Modal isOpen={open} closeModal={handleClose} >
+        <div className="form-in-hiring">
+          <h1>Application form</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
+              <p  className='text-field'>Name</p>
               <input 
                 type="text"
                 className="form-control"
@@ -134,7 +110,9 @@ function UX_UIDesigner(props) {
                 onChange={handleChange}
                 required 
               />
-              <div className="spacer" style={{ padding: "1vw" }}></div>
+            </div>
+            <div className="form-group">
+              <p  className='text-field'>Email</p>
               <input 
                 type="email"
                 name="email"
@@ -146,43 +124,36 @@ function UX_UIDesigner(props) {
                 required 
               />
             </div>
-            <input 
-              name="contact"
-              value={formData.contact}
-              onChange={handleChange}
-              maxLength={10}
-              className="form-control"
-              id="contact"
-              placeholder="Contact"
-              required
-            />
-            <label for="pdfInput">Upload a PDF file (Max size: 2 MB):</label>
-        <input type="file" id="pdfInput" accept=".pdf" required/>
-
-
             <div className="form-group">
-              <textarea 
-                className="form-control"
-                name="message"
-                value={formData.message}
+              <p  className='text-field'>Mobile</p>
+              <input 
+                type="text"
+                name="contact"
+                value={formData.contact}
                 onChange={handleChange}
-                id="message"
-                placeholder="Message"
-                style={{ resize: "none", height: "100px" }}
+                className="form-control"
+                id="contact"
+                placeholder="Contact"
+                maxLength={10}
                 required
-              ></textarea>
+              />
             </div>
-            <div className="product-apply-button" style={{ display: "flex", justifyContent: "center" }}>
-              <Link to="https://creditmitra.cloudbankin.com/onboard/#/login" style={{ color: "#fff", textDecoration: "none" }}>
-                <button style={{ marginLeft: "0px" }} className="btn brand-primary lg">
-                  Apply Now
-                </button>
-              </Link>
+            <div className="form-group">
+            <p className='text-field'>Upload your resume:</p>
+            <input
+            type="file"
+            name="resume"
+            accept=".pdf"
+            onChange={handleChange}
+            required
+          />
+            </div>
+            <div className="product-apply-button">
+              <button type="submit" className="btn brand-primary lg">Apply now</button>
             </div>
           </form>
         </div>
       </Modal>
-    </div> */}
 
             </div>
             <Footer />
