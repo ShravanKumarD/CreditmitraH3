@@ -51,6 +51,7 @@ import FinanceManger from "./Pages/HiringPages/Jds/FinanceManger";
 import CollectingManager from "./Pages/HiringPages/Jds/CollectingManager";
 import Banner from "./Components/ContactUsBanner/ContactUsBanner";
 import JobApplicationForm from "./Pages/HiringPages/ApplicationForm";
+import JobApplications from "./Pages/HiringPages/JobApplications";
 
 // keep 404 last always
 import Page404 from "./Pages/Page404/Page404";
@@ -247,7 +248,11 @@ function App() {
               <JobApplicationForm routePath="job-application-form" />
               }
               />
-
+              <Route
+              path="job-applications"
+              element={
+                <JobApplications routePath="job-applications" />
+              }/>
 
 
             {/* Keep this at last. */}

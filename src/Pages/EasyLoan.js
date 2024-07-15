@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Logo from "../../src/assets/images/logo.png";
-import { icon, text } from "@fortawesome/fontawesome-svg-core";
-import { Button } from "bootstrap";
 
 export default function EasyLoan() {
     const [text, setText] = useState('');

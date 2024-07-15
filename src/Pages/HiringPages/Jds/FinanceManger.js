@@ -2,6 +2,7 @@ import React ,{useState}from "react";
 import Modal from "./../ApplicationForm";
 import Header from "../../../Components/Header/Header";
 import Footer from "../../../Components/Footer/Footer";
+import "./../wearehiring.css";
 
 export default function FinanceManger(props) {
   const [open, setOpen] = React.useState(false);
@@ -175,6 +176,7 @@ export default function FinanceManger(props) {
             type="file"
             name="resume"
             accept=".pdf"
+            id="resume"
             onChange={handleChange}
             required
           />

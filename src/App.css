@@ -2260,8 +2260,7 @@ padding-left: 20px; */
   margin: 10px;
 }
 .top-card-img{
-  height: 40px;
-  width: 50px;
+  height: 50px;
   margin: 10px;
 }
 .line {
@@ -2307,16 +2306,16 @@ padding-left: 20px; */
 }
 .hiring-button-el{
   background: transparent;
-  transition: background-color 0.3s ease;
+  transition: #1da1e8 0.3s ease;
   color: #ffffff;
   border: 1px solid #7ED2FF;
-  margin: 6px;
+  margin: 5px;
   border-radius: 17px;
 }
 
-.hiring-button-el.selected {
-  background-color: rgb(160, 160, 164);
-}
+/* .hiring-button-el.selected {
+  background-color: rgb(75, 75, 144);
+} */
 .el-button{
   display: flex;
   justify-content: center

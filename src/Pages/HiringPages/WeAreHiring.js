@@ -21,13 +21,15 @@ const WeAreHiring = (props) => {
     {
       Designation: "UX/UI Designer",
       headLine:
-        "We are looking for a skilled UX/UI Designer to collaborate with our team for our fintech based product.",
+        `We are looking for a skilled UX/UI Designer to collaborate with our team for our fintech based product. In this role, you will have the opportunity to work on multiple attributes of
+                    the product, contributing your expertise to create intuitive and visually appealing user
+                    interfaces and designs.`,
       modes: ["Full Time"],
       redirect: "ux/ui-designer",
       path:"/job-application-form"
     },
     {
-      Designation: "Digital marketing specialist",
+      Designation: "Digital Marketing Specialist",
       headLine: `We are seeking a highly motivated and creative Digital Marketer to join our team and play 
 a key role in developing and executing our digital marketing strategy.`,
       modes: ["Full Time"],
