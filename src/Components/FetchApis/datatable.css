@@ -1,0 +1,91 @@
+.pan-table-container {
+    overflow-x: auto;
+    margin: 0 auto; 
+    padding: 50px; 
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse; 
+    scroll-behavior: auto;
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .data-table td {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .data-table th, .data-table td {
+      font-size: 12px;
+      padding: 6px; 
+    }
+  }
+
+  .pan-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pan-input-container{
+display: flex;
+flex-direction: column
+  }
+  .spinner{
+color:aliceblue;
+font-family: Poppins;
+font-size: 1.5rem
+  }
+  .error{
+    color: red;
+    text-align: center;
+  }
+
+
+
+  .pan-table-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .scrollable-table {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+  }
+  
+  .data-table th,
+  .data-table td {
+    padding: 8px 12px;
+    text-align: left;
+    white-space: nowrap; 
+    color: white;
+  }
+  
+  .data-table th {
+    background-color: #333; 
+  }
+  
+  .data-table tr:nth-child(even) {
+    background-color: #444; 
+  }
+  
+  .data-table tr:nth-child(odd) {
+    background-color: #555; 
+  }
+  

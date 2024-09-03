@@ -56,6 +56,7 @@ import JobApplications from "./Pages/HiringPages/JobApplications";
 // keep 404 last always
 import Page404 from "./Pages/Page404/Page404";
 import EasyLoan from "./Pages/EasyLoan";
+import FetchApis from "./Components/FetchApis/FetchApis";
 
 function App() {
   const Wrapper = ({ children }) => {
@@ -253,7 +254,11 @@ function App() {
               element={
                 <JobApplications routePath="job-applications" />
               }/>
-
+              <Route
+              path="fetch-pan-details"
+              element={
+               <FetchApis routePath="fetch-pan-details"/>
+              }/>
 
             {/* Keep this at last. */}
             <Route path="/404" element={<Page404 />} />{" "}

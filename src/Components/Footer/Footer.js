@@ -103,8 +103,9 @@ function Footer(props) {
                     className="btn dropdown-toggle dropdown-toggleFooter"
                     type="button"
                     onClick={handleDropdownToggle}
+                    style={{fontFamily:"Poppins",marginTop:"-6px"}}
                   >
-                    {"Loans By Location"}
+                    {"Loans by Location"}
                   </button>
                   {isDropdownOpen && (
                     <ul className="dropdown-menu custom-dropdown-menu show">
@@ -166,7 +167,7 @@ function Footer(props) {
           </div>
           <SocialComponentsMobile />
           <p className="copyright-text">
-            © 2024 CreditMitra — All Rights are Reserved
+            © 2024 CreditMitra — All Rights are Reserved @<a href="https://samcintsolutions.in/" style={{textDecoration:"none"}}>Samcint Solutions Private Limited.</a>
           </p>
         </div>
       </div>

@@ -728,6 +728,14 @@ text-align: center;
   font-family: Poppins;
 }
 
+@media (min-width:768px) {
+  .cntUs{
+    display: flex;
+    padding: 0 58px 110px;
+  /* justify-content:safe; */
+  }
+}
+
 /* contact-us-section ends */
 
 /* about-us-container starts */
@@ -868,6 +876,21 @@ text-align: center;
 /* about-us-container ends */
 
 /* lendingpartners-section starts */
+.legend-partners{
+    border-radius: 32px;
+    background: linear-gradient(140deg, #5e7784 5.94%, #151b1e 90.73%);
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 0.7%;
+    border: 1px solid #3caff5;
+    /* margin: 50px;
+      padding: 150px 50px; */
+    
+}
 .lendingpartners-section {
   .content {
     text-align: center;
@@ -2023,7 +2046,7 @@ th {
 
   /* width:201px; */
   /* padding-left: 16px; */
-  margin: 0px 0px 10px 0px;
+  margin: 0px 26px 10px 0px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.753);
   border: 1px solid #fff;
@@ -2082,7 +2105,7 @@ th {
 }
 .contactUsMain {
   text-align: left;
-  margin-left: 7.5%;
+  margin-left: 4%;
   font-size: 2rem;
   margin-top: -10vw;
 }

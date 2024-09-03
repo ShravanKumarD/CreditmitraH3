@@ -15,6 +15,7 @@ function Contact(props) {
     { value: "repayment_issue", label: "Repayment issue" },
     { value: "others", label: "Others" },
   ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,6 +23,7 @@ function Contact(props) {
     message: "",
     reason: "",
   });
+
   const [formStatus, setFormStatus] = useState("");
 
   const handleSelect = (e) => {
@@ -50,15 +52,14 @@ function Contact(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let mobile = { contact: formData.contact };
-    const mobileNumber = ((mobile) => {
-      const mobileNumberPattern = /^[5-9]\d{9}$/;
-      if (mobileNumberPattern.test(mobile.contact)) {
-        console.log("true");
-      } else {
-        alert("enter a valid mobile number");
-      }
-    })(mobile);
+    const mobile = { contact: formData.contact };
+    const mobileNumberPattern = /^[5-9]\d{9}$/;
+
+    if (!mobileNumberPattern.test(mobile.contact)) {
+      alert("Enter a valid mobile number");
+      return;
+    }
+
     emailjs
       .send(
         "service_vjn84f9",
@@ -85,9 +86,11 @@ function Contact(props) {
         }
       );
   };
+
   useEffect(() => {
     console.log(formData, "formdata");
-  }, []);
+  }, [formData]);
+
   return (
     <>
       <Header routePath={props.routePath} />
@@ -99,7 +102,7 @@ function Contact(props) {
         type="LendingService"
       />
       <section>
-        <div className="page-container">
+        <div className="page-container cntUs">
           <div className="mainDivAtContact">
             <div className="textContent">
               <div className="mainHeaderatContactSection">
@@ -109,11 +112,10 @@ function Contact(props) {
               <div className="subHeaderAtContactSection">
                 Feel free to connect with us with any questions or queries.
                 We're
-                <br /> dedicated to providing you with the best possible
-                experience
+                <br /> dedicated to providing you with the best possible experience.
               </div>
             </div>
-            <div className="betweenSpace" style={{ padding: "12vw" }}></div>
+            <div className="betweenSpace" style={{ padding: "7vw" }}></div>
             <img
               src={message}
               className="imageInContact"
@@ -122,179 +124,152 @@ function Contact(props) {
             />
           </div>
         </div>
-        <section>
-          <h2 className="contactUsMain">Contact Us</h2>
-          <div className="row-container">
-            <div className=""></div>
-            <div className="col-sm-6">
-              <div className="form-container">
-                <form onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Your name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                    <div className="spacer" style={{ padding: "1vw" }}></div>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      className="form-control"
-                      id="email"
-                      placeholder="Email address"
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <select
-                      value={selectedOption}
-                      name="reason"
-                      id="reason"
-                      className="dropdown contactUsDropdown"
-                      onChange={handleSelect}
-                      required
-                    >
-                      <option value="" style={{ color: "black" }}>
-                        Select an issue
+        <h2 className="contactUsMain">Contact Us</h2>
+        <div className="row-container">
+          <div className="col-sm-6">
+            <div className="form-container">
+              <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                  <div className="spacer" style={{ padding: "1vw" }}></div>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    className="form-control"
+                    id="email"
+                    placeholder="Email address"
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <select
+                    value={selectedOption}
+                    name="reason"
+                    id="reason"
+                    className="dropdown contactUsDropdown"
+                    onChange={handleSelect}
+                    required
+                  >
+                    <option value="" style={{ color: "black" }}>
+                      Select an issue
+                    </option>
+                    {options.map((option) => (
+                      <option
+                        key={option.value}
+                        value={option.value}
+                        style={{ color: "white", backgroundColor: "#3D4F74" }}
+                      >
+                        {option.label}
                       </option>
-                      {options.map((option) => (
-                        <option
-                          key={option.value}
-                          value={option.value}
-                          style={{ color: "white", backgroundColor: "#3D4F74" }}
-                        >
-                          {option.label}
-                        </option>
-                      ))}
-                    </select>
-                    <div className="spacer" style={{ padding: "1vw" }}></div>
-                    <input
-                      name="contact"
-                      value={formData.contact}
-                      onChange={handleChange}
-                      maxLength={10}
-                      className="form-control"
-                      id="contact"
-                      placeholder="Contact"
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      className="form-control"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      id="message"
-                      placeholder="Message"
-                      style={{ resize: "none", height: "100px" }}
-                      required
-                    ></textarea>
-                  </div>
-
-                  {/* <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="accepted" required />
+                    ))}
+                  </select>
+                  {/* <div className="spacer" style={{ padding: "1vw" }}></div> */}
+                  <input
+                    name="contact"
+                    value={formData.contact}
+                    onChange={handleChange}
+                    maxLength={10}
+                    className="form-control"
+                    id="contact"
+                    placeholder="Contact"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <textarea
+                    className="form-control"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    id="message"
+                    placeholder="Message"
+                    style={{ resize: "none", height: "100px" }}
+                    required
+                  ></textarea>
+                </div>
+                <div className="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="privacyPolicy"
+                    name="privacyPolicy"
+                    value="accepted"
+                    required
+                  />
                   <label htmlFor="privacyPolicy" className="contactusCheckBox">
                     By submitting this form, you agree to Creditmitra's
-                    <a className="contactusCheckBoxLegal" href="/privacypolicy"> Privacy Policy</a> &
-                    <a className="contactusCheckBoxLegal" href="/termsAndConditions"> Terms and Conditions</a>.
+                    <a
+                      className="contactusCheckBoxLegal"
+                      href="/privacypolicy"
+                    >
+                      Privacy Policy
+                    </a>{" "}
+                    &{" "}
+                    <a
+                      className="contactusCheckBoxLegal"
+                      href="/termsAndConditions"
+                    >
+                      Terms and Conditions
+                    </a>
                   </label>
-
-                  <br />
-
-                  <input type="checkbox" id="notifications" name="notifications" value="accepted" required />
-                  <label htmlFor="notifications" className="contactusCheckBox">I hereby authorize to receive notifications and SMS,
-                    RCS Messages, Promotional or Information Messages.
-                  </label><br /> */}
-
-                  <div className="checkbox-container">
-                    <input
-                      type="checkbox"
-                      id="privacyPolicy"
-                      name="privacyPolicy"
-                      value="accepted"
-                      required
-                    />
-                    <label
-                      htmlFor="privacyPolicy"
-                      className="contactusCheckBox"
-                    >
-                      By submitting this form, you agree to Creditmitra's
-                      <a
-                        className="contactusCheckBoxLegal"
-                        href="/privacypolicy"
-                      >
-                        Privacy Policy
-                      </a>{" "}
-                      &
-                      <a
-                        className="contactusCheckBoxLegal"
-                        href="/termsAndConditions"
-                      >
-                        Terms and Conditions
-                      </a>
-                    </label>
-                  </div>
-
-                  <div className="checkbox-container">
-                    <input
-                      type="checkbox"
-                      id="notifications"
-                      name="notifications"
-                      value="accepted"
-                      required
-                    />
-                    <label
-                      htmlFor="notifications"
-                      className="contactusCheckBox"
-                    >
-                      I hereby authorize to receive RCS, Whatsapp messages and
-                      informational emails.
-                    </label>
-                  </div>
-
-                  <button type="submit" className="contact-submit-button">
-                    Submit
-                  </button>
-                  {formStatus === "SUCCESS" && (
-                    <p className="responseText">
-                      Thank you for your message, we will get back to you
-                      shortly.
-                    </p>
-                  )}
-                  {formStatus === "ERROR" && (
-                    <p className="responseText">
-                      Failed to send message. Please try again.
-                    </p>
-                  )}
-                </form>
-              </div>
-            </div>
-            <div className="">
-              <div className="vl"></div>
-            </div>
-            <div className="col-sm-4">
-              <div className="emailLink">
-                <img src={Hangout} className="hangout" alt="Hangout" />
-                <p style={{ color: "white" }}>
-                  Email Us
-                  <a
-                    style={{ textDecoration: "none" }}
-                    href="mailto: support@creditmitra.in"
-                  >
-                    <br /> support@creditmitra.in
-                  </a>
-                </p>
-              </div>
+                </div>
+                <div className="checkbox-container">
+                  <input
+                    type="checkbox"
+                    id="notifications"
+                    name="notifications"
+                    value="accepted"
+                    required
+                  />
+                  <label htmlFor="notifications" className="contactusCheckBox">
+                    I hereby authorize to receive RCS, Whatsapp messages, and informational emails.
+                  </label>
+                </div>
+                <button type="submit" className="contact-submit-button">
+                  Submit
+                </button>
+                {formStatus === "SUCCESS" && (
+                  <p className="responseText">
+                    Thank you for your message, we will get back to you shortly.
+                  </p>
+                )}
+                {formStatus === "ERROR" && (
+                  <p className="responseText">
+                    Failed to send message. Please try again.
+                  </p>
+                )}
+              </form>
             </div>
           </div>
-        </section>
+          <div className="">
+            <div className="vl"></div>
+          </div>
+          <div className="col-sm-4">
+            <div className="emailLink">
+              <img src={Hangout} className="hangout" alt="Hangout" />
+              <p style={{ color: "white" }}>
+                Email Us
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="mailto: support@creditmitra.in"
+                >
+                  <br /> support@creditmitra.in
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <section></section>
         <Footer />
       </section>
     </>
