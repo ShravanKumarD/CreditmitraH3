@@ -52,7 +52,7 @@ import CollectingManager from "./Pages/HiringPages/Jds/CollectingManager";
 import Banner from "./Components/ContactUsBanner/ContactUsBanner";
 import JobApplicationForm from "./Pages/HiringPages/ApplicationForm";
 import JobApplications from "./Pages/HiringPages/JobApplications";
-
+import Tudf from "./Components/Tudf";
 // keep 404 last always
 import Page404 from "./Pages/Page404/Page404";
 import EasyLoan from "./Pages/EasyLoan";
@@ -258,6 +258,11 @@ function App() {
               path="fetch-pan-details"
               element={
                <FetchApis routePath="fetch-pan-details"/>
+              }/>
+              <Route
+              path="/tudf"
+              element={
+                <Tudf routePath="tudf"/>
               }/>
 
             {/* Keep this at last. */}
