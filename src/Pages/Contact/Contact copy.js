@@ -107,7 +107,7 @@ function Contact(props) {
             <div className="textContent">
               <div className="mainHeaderatContactSection">
                 Got a question?
-                <br/> We're here to help!
+                <br /> We're here to help!
               </div>
               <div className="subHeaderAtContactSection">
                 Feel free to connect with us with any questions or queries.

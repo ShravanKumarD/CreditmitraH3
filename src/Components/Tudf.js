@@ -84,7 +84,25 @@ export default function Tudf() {
       const fifthPart = remainingAddress.slice(0, maxLength);
   
 
-      return `01${formatAddressPart(firstPart)}02${formatAddressPart(secondPart)}03${formatAddressPart(thirdPart)}04${formatAddressPart(fourthPart)}05${formatAddressPart(fifthPart)}`;
+      let formattedAddress = `01${formatAddressPart(firstPart)}`;
+
+if (secondPart) {
+  formattedAddress += `02${formatAddressPart(secondPart)}`;
+}
+
+if (thirdPart) {
+  formattedAddress += `03${formatAddressPart(thirdPart)}`;
+}
+
+if (fourthPart) {
+  formattedAddress += `04${formatAddressPart(fourthPart)}`;
+}
+
+if (fifthPart) {
+  formattedAddress += `05${formatAddressPart(fifthPart)}`;
+}
+return formattedAddress;
+
     } else {
      
       return `${address.length.toString().padStart(2, '0')}${address}`;
@@ -137,25 +155,29 @@ export default function Tudf() {
     if (!excelData) return;
   
     // Define the fixed header (without dynamic content)
-    const fixedHeader = `TUDF12007FP05839                    AGFI              ${excelData[0].dateReported}                              L00000`
+    // const fixedHeader = `TUDF12007FP05839                    AGFI              ${excelData[0].dateReported}                              L00000`
+    const fixedHeader = `TUDF12007FP05839                    AGFI              ${excelData[0].dateReported}                              L00000                                                `
   
     // Process each row to create content
     const txtContent = excelData.map((row) => {
+      console.log(row,"rowData")
       const consumerNameValue = row.consumerName ? consumerName(row.consumerName) : '';
       const consumerAddressValue = row.address1 ? consumerAddress(row.address1) : '';
       const memberName = '0204AGFI';
-      const accNumber = row['curr/NewAccountNo'];
-      const dateOpened = row['dateOpened/Disbursed'];
+      // const accNumber = row['curr/NewAccountNo'];
+      const accNumber = String(row['curr/NewAccountNo']).padStart(9, '0'); 
+
+      const dateOpened = row["dateOpened/Disbursed"];
       const approvedAmount = row["highCredit/SanctionedAmt"];
       const currentBal = row.currentBalance;
       const emi = row.eMIAmount;
-  
+      console.log(typeof accNumber, accNumber);
 
-      const recordLine = `PN03N0101${consumerNameValue}0708${row.dateOfBirth.toString().length}${row.dateOfBirth}0801${row.gender}03I010102010210${row.incomeTaxIDNumber}PT03T010110${row["telephoneNo.Mobile"]}030201PA03A0101${consumerAddressValue}0602${row.stateCode1}0706${row.pINCode1}080202TL04T0010110007FP05839${memberName}03${accNumber.length}${accNumber}040269050110808${dateOpened.length}${dateOpened}0908${row.dateOfLastPayment?.length}${row.dateOfLastPayment}${row.dateClosed ? `1008${row.dateClosed}` : ``}1108${row.dateReported}12${approvedAmount.toString().length}${approvedAmount}13${currentBal.toString().length}${currentBal}${row.amtOverdue ? `14${row.amtOverdue.toString().length}${row.amtOverdue}` : ``}${row.noOfDaysPastDue ? `${row.noOfDaysPastDue.toString().length}${row.noOfDaysPastDue}` : ``}26020140${emi.toString().length}${emi}ES02**`
+      const recordLine = `PN03N0101${consumerNameValue}0708${row.dateOfBirth}0801${row.gender}ID03I010102010210${row.incomeTaxIDNumber}PT03T010110${row["telephoneNo.Mobile"]}030201PA03A01${consumerAddressValue}0602${row.stateCode1}0706${row.pINCode1}080202TL04T0010110007FP05839${memberName}030${accNumber.toString().length}${accNumber}040269050110808${dateOpened}${row.dateOfLastPayment?`0908${row.dateOfLastPayment}`:``}${row.dateClosed ? `1008${row.dateClosed}` : ``}1108${row.dateReported}120${approvedAmount.toString().length}${approvedAmount}130${currentBal.toString().length}${currentBal}${row.amtOverdue ? `140${row.amtOverdue.toString().length}${row.amtOverdue}` : ``}${row.noOfDaysPastDue ? `150${row.noOfDaysPastDue.toString().length}${row.noOfDaysPastDue}` : ``}260201400${emi.toString().length}${emi}ES02**`
   
       return `${recordLine}`;
     }).join('')
-  let x = 'RLTR';
+  let x = 'TRLR';
     // const fullContent = fixedHeader + txtContent + x;
     const fullContent = `${fixedHeader}${txtContent}${x}`;
 

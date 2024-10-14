@@ -12,7 +12,7 @@ function Header() {
   const location = useLocation();
   const dropdownRef = useRef(null);
 
-  useEffect(() => {
+  useEffect(() => { 
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsDropdownOpen(false);
@@ -217,7 +217,7 @@ function Header() {
                 <br /> support@creditmitra.in
               </a>
               <br />
-              +91 9666042345
+              +91 9951703178
               <div className="timeStamp">Mon-Sun:9:30AM to 7:00PM</div>
             </div>
             <button className="nav-btn btn brand-secondary lg"
